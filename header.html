@@ -1,0 +1,82 @@
+<header>
+    <nav class="cabecalho container-fluid">
+        <div class="row">
+            <div class="logo col-md-5">
+                <a href="#"><img src="logo.png" alt="Logo Buyhood" width="200px"></a>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="nav col-md-5">
+                <ul class="navegacao">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Comida Caseira</a></li>
+                    <li><a href="#">Expêriencias</a></li>
+                    <li class="login"><a href="#">Entre ou Cadastre-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+    box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
+    margin-bottom: 10px;
+}
+
+.cabecalho {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav, .logo{
+    align-items: center;
+}
+
+.navegacao li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 14px;
+}
+
+.navegacao .login {
+    border: 1px solid #02acaf;
+    border-radius: 5px;
+    padding: 10px;
+    transform: none;
+    transition: 1s all;
+}
+
+.navegacao a {
+    color: #000;
+}
+
+.navegacao a:hover {
+    color: #02acaf;
+}
+
+.navegacao .login a {
+    text-decoration: none;
+    color: #02acaf;
+    transition: 0.5s all;
+}
+
+.navegacao .login:hover {
+    background-color: #02acaf;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.navegacao .login:hover a {
+    color: white;
+    transition: 0.5s all;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>BuyHood - Cadastro</title>
+    </head>
+    <body>
+    <main>
+        <form  class="container-fluid" class="formulario" style="margin: auto; width: 600px;">
+           
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="coloque seu nome" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="sobrenome" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="seu_email@email.com" class="form-control" required>
+            </div> 
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" name="username" id="username" placeholder="nome de Usuário " class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="text" name="password" id="password" placeholder="senha" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00)00000-0000" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Gênero</label>
+                <select name="genero" id="genero" class="form-control" required>
+                    <option selected disabled>selecione seu gênero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div> 
+            <div class="form-check">
+                <input type="checkbox" id="termos" class="form-check-input">
+                <label for="termos" class="form-check-label">aceitar termos & condições</label>
+            </div>
+            <div style = "margin-top: 4vh;">
+            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </div>
+        </form>
+    </main>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script>
+            var form = document.querySelector('.needs-validation');
+
+            form.addEventListener('submit', function(event){
+                if (form.checkValidity() === false){
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            } )
+        </script>
+    </body>
+</html>
+

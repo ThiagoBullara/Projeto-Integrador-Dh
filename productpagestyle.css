@@ -17,7 +17,7 @@ nav{
 }
 
 .menubar{
-    margin: 0px 5px 0px 5px;
+    margin: 0px;
     font-size: 20px;
     display: inline;
     list-style: none;
@@ -74,7 +74,9 @@ nav{
 
 footer{
     background-color: lightgray;
-    border-top: 3px solid black;
+    border-top: 1px solid rgba(0, 0, 0, 0.425);
+    margin-top: 10px;
+    box-shadow: 0px 1px 10px 0.5px rgba(0, 0, 0, 0.473);
 }
 
 .listfooteritem{

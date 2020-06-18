@@ -1,0 +1,137 @@
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+    box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
+    margin-bottom: 10px;
+}
+
+.header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav, .logo{
+    align-items: center;
+}
+
+.navbarmain li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 14px;
+}
+
+.navbarmain .login {
+    border: 1px solid #02acaf;
+    border-radius: 5px;
+    padding: 10px;
+    transform: none;
+    transition: 1s all;
+}
+
+.navbarmain a {
+    color: #000;
+}
+
+.navbarmain a:hover {
+    color: #02acaf;
+}
+
+.navbarmain .login a {
+    text-decoration: none;
+    color: #02acaf;
+    transition: 0.5s all;
+}
+
+.navbarmain .login:hover {
+    background-color: #02acaf;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.navbarmain .login:hover a {
+    color: white;
+    transition: 0.5s all;
+}
+
+footer{
+    background-color: lightgray;
+    border-top: 1px solid rgba(0, 0, 0, 0.425);
+    margin-top: 10px;
+    box-shadow: 0px 1px 10px 0.5px rgba(0, 0, 0, 0.473);
+}
+
+.listfooteritem{
+    margin: 15px;
+    font-size: 15px;
+    list-style: none;
+    display: block;
+}
+
+.listfooteritem a{
+    text-decoration: none;
+    color: black;
+}
+
+.logofooter{
+    margin: 35px 20px 20px 20px;
+}
+
+.address{
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+   
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .meio{
+      margin: 40px 0 40px 0;
+  }
+
+  h1{
+      margin-bottom: 20px;
+  }
+  
+  .formulario{
+      width: 550px;
+      margin: auto;
+  }
+
+  .enviar{
+    margin-top: 4vh;
+  }

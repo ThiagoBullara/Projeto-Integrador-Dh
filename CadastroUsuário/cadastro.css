@@ -120,11 +120,11 @@ footer{
   }
 
   .meio{
-      margin: 40px 0 40px 0;
+      margin: 5% 0 5% 0;
   }
 
   .formulario{
-      width: 500px;
+      width: 40%;
       margin: auto;
   }
 
@@ -133,9 +133,7 @@ footer{
   }
 
   hr{
-      margin-left: -70px ;
-      width: 670px;
+      margin-left: -20% ;
+      width: 140%;
 
   }
-
-  

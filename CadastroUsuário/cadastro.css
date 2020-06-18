@@ -123,15 +123,19 @@ footer{
       margin: 40px 0 40px 0;
   }
 
-  h1{
-      margin-bottom: 20px;
-  }
-  
   .formulario{
-      width: 550px;
+      width: 500px;
       margin: auto;
   }
 
   .enviar{
     margin-top: 4vh;
   }
+
+  hr{
+      margin-left: -70px ;
+      width: 670px;
+
+  }
+
+  

@@ -1,10 +1,16 @@
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
 header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.425);
     box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
     margin-bottom: 10px;
 }
 
-.header {
+.cabecalho {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -13,13 +19,13 @@ header {
     align-items: center;
 }
 
-.navbarmain li {
+.navegacao li {
     display: inline-block;
     margin: 0 10px;
     margin-top: 14px;
 }
 
-.navbarmain .login {
+.navegacao .login {
     border: 1px solid #02acaf;
     border-radius: 5px;
     padding: 10px;
@@ -27,27 +33,27 @@ header {
     transition: 1s all;
 }
 
-.navbarmain a {
+.navegacao a {
     color: #000;
 }
 
-.navbarmain a:hover {
+.navegacao a:hover {
     color: #02acaf;
 }
 
-.navbarmain .login a {
+.navegacao .login a {
     text-decoration: none;
     color: #02acaf;
     transition: 0.5s all;
 }
 
-.navbarmain .login:hover {
+.navegacao .login:hover {
     background-color: #02acaf;
     cursor: pointer;
     transition: 1s all;
 }
 
-.navbarmain .login:hover a {
+.navegacao .login:hover a {
     color: white;
     transition: 0.5s all;
 }

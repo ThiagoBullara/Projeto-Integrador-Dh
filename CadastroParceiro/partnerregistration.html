@@ -10,6 +10,25 @@
         <link rel="stylesheet" href="partnerregistration.css">
         <title>Buyhood - Cadastro de Parceiro</title>
 </head>
+<header>
+    <nav class="header container-fluid">
+        <div class="row">
+            <div class="logo col-lg-5">
+                <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo Buyhood" width="200px"></a>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="nav col-lg-5">
+                <ul class="navbarmain">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Comida Caseira</a></li>
+                    <li><a href="#">Expêriencias</a></li>
+                    <li class="login"><a href="#">Entre ou Cadastre-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
     <div class="container">
         <div class="titlemain">
@@ -20,25 +39,25 @@
             <form>
                 <div class="form-group">
                     <label for="inputAddress">Nome completo do responsável</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Exemplo: Avenida Paulista, 1200 - Bela Vista" required>
+                    <input type="text" class="form-control" id="inputAddress">
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-4">
                     <label for="inputEmail4">E-mail</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" required>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputPassword4">Telefone</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="00 00000000" required>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="00 00000000">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="inputAddress">Endereço do negócio</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Exemplo: Avenida Paulista, 1200 - Bela Vista" required>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Exemplo: Avenida Paulista, 1200 - Bela Vista">
                 </div>
                 <div class="form-group">
                   <label for="inputAddress2">Complemento</label>
@@ -47,11 +66,11 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputCity">Nome do negócio</label>
-                    <input type="text" class="form-control" id="inputCity" placeholder="O nome que será exibido para os usuários" required>
+                    <input type="text" class="form-control" id="inputCity" placeholder="O nome que será exibido para os usuários">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputState">Tipo de serviço</label>
-                    <select id="inputState" class="form-control" required>
+                    <select id="inputState" class="form-control">
                       <option selected disabled>Selecione</option>
                       <option>Restaurante</option>
                       <option>Comida Caseira</option>
@@ -60,12 +79,12 @@
                   </div>
                   <div class="form-group col-md-2">
                     <label for="inputZip">CNPJ</label>
-                    <input type="text" class="form-control" id="inputZip" placeholder="XX.XXX.XXX/XXX-XX" required>
+                    <input type="text" class="form-control" id="inputZip" placeholder="XX.XXX.XXX/XXX-XX">
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
                       Eu li aceito os <a href="#">Termos e condições</a> e concordo com a <a href="#">Política de Privacidade.</a>
                     </label>

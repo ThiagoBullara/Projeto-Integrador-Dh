@@ -6,8 +6,7 @@
 
 header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.425);
-    box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
-    margin-bottom: 10px;
+    box-shadow: 1px 0px 10px 0.5px rgba(0, 0, 0, 0.473);
 }
 
 .header {
@@ -58,44 +57,76 @@ header {
     transition: 0.5s all;
 }
 
-.product{
-    margin-top: 5px;
-    border-left: black solid 1px;
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.fullbody{
-    background-color: white;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    padding: 10px;
+.product-title{
+    margin-bottom: 20px;
 }
 
 .description-list{
     font-size: 15px;
     color: gray;
-    text-align: left;
+    margin-left: 5px;
+}
+
+.buy-btn{
+    margin: 20px 0px 20px 0px;
 }
 
 .rating{
-    margin: 25px 0px 25px 0px;
     color: goldenrod;
 }
 
-.product-description{
-    margin: 25px 0px 25px 0px;
+.description{
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    padding: 20px 0px 20px 0px;
 }
 
-.top-description{
-    border-bottom: black solid 1px;
+.review-section-title{
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
-.map{
-    margin: 15px 0px 15px 0px;
-}
-
-.pricing{
-    margin: 100px 0px 20px 0px;
-}
+.review-section {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+  }
+  
+  .review-section::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .review-section img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    image-resolution: 50%;
+  }
+  
+  .review-section span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  @media (max-width: 500px) {
+    .review-section {
+        text-align: center;
+    }
+    .review-section img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
 
 footer{
     background-color: lightgray;

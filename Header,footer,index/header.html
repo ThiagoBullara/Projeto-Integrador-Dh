@@ -1,25 +1,4 @@
-<header>
-    <nav class="cabecalho container-fluid">
-        <div class="row">
-            <div class="logo col-lg-5">
-                <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo Buyhood" width="200px"></a>
-            </div>
-            <div class="col-lg-2"></div>
-            <div class="nav col-lg-5">
-                <ul class="navegacao">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Restaurantes</a></li>
-                    <li><a href="#">Comida Caseira</a></li>
-                    <li><a href="#">Expêriencias</a></li>
-                    <li class="login"><a href="#">Entre ou Cadastre-se</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-
+<style>
 
 * {
     padding: 0; 
@@ -33,7 +12,7 @@ header {
     margin-bottom: 10px;
 }
 
-.cabecalho {
+.header {
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -42,13 +21,13 @@ header {
     align-items: center;
 }
 
-.navegacao li {
+.navbarmain li {
     display: inline-block;
     margin: 0 10px;
     margin-top: 14px;
 }
 
-.navegacao .login {
+.navbarmain .login {
     border: 1px solid #02acaf;
     border-radius: 5px;
     padding: 10px;
@@ -56,27 +35,50 @@ header {
     transition: 1s all;
 }
 
-.navegacao a {
+.navbarmain a {
     color: #000;
 }
 
-.navegacao a:hover {
+.navbarmain a:hover {
     color: #02acaf;
 }
 
-.navegacao .login a {
+.navbarmain .login a {
     text-decoration: none;
     color: #02acaf;
     transition: 0.5s all;
 }
 
-.navegacao .login:hover {
+.navbarmain .login:hover {
     background-color: #02acaf;
     cursor: pointer;
     transition: 1s all;
 }
 
-.navegacao .login:hover a {
+.navbarmain .login:hover a {
     color: white;
     transition: 0.5s all;
 }
+
+</style>
+
+<header>
+    <nav class="header container-fluid">
+        <div class="row">
+            <div class="logo col-lg-5">
+                <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo BuyHood" width="200px"></a>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="nav col-lg-6s">
+                <ul class="navbarmain">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Comida Caseira</a></li>
+                    <li><a href="#">Expêriencias</a></li>
+                    <li><a href="#">Entrar</a></li>
+                    <li class="login"><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>   
+        </div>
+    </nav>
+</header>

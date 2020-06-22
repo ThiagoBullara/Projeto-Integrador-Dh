@@ -73,6 +73,7 @@ header {
 </style>
 
 <?php require('ModalLogin.php')?>
+<?php require('ModalRegistration.php')?>
 
 <header>
     <nav class="header container-fluid">
@@ -87,8 +88,10 @@ header {
                     <li><a href="../AllRestaurantPages/AllRestaurantPages.html">Restaurantes</a></li>
                     <li><a href="#">Experiências</a></li>
                     <li><a href="../PaginasSobreNos/sobrenos.html">Sobre Nós</a></li>
-                    <li><a href="#myModalLogin" class="trigger-btn" data-toggle="modal">Entrar</a></li>
-                    <li class="login"><a href="../CadastroParceiro/singingupchoice.php">Cadastre-se</a></li>
+                    <li><a href="#">Entrar</a></li>
+                    <li class="login"><a href="#">Cadastre-se</a></li>
+                    <!-- <li><a href="#myModalLogin" class="trigger-btn" data-toggle="modal">Entrar</a></li>
+                    <li class="login"><a href="#myModalRegistration" class="trigger-btn" data-toggle="modal">Cadastre-se</a></li> -->
                 </ul>
             </div>   
         </div>

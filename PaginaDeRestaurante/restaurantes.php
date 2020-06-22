@@ -13,6 +13,7 @@
         <title>Buyhood - Restaurantes</title>
     </head>
     <body>
+<<<<<<< HEAD:PaginaDeRestaurante/restaurantes.html
         <header>
             <nav class="header container-fluid">
                 <div class="row">
@@ -35,6 +36,11 @@
         </header>
         <section>
             <div class="container-fluid">
+=======
+        <?php require_once('../Header,footer,index/header.php')?>
+        <section class="carrosel-de-imagens"> 
+            <div class="container">
+>>>>>>> 8bd6746a5b2437ca9287a85ae00fb6ec74f81ec1:PaginaDeRestaurante/restaurantes.php
                 <div class="row">
                     <div class="col-lg-12 banner">
                         <h1 class="titulo-loja">Restaurante de comida Japonesa</h1>
@@ -256,6 +262,7 @@
                 </div>
             </div>
         </section>
+<<<<<<< HEAD:PaginaDeRestaurante/restaurantes.html
         <footer class="container-fluid">
             <div class="row">
                 <div class="logofooter col-lg-2">
@@ -289,6 +296,11 @@
                 </div>
             </div>
         </footer>
+=======
+
+        <?php include('../Header,footer,index/footer.php')?>
+        
+>>>>>>> 8bd6746a5b2437ca9287a85ae00fb6ec74f81ec1:PaginaDeRestaurante/restaurantes.php
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

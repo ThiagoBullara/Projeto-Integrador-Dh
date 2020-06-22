@@ -13,6 +13,8 @@
 
 <body>
 
+    <?php require('ModalPartnerRegistration.php')?>
+    <?php require('../ModalCadastro/modal.html')?>
     <?php require_once('../Header,footer,index/header.php')?>
 
     <div class="container-fluid">
@@ -23,7 +25,7 @@
                 <h5 class="card-title">Seja um Parceiro!</h5>
                 <p class="card-text">Se você tem um negócio na nossa região e gostaria de mais exposição, junte-se a nós
                      e crie um perfil profissional!</p>
-                <a href="#!" class="btn btn-primary">Cadastre-se como parceiro</a>
+                     <a href="#" data-toggle="modal" data-target="#myModalPartner" class="btn btn-primary">Cadastre-se como parceiro</a>
             </div>
             </div>
         </div>
@@ -33,7 +35,7 @@
             <div class="card-body">
                 <h5 class="card-title">Seja um Membro!</h5>
                 <p class="card-text">Os melhores produtos e serviços culinários da região, junte-se a nós e crie um perfil para explorar suas opções!</p>
-                <a href="#!" class="btn btn-primary">Cadastre-se como usuário</a>
+                <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Cadastre-se como usuário</a>
             </div>
             </div>
         </div>

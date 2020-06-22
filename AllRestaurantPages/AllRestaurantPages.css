@@ -4,61 +4,6 @@
     box-sizing: border-box;
 }
 
-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
-    box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
-    margin-bottom: 10px;
-}
-
-.header {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.nav, .logo{
-    align-items: center;
-}
-
-.navbarmain li {
-    display: inline-block;
-    margin: 0 10px;
-    margin-top: 14px;
-}
-
-.navbarmain .login {
-    border: 1px solid #02acaf;
-    border-radius: 5px;
-    padding: 10px;
-    transform: none;
-    transition: 1s all;
-}
-
-.navbarmain a {
-    color: #000;
-    text-decoration: none !important;
-}
-
-.navbarmain a:hover {
-    color: #02acaf;
-}
-
-.navbarmain .login a {
-    text-decoration: none;
-    color: #02acaf;
-    transition: 0.5s all;
-}
-
-.navbarmain .login:hover {
-    background-color: #02acaf;
-    cursor: pointer;
-    transition: 1s all;
-}
-
-.navbarmain .login:hover a {
-    color: white;
-    transition: 0.5s all;
-}
-
 .rating-stars{
     color: orange;
 }

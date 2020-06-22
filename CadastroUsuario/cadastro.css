@@ -96,51 +96,50 @@ footer{
     margin: 20px 2px;
   }
   
-  .fa:hover {
-      color: lightgray;
-      opacity: 1.5;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-   
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
+.fa:hover {
+    color: lightgray;
+    opacity: 1.5;
+}
 
-  .meio{
-      margin: 5% 0 5% 0;
-  }
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
 
-  .formulario{
-      width: 40%;
-      margin: auto;
-  }
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
 
-  .enviar{
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.meio{
+    margin: 5% 0 5% 0;
+}
+
+.titulo {
+    width: 50%!important;
+    margin: 0 auto;
+}
+
+.enviar{
     margin-top: 4vh;
-  }
+}
 
-  hr{
-      margin-left: -20% ;
-      width: 140%;
-
-  }
+hr{
+    margin-left: -20% ;
+    width: 140%;
+}

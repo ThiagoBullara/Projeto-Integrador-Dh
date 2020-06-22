@@ -20,7 +20,7 @@
         <form class="formulario" class="needs-validation" novalidate>
         
         <div>
-        <h1 class="formulario">Cadastre-se</h1><br>
+          <h1 class="titulo">Editar seu cadastro</h1><br>
         </div>
         <div class="form-row" >
             <div class="col">

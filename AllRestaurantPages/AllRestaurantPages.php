@@ -15,7 +15,7 @@
 
         <div class="container-fluid row">
             <div class="col-lg-6 restaurant-full-details">
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -66,7 +66,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -117,7 +117,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -168,7 +168,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -219,7 +219,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -270,7 +270,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -321,7 +321,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -372,7 +372,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
@@ -423,7 +423,7 @@
                         <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
                     </div>
                 </div></a>
-                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.html"><div class="restaurant-list row">
+                <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php"><div class="restaurant-list row">
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">

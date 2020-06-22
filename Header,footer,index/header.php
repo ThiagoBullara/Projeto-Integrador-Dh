@@ -84,9 +84,9 @@ header {
             <div class="nav col-lg-6s">
                 <ul class="navbarmain">
                     <li><a href="#">Home</a></li>
-                    <li><a href="../AllRestaurantPages/AllRestaurantPages.html">Restaurantes</a></li>
+                    <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
                     <li><a href="#">Experiências</a></li>
-                    <li><a href="../PaginasSobreNos/sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
                     <li><a href="#myModalLogin" class="trigger-btn" data-toggle="modal">Entrar</a></li>
                     <li class="login"><a href="../CadastroParceiro/singingupchoice.php">Cadastre-se</a></li>
                 </ul>

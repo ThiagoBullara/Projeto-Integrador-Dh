@@ -72,8 +72,9 @@ header {
 
 </style>
 
-<?php require('ModalLogin.php')?>
-<?php require('ModalRegistration.php')?>
+<?php //require('ModalLogin.php')?>
+<?php //require('ModalRegistration.php')?>
+
 
 <header>
     <nav class="header container-fluid">

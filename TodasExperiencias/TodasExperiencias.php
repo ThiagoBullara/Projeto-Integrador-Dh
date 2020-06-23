@@ -19,10 +19,10 @@
                     <div class="col-lg-8">
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
-                                <span class="restaurant-name">Burger King</span>
+                                <span class="restaurant-name">Chef Thiago Bullara ensina brownie da familia</span>
                             </div>
                             <div class="description">
-                                <span id="rating-value">3.5</span>               
+                                <span id="rating-value">5</span>               
                                 <span class="rating-stars">
                                     <svg class="bi bi-star-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -44,26 +44,26 @@
                                 <div id="restaurant-details">
                                 <span id="pricing">$$</span>
                                 <span id="detail-divider">-</span>
-                                <span id="restaurant-tipe">Fast-Food</span>
+                                <span id="restaurant-tipe">Aula de culinária com chef especialista</span>
                                 <span id="detail-divider">-</span>
-                                <span id="address">Av.Pavão, 109</span>
+                                <span id="address">rua Helena, 151</span>
                                 </div>
-                                <span>Aberto até as 23:00</span>
+                                <span>O evento se inicia as 16h30</span>
                             </div>
                             <div class="allergies-checklist">
                                 <span><svg class="bi bi-check2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                                </svg>Opção Vegana <svg class="bi bi-check2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                </svg>Vegan friendly <svg class="bi bi-check2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-                                </svg>Opção Vegetariana <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                </svg>Para ir com a familia <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
                                     <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
-                                </svg>Opção Sem Glútem</span>
+                                </svg>Aulas com grandes cozinheiros</span>
                             </div>
                         </div>
                     </div>
                     <div class="restaurant-photo col-lg-4">
-                        <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Burger King">
+                        <img src="https://www.publicitarioscriativos.com/wp-content/uploads/2020/03/burger-king-doara-parte-dos-seus-lucros-para-o-sus.png" width="200px" alt="Foto Da Experência">
                     </div>
                 </div></a>          
             </div>

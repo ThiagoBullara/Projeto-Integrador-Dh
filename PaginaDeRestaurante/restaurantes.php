@@ -1,5 +1,3 @@
-<!-- Teste -->
-
 <!DOCTYPE html>
     
 <html lang="pt-br">
@@ -29,7 +27,7 @@
                             <li><a href="#">Experiências</a></li>
                             <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
                             <li><a href="#">Entrar</a></li>
-                            <li class="login"><a href="../ModalCadastro/modal.php">Cadastre-se</a></li>
+                            <li class="login"><a href="#">Cadastre-se</a></li>
                         </ul>
                     </div>   
                 </div>

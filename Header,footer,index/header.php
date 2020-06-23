@@ -36,7 +36,7 @@ header {
     margin-top: 14px;
 }
 
-.navbarmain .login {
+.navbarmain .sing-up {
     border: 1px solid #02acaf;
     border-radius: 5px;
     padding: 10px;
@@ -53,19 +53,19 @@ header {
     color: #02acaf;
 }
 
-.navbarmain .login a {
+.navbarmain .sing-up a {
     text-decoration: none;
     color: #02acaf;
     transition: 0.5s all;
 }
 
-.navbarmain .login:hover {
+.navbarmain .sing-up:hover {
     background-color: #02acaf;
     cursor: pointer;
     transition: 1s all;
 }
 
-.navbarmain .login:hover a {
+.navbarmain .sing-up:hover a {
     color: white;
     transition: 0.5s all;
 }
@@ -79,18 +79,18 @@ header {
 <header>
     <nav class="header container-fluid">
         <div class="row">
-            <div class="logo col-lg-5">
+            <div class="logo col-lg-7">
                 <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo BuyHood" width="200px"></a>
             </div>
-            <div class="col-lg-1"></div>
-            <div class="nav col-lg-6s">
+            <div class="nav col-lg-5">
                 <ul class="navbarmain">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Início</a></li>
                     <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
                     <li><a href="#">Experiências</a></li>
                     <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
-                    <li><a href="#">Entrar</a></li>
-                    <li class="login"><a href="#">Cadastre-se</a></li>
+                    <li><a href="#">Torne-se um parceiro</a></li>
+                    <li><a class="sing-in" href="#">Entrar</a></li>
+                    <li class="sing-up"><a href="#">Cadastre-se</a></li>
                     <!-- <li><a href="#myModalLogin" class="trigger-btn" data-toggle="modal">Entrar</a></li>
                     <li class="login"><a href="#myModalRegistration" class="trigger-btn" data-toggle="modal">Cadastre-se</a></li> -->
                 </ul>

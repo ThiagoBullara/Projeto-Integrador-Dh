@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    height: 500px;
+    background-image: url(https://s3-sa-east-1.amazonaws.com/chefs-salles/destaque/banner-home.jpg);
+    background-size: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.banner-info {
+    padding-left: 50px; 
+}
+
+.banner-info h1 {
+    font-size: 3.1em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.banner-info h2 {
+    font-size: 2em;
+    color: rgb(15, 14, 1);
+    margin-bottom: 5px;
+}
+.banner-info p {
+    font-size: 1.2em;
+    color: #dddddd;
+    font-weight: bold;
+}
+
+.tarja{
+    text-align: center;
+    background-color: #000000;
+    color: #dddddd;
+}

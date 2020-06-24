@@ -24,7 +24,7 @@
 	});	
 </script>
 
-    <title>Todas as experiênciass</title>
+    <title>Todas as experiências</title>
 </head>
 <body>
     <section class="container-fluid">
@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Featured <b>Products</b></h2>
+                        <h2>novas <b>Experiências</b></h2>
                         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
@@ -66,7 +66,7 @@
                                                 <img src="/examples/images/products/ipad.jpg" class="img-responsive" alt="">									
                                             </div>
                                             <div class="thumb-content">
-                                                <h4>Apple iPad</h4>									
+                                                <h4>Aprenda a dormir com Texugo</h4>									
                                                 <div class="star-rating">
                                                     <ul class="list-inline">
                                                         <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -77,7 +77,7 @@
                                                     </ul>
                                                 </div>
                                                 <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@
                                                 <img src="/examples/images/products/headphone.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4>Sony Headphone</h4>									
+                                                <h4>Brownie da familia com Thiko</h4>									
                                                 <div class="star-rating">
                                                     <ul class="list-inline">
                                                         <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -99,7 +99,7 @@
                                                     </ul>
                                                 </div>
                                                 <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>		
@@ -110,7 +110,7 @@
                                                 <img src="/examples/images/products/macbook-air.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4>Macbook Air</h4>									
+                                                <h4>Venha descobrir os sabores do Sul</h4>									
                                                 <div class="star-rating">
                                                     <ul class="list-inline">
                                                         <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -121,7 +121,7 @@
                                                     </ul>
                                                 </div>
                                                 <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>								
@@ -132,7 +132,7 @@
                                                 <img src="/examples/images/products/nikon.jpg" class="img-responsive" alt="">
                                             </div>
                                             <div class="thumb-content">
-                                                <h4>Nikon DSLR</h4>									
+                                                <h4>Jantar onde você quiser</h4>									
                                                 <div class="star-rating">
                                                     <ul class="list-inline">
                                                         <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -143,7 +143,7 @@
                                                     </ul>
                                                 </div>
                                                 <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -169,7 +169,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -191,7 +191,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -213,7 +213,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -235,7 +235,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>						
@@ -261,7 +261,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -283,7 +283,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>	
@@ -327,7 +327,7 @@
                                                         <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                                     </ul>
                                                 </div>
-                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                                <a href="#" class="btn btn-primary">Participar</a>
                                             </div>						
                                         </div>
                                     </div>

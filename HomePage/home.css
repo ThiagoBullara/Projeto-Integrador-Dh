@@ -1,13 +1,60 @@
 * {
-    padding: 0!important;
-    margin: 0!important;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-/* .banner {
-    height: 400px;
-    background-image: url(https://i.ibb.co/zVsZmmQ/banner1.jpg);
-    background-repeat: no-repeat;
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    height: 450px;
+    background-image: url(https://s3-sa-east-1.amazonaws.com/chefs-salles/destaque/banner-home.jpg);
     background-size: 100%;
-    background-position: center;    
-} */
+    align-items: center;
+}
+
+.banner-info {
+    padding-left: 50px; 
+}
+
+.banner-info h1 {
+    font-size: 3.1em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.banner-info p {
+    font-size: 1.2em;
+    color: #dddddd;
+    font-weight: bold;
+}
+
+.input-search {
+    width: 70%;
+    padding: 0.6em;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.input-search:hover {
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgb(235, 235, 235);
+    transition: all 0.4s;
+}
+
+.button-search {
+    font-weight: 600;
+    width: 15%;
+    padding: 0.6em;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    background-color: #dddd;
+}

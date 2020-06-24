@@ -20,11 +20,11 @@
 	$(document).ready(function(){
 		$(".wish-icon i").click(function(){
 			$(this).toggleClass("fa-heart fa-heart-o");
-		});
+		}); 
 	});	
 </script>
 
-    <title>Todas as experiências</title>
+    <title>Todas as experiênciass</title>
 </head>
 <body>
     <section class="container-fluid">

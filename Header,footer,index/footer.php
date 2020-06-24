@@ -10,7 +10,7 @@
 <body>
     <style>
 footer{
-    background-color: darkseagreen;
+    background-color: black;
     border-top: 1px solid rgba(0, 0, 0, 0.425);
     margin-top: 10px;
     box-shadow: 0px 1px 10px 0.5px rgba(0, 0, 0, 0.473);
@@ -34,8 +34,12 @@ footer{
     color: white;
 }
 
+.listfooteritem a:hover{
+    color: #02acaf;
+}
+
 .logofooter{
-    margin: 100px 20px 20px 40px;
+    margin: 40px 20px 20px 50px;
 }
 
 .copyright{
@@ -95,7 +99,7 @@ footer{
     <footer class="container-fluid">
         <div class="row">
             <div class="logofooter col-lg-3">
-            <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo Buyhood" width="350px"></a>
+            <a href="#"><img src="https://i.ibb.co/1K1qP06/Screenshot-5-removebg-preview.png" alt="Logo Buyhood" width="300px"></a>
             </div>
             <div class="footerinfo1 col-lg-2">
                 <ul class="listfooter">

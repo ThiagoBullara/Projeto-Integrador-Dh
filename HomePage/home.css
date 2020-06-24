@@ -58,3 +58,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
     background-color: #dddd;
 }
+
+.howto-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.howto-description{
+    color: gray;
+    text-align: center;
+}
+
+.howto-icons{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    padding-left: 30px;
+    color: rgb(105, 104, 104);
+}
+
+.howto-main-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.howto-button{
+    text-align: center;
+    margin-bottom: 20px;
+}

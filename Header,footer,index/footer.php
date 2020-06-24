@@ -38,10 +38,6 @@ footer{
     color: #02acaf;
 }
 
-.logofooter{
-    margin: 40px 20px 20px 50px;
-}
-
 .copyright{
     font-size: 15px;
     text-align: center;
@@ -98,8 +94,7 @@ footer{
 
     <footer class="container-fluid">
         <div class="row">
-            <div class="logofooter col-lg-3">
-            <a href="#"><img src="https://i.ibb.co/1K1qP06/Screenshot-5-removebg-preview.png" alt="Logo Buyhood" width="300px"></a>
+            <div class="col-lg-3">
             </div>
             <div class="footerinfo1 col-lg-2">
                 <ul class="listfooter">

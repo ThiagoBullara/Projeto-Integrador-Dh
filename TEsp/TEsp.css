@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .carrossel {
-	background: #dddddd;
+	background: hsl(0, 0%, 100%);
 }
 .carrossel h2 {
 	color: #000;
@@ -84,13 +84,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 	overflow: hidden;
 }
+/* dentro do produto */
 .carousel .thumb-wrapper {
 	padding: 25px 15px;
-	background: #fff;
+	background: #dddddd;
 	border-radius: 6px;
 	text-align: center;
 	position: relative;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.493);
 }
 .carousel .item .img-box {
 	height: 120px;
@@ -120,15 +121,15 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: bold;
     background: none;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     padding: 6px 14px;
     margin-top: 5px;
     line-height: 16px;
     border-radius: 20px;
 }
 .carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
-	color: #fff;
-	background:linear-gradient(rgb(6, 6, 192),white);
+	color: rgb(0, 0, 0);
+	background:linear-gradient(rgba(197, 197, 197, 0.781),rgba(204, 204, 204, 0.493));
 	box-shadow: none;
 }
 .carousel .thumb-content .btn i {
@@ -139,13 +140,14 @@ h1, h2, h3, h4, h5, h6 {
 .carousel .carousel-control {
 	height: 44px;
 	width: 40px;
-	background: rgba(128, 128, 128, 0);	
+	background: rgb(190, 190, 190);	
     margin: auto 0;
     border-radius: 100%;
-	opacity: 0.8;
+	opacity: 0.5;
 }
+
 .carousel .carousel-control:hover {
-	background: #78bf00;
+	background: rgba(194, 194, 194, 0.397);
 	opacity: 1;
 }
 .carousel .carousel-control i {
@@ -157,16 +159,16 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 5;
     left: 0;
     right: 0;
-    color: #fff;
+    color: black;
 	text-shadow: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .carousel .item-price {
 	font-size: 13px;
 	padding: 2px 0;
 }
 .carousel .item-price strike {
-	opacity: 0.7;
+	opacity: 0.5;
 	margin-right: 5px;
 }
 .carousel .carousel-control.left i {
@@ -186,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 	border: none;
 }
 .carousel-indicators li {	
-	background: rgba(0, 0, 0, 0.2);
+	background: rgb(0, 0, 0);
 }
 .carousel-indicators li.active {	
 	background: rgba(0, 0, 0, 0.6);

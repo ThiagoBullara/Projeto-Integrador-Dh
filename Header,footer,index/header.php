@@ -19,6 +19,7 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.425);
     box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .header {

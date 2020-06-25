@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-indicators li, .carousel-indicators li.active {
 	width: 10px;
 	height: 10px;
-	margin: 4px;
+	margin: 6px;
 	border-radius: 50%;
 	border: none;
 }
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: rgb(0, 0, 0);
 }
 .carousel-indicators li.active {	
-	background: rgba(0, 0, 0, 0.6);
+	background: rgb(0, 0, 0);
 }
 .carousel .wish-icon {
 	position: absolute;

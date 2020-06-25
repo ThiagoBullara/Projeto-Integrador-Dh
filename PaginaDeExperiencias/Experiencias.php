@@ -29,7 +29,6 @@
 <body>
     <?php require_once('../Header,footer,index/header.php')?>
 
-
     <section class="container-fluid">
             <div class="banner row">
                 <div class="col-lg-12">

@@ -27,8 +27,7 @@
     <title>Todas as experiências</title>
 </head>
 <body>
-    <?php require_once('../Header,footer,index/header.php')?>
-
+    <!-- banner -->
     <section class="container-fluid">
             <div class="banner row">
                 <div class="col-lg-12">
@@ -39,6 +38,7 @@
                     </div>
                 </div>
     </section>
+    <!-- carrossel 1 -->
     <section class="container-fluid">
         <div class="row tarja">
             <div class="col-lg-12">
@@ -348,10 +348,630 @@
                 </div>
             </div>
     </section>
-</section>
-
-    <?php include('../Header,footer,index/footer.php')?>
-
+    <!-- carrossel 2 -->
+    <section class="carrossel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>melhores <b>Experiências</b></h2>
+                        <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel2" data-slide-to="1"></li>
+                            <li data-target="#myCarousel2" data-slide-to="2"></li>
+                        </ol>   
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="" class="img-responsive" alt="">									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/headphone.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Brownie da familia com Thiko</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>		
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/macbook-air.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Venha descobrir os sabores do Sul</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>								
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/nikon.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Jantar onde você quiser</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/play-station.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/macbook-pro.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/speaker.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/galaxy.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/iphone.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/canon.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/pixel.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/watch.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left" href="#myCarousel2" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel2" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- imagem e explicaçoes -->
+    <section class= "container-fluid" >
+            <div class = "row" > 
+                <div class="col-lg-1"></div>
+                <div class= "col-lg-4">
+                    <h1>Arrisque novas experiências com a gente</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium iste minima obcaecati. Rem deserunt delectus nostrum, unde placeat in maxime inventore saepe tenetur similique ab fuga quis maiores minus?<br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, quod repudiandae, odio tempora, eum accusantium ipsam quos quidem earum suscipit at consectetur! At, incidunt itaque modi sed adipisci quam veritatis!<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, officia. Fuga voluptatum quae cum sint, aliquid aliquam eius porro nihil reiciendis ab placeat itaque qui sapiente! Doloremque magnam facere incidunt.</p>
+                </div>
+                    
+                <div class= "col-sm-7">
+                    <img src="https:///images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt=" " width="90%">
+                </div>
+            </div>
+    </section>
+    <!-- carrossel 3 -->
+    <section class="carrossel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Para fazer com a <b>familia</b></h2>
+                        <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel3" data-slide-to="1"></li>
+                            <li data-target="#myCarousel3" data-slide-to="2"></li>
+                        </ol>   
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="" class="img-responsive" alt="">									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/headphone.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Brownie da familia com Thiko</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>		
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/macbook-air.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Venha descobrir os sabores do Sul</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>								
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/nikon.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Jantar onde você quiser</h4>									
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/play-station.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/macbook-pro.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/speaker.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/galaxy.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>						
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/iphone.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/canon.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/pixel.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/watch.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Aprenda a dormir com Texugo</h4>
+                                                <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Participar</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left" href="#myCarousel3" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel3" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

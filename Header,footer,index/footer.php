@@ -53,6 +53,8 @@ footer{
     font-size: 15px;
 }
 
+
+
 .fa {
     padding: 5px;
     font-size: 30px;
@@ -90,6 +92,10 @@ footer{
     .fa-instagram {
         background: #125688;
         color: white;
+    }
+
+    .button-footer{
+        font-size: 17px;
     }
     </style>
 
@@ -136,7 +142,7 @@ footer{
   <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
   <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
 </svg> Alto potencial de retorno financeiro</li>
-                    <li class="listfooteritem"><button type="button" class="btn btn-info">Cadastre o seu restaurante</button></li>
+                    <li class="listfooteritem"><button type="button" class="button-footer btn btn-info">Cadastre o seu restaurante</button></li>
                 </ul>
             </div>
         </div>

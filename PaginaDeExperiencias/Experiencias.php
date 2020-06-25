@@ -349,7 +349,7 @@
                 </div>
             </div>
     </section>
-
+</section>
 
     <?php include('../Header,footer,index/footer.php')?>
 

@@ -50,6 +50,7 @@ footer{
     margin-bottom:25px;
     font-weight: bold;
     list-style: none;
+    font-size: 15px;
 }
 
 .fa {

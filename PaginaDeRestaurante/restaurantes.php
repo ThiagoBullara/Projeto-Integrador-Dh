@@ -22,9 +22,9 @@
                     <div class="col-lg-1"></div>
                     <div class="nav col-lg-6s">
                         <ul class="navbarmain">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="../HomePage/home.php">Home</a></li>
                             <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
-                            <li><a href="#">Experiências</a></li>
+                            <li><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li>
                             <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
                             <li><a href="#">Entrar</a></li>
                             <li class="login"><a href="#">Cadastre-se</a></li>

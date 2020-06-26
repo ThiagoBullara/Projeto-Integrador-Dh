@@ -80,14 +80,14 @@ header {
 <header>
     <nav class="header container-fluid">
         <div class="row">
-            <div class="logo col-lg-7">
+            <div class="logo col-lg-5">
                 <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo BuyHood" width="200px"></a>
             </div>
-            <div class="nav col-lg-5">
+            <div class="nav col-lg-7">
                 <ul class="navbarmain">
-                    <li><a href="#">Início</a></li>
+                    <li><a href="../HomePage/home.php">Home</a></li>
                     <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
-                    <li><a href="#">Experiências</a></li>
+                    <li><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li>
                     <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
                     <li><a href="#">Torne-se um parceiro</a></li>
                     <li><a class="sing-in" href="#">Entrar</a></li>

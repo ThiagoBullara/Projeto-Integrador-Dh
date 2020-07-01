@@ -1,0 +1,31 @@
+.produtos{
+    border: black 0.05px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10vh;
+}
+
+.image{
+    margin-bottom: 5vh;
+}
+
+.botao{
+    border: 1px solid #245501;
+    background:#245501;
+    padding: 10px 40%;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    size: 10px;
+    color: #ffffff;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.botao:hover{
+    color: #245501;
+    background-color:#538d22;
+    border-color: #245501;
+}
+

@@ -26,7 +26,7 @@
 
     <title>Todas as experiências</title>
 </head>
-<?php require_once('../Header,footer,index/header.php')?>
+ <?php require_once('../Header,footer,index/header.php')?> 
 
 <body>
     <!-- banner -->

@@ -10,10 +10,8 @@
 <body>
     <style>
 footer{
-    background-color: black;
+    background-color: #1a4301;
     border-top: 1px solid rgba(0, 0, 0, 0.425);
-    margin-top: 10px;
-    box-shadow: 0px 1px 10px 0.5px rgba(0, 0, 0, 0.473);
     color: white;
 }
 
@@ -35,7 +33,7 @@ footer{
 }
 
 .listfooteritem a:hover{
-    color: #02acaf;
+    color: #73a942;
 }
 
 .copyright{
@@ -106,43 +104,31 @@ footer{
             <div class="footerinfo1 col-lg-2">
                 <ul class="listfooter">
                     <li class="listfootertitle">Sobre o Buyhood</li>
-                    <li class="listfooteritem"><a href="#">Quem Somos</a></li>
-                    <li class="listfooteritem"><a href="#">Trabalhe conosco</a></li>
-                    <li class="listfooteritem"><a href="#">Restaurantes</a></li>
-                    <li class="listfooteritem"><a href="#">Experiências</a></li>
-                    <li class="listfooteritem"><a href="#">Área que atendemos</a></li>
+                    <li class="listfooteritem"><a href="../PaginasSobreNos/sobrenos.php">Sobre nós</a></li>
+                    <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php">Trabalhe conosco</a></li>
+                    <li class="listfooteritem"><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
+                    <li class="listfooteritem"><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li>
+                    <li class="listfooteritem"><a href="../AreaQueAtendemos/AreaQueAtendemos.php">Área que atendemos</a></li>
                 </ul>
             </div>
             <div class="footerinfo2 col-lg-2">
                 <ul class="listfooter">
                     <li class="listfootertitle">Contato</li>
-                    <li class="listfooteritem"><a href="#">F.A.Q.</a></li>
+                    <li class="listfooteritem"><a href="../FAQ/FAQ.php">F.A.Q.</a></li>
                     <li class="listfooteritem"><a href="#">Envie-nos um e-mail</a></li>
-                    <li class="listfooteritem"><a href="#">Carreiras</a></li>
-                    <li class="listfooteritem"><a href="#">Termos de uso</a></li>
-                    <li class="listfooteritem"><a href="#">Política de Privacidade</a></li>
+                    <li class="listfooteritem"><a href="../Careers/Careers.php">Carreiras</a></li>
+                    <li class="listfooteritem"><a href="../Terms&Conditions/TermsOfUse.php">Termos de uso</a></li>
+                    <li class="listfooteritem"><a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade</a></li>
                 </ul>
             </div>
             <div class="footer-partner col-lg-4">
                 <ul class="listfooter">
                     <li class="listfootertitle">Seja nosso parceiro</li>
-                    <li class="listfooteritem"><svg class="bi bi-check-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-</svg> Ganhe muita visibilidade on-line</li>
-                    <li class="listfooteritem"><svg class="bi bi-check-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-</svg> Clientes novos e fidelizados</li>
-                    <li class="listfooteritem"><svg class="bi bi-check-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-</svg> Conheça seu público-alvo</li>
-                    <li class="listfooteritem"><svg class="bi bi-check-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-</svg> Alto potencial de retorno financeiro</li>
-                    <li class="listfooteritem"><button type="button" class="button-footer btn btn-info">Cadastre o seu restaurante</button></li>
+                    <li class="listfooteritem">🗹 Ganhe muita visibilidade on-line</li>
+                    <li class="listfooteritem">🗹 Clientes novos e fidelizados</li>
+                    <li class="listfooteritem">🗹 Conheça seu público-alvo</li>
+                    <li class="listfooteritem">🗹 Alto potencial de retorno financeiro</li>
+                    <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php"><button type="button" class="button-footer btn btn-info">Cadastre o seu restaurante</button></a></li>
                 </ul>
             </div>
         </div>
@@ -150,11 +136,10 @@ footer{
             <div class="col-lg-5"></div>
                 <div class="social-media col-lg-4">
                     <div>
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google"></a>
-                        <a href="#" class="fa fa-youtube"></a>
-                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/BuyhoodL" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" class="fa fa-youtube"></a>
+                        <a href="https://www.instagram.com/buyhoodlocalfoods/" class="fa fa-instagram"></a>
                     </div>
                 </div>
             </div>

@@ -71,7 +71,7 @@
     if(!empty($businessType) && $businessType != "Restaurante" && $businessType != "Experiências"){
       echo "Por favor, selecione qual é o tipo de negócio que você tem";
   }
-  }
+}
 
   ?>
     <div class="container">

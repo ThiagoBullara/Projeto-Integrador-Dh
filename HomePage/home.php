@@ -31,7 +31,7 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-6">
                     <input type="text" name="search" id="search" class="input-search" placeholder="Busque por um restaurantes ou uma experiência">
-                    <button class="button-search">Buscar</button>
+                    <button class="botao button-search">Buscar</button>
                 </div>
             </div>
         </section>

@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: #ffffff;
 }
 .carrossel h2 {
-	color: #000;
+	color: rgb(0, 0, 0);
 	font-size: 26px;
 	font-weight: 300;
 	text-align: center;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 	height: 4px;
 	border-radius: 1px;
-    background: #239102; 
+    background: #ff0000; 
 	left: 0;
 	right: 0;
 	bottom: -20px;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 /* dentro do produto */
 .carousel .thumb-wrapper {
 	padding: 25px 15px;
-	background-image:url(https://s3-sa-east-1.amazonaws.com/chefs-salles/destaque/banner-home.jpg);
+	background-image:url(https://images.unsplash.com/photo-1556908450-1a9b4fe91fb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
 	border-radius: 6px;
 	text-align: center;
 	position: relative;

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.divisao{
+    text-align: center;
+    padding: 10vh;
+    background:#73a942;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.produtos{
+    border: black 0.05px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10vh;
+}
+
+.image{
+    margin-bottom: 5vh;
+}
+
+.botao{
+    border: 1px solid #245501;
+    background:#245501;
+    padding: 10px 150px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    size: 10px;
+    color: #ffffff;
+    transition: 0.7s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.botao:hover{
+    color: #ffffffe0;
+    background-color:#538d22;
+    border-color: #245501;
+}
+

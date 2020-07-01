@@ -91,7 +91,7 @@ header {
                     <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
                     <li><a href="#">Torne-se um parceiro</a></li>
                     <li><a class="sing-in" href="#">Entrar</a></li>
-                    <li class="sing-up"><a href="#">Cadastre-se</a></li>
+                    <li class="botao"><a href="#">Cadastre-se</a></li>
                     <!-- <li><a href="#myModalLogin" class="trigger-btn" data-toggle="modal">Entrar</a></li>
                     <li class="login"><a href="#myModalRegistration" class="trigger-btn" data-toggle="modal">Cadastre-se</a></li> -->
                 </ul>

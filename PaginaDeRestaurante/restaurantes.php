@@ -13,26 +13,9 @@
         <title>Buyhood - Restaurantes</title>
     </head>
     <body>
-        <header>
-            <nav class="header container-fluid">
-                <div class="row">
-                    <div class="logo col-lg-5">
-                        <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo BuyHood" width="200px"></a>
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="nav col-lg-6s">
-                        <ul class="navbarmain">
-                            <li><a href="../HomePage/home.php">Home</a></li>
-                            <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
-                            <li><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li>
-                            <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
-                            <li><a href="#">Entrar</a></li>
-                            <li class="login"><a href="#">Cadastre-se</a></li>
-                        </ul>
-                    </div>   
-                </div>
-            </nav>
-        </header>
+    
+        <?php require_once('../Header,footer,index/header.php')?>
+
         <section>
             <div class="container-fluid">
                 <div class="row">
@@ -328,39 +311,9 @@
             <button type="button" class="btn btn-outline-secondary">Mais avaliações</button>
         </div>
     </div>
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="logofooter col-lg-2">
-                   <a href="#"><img src="https://i.ibb.co/hRDD7Pz/logo.png" alt="Logo Buyhood" width="250px"></a>
-                </div>
-                <div class="footerinfo1 col-lg-2">
-                    <ul class="listfooter">
-                        <li class="listfooteritem"><a href="#">Sobre nós</a></li>
-                        <li class="listfooteritem"><a href="#">Trabalhe conosco</a></li>
-                        <li class="listfooteritem"><a href="#">Termos e condições</a></li>
-                        <li class="listfooteritem"><a href="#">Áreas que atendemos</a></li>
-                    </ul>
-                </div>
-                <div class="footerinfo2 col-lg-4">
-                    <ul>
-                        <li class="listfooteritem"><a href="#">F.A.Q.</a></li>
-                        <li class="listfooteritem"><a href="#">Área do cliente</a></li>
-                        <li class="listfooteritem"><a href="#">Área de restaurantes</a></li>
-                        <li class="listfooteritem"><a href="#">Área de experiências</a></li>
-                    </ul>
-                </div>
-                <div class="address col-lg-3">
-                    <span>2020 BuyHood - BUYHOOD BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA.</span>
-                    <div class="social-media">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google"></a>
-                        <a href="#" class="fa fa-youtube"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    
+        <?php include('../Header,footer,index/footer.php')?>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

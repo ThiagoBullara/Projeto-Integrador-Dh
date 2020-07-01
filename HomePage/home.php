@@ -8,14 +8,6 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="../EstilosPadrao/styleDefault.css">
-
-        <script>
-            $(document).ready(function(){
-                $(".wish-icon i").click(function(){
-                    $(this).toggleClass("fa-heart fa-heart-o");
-                }); 
-            });	
-        </script>
         <title>Buyhood</title>
     </head>
     <body>

@@ -51,7 +51,25 @@ footer{
     font-size: 15px;
 }
 
+.button-footer {
+            list-style: none;
+            font-size: 17px;
+        }
 
+        .button-footer a {
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 10px 20px !important;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .button-footer a:hover {
+            color: #73a942;
+            border-color: #73a942;
+            background-color: white;
+            transition: 0.5s all;
+        }
 
 .fa {
     padding: 5px;
@@ -128,7 +146,7 @@ footer{
                     <li class="listfooteritem">🗹 Clientes novos e fidelizados</li>
                     <li class="listfooteritem">🗹 Conheça seu público-alvo</li>
                     <li class="listfooteritem">🗹 Alto potencial de retorno financeiro</li>
-                    <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php"><button type="button" class="button-footer btn btn-info">Cadastre o seu restaurante</button></a></li>
+                    <li class="listfooteritem"><div class="button-footer"><a href="../CadastroParceiro/partnerregistration.php">Cadastre o seu restaurante</a><div></li>
                 </ul>
             </div>
         </div>

@@ -89,6 +89,7 @@
                 <hr>
                 <div class="restaurant-list row">
                     <div class="col-lg-8">
+                    <a class="hyperlink-restaurant-list" href="../PaginaDeRestaurante/restaurantes.php">                        
                         <div class="restaurant-list-text">
                             <div class="restaurant-name">
                                 <span class="restaurant-name">Burger King</span>

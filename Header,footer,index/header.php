@@ -59,7 +59,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="logo col-lg-12">
-                    <a href="#"><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
+                    <a href="../HomePage/home.php"><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
                 </div>
             </div>
         </div>

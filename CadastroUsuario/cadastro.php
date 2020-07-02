@@ -16,12 +16,13 @@
         
         <?php require_once('../Header,footer,index/header.php')?>
 
-        <main class="meio">
-        <form class="formulario" class="needs-validation" novalidate>
-        
-        <div>
+    <main class="meio">
+      <div class="container">
+        <form class="formulario" class="needs-validation" novalidate>        
+        <!-- <div>
           <h1 class="titulo">Editar seu cadastro</h1><br>
-        </div>
+        </div> -->
+        <p>Preencha o formulário para se cadastrar como usuário no nosso site! Ou se sua intenção era cadastrar seu restaurante, clique <a href="../CadastroParceiro/partnerregistration.php">aqui</a></p><hr>
         <div class="form-row" >
             <div class="col">
                 <div class="form-group"> 
@@ -64,7 +65,7 @@
                 <label for="pwd">Confirme sua senha</label>
                 <input type="password" class="form-control form-control-lg" id="pwd" placeholder="Senha" name="pswd" required>
                 <div class="valid-feedback">Valido.</div>
-                <div class="invalid-feedback">Porfavor preencha este campo.</div>
+                <div class="invalid-feedback">Por favor preencha este campo.</div>
             </div>
             <hr>
             <div class="form-group">
@@ -79,13 +80,14 @@
             </div> 
             <div class="form-group form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember" required> Aceito termos e condições.
+                <input class="form-check-input" type="checkbox" name="remember" required> Eu li e concordo com os <a href="../Terms&Conditions/TermsOfUse.php">Termos de Uso</a> e com a <a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade</a>
                 <div class="valid-feedback">Valido.</div>
-                <div class="invalid-feedback">Porfavor preencha este campo.</div>
+                <div class="invalid-feedback">Por favor preencha este campo.</div>
               </label>
             </div>
             <button type="submit" class="btn btn-outline-primary btn-lg btn-block" class="enviar">Enviar</button>
           </form>
+      </div>
     </main>
 
     <?php include('../Header,footer,index/footer.php')?>

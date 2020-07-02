@@ -78,6 +78,8 @@
 
 <section style="margin-bottom: 20px;margin-top: 20px;">
   <div class="container">
+    <h1 style="text-align: center;">Cadastro de Restaurante</h1>
+    <p>Preencha o formulário para se cadastrar como parceiro no nosso site! Ou se sua intenção se cadastrar como usuário da nossa plataforma, clique <a href="../CadastroUsuario/cadastro.php">aqui</a></p><hr>
     <form method="POST" enctype="multipart/form-data">
       <div class="form-group">
           <label for="inputAddress">Nome completo do responsável</label>
@@ -151,7 +153,7 @@
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck" required>
           <label class="form-check-label" for="gridCheck">
-            Eu li aceito os <a href="../Terms&Conditions/TermsOfUse.php">Termos e condições</a> e concordo com a <a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade.</a>
+            Eu li e aceito os <a href="../Terms&Conditions/TermsOfUse.php">Termos e condições</a> e concordo com a <a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade.</a>
           </label>
           <div class="valid-feedback">Valido.</div>
           <div class="invalid-feedback">Por favor preencha este campo.</div>

@@ -54,6 +54,18 @@
         .nav-border {
             padding: 0 !important;
         }
+        
+        .dropdown-item{
+            color: black !important;
+        }
+
+        .dropdown-item:hover{
+            color: #73a942 !important;
+        }
+
+        .dropdown-menu{
+            margin-left: 1300px !important;
+        }
     </style>
     <header>
         <div class="container-fluid">
@@ -71,8 +83,28 @@
                         <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
                         <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
                         <li><a href="#">Torne-se um parceiro</a></li>
-                        <li><a href="#">Entrar</a></li>
-                        <li class="botao"><a href="#">Cadastre-se</a></li>
+                        <li><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
+                                <div class="dropdown-menu">
+                                    <form class="px-4 py-3">
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail1">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@examplo.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormPassword1">Senha</label>
+                                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                            <label class="form-check-label" for="dropdownCheck">Lembrar login</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Entrar</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Novo por aqui? Cadastre-se!</a>
+                                        <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                                </div></li>
+                        <li class="botao"><a href="../CadastroUsuario/cadastro.php">Cadastre-se</a></li>
                     </ul>
                 </div>   
             </nav>

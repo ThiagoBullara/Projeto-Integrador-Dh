@@ -1,4 +1,4 @@
-    <style>
+<style>
         * {
             padding: 0; 
             margin: 0; 
@@ -110,4 +110,3 @@
             </nav>
         </div>
     </header>
-

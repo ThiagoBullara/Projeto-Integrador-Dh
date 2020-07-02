@@ -12,8 +12,72 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Css do header */
+
+.logo {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #146601;
+}
+
+.navbar {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    list-style: none;
+    padding: 0 40px 20px 40px !important;
+    background-color: #146601;
+    margin-bottom: 0;
+}
+
+.navbar li a {
+    color: white;
+}
+
+
+.navbar li a:hover {
+    text-decoration: none;
+    color: #73a942;
+}
+
+.botao {
+    list-style: none;
+    font-size: 17px;
+}
+
+.botao a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: white;
+}
+
+.botao a:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+.nav-border {
+    padding: 0 !important;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.dropdown-item:hover{
+    color: #73a942 !important;
+}
+
+.dropdown-menu{
+    margin-left: 72%;
+}
+
 .banner {
-    height: 450px;
+    height: 400px;  
     background-image: url(https://s3-sa-east-1.amazonaws.com/chefs-salles/destaque/banner-home.jpg);
     background-size: 100%;
     align-items: center;
@@ -37,26 +101,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .input-search {
     width: 70%;
-    padding: 0.6em;
+    padding: 10px 0 10px 10px;    
     border: 1px solid #000;
     border-radius: 10px;
+    background-color: white;
 }
 
 .input-search:hover {
     color: #000;
     border: 1px solid #000;
-    background-color: rgb(235, 235, 235);
+    background-color: #b7e988;
     transition: all 0.4s;
 }
 
 .button-search {
-    font-weight: 600;
-    width: 15%;
-    padding: 0.6em;
-    border: 1px solid #000;
-    border-radius: 10px;
-    color: #000;
-    background-color: #dddd;
+    font-size: 17px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: white;
+    background-color: #73a942;
+}
+
+.button-search:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
 }
 
 .howto-title{
@@ -85,4 +157,134 @@ h1, h2, h3, h4, h5, h6 {
 .howto-button{
     text-align: center;
     margin-bottom: 20px;
+}
+
+.titulo-restaurantes {
+    text-align: center;
+    padding: 2vh 10vh;
+    background:#73a942;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2vh 0;
+}
+
+.titulo-restaurantes h2 {
+    margin: 0;
+    color: white;
+}
+
+.imagem-descubra {
+    margin: 2vh 0;
+}
+
+.imagem-descubra ul li {
+    display: inline-block;
+}
+
+
+/* Css Footer */
+
+footer{
+    background-color: #1a4301;
+    border-top: 1px solid rgba(0, 0, 0, 0.425);
+    color: white;
+}
+
+.listfooter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.listfooteritem{
+    margin: 15px;
+    font-size: 15px;
+    list-style: none;
+    display: block;
+}
+
+.listfooteritem a{
+    text-decoration: none;
+    color: white;
+}
+
+.listfooteritem a:hover{
+    color: #73a942; 
+}
+
+.copyright{
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    color: gray;
+    font-weight: bold;
+}
+
+.listfootertitle{
+    margin-bottom:25px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 15px;
+}
+
+.button-footer {
+    list-style: none;
+    font-size: 17px;
+}
+
+.button-footer a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: white;
+}
+
+.button-footer a:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px !important;
+    text-align: center;
+    text-decoration: none !important;
+    margin: 20px 2px;
+}
+
+.fa:hover {
+    color: lightgray;
+    opacity: 1.5;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.button-footer{
+    font-size: 17px;    
 }

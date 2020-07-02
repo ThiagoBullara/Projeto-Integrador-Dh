@@ -39,3 +39,7 @@
     color: white;
   }
   /* carousel */
+
+  hr {
+    margin-top: 2vh;
+  }

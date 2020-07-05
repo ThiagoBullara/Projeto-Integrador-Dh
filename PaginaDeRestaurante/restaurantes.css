@@ -5,65 +5,81 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
 }
 
-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
-    box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: #fafafa;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.nav, .logo{
-    align-items: center;
+/* Css do header */
+
+.logo {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #146601;
 }
 
-.navbarmain li {
-    display: inline-block;
-    margin: 0 10px;
-    margin-top: 14px;
+.navbar {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    list-style: none;
+    padding: 0 40px 20px 40px !important;
+    background-color: #146601;
+    margin-bottom: 0;
 }
 
-.navbarmain .login {
-    border: 1px solid #02acaf;
-    border-radius: 5px;
-    padding: 10px;
-    transform: none;
-    transition: 1s all;
-}
-
-.navbarmain a {
-    color: #000;
-}
-
-.navbarmain a:hover {
-    color: #02acaf;
-}
-
-.navbarmain .login a {
-    text-decoration: none;
-    color: #02acaf;
-    transition: 0.5s all;
-}
-
-.navbarmain .login:hover {
-    background-color: #02acaf;
-    cursor: pointer;
-    transition: 1s all;
-}
-
-.navbarmain .login:hover a {
+.navbar li a {
     color: white;
+}
+
+
+.navbar li a:hover {
+    text-decoration: none;
+    color: #73a942;
+}
+
+.botao {
+    list-style: none;
+    font-size: 17px;
+}
+
+.botao a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: white;
+}
+
+.botao a:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
     transition: 0.5s all;
+}
+
+.nav-border {
+    padding: 0 !important;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.dropdown-item:hover{
+    color: #73a942 !important;
+}
+
+.dropdown-menu{
+    margin-left: 72%;
 }
 
 .banner {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 190px;
+    /* background-image: url(http://via.placeholder.com/1350x550); */
+    background-color: #73a942;
     border-bottom: 1px solid rgba(0, 0, 0, 0.425);
     box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
 }
@@ -196,19 +212,6 @@ cite {
     color: rgb(112, 112, 112);
 }
 
-.botao {
-    border: 1px solid #02acaf;
-    border-radius: 5px;
-    padding: 6px;
-    transform: none;
-    transition: 1s all;
-    color: rgb(112, 112, 112);
-}
-
-.botao:hover {
-    background-color: #02acaf;
-}
-
 .card-img {
     padding: 10px;
 }
@@ -299,25 +302,15 @@ cite {
       border-bottom: lightgray solid 2px;
   }
 
-  .last-item button {
-    border: 1px solid #02acaf;
-    border-radius: 5px;
-    padding: 10px;
-    transform: none;
-    transition: 1s all;
-    color: rgb(112, 112, 112);
-  }
-
-  .last-item button:hover {
-    background-color: #02acaf;
-    cursor: pointer;
-    transition: 1s all;
-  }
-  
-footer{
-    background-color: lightgray;
+  footer{
+    background-color: #143601;
     border-top: 1px solid rgba(0, 0, 0, 0.425);
-    box-shadow: 0px 1px 10px 0.5px rgba(0, 0, 0, 0.473);
+    color: white;
+}
+
+.listfooter{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .listfooteritem{
@@ -329,65 +322,88 @@ footer{
 
 .listfooteritem a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-.logofooter{
-    margin: 35px 20px 20px 20px;
+.listfooteritem a:hover{
+    color: #73a942; 
 }
 
-.address{
+.copyright{
     font-size: 15px;
     text-align: center;
     margin: 30px 0px 0px 0px;
+    color: gray;
+    font-weight: bold;
+}
+
+.listfootertitle{
+    margin-bottom:25px;
+    font-weight: bold;
+    list-style: none;
+    font-size: 15px;
+}
+
+.button-footer {
+    list-style: none;
+    font-size: 17px;
+}
+
+.button-footer a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: white;
+}
+
+.button-footer a:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
 }
 
 .fa {
     padding: 5px;
     font-size: 30px;
-    width: 40px;
+    width: 40px !important;
     text-align: center;
     text-decoration: none !important;
     margin: 20px 2px;
-  }
-  
-  .fa:hover {
-      color: lightgray;
-      opacity: 1.5;
-  }
-  
-  .fa-facebook {
+}
+
+.fa:hover {
+    color: lightgray;
+    opacity: 1.5;
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  
-  .fa-twitter {
+}
+
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
-  
+}
+
 .fa-google {
     background: #dd4b39;
     color: white;
-  }
-   
+}
+
 .fa-youtube {
     background: #bb0000;
     color: white;
-  }
-  
+}
+
 .fa-instagram {
     background: #125688;
     color: white;
-  }
+}
 
-  @media (max-width: 500px) {
-    .review-section {
-        text-align: center;
-    }
-    .review-section img {
-        margin: auto;
-        float: none;
-        display: block;
-    }
-  }
+.button-footer{
+    font-size: 17px;    
+}
+  

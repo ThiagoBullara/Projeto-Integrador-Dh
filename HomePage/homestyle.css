@@ -76,11 +76,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 72%;
 }
 
+/* Css Main */
+
 .banner {
-    height: 400px;  
-    background-image: url(https://s3-sa-east-1.amazonaws.com/chefs-salles/destaque/banner-home.jpg);
+    background-image: url(http://via.placeholder.com/1350x550);
     background-size: 100%;
     align-items: center;
+    height: 550px;
 }
 
 .banner-info {
@@ -185,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Css Footer */
 
 footer{
-    background-color: #1a4301;
+    background-color: #143601;
     border-top: 1px solid rgba(0, 0, 0, 0.425);
     color: white;
 }

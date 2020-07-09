@@ -92,31 +92,104 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;  
 }
 
-.image{
-    margin-bottom: 5vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* Restaurantes */
+
+.produtos {
+    margin: 50px auto;
 }
 
-.sapato{
-    border: 1px solid #245501;
-    background:#245501;
-    padding: 10px 150px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-    size: 10px;
-    color: #ffffff;
-    transition: 0.7s;
+.card-produtos {
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    margin: 30px 5px;
     position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-.sapato:hover{
-    color: #ffffffe0;
-    background-color:#538d22;
-    border-color: #245501;
+.imagem-mobile {
+    padding: 10px;
 }
+
+.titulo-restaurante {
+    text-align: center;
+    align-items: center;
+    padding: 18px 9px;
+    margin: 1px 0;
+}
+
+.titulo-restaurante p {
+    margin: 0;
+}
+
+.link-restaurante {
+    color: black;
+    text-decoration: none;
+}
+
+.link-restaurante:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.card-produtos:after, .card-produtos:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.card-produtos:before {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px;
+
+    transform: scaleY(0);
+}
+
+.card-produtos:after {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    transform: scaleX(0);
+}
+
+.card-produtos:hover:before {
+    transform: scaleY(1);
+}
+
+.card-produtos:hover:after {
+    transform: scaleX(1);
+}
+
+.card-produtos:hover {
+    cursor: pointer;
+}
+
+.button-search {
+    font-size: 17px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    color: white;
+    background-color: #73a942;
+    width: 20%;
+    position: relative;
+    left: 40%;
+}
+
+.button-search:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+
+/* Rodapé */
 
 footer{
     background-color: #143601;
@@ -222,4 +295,42 @@ footer{
 
 .button-footer{
     font-size: 17px;    
+}
+
+@media (max-width: 600px) {
+
+    .imagem-mobile {
+        padding: 10px 10px 0 10px;
+        position: relative;
+        right: 0.5%;
+    }
+
+    .titulo-restaurante {
+        text-align: center;
+        align-items: center;
+        padding: 18px 9px;
+        margin: 1px 0;
+        font-size: 18px;
+    }
+
+    .button-search {
+        font-size: 17px;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 20px !important;
+        border-radius: 5px;
+        color: white;
+        background-color: #73a942;
+        width: 60%;
+        position: relative;
+        left: 20%;
+    }
+}
+
+@media (max-width: 812px) { 
+
+    
+
+
+
 }

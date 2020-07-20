@@ -220,6 +220,31 @@ footer{
 }
 
 @media(max-width:670px){
+  
+  /*Header */
+  
+  header {
+    width: 100vw;
+  }
+
+  header li a {
+    display: block;
+    margin: 5px 2px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Body */
   body{
     width: 69vw;
     font-size: 8px;

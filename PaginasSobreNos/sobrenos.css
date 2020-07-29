@@ -42,7 +42,7 @@ body {
 .botao a {
   text-decoration: none;
   border: 1px solid white;
-  padding: 10px 20px !important;
+  padding: 15px 20px !important;
   border-radius: 5px;
   color: white;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .imagem{
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -164,7 +164,7 @@ footer{
 .button-footer a {
   text-decoration: none;
   border: 1px solid white;
-  padding: 10px 20px !important;
+  padding: 15px 20px !important;
   border-radius: 5px;
   color: white;
 }
@@ -217,4 +217,121 @@ footer{
 
 .button-footer{
   font-size: 17px;    
+}
+
+@media(max-width:670px){
+  
+  /*Header */
+  
+  header {
+    width: 100vw;
+  }
+
+  header li a {
+    display: block;
+    margin: 5px 2px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Body */
+  body{
+    width: 69vw;
+    font-size: 8px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .conteudo1{
+    margin: 10px;
+    padding: 0;
+  }
+  
+  .conteudo2{
+    margin-top: 10px;
+    padding-left:0;
+  }
+  
+  .conteudo3{
+    margin: 10px;
+    padding:0;
+  }
+  .verdeclaro{
+    background-color: #aad5766b;
+    padding:  15px;
+  }
+  
+  .cinza{
+    background-color: #f2f2f2;
+    padding: 15px;
+  }
+  
+  .verde{
+    background-color: #aad576;
+    padding: 15px;
+  }
+  
+ .tripla{
+   padding-top: 15px;
+   margin: 10px;
+ } 
+  .separar{
+    margin: 5px;
+  }
+}
+
+@media(max-width:1024px){
+  body{
+    width: 69vw;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .conteudo1{
+    margin: 10px;
+    padding: 0;
+  }
+  
+  .conteudo2{
+    margin-top: 10px;
+    padding-left:0;
+  }
+  
+  .conteudo3{
+    margin: 10px;
+    padding:0;
+  }
+  .verdeclaro{
+    background-color: #aad5766b;
+    padding:  15px;
+  }
+  
+  .cinza{
+    background-color: #f2f2f2;
+    padding: 15px;
+  }
+  
+  .verde{
+    background-color: #aad576;
+    padding: 15px;
+  }
+  
+ .tripla{
+   padding-top: 15px;
+   margin: 10px;
+ } 
+  .separar{
+    margin: 8px;
+  } 
 }

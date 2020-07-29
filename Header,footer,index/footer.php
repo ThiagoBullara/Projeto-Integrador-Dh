@@ -71,6 +71,11 @@ footer{
             transition: 0.5s all;
         }
 
+    .social-media{
+        margin-left: 25%;
+        width: 80%;
+    }
+
 .fa {
     padding: 5px;
     font-size: 30px;
@@ -113,13 +118,27 @@ footer{
     .button-footer{
         font-size: 17px;
     }
+
+    @media(min-width: 768px){
+    .social-media{
+        margin-left: 40%;
+        width: 80%;
+        }
+    }
+
+    @media(min-width: 1000px){
+        .social-media{
+            margin-left: 40%;
+            width: 80%;
+        }
+    }
     </style>
 
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-sm-4 col-md-4 col-lg-4">
             </div>
-            <div class="footerinfo1 col-lg-2">
+            <div class="footerinfo1 col-sm-4 col-md-4 col-lg-4">
                 <ul class="listfooter">
                     <li class="listfootertitle">Sobre o Buyhood</li>
                     <li class="listfooteritem"><a href="../PaginasSobreNos/sobrenos.php">Sobre nós</a></li>
@@ -129,7 +148,7 @@ footer{
                     <li class="listfooteritem"><a href="../AreaQueAtendemos/AreaQueAtendemos.php">Área que atendemos</a></li>
                 </ul>
             </div>
-            <div class="footerinfo2 col-lg-2">
+            <div class="footerinfo2 col-sm-4 col-md-4 col-lg-4">
                 <ul class="listfooter">
                     <li class="listfootertitle">Contato</li>
                     <li class="listfooteritem"><a href="../FAQ/FAQ.php">F.A.Q.</a></li>
@@ -139,7 +158,7 @@ footer{
                     <li class="listfooteritem"><a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade</a></li>
                 </ul>
             </div>
-            <div class="footer-partner col-lg-4">
+            <div class="footer-partner col-sm-4 col-md-4 col-lg-4">
                 <ul class="listfooter">
                     <li class="listfootertitle">Seja nosso parceiro</li>
                     <li class="listfooteritem">🗹 Ganhe muita visibilidade on-line</li>
@@ -150,21 +169,15 @@ footer{
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-5"></div>
-                <div class="social-media col-lg-4">
-                    <div>
-                        <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" class="fa fa-facebook"></a>
-                        <a href="https://twitter.com/BuyhoodL" class="fa fa-twitter"></a>
-                        <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" class="fa fa-youtube"></a>
-                        <a href="https://www.instagram.com/buyhoodlocalfoods/" class="fa fa-instagram"></a>
-                    </div>
-                </div>
-            </div>
+        <div class="social-media row">
+            <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/BuyhoodL" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/buyhoodlocalfoods/" class="fa fa-instagram"></a>
+        </div>
         <div class="copyright">
         <span>&copy; 2020 BuyHood - BUYHOOD BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA.</span>
         </div>
     </footer>
-    
 </body>
 </html>

@@ -82,7 +82,7 @@
                         <li><a href="../HomePage/home.php">Home</a></li>
                         <li><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
                         <li><a href="../PaginasSobreNos/sobrenos.php">Sobre Nós</a></li>
-                        <li><a href="#">Torne-se um parceiro</a></li>
+                        <li><a href="../CadastroParceiro\partnerregistration.html">Torne-se um parceiro</a></li>
                         <li><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</a>
                                 <div class="dropdown-menu">
                                     <form class="px-4 py-3">

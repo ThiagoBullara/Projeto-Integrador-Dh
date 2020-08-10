@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <?php require_once('../Header,footer,index/header.php')?>
+        <?php //require_once('../Header,footer,index/header.php')?>
 
         <div class="container-fluid row">
             <div class="col-lg-6 restaurant-full-details">

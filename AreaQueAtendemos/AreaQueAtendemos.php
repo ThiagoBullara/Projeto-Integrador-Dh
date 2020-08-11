@@ -12,16 +12,40 @@
     <body>
         <?php require_once('../Header,footer,index/header.php')?>
 
+        <style>
+            .container{
+                margin-bottom: 5vw;
+            }
+
+            .iframe-wrap {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-top: 56.25%;
+            }
+
+
+            .responsive-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+        </style>
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-9">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1bR-u0RxdThunkn-_P-Y29h_ru83XtfKC" width="900" height="750"></iframe>
+                <div class="iframe-wrap col-lg-12">
+                    <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1bR-u0RxdThunkn-_P-Y29h_ru83XtfKC" width="100%" height="100%"></iframe>
                 </div>
             </div>
         </div>
         
-        <?php include('../Header,footer,index/footer.php')?>
+        <?php require_once('../Header,footer,index/footer.php')?>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -1,0 +1,86 @@
+<style>
+
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(#1a4301, #146601);
+}
+
+.logo {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.navbar {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    list-style: none;
+    padding: 0 40px 20px 40px !important;
+    margin-bottom: 0;
+}
+
+.navbar li a { 
+    color: white;
+}
+
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color: #73a942;
+}
+
+.botao {
+    list-style: none;
+    font-size: 17px;
+}
+
+.botao a {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.botao a:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+</style>
+
+<link rel="icon" href="https://i.ibb.co/0tNkSBr/Screenshot-1-removebg-preview.png%22%3E">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<header class="container-fluid">
+    <div class="row">
+        <div class="logo col-lg-12">
+            <a href="../Home/home.php"><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
+        </div>
+    </div>
+    <nav class="row">
+        <div class="nav-border col-lg-12">
+            <ul class="navbar">
+                <li><a href="../Home/home.php">Home</a></li>
+                <li><a href="../AllRestaurants/allRestaurants.php">Restaurantes</a></li>
+                <li><a href="../Sobre/sobre.php">Sobre Nós</a></li>
+                <li><a href="../CadastroParceiro/partnerRegistration.php">Torne-se um parceiro</a></li>
+                <li><a href="#">Entrar</a></li>
+                <li class="botao"><a href="../CadastroUsuario/cadastro.php">Cadastre-se</a></li>
+            </ul>
+        </div>   
+    </nav>
+</header>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    

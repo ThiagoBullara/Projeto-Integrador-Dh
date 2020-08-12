@@ -4,29 +4,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="https://i.ibb.co/q7Wkrgq/icon.png">
+        <link rel="icon" href="https://i.ibb.co/0tNkSBr/Screenshot-1-removebg-preview.png%22%3E">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="Home.css">
+        <link rel="stylesheet" href="home.css">
         <title>Buyhood</title>
     </head>
+
     <body>
+
+        <?php require_once ("../Includes/header.php"); ?>
         
-        <section class="container-fluid">
-            <div class="banner row">
-                <div class="col-lg-4">
-                    <div class="banner-info">
-                        <h1>Conheça o BuyHood</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nobis quisquam magnam excepturi labore natus deserunt asperiores provident error incidunt vitae, laborum, molestias aperiam maxime facere perferendis pariatur odit obcaecati.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2"></div>
-                <div class="col-lg-6">
-                    <input type="text" name="search" id="search" class="input-search" placeholder="Busque por um restaurantes ou uma experiência">
-                    <button class="button-search">Buscar</button>
-                </div>
-            </div>
+        <section class="container-fluid banner">
+            
+            
         </section>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
         <section class="container">
             <div class="row">
                 <p class="howto-main-title col-lg-12">Como usar o Buyhood</p>
@@ -77,7 +87,7 @@
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-3">
-                        <img src="https://upload.wikimedia.org/wikipedia/pt/2/20/Capa_CD_Carrossel.jpg" alt="Aqui vai ter um carousel">
+                        <img src="#" alt="Aqui vai ter um carousel">
                     </div>
                 </div>
             </div>
@@ -90,72 +100,23 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="imagem-descubra">
-                    <ul>
-                        <li><a href="../PaginaDeRestaurante/restaurantes.html"><img src="http://via.placeholder.com/756x400"></a></li>
-                        <li><a href="../PaginaDeExperiencia/experiencia.html"><img src="http://via.placeholder.com/756x400"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </section>
-        <section>
-            <!-- <p>Aqui vai ter alguma outra coisa</p> -->
-        </section>
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3">
-                </div>
-                <div class="footerinfo1 col-lg-2">
-                    <ul class="listfooter">
-                        <li class="listfootertitle">Sobre o Buyhood</li>
-                        <li class="listfooteritem"><a href="../PaginasSobreNos/sobrenos.php">Sobre nós</a></li>
-                        <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php">Trabalhe conosco</a></li>
-                        <li class="listfooteritem"><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
-                        <li class="listfooteritem"><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li>
-                        <li class="listfooteritem"><a href="../AreaQueAtendemos/AreaQueAtendemos.php">Área que atendemos</a></li>
-                    </ul>
-                </div>
-                <div class="footerinfo2 col-lg-2">
-                    <ul class="listfooter">
-                        <li class="listfootertitle">Contato</li>
-                        <li class="listfooteritem"><a href="../FAQ/FAQ.php">F.A.Q.</a></li>
-                        <li class="listfooteritem"><a href="#">Envie-nos um e-mail</a></li>
-                        <li class="listfooteritem"><a href="../Careers/Careers.php">Carreiras</a></li>
-                        <li class="listfooteritem"><a href="../Terms&Conditions/TermsOfUse.php">Termos de uso</a></li>
-                        <li class="listfooteritem"><a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-                <div class="footer-partner col-lg-4">
-                    <ul class="listfooter">
-                        <li class="listfootertitle">Seja nosso parceiro</li>
-                        <li class="listfooteritem">🗹 Ganhe muita visibilidade on-line</li>
-                        <li class="listfooteritem">🗹 Clientes novos e fidelizados</li>
-                        <li class="listfooteritem">🗹 Conheça seu público-alvo</li>
-                        <li class="listfooteritem">🗹 Alto potencial de retorno financeiro</li>
-                        <li class="listfooteritem"><div class="button-footer"><a href="../CadastroParceiro/partnerregistration.php">Cadastre o seu restaurante</a><div></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5"></div>
-                    <div class="social-media col-lg-4">
-                        <div>
-                            <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" class="fa fa-facebook"></a>
-                            <a href="https://twitter.com/BuyhoodL" class="fa fa-twitter"></a>
-                            <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" class="fa fa-youtube"></a>
-                            <a href="https://www.instagram.com/buyhoodlocalfoods/" class="fa fa-instagram"></a>
-                        </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="imagem-descubra">
+                        <ul>
+                            <li><a href="../PaginaDeRestaurante/restaurantes.html"><img src="#"></a></li>
+                            <li><a href="../PaginaDeExperiencia/experiencia.html"><img src="#"></a></li>
+                        </ul>
                     </div>
                 </div>
-            <div class="copyright">
-            <span>&copy; 2020 BuyHood - BUYHOOD BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA.</span>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </section>
+
+        <?php require_once("../Includes/footer.php"); ?>
+
     </body>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>

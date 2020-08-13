@@ -119,17 +119,17 @@
         <div class="footerinfo1 col-lg-4">
             <ul class="listfooter">
                 <li class="listfootertitle">Sobre o Buyhood</li>
-                <li class="listfooteritem"><a href="../PaginasSobreNos/sobrenos.php">Sobre nós</a></li>
+                <li class="listfooteritem"><a href="../Sobre/sobre.php">Sobre nós</a></li>
                 <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php">Trabalhe conosco</a></li>
-                <li class="listfooteritem"><a href="../AllRestaurantPages/AllRestaurantPages.php">Restaurantes</a></li>
-                <li class="listfooteritem"><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li>
-                <li class="listfooteritem"><a href="../AreaQueAtendemos/AreaQueAtendemos.php">Área que atendemos</a></li>
+                <li class="listfooteritem"><a href="../AllRestaurantPages/allRestaurantPages.php">Restaurantes</a></li>
+                <!-- <li class="listfooteritem"><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li> -->
+                <li class="listfooteritem"><a href="../AreaQueAtendemos/areaQueAtendemos.php">Área que atendemos</a></li>
             </ul>
         </div>
         <div class="footerinfo2 col-lg-4">
             <ul class="listfooter">
                 <li class="listfootertitle">Contato</li>
-                <li class="listfooteritem"><a href="../FAQ/FAQ.php">F.A.Q.</a></li>
+                <li class="listfooteritem"><a href="../Faq/faq.php">F.A.Q.</a></li>
                 <li class="listfooteritem"><a href="#">Envie-nos um e-mail</a></li>
                 <li class="listfooteritem"><a href="../Careers/Careers.php">Carreiras</a></li>
                 <li class="listfooteritem"><a href="../Terms&Conditions/TermsOfUse.php">Termos de uso</a></li>

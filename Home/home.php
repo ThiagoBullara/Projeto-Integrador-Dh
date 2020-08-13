@@ -16,98 +16,88 @@
         <?php require_once ("../Includes/header.php"); ?>
         
         <section class="container-fluid banner">
-            
-            
+            <ul>
+                <li class="sobre">
+                    <h1>Conheça o Buyhood</h1>
+                    <p>
+                        O Buyhood é uma plataforma onde você descobre e desfruta de experiências 
+                        gastronômicas de uma maneira única. Trabalhamos em uma pequena área entre o Morumbi, 
+                        Campo Belo, Pinheiros e Paraíso, confira toda nossa área de atendimento 
+                        <a href="../AreaQueAtendemos/areaQueAtendemos.php">aqui!</a>
+                    </p>
+                </li>
+                <li class="buscar">
+                    <input type="text" class="inp" placeholder="Procure por uma experiência!">
+                    <input type="submit" value="Buscar" class="btn-inp">
+                </li>
+            </ul>
         </section>
-        
-        
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        <section class="container">
-            <div class="row">
-                <p class="howto-main-title col-lg-12">Como usar o Buyhood</p>
+        <section class="container-fluid">
+            <div class="row titulo">
+                <h2 class="how-to-main-title col-lg-12">Como usar o Buyhood</h2>
             </div>
             <div class="info row">
-                <div class="howto col-lg-3">
-                    <p class="howto-icons"><svg class="bi bi-person-check" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M11 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h1zm-9995-.944v-.002.002zM1.022 13h9.956a.7.2757 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-832 1.664a1.05 1.05 0 0 0 .022.004zm9.9757.056v-.002.002zM6 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm6.854.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                      </svg></p>
-                    <p class="howto-title">Cadastre-se!</p>
-                    <p class="howto-description">Crie uma conta para poder desfrutar da melhor gastronomia da região</p>
+                <div class="col-lg-3">
+                    <img class="how-to-icons" src="https://i.ibb.co/VS3nw3y/icone-Perfil.png" alt="Ícone de perfil">
+                    <p class="how-to-title">Cadastre-se!</p>
+                    <p class="how-to-description">Crie uma conta para poder desfrutar da melhor gastronomia da região.</p>
                 </div>
                 <div class="col-lg-3">
-                    <p class="howto-icons"><svg class="bi bi-search" width="4em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                      </svg></p>
-                    <p class="howto-title">Explore as nossas opções</p>
-                    <p class="howto-description">Descubra todas as culinárias e experiências que estão bem debaixo do seu nariz!</p>
+                    <img class="how-to-icons" src="https://i.ibb.co/WG76WFK/icone-Pesquisa.png" alt="Ícone de pesquisar">
+                    <p class="how-to-title">Explore as nossas opções</p>
+                    <p class="how-to-description">Descubra todas as culinárias e experiências que estão bem debaixo do seu nariz!</p>
                 </div>
                 <div class="col-lg-3">
-                    <p class="howto-icons"><svg class="bi bi-basket2" width="4em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M1.111 7.186A.5.5 0 0 1 1.5 7h13a.5.5 0 0 1 .489.605l-1.5 7A.5.5 0 0 1 13 15H3a.5.5 0 0 1-.489-.395l-1.5-7a.5.5 0 0 1 .1-.42zM2.118 8l1.286 6h9.192l1.286-6H2.118z"/>
-                        <path fill-rule="evenodd" d="M11.314 1.036a.5.5 0 0 1 .65.278l2 5a.5.5 0 1 1-.928.372l-2-5a.5.5 0 0 1 .278-.65zm-6.628 0a.5.5 0 0 0-.65.278l-2 5a.5.5 0 1 0 .928.372l2-5a.5.5 0 0 0-.278-.65z"/>
-                        <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zM0 6.5A.5.5 0 0 1 .5 6h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1z"/>
-                      </svg></p>
-                    <p class="howto-title">Adicione tudo no seu carrinho</p>
-                    <p class="howto-description">São milhares de pratos e experiências que você pode escolher eat-in ou take-away!</p>
+                    <img class="how-to-icons" src="https://i.ibb.co/MZf1XML/icone-Carrinho.png" alt="Ícone de carrinho">
+                    <p class="how-to-title">Adicione tudo no seu carrinho</p>
+                    <p class="how-to-description">São milhares de pratos e experiências que você pode escolher eat-in ou take-away!</p>
                 </div>
                 <div class="col-lg-3">
-                    <p class="howto-icons"><svg class="bi bi-emoji-smile" width="4em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path fill-rule="evenodd" d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z"/>
-                        <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
-                      </svg></p>
-                    <p class="howto-title">Aproveite os benefícios</p>
-                    <p class="howto-description">O Buyhood está aqui para ajudar você a explorar os sabores do seu bairro e descobrir novos lugares para comer que estão bem pertinho de você</p>
+                    <img class="how-to-icons" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Ícone de benefícios">
+                    <p class="how-to-title">Aproveite os benefícios</p>
+                    <p class="how-to-description">
+                        O Buyhood está aqui para ajudar você a explorar os sabores do seu bairro e 
+                        descobrir novos lugares para comer por um ótimo preço.
+                    </p>
                 </div>
             </div>
-            <div class="howto-button row">
-                <div class="col-lg-12">
-                    <a href="../Restaurantes_Experiencias/restaurantes_experiencias.html"><button type="button" class="button-search">Explore</button></a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3">
-                        <img src="#" alt="Aqui vai ter um carousel">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-        <div class="titulo-restaurantes">
             <div class="row">
-                <div class="col">
-                    <h2>Descubra</h2>
+                <div class="col-lg-12">
+                    <a href="../AllRestaurants/allRestaurants.php"><button class="how-to-button">Explore</button></a>
                 </div>
             </div>
-        </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="imagem-descubra">
-                        <ul>
-                            <li><a href="../PaginaDeRestaurante/restaurantes.html"><img src="#"></a></li>
-                            <li><a href="../PaginaDeExperiencia/experiencia.html"><img src="#"></a></li>
-                        </ul>
-                    </div>
+        </section>
+
+        <section class="container-fluid carrosel">
+            <p>Aqui vai ter um carrosel</p>
+        </section>
+
+        <section class="container-fluid descubra-todos">
+            <div class="row descubra">
+                <div class="col-lg-12">
+                    <h2>Descubra!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 descubra-restaurante">
+                    <a href="../PaginaDeRestaurante/restaurantes.html">
+                        <h3>Conheça um dos nossos restaurantes mais prestigiados</h3>
+                        <p class="descricao-restaurante">
+                            O restaurante alemão, HERZLICH WILLKOMMEN, localizado no bairro do 
+                            jardins oferece uma variedade de pratos tradicionais da alemanhã com um cardápio feito pelo 
+                            famoso chefe James.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-6 descubra-experiencia">
+                    <a href="../PaginaDeExperiencia/experiencia.html">
+                        <h3>Conheça uma das nossas eperiências mais pretigiadas</h3>
+                        <p class="descricao-experiencia">
+                            Café da manhã 100% vegano ofericido pela Padaria do seu Zé, 
+                            acompanha um suco nattural a sua escolha ou uma vitamina.
+                        </p>
+                    </a>
                 </div>
             </div>
         </section>

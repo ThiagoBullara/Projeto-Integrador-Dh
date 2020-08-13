@@ -121,7 +121,7 @@
                 <li class="listfootertitle">Sobre o Buyhood</li>
                 <li class="listfooteritem"><a href="../Sobre/sobre.php">Sobre nós</a></li>
                 <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php">Trabalhe conosco</a></li>
-                <li class="listfooteritem"><a href="../AllRestaurantPages/allRestaurantPages.php">Restaurantes</a></li>
+                <li class="listfooteritem"><a href="../AllRestaurants/allRestaurants.php">Restaurantes</a></li>
                 <!-- <li class="listfooteritem"><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li> -->
                 <li class="listfooteritem"><a href="../AreaQueAtendemos/areaQueAtendemos.php">Área que atendemos</a></li>
             </ul>

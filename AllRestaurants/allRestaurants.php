@@ -26,7 +26,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- grid de restaurantes -->
 		<div class="container produtos">
 			<div class="row">
 				<div class="col-lg-4 col-md-6">

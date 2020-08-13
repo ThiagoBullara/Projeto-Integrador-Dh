@@ -81,7 +81,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 descubra-restaurante">
-                    <a href="../PaginaDeRestaurante/restaurantes.html">
+                    <a href="../PaginaDeRestaurante/restaurantes.php">
                         <h3>Conheça um dos nossos restaurantes mais prestigiados</h3>
                         <p class="descricao-restaurante">
                             O restaurante alemão, HERZLICH WILLKOMMEN, localizado no bairro do 
@@ -91,7 +91,7 @@
                     </a>
                 </div>
                 <div class="col-lg-6 descubra-experiencia">
-                    <a href="../PaginaDeExperiencia/experiencia.html">
+                    <a href="../PaginaDeExperiencia/experiencia.php">
                         <h3>Conheça uma das nossas eperiências mais pretigiadas</h3>
                         <p class="descricao-experiencia">
                             Café da manhã 100% vegano ofericido pela Padaria do seu Zé, 

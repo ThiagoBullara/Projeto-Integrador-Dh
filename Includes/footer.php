@@ -122,7 +122,6 @@
                 <li class="listfooteritem"><a href="../Sobre/sobre.php">Sobre nós</a></li>
                 <li class="listfooteritem"><a href="../CadastroParceiro/partnerregistration.php">Trabalhe conosco</a></li>
                 <li class="listfooteritem"><a href="../AllRestaurants/allRestaurants.php">Restaurantes</a></li>
-                <!-- <li class="listfooteritem"><a href="../PaginaDeExperiencias/Experiencias.php">Experiências</a></li> -->
                 <li class="listfooteritem"><a href="../AreaQueAtendemos/areaQueAtendemos.php">Área que atendemos</a></li>
             </ul>
         </div>
@@ -130,7 +129,7 @@
             <ul class="listfooter">
                 <li class="listfootertitle">Contato</li>
                 <li class="listfooteritem"><a href="../Faq/faq.php">F.A.Q.</a></li>
-                <li class="listfooteritem"><a href="#">Envie-nos um e-mail</a></li>
+                <li class="listfooteritem"><a href="../Contato/contato.php">Contato</a></li>
                 <li class="listfooteritem"><a href="../Careers/Careers.php">Carreiras</a></li>
                 <li class="listfooteritem"><a href="../Terms&Conditions/TermsOfUse.php">Termos de uso</a></li>
                 <li class="listfooteritem"><a href="../Terms&Conditions/PrivacyPolicy.php">Política de Privacidade</a></li>
@@ -148,10 +147,10 @@
         </div>
     </div>
     <div class="social-media">
-        <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/BuyhoodL" class="fa fa-twitter"></a>
-        <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" class="fa fa-youtube"></a>
-        <a href="https://www.instagram.com/buyhoodlocalfoods/" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/BuyhoodL" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" class="fa fa-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/buyhoodlocalfoods/" class="fa fa-instagram" target="_blank"></a>
     </div>
     <div class="copyright">
         <span>&copy; 2020 BuyHood - BUYHOOD BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA.</span>

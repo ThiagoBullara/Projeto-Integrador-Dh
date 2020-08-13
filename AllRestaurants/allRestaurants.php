@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 
-<html lang="pt-br">
+<php lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 		<div class="container produtos">
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -41,7 +41,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -53,7 +53,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -65,7 +65,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -77,7 +77,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -89,7 +89,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -101,7 +101,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -113,7 +113,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -125,7 +125,7 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.html" class="link-restaurante">
+					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
 						<div class="card-produtos">
 							<div class="imagem-mobile">
 								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
@@ -143,4 +143,4 @@
 		<?php require_once("../Includes/footer.php"); ?>
 
 	</body>
-</html>
+</php>

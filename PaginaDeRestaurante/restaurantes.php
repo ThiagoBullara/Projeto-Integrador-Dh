@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a href="../PaginaDeExperiencia/experiencia.html" class="itens-cardapio">
+                    <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
                         <div class="col-lg-12">
                             <div class="card mb-3 produtos">
                                 <div class="row no-gutters">
@@ -127,7 +127,7 @@
                     </a>
                 </div>
                 <div class="row">
-                    <a href="../PaginaDeExperiencia/experiencia.html" class="itens-cardapio">
+                    <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
                         <div class="col-lg-12">
                             <div class="card mb-3 produtos">
                                 <div class="row no-gutters">
@@ -149,7 +149,7 @@
                     </a>
                 </div>
                 <div class="row">
-                    <a href="../PaginaDeExperiencia/experiencia.html" class="itens-cardapio">
+                    <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
                         <div class="col-lg-12">
                             <div class="card mb-3 produtos">
                                 <div class="row no-gutters">
@@ -171,7 +171,7 @@
                     </a>
                 </div>
                 <div class="row">
-                    <a href="../PaginaDeExperiencia/experiencia.html" class="itens-cardapio">
+                    <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
                         <div class="col-lg-12">
                             <div class="card mb-3 produtos">
                                 <div class="row no-gutters">
@@ -193,7 +193,7 @@
                     </a>
                 </div>
                 <div class="row">
-                    <a href="../PaginaDeExperiencia/experiencia.html" class="itens-cardapio">
+                    <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
                         <div class="col-lg-12">
                             <div class="card mb-3 produtos">
                                 <div class="row no-gutters">
@@ -215,7 +215,7 @@
                     </a>
                 </div>
                 <div class="row">
-                    <a href="../PaginaDeExperiencia/experiencia.html" class="itens-cardapio">
+                    <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
                         <div class="col-lg-12">
                             <div class="card mb-3 produtos">
                                 <div class="row no-gutters">

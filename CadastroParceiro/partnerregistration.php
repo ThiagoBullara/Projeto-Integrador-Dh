@@ -27,6 +27,14 @@
             border-radius: 2px;
         }
 
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container{
+            margin: 2% 0 5% 0;
+        }
+
         </style>
 
         <div class="container">

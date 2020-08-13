@@ -17,10 +17,10 @@
     <main class="meio">
       <div class="container">
         <form class="formulario" class="needs-validation" novalidate>        
-        <!-- <div>
-          <h1 class="titulo">Editar seu cadastro</h1><br>
-        </div> -->
-        <p>Preencha o formulário para se cadastrar como usuário no nosso site! Ou se sua intenção era cadastrar seu restaurante, clique <a href="../CadastroParceiro/partnerregistration.html">aqui</a></p>
+        <div>
+          <h1 class="titulo">Cadastro de Usuário</h1><br>
+        </div> 
+        <p>Preencha o formulário para se cadastrar como usuário no nosso site! Ou se sua intenção era cadastrar seu restaurante, clique <a href="../CadastroParceiro/partnerregistration.php">aqui</a>.</p>
         <div class="form-row" >
             <div class="col">
                 <div class="form-group"> 

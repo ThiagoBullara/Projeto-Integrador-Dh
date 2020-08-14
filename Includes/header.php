@@ -29,11 +29,12 @@
     }
 
     .navbar li a { 
+        text-decoration: underline;
         color: white;
     }
 
     .navbar li a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: #73a942;
     }
 
@@ -47,13 +48,14 @@
         border: 1px solid white;
         padding: 10px 20px;
         border-radius: 5px;
-        color: white;
+        color: #1a4301 !important;
+        background-color: white;
     }
 
     .botao a:hover {
-        color: #73a942;
-        border-color: #73a942;
-        background-color: white;
+        color: white !important;
+        border-color: white;
+        background: none !important;
         transition: 0.5s all;
     }
 
@@ -62,6 +64,7 @@
         .navbar li a {
             display: inline-block;
             margin: 1vh 2vw;
+            font-size: 20px;
         }
 
         .botao {
@@ -71,6 +74,8 @@
         .botao a {
             padding: 0;
             border: none;
+            background: none !important;
+            color: white !important;
         }
 
         .botao a:hover {
@@ -107,7 +112,7 @@
 
 </style>
 
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 <header class="container-fluid">
     <div class="row">

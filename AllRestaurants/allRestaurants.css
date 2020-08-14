@@ -24,7 +24,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgb(255, 255, 255);
     margin-top: 10vh;
 }
-
+main{
+    margin-bottom: 5%;
+}
 .banner-image{
     width: 100%;
     height: auto;  
@@ -45,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .imagem-mobile {
     padding: 10px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 
 .titulo-restaurante {
@@ -125,13 +129,16 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s all;
     cursor: pointer;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 370px){
+    h2{
+        font-size:20px;
+    }
+}
+@media (max-width: 1024px) {
 
     .imagem-mobile {
-        padding: 10px 10px 0 10px;
-        position: relative;
-        right: 0.5%;
+        width: 100%;
+        border-radius: 5px 5px 0 0
     }
 
     .titulo-restaurante {
@@ -156,10 +163,3 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (max-width: 812px) { 
-
-    
-
-
-
-}

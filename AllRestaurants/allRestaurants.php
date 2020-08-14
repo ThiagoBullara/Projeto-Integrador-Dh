@@ -13,133 +13,133 @@
 	<body>
 		
 		<?php require_once("../Includes/header.php"); ?>
-
-		<div>
-			<div class="banner">
-				<img class ="banner-image" src="http://via.placeholder.com/1350x550" alt="">
-			</div>
-		</div> 
-		<div class="container-fliud divisao">
-			<div class="row">
-				<div class="col">
-					<h2>restaurantes parceiros</h2>
+		<main>
+			<div>
+				<div class="banner">
+					<img class ="banner-image" src="http://via.placeholder.com/1350x550" alt="">
+				</div>
+			</div> 
+			<div class="container-fliud divisao">
+				<div class="row">
+					<div class="col">
+						<h2>restaurantes parceiros</h2>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container produtos">
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
+			<div class="container produtos">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>Nome do restaurante</p>
+								</div>
 							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="../PaginaDeRestaurante/restaurantes.php" class="link-restaurante">
-						<div class="card-produtos">
-							<div class="imagem-mobile">
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" style="border-radius: 5px 5px 0 0;">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>			
-		</div>
-		<button class="button-search">Ver mais</button>
-		
+						</a>
+					</div>
+				</div>			
+			</div>
+			<button class="button-search">Ver mais</button>
+		</main>
 		<?php require_once("../Includes/footer.php"); ?>
 
 	</body>

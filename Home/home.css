@@ -150,76 +150,48 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.descubra-restaurante {
-    background-image: url(https://i.ibb.co/KWy48wt/restaurante.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    position: relative;
-    padding: 0!important; 
+div .polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+  
+div .container {
+    text-align: center;
+    padding: 10px 20px;
 }
 
-.descubra-restaurante a {
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    color: #fff;
-    height: 30%;
-    padding: 10px;
-}
-
-.descubra-restaurante a:hover {
-    color: #73a942;
-}
-
-.descubra-experiencia {
-    background-image: url(https://i.ibb.co/9HswNbN/experiencia.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    position: relative;
-    padding: 0!important; 
-}
-
-.descubra-experiencia a {
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    color: #fff;
-    height: 30%;
-    padding: 10px;
-}
-
-.descubra-experiencia a:hover {
-    color: #73a942;
-}
-
-.descubra-restaurante .descricao-restaurante {
-    width: 70%;
-}
-
-.descubra-experiencia .descricao-experiencia {
-    width: 70%;
+div .polaroid a {
+    color: black;
 }
 
 @media only screen and (max-width: 1110px) {
     .banner {
-        background-image: url(https://i.ibb.co/C0L0b3H/Buy-Hood-Home.jpg);
+        background-image: none;
     }
 
     .banner ul .sobre {
-        color: black;
+        color: #000;
+        font-size: 16px;
+    }
+
+    .how-to-button {
+        width: 30%;
+        left: 35%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .banner ul .sobre {
-        display: none;
         color: black;
+        display: block;
+        width: 35%;
     }
 
     .banner ul .buscar {
-        width: 65%;
+        width: 40%;
+        display: block;
     }
 
     .how-to-button {
@@ -227,28 +199,9 @@ h1, h2, h3, h4, h5, h6 {
         left: 35%;
     }
 
-    .descubra-restaurante a {
-        position: absolute;
-        bottom: 0;
-        background-color: black;
-        color: #fff;
-        height: 40%;
-        padding: 10px;
-    }
-
-    .descubra-experiencia a {
-        position: absolute;
-        bottom: 0;
-        background-color: black;
-        color: #fff;
-        height: 40%;
-        padding: 10px;
-    }
-
-
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 468px) {
     .banner {
         background-image: none;
     }

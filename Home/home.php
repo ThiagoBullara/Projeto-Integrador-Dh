@@ -80,24 +80,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 descubra-restaurante">
-                    <a href="../PaginaDeRestaurante/restaurantes.php">
-                        <h3>Conheça um dos nossos restaurantes mais prestigiados</h3>
-                        <p class="descricao-restaurante">
-                            O restaurante alemão, HERZLICH WILLKOMMEN, localizado no bairro do 
-                            jardins oferece uma variedade de pratos tradicionais da alemanhã com um cardápio feito pelo 
-                            famoso chefe James.
-                        </p>
-                    </a>
+                <div class="col-lg-6" style="text-align: -webkit-center;">
+                    <div class="polaroid">
+                        <a href="../PaginaDeRestaurante/restaurantes.php">
+                            <img src="https://i.ibb.co/KWy48wt/restaurante.jpg" alt="Melhor Restaurante" style="width:100%">
+                            <div class="container">
+                                <p>Conheça nosso melhor parceiro</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6 descubra-experiencia">
-                    <a href="../PaginaDeExperiencia/experiencia.php">
-                        <h3>Conheça uma das nossas eperiências mais pretigiadas</h3>
-                        <p class="descricao-experiencia">
-                            Café da manhã 100% vegano ofericido pela Padaria do seu Zé, 
-                            acompanha um suco nattural a sua escolha ou uma vitamina.
-                        </p>
-                    </a>
+                <div class="col-lg-6" style="text-align: -webkit-center;">
+                    <div class="polaroid">
+                        <a href="../PaginaDeExperiencia/experiencia.php">
+                            <img src="https://i.ibb.co/9HswNbN/experiencia.jpg" alt="Melhor Experiência" style="width:100%">
+                            <div class="container">
+                                <p>Conheça nossa melhor experiência</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

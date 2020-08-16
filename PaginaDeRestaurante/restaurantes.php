@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="https://i.ibb.co/q7Wkrgq/icon.png">
+        <link rel="icon" href="https://i.ibb.co/0tNkSBr/Screenshot-1-removebg-preview.png%22%3E">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="restaurantes.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -90,19 +90,10 @@
                     <div class="sobre-cardapio">
                         <h3>Cardápio</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere impedit nulla veritatis repellendus at deleniti aperiam libero porro aliquid dolores fugiat voluptas eaque laboriosam itaque, accusantium adipisci placeat ipsa pariatur!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui necessitatibus dolorum suscipit consequatur nemo? Molestiae commodi fugit quibusdam vero inventore necessitatibus deleniti cupiditate. Molestias, iusto. Dolores alias mollitia quas fuga!</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="selecione-produtos col-lg-12">
-                        <div class="navbar navbar-light" style="background-color: #fff;">
-                            <a class="navbar-brand"><h4>Selecione seus produtos</h4></a>
-                            <form class="form-inline">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0 botao" type="#">Search</button>
-                            </form>
-                        </div>                          
-                    </div>
+                    <h4 class="selecione">Selecione seus produtos</h4>
                 </div>
                 <div class="row">
                     <a href="../PaginaDeExperiencia/experiencia.php" class="itens-cardapio">
@@ -260,7 +251,7 @@
                 <svg class="bi bi-star-fill" width="0.5em" height="0.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                 </svg>
-            </span></span></p>
+            </span></p>
             <q>A comida é excelente, o atendimento impecável, e a experiência de poder observar as lindas criaturas aquáticas brasileiras enquanto degusta um belo prato
                 de foie gras é inegualável! Recomendo a todos!</q>
         </div>
@@ -282,7 +273,7 @@
                 <svg class="bi bi-star-fill" width="0.5em" height="0.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                 </svg>
-            </span></span></p>
+            </span></p>
             <q>Sem dúvidas um ambiente para a classe alta de São Paulo, me senti nas Maldívas por um segundo, comida da chef Paula Mbido superou expetativas, recomendo!</q>
         </div>
         <div class="review-section">
@@ -303,11 +294,11 @@
                 <svg class="bi bi-star" width="0.5em" height="0.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
                 </svg>
-            </span></span></p>
+            </span></p>
             <q>Achei mais ou menos, a comida era boa mas um peixe ficou me encarando por 30 minutos, me senti desconfortável</q>
         </div>
         <div class="last-item">
-            <button type="button" class="btn btn-outline-secondary">Mais avaliações</button>
+            <button type="button" class="btn-buyhood">Mais avaliações</button>
         </div>
     </div>
     

@@ -13,72 +13,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Css do header */
-
-.logo {
-    text-align: center;
-    padding: 5px 0;
-    background-color: #146601;
-}
-
-.navbar {
-    text-align: center;
-    border-bottom: 1px solid black;
-    font-size: 17px;
-    list-style: none;
-    padding: 0 40px 20px 40px !important;
-    background-color: #146601;
-    margin-bottom: 0;
-}
-
-.navbar li a {
-    color: white;
-}
-
-
-.navbar li a:hover {
-    text-decoration: none;
-    color: #73a942;
-}
-
-.botao {
-    list-style: none;
-    font-size: 17px;
-}
-
-.botao a {
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 10px 20px !important;
-    border-radius: 5px;
-    color: white;
-}
-
-.botao a:hover {
-    color: #73a942;
-    border-color: #73a942;
-    background-color: white;
-    transition: 0.5s all;
-}
-
-.nav-border {
-    padding: 0 !important;
-}
-
-.dropdown-item{
-    color: black !important;
-}
-
-.dropdown-item:hover{
-    color: #73a942 !important;
-}
-
-.dropdown-menu{
-    margin-left: 72%;
-}
-
 .banner {
-    /* background-image: url(http://via.placeholder.com/1350x550); */
+    background-image: url(https://i.ibb.co/0F4rNdZ/restaurante4.jpg);
+    width: 100%;
     background-color: #73a942;
     border-bottom: 1px solid rgba(0, 0, 0, 0.425);
     box-shadow: 0 1px 10px 0.5px rgba(0, 0, 0, 0.473);
@@ -88,12 +25,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4em;
     margin-top: 50px;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 
 }
 
 .titulo-loja, .sobre-loja{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color: white;
 }
 
 section, main {
@@ -182,22 +121,22 @@ cite {
 .sobre-cardapio p {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
 }
 
-.selecione-produtos {
+.selecione {
     background-color: #fff;
-    border-top: 2px solid lightgray;
-
 }
 
-.selecione-produtos h4 {
+.selecione {
     text-align: center; 
     font-family: 'Times New Roman', Times, serif;
     margin: 10px 0 20px 0;
     font-size: 2em;
 }
 
-.selecione-produtos h4:before {
+.selecione:before {
     content: "⸰";
 }
 
@@ -259,8 +198,8 @@ cite {
 }
 
 .produtos:active {
-    border: 1px solid #02acaf;
-    color: #02acaf;
+    border: 1px solid #73a942;
+    color: #73a942;
 }
 
 .review-section-title{
@@ -296,114 +235,34 @@ cite {
     margin-right: 15px;
   }
 
-  .last-item {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: lightgray solid 2px;
-  }
-
-  footer{
-    background-color: #143601;
-    border-top: 1px solid rgba(0, 0, 0, 0.425);
-    color: white;
+.last-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: lightgray solid 2px;
 }
 
-.listfooter{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.listfooteritem{
-    margin: 15px;
-    font-size: 15px;
-    list-style: none;
-    display: block;
-}
-
-.listfooteritem a{
-    text-decoration: none;
-    color: white;
-}
-
-.listfooteritem a:hover{
-    color: #73a942; 
-}
-
-.copyright{
-    font-size: 15px;
-    text-align: center;
-    margin: 30px 0px 0px 0px;
-    color: gray;
-    font-weight: bold;
-}
-
-.listfootertitle{
-    margin-bottom:25px;
-    font-weight: bold;
-    list-style: none;
-    font-size: 15px;
-}
-
-.button-footer {
-    list-style: none;
-    font-size: 17px;
-}
-
-.button-footer a {
+.btn-buyhood {
     text-decoration: none;
     border: 1px solid white;
-    padding: 10px 20px !important;
+    padding: 10px 20px;
     border-radius: 5px;
     color: white;
+    background-color: #73a942;
 }
 
-.button-footer a:hover {
+.btn-buyhood:hover {
     color: #73a942;
     border-color: #73a942;
     background-color: white;
     transition: 0.5s all;
 }
 
-.fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 40px !important;
-    text-align: center;
-    text-decoration: none !important;
-    margin: 20px 2px;
-}
+@media only screen and (max-width: 420px) {
+    .selecione {
+        font-size: 25px;
+    }
 
-.fa:hover {
-    color: lightgray;
-    opacity: 1.5;
+    .rating {
+        display: block;
+    }
 }
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.button-footer{
-    font-size: 17px;    
-}
-  

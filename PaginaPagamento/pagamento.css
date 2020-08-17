@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(110deg, #AAD526 60%, #538D22 60%)
+    background: linear-gradient(110deg, #73a942 60%, #538D22 60%)
 }
 
 .shop {
@@ -47,7 +47,7 @@ a:active {
 }
 
 .form-control-sm:focus {
-    border: 1.5px solid #4bb8a9
+    border: 1.5px solid #73a942;
 }
 
 .btn-group-lg>.btn,
@@ -55,8 +55,8 @@ a:active {
     padding: .5rem 0.1rem;
     font-size: 1rem;
     border-radius: 0;
-    color: white !important;
-    background-color: #4bb8a9;
+    color: black !important;
+    background-color: #73a942;;
     height: 2.8rem !important;
     border-radius: 0.2rem !important
 }
@@ -68,15 +68,15 @@ a:active {
 
 .btn-outline-primary {
     background-color: #fff !important;
-    color: #4bb8a9 !important;
+    color: #73a942; !important;
     border-radius: 0.2rem !important;
-    border: 1px solid #4bb8a9
+    border: 1px solid #73a942;
 }
 
 .btn-outline-primary:hover {
-    background-color: #4bb8a9 !important;
+    background-color: #73a942; !important;
     color: #fff !important;
-    border: 1px solid #4bb8a9
+    border: 1px solid #73a942;
 }
 
 .card-2 {
@@ -109,7 +109,7 @@ p {
 
 .boxed {
     padding: 0px 8px 0 8px;
-    background-color: #4bb8a9;
+    background-color: #73a942;;
     color: white
 }
 

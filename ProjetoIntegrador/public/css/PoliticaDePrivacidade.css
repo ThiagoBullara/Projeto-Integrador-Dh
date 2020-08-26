@@ -1,0 +1,21 @@
+p{
+    margin-left: 40px;
+}
+
+h3{
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    margin: 8% 0;
+}
+
+@media(max-width:400px){
+    .espaco{
+        padding-left:50%;
+    }
+}

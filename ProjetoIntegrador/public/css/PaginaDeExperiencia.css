@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 { 
+    font-size: 40px;
+}
+
+.container {
+    border-bottom: 3px lightgray solid;
+    padding: 20px 0;
+}
+
+.product-title {
+    margin-bottom: 20px;
+    font-size: 2.7em;
+}
+
+.info-header {
+    border-bottom: 3px lightgray solid;
+    margin-bottom: 20px;
+}
+
+.tags .tags-list .tags-itens{
+    display: inline-block;
+    padding: 0 20px;
+    margin: 5px 10px;
+    background-color: #313131;
+    border: #313131 solid 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px;
+    color: white;
+}
+
+.tags .tags-list .tags-itens:hover{
+    background-color: #444444;
+    border: #444444 solid 1px;
+    cursor: pointer;
+}
+
+.info .info-list .info-itens {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+}
+
+.product .description-list .description-itens {
+    list-style: none;
+    font-size: 15px;
+    color: gray;
+    padding-left: 20px;
+}
+
+.product .description-list .description-itens:before {
+    content: "- ";
+}
+
+.product .description-list .description-itens-title {
+    list-style: none;
+    color: #000;
+}
+
+.participants {
+    margin: 10px 0 15px 0;
+}
+
+.day {
+    margin: 10px 0 5px 0;
+}
+
+.month {
+    margin: 5px 0 10px 0;
+}
+
+.about {
+    border-bottom: 3px lightgray solid;
+    padding-bottom: 20px;
+}
+
+.host {
+    padding: 20px 0;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.container-last {
+    border: none;
+}
+
+.review-section-title{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.review-section {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+  }
+  
+  .review-section::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .review-section img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    image-resolution: 50%;
+  }
+  
+  .review-section span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .btn-buyhood {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #73a942;
+}
+
+.btn-buyhood:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+ 
+  
+  @media (max-width: 500px) {
+    .review-section {
+        text-align: center;
+    }
+    .review-section img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
+

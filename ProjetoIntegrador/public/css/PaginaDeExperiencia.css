@@ -71,14 +71,6 @@ h2 {
     margin: 10px 0 15px 0;
 }
 
-.day {
-    margin: 10px 0 5px 0;
-}
-
-.month {
-    margin: 5px 0 10px 0;
-}
-
 .about {
     border-bottom: 3px lightgray solid;
     padding-bottom: 20px;
@@ -130,7 +122,7 @@ h2 {
     margin-right: 15px;
   }
 
-  .btn-buyhood {
+.btn-buyhood {
     text-decoration: none;
     border: 1px solid white;
     padding: 10px 20px;
@@ -146,8 +138,6 @@ h2 {
     transition: 0.5s all;
 }
 
- 
-  
   @media (max-width: 500px) {
     .review-section {
         text-align: center;

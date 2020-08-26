@@ -46,3 +46,6 @@ Route::get('/PoliticaDePrivacidade', 'pageController@exibirPoliticaDePrivacidade
 Route::get('/TermosDeUso', 'pageController@exibirTermosDeUso');
 
 Route::get('/Home', 'pageController@exibirHome');
+
+Route::get('/Layout', 'pageController@layout');
+

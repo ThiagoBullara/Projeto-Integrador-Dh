@@ -16,3 +16,19 @@ form div + div {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 }
+
+.btn-buyhood {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #73a942;
+}
+
+.btn-buyhood:hover {
+    color: #73a942;
+    border-color: #73a942;
+    background-color: white;
+    transition: 0.5s all;
+}

@@ -12,72 +12,50 @@
     
 <div class="container">
     <div class="body-header">
-    @if(isset($resultado))
-      @if($resultado)
-
-    <br>
-
-    <div style="text-align:center; background-color:#cef2f0;">
-      <h3>Experiência Cadastrada com Sucesso!</h3>
-    </div>
-
-    <br>
-  @else
-      
-    <br>
-
-    <div style="text-align:center; background-color:red">
-      <h3>Erro ao cadastrar experiência</h3>
-    </div>
-
-    <br>
-  @endif
-@endif 
-
-        <h1 class="title" style="text-align:center;">Cadastro de Experiencia</h1>
+        <h1 class="title" style="text-align:center;">Edição de Experiencia</h1>
         <br>
         <br>
-        <p class="subtitle">Preencha o formulário para cadastrar uma experiência nova do seu restaurante!</a>.</p>
+        <p class="subtitle">Preencha o formulário para atualizar as informações de uma experiência do seu restaurante!</a>.</p>
     </div>
     <br>
     <hr>
     <br>
 
-    <form action="/CadastroDeExperiencia" class="formulario" method="POST" enctype="multipart/form-data">
+    <form action="/editarExperiencia/{{ $editarExperiencia->id }}" class="formulario" method="POST" enctype="multipart/form-data">
 
       @csrf
 
         <div>
         <label class="label" for="nomeExperiencia">Nome da Experiência</label>
-            <input class="input form-control" type="text" name="nomeExperiencia" id="nomeExperiencia" placeholder="Nome que será o título exibido aos usuários">
+            <input class="input form-control" type="text" name="nomeExperiencia" id="nomeExperiencia" placeholder="{{ $editarExperiencia->nome }}">
         </div>
 
         <hr>
 
         <div>
         <label class="label" for="precoExperiencia">Preço</label>
-            <input class="input form-control" type="text" name="precoExperiencia" id="precoExperiencia" placeholder="Valor que será cobrado por essa experiência">
+            <input class="input form-control" type="text" name="precoExperiencia" id="precoExperiencia" placeholder="{{ $editarExperiencia->preco }}">
         </div>
 
         <hr>
 
         <div>
         <label class="label" for="quantidadePessoasExperiencia">Quantidade Máxima de Pessoas</label>
-            <input class="input form-control" type="text" name="quantidadePessoasExperiencia" id="quantidadePessoasExperiencia">
+            <input class="input form-control" type="text" name="quantidadePessoasExperiencia" id="quantidadePessoasExperiencia" placeholder="{{ $editarExperiencia->quantidade_pessoas }}">
         </div>
 
         <hr>
 
         <div>
         <label class="label" for="descricaoExperiencia">Descrição</label>
-          <input class="input form-control" type="text" name="descricaoExperiencia" id="descricaoExperiencia" placeholder="Faça uma breve descrição do que sua experiência irá proporcionar">
+          <input class="input form-control" type="text" name="descricaoExperiencia" id="descricaoExperiencia" placeholder="{{ $editarExperiencia->descricao }}">
         </div>
 
         <hr>
 
         <div>
         <label class="label" for="fotoExperiencia">Fotos da Experiência</label>
-            <input class="input form-control" type="file" name="fotoExperiencia" id="fotoExperiencia" placeholder="Número de Telefone para contato, será exibido aos usuários">
+            <input class="input form-control" type="file" name="fotoExperiencia" id="fotoExperiencia">
         </div>
 
         <hr>
@@ -234,9 +212,17 @@
         </div>
 
         <hr>
-    <input type="submit" class="btn btn-info" value="Cadastrar">
+    <input type="submit" class="btn btn-info" value="Atualizar">
     <br>
     <br>
 </div>
 
+@if(isset($resultado))
+  @if($resultado)
+    <h1>Experiência Cadastrada com Sucesso!</h1>
+  @else
+    <h1>Erro ao cadastrar experiência</h1>
+  @endif
+@endif 
 @endsection
+

@@ -11,10 +11,17 @@
 @section('conteudo')
     <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="product-title">Aprenda a fazer o Brownie</h1>
+                <div class="col-lg-6">
+                    <h1 class="product-title">{{ $detalhesExperiencia->nome }}</h1>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-lg-6" style="text-align:right;">
+                    <a href="/DeletarExperiencia/{{$detalhesExperiencia->id}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
+                    <a href="/EditarExperiencia/{{$detalhesExperiencia->id}}"><button class="btn btn-primary">Editar Experiencia</button></a>
                 </div>
             </div>
+            
             <div class="info-header row">
                 <div class="col-lg-6">
                     <div class="tags">
@@ -69,7 +76,7 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="http://via.placeholder.com/540x337" alt="Primeira Foto">
+                                <img class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->foto }}" alt="{{ $detalhesExperiencia->foto }}">
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="http://via.placeholder.com/540x337" alt="Segunda Foto">
@@ -96,6 +103,7 @@
                         <li class="description-itens">Ingredientes 100% naturais</li>
                         <li class="description-itens">Fácil de fazer</li>
                         <li class="description-itens">Aprovado pelo chefe</li>
+                        <li class="description-itens" style="font-weight:bolder;">Preço por pessoa: R${{ $detalhesExperiencia->preco }}</li>
                     </ul>
                     <div class="form-group">
                         <label for="participants"><h4>Total de participantes</h4></label>
@@ -132,12 +140,7 @@
                 </div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt architecto dolore asperiores odio ducimus assumenda delectus atque, dolorum natus blanditiis quia fuga sapiente qui eaque eius error? Voluptas, illum!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt architecto dolore asperiores odio ducimus assumenda delectus atque, dolorum natus blanditiis quia fuga sapiente qui eaque eius error? Voluptas, illum!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt architecto dolore asperiores odio ducimus assumenda delectus atque, dolorum natus blanditiis quia fuga sapiente qui eaque eius error? Voluptas, illum!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt architecto dolore asperiores odio ducimus assumenda delectus atque, dolorum natus blanditiis quia fuga sapiente qui eaque eius error? Voluptas, illum!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt architecto dolore asperiores odio ducimus assumenda delectus atque, dolorum natus blanditiis quia fuga sapiente qui eaque eius error? Voluptas, illum!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt architecto dolore asperiores odio ducimus assumenda delectus atque, dolorum natus blanditiis quia fuga sapiente qui eaque eius error? Voluptas, illum!</p>
+                    {{ $detalhesExperiencia->descricao }}
                 </div>
             </div>
             <div class="row host">

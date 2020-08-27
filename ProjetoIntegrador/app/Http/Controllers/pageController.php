@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\cadastroModel;
 
 class pageController extends Controller
 {
@@ -10,9 +11,6 @@ class pageController extends Controller
 
     public function exibirAreaQueAtendemos(){
         return view('AreaQueAtendemos');
-    }
-    public function exibirCadastroDeExperiencia(){
-        return view('CadastroDeExperiencia');
     }
     public function exibirCadastroDeParceiro(){
         return view('CadastroDeParceiro');
@@ -52,8 +50,5 @@ class pageController extends Controller
     }
     public function exibirTermosDeUso(){
         return view('TermosDeUso');
-    }
-    public function layout(){
-        return view('layout');
     }
 }

@@ -1,61 +1,35 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+## Detalhes Técnicos do projeto BuyHood
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Nosso projeto utilizou diversas ferramentas de desenvolvimento web, tais como:
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- **Front End**
+  - **HTML5** para estruturar a visualização das páginas
+  - **CSS3 para** estilizar a visualização das páginas
+  - **Javascript** para adicionar elementos interativos as páginas
+  - **Bootstrap** como framework de estilização e padronização de grids do projeto
+ 
+ - **Back End**
+   - **PHP 7.4.8** como linguagem de programação do projeto
+   - **Laravel 5.4.22** como framework PHP para melhor aproveitamento e organização
+   - **MySQL** como banco de dados para ser manipulado através de comandos e funcionalidades do site
+   
+- **Dentre os programas que utilizamos no desenvolvimento do projeto, temos:**  
+  - **Visual Studio Code** para escrever todos as partes do projeto
+  - **MySQL Workbench 8.0.21** para desenvolver e verificar a interação do projeto com o banco de dados
+  - **XAMPP** usado algumas vezes como hosteador de servidor Apache e MySQL
+  - **NPM** como gerenciador de dependências do JavaScript e JQUERY
+  - **Composer v1.10.10** usado para gerenciar as dependências do Laravel
+    
+ ## Motivação para criar o projeto
+ 
+Esse projeto é parte do processo de conclusão do curso de Desenvolvimento Web FullStack da Digital House Coding School Brazil. Com o intuito de testar as práticas ensinadas durante o curso, o professor exige a criação de um projeto extenso, em grupo, onde os estudantes precisam criar um projeto a partir de uma ideia que eles mesmos precisam inventar e desenvolver toda a plataforma do site do zero respeitando alguns parâmetros(O site precisa ter pelo menos um CRUD, com uma área restrita a usuários logados, uma área restrita a apenas alguns usuários, algumas ferramentas só podem ser vistas por administradores e o site deve estar 100% funcional em relação a ideia apresentada). Para que o aluno seja efetivamente certificado pela conclusão do curso, é necessário de que ele tenha participação ativa em todas as partes do projeto, que será apresentado e avaliado pelos coordenadores, designers UX, professores e programadores seniors.
+ 
+ ## Entrega do projeto e time de contribuidores
+ A entrega deste projeto será feita no dia 28 de Setembro de 2020 de maneira remota e síncrona pela sala oficial da Digital House na plataforma Zoom.
+ 
+ O time de contribuidores que criou esse projeto foi composto por:
+ 
+ - [Henrique Bastos Evers](https://github.com/EversHenrique)
+ - [Luis Felipe de Oliveira](https://github.com/LuisFelipeOl)
+ - [Thiago Bullara Leite](https://github.com/ThiagoBullara)
+ - [Raphael Scandura da Cunha](https://github.com/raphaelscandura)

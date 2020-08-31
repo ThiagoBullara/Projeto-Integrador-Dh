@@ -4,7 +4,7 @@ Nosso projeto utilizou diversas ferramentas de desenvolvimento web, tais como:
 
 - **Front End**
   - **HTML5** para estruturar a visualização das páginas
-  - **CSS3 para** estilizar a visualização das páginas
+  - **CSS3** para estilizar a visualização das páginas
   - **Javascript** para adicionar elementos interativos as páginas
   - **Bootstrap** como framework de estilização e padronização de grids do projeto
  

@@ -17,8 +17,8 @@
                     <br>
                 </div>
                 <div class="col-lg-6" style="text-align:right;">
-                    <a href="/DeletarExperiencia/{{$detalhesExperiencia->id}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
-                    <a href="/EditarExperiencia/{{$detalhesExperiencia->id}}"><button class="btn btn-primary">Editar Experiencia</button></a>
+                    <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
+                    <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
                 </div>
             </div>
             

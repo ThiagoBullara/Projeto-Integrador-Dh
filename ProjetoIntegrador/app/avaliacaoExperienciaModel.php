@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class restauranteModel extends Model
+class avaliacaoExperiencia extends Model
 {
-    public $table = "restaurante";
+    public $table = "avaliacao_experiencia";
     public $primaryKey = "id";
-    public $timestamps = false;
     public $guarded = [];
+
 }

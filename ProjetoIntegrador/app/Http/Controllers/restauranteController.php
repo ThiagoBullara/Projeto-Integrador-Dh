@@ -24,22 +24,6 @@ class restauranteController extends Controller
         return view('PaginaDeRestaurante', $vac);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function cadastrarParceiro(Request $request){
         if($request -> isMethod('GET')){
             return view('CadastroDeParceiro');
@@ -56,12 +40,12 @@ class restauranteController extends Controller
         $novoRestaurante -> email = $request -> email;
         $novoRestaurante -> senha = $request -> password;
         $novoRestaurante -> funcionamento = $request -> funcionamento;
-        $novoRestaurante -> foto = $foto = $request -> file('foto') -> getClientOriginalName();
-        $salvarFoto = $request -> file('foto') -> storeAs("public/imgRestaurantes", $foto);
-        $urlBase = 'storage/imgRestaurantes/'.$foto;
-        $novoRestaurante -> fotoBanner = $fotoBanner = $request -> file('fotoBanner') -> getClientOriginalName();
-        $salvarFoto = $request -> file('fotoBanner') -> storeAs("public/imgRestaurantes", $fotoBanner);
-        $urlBase = 'storage/imgRestaurantes/'.$fotoBanner;
+        // $novoRestaurante -> foto = $foto = $request -> file('foto') -> getClientOriginalName();
+        // $salvarFoto = $request -> file('foto') -> storeAs("public/imgRestaurantes", $foto);
+        // $urlBase = 'storage/imgRestaurantes/'.$foto;
+        // $novoRestaurante -> fotoBanner = $fotoBanner = $request -> file('fotoBanner') -> getClientOriginalName();
+        // $salvarFoto = $request -> file('fotoBanner') -> storeAs("public/imgRestaurantes", $fotoBanner);
+        // $urlBase = 'storage/imgRestaurantes/'.$fotoBanner;
 
 
         $resultado = $novoRestaurante -> save();
@@ -69,5 +53,45 @@ class restauranteController extends Controller
         // $vac = compact('resultado');
 
         return view("/Home");
+    }
+
+    public function editarRestaurante(Request $request){
+        if($request -> isMethod('GET')){
+            return view('editarRestaurante');
+        }
+
+        $editarRestaurante = restauranteModel::find($id);
+
+        $editarRestaurante -> nomeProprietario = $request -> nomeProprietario;
+        $editarRestaurante -> nomeRestaurante = $request -> nomeRestaurante;
+        $editarRestaurante -> descricao = $request -> descricao;
+        $editarRestaurante -> descricaoCardapio = $request -> descricaoCardapio;
+        $editarRestaurante -> cnpj = $request -> cnpj;
+        $editarRestaurante -> endereco = $request -> endereco;
+        $editarRestaurante -> telefone = $request -> telefone;
+        $editarRestaurante -> email = $request -> email;
+        $editarRestaurante -> senha = $request -> password;
+        $editarRestaurante -> funcionamento = $request -> funcionamento;
+        // $editarRestaurante -> foto = $foto = $request -> file('foto') -> getClientOriginalName();
+        // $salvarFoto = $request -> file('foto') -> storeAs("public/imgRestaurantes", $foto);
+        // $urlBase = 'storage/imgRestaurantes/'.$foto;
+        // $editarRestaurante -> fotoBanner = $fotoBanner = $request -> file('fotoBanner') -> getClientOriginalName();
+        // $salvarFoto = $request -> file('fotoBanner') -> storeAs("public/imgRestaurantes", $fotoBanner);
+        // $urlBase = 'storage/imgRestaurantes/'.$fotoBanner;
+
+
+        $resultado = $editarRestaurante -> save();
+
+        // $vac = compact('resultado');
+
+        return view("/Home");
+    }
+
+    public function deletarRestaurante($id) {
+        $restaurante = restauranteModel::find($id);
+
+        $restaurante -> delete();
+
+        return redirect() -> action('restauranteController@cadastrarParceiro');
     }
 }

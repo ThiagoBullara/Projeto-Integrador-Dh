@@ -24,13 +24,13 @@ Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
 
-Route::get('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
-Route::post('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
+Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
+Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
 
 Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
 Route::post('/editarExperiencia/{id}', 'experienciaController@editarExperiencia');
 
-Route::get('/DeletarExperiencia/{id}', 'experienciasController@deletarExperiencia');
+Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia');
 
 // Rotas de Restaurantes
 Route::get('/Restaurantes', 'restauranteController@listarRestaurante');

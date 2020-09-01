@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\experienciasModel;
+use App\experienciaModel;
 
-class experienciasController extends Controller
+class experienciaController extends Controller
 {
     //
     public function cadastrarExperiencia(Request $request){
         if($request->isMethod('GET')){
             return view('CadastroDeExperiencia');
         }
-        $novaExperiencia = new experienciasModel();
+        $novaExperiencia = new experienciaModel();
         $novaExperiencia->nome = $request->nomeExperiencia;
         $novaExperiencia->preco = $request->precoExperiencia;
         $novaExperiencia->quantidade_pessoas = $request->quantidadePessoasExperiencia;
@@ -27,27 +27,27 @@ class experienciasController extends Controller
     }
 
     public function listarExperiencias(){
-        $experiencia = experienciasModel::paginate(15);
+        $experiencia = experienciaModel::paginate(15);
 
         return view('ListaDeExperiencias',["experiencia" => $experiencia]);
     }
 
-    public function detalhesExperiencia($id){
-        $detalhesExperiencia = experienciasModel::find($id);
+    public function detalhesExperiencia($id_experiencia){
+        $detalhesExperiencia = experienciaModel::find($id_experiencia);
 
         return view('PaginaDeExperiencia', ["detalhesExperiencia" =>$detalhesExperiencia]);
     }
 
-    public function deletarExperiencia($id){
-        $deletarExperiencia = experienciasModel::find($id);
+    public function deletarExperiencia($id_experiencia){
+        $deletarExperiencia = experienciaModel::find($id_experiencia);
         $deletarExperiencia->delete();
 
-        return redirect()->action("experienciasController@listarExperiencias");
+        return redirect()->action("experienciaController@listarExperiencias");
     }
 
-    public function editarExperiencia(Request $request, $id){
+    public function editarExperiencia(Request $request, $id_experiencia){
         if($request->isMethod('GET')){
-            $editarExperiencia = experienciasModel::find($id);
+            $editarExperiencia = experienciaModel::find($id_experiencia);
             return view('EdicaoDeExperiencia', ["editarExperiencia" => $editarExperiencia]);
         }
 
@@ -59,7 +59,7 @@ class experienciasController extends Controller
         //     'fotoExperiencia' => 'required',
         // ]);
 
-        $editarExperiencia = experienciasModel::find($id);
+        $editarExperiencia = experienciaModel::find($id_experiencia);
 
         $editarExperiencia->nome = $request->post('nomeExperiencia');
         $editarExperiencia->preco = $request->post('precoExperiencia');
@@ -71,7 +71,7 @@ class experienciasController extends Controller
 
         $resultado = $editarExperiencia->save();
 
-        return redirect()->action("experienciasController@listarExperiencias");
+        return redirect()->action("experienciaController@listarExperiencias");
     }
 
 

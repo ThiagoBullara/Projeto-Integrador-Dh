@@ -21,7 +21,7 @@
     <hr>
     <br>
 
-    <form action="/editarExperiencia/{{ $editarExperiencia->id }}" class="formulario" method="POST" enctype="multipart/form-data">
+    <form action="/editarExperiencia/{{ $editarExperiencia->id_experiencia }}" class="formulario" method="POST" enctype="multipart/form-data">
 
       @csrf
 

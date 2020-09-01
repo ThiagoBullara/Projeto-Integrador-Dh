@@ -26,7 +26,7 @@
             <div class="row">
             @forelse($experiencia as $experiencias)
                 <div class="col-lg-4 col-md-6">
-                    <a href="/Experiencia/{{ $experiencias->id }}" class="link-restaurante">
+                    <a href="/Experiencia/{{ $experiencias->id_experiencia }}" class="link-restaurante">
                         <div class="card-produtos">
                             <div >
                                 <img style="width:340px; height:350px;" src="{{'storage/img/'.$experiencias->foto}}" alt="{{$experiencias->foto}}" class="imagem-mobile">

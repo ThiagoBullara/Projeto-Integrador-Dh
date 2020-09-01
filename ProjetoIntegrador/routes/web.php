@@ -19,17 +19,17 @@ Route::get('/', function () {
 
 Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');
 
-Route::get('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
-Route::post('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
+Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
+Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
 
-Route::get('/ListaDeExperiencias', 'experienciasController@listarExperiencias');
+Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
-Route::get('/Experiencia/{id}', 'experienciasController@detalhesExperiencia');
+Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
 
-Route::get('/DeletarExperiencia/{id}', 'experienciasController@deletarExperiencia');
+Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia');
 
-Route::get('/EditarExperiencia/{id}', 'experienciasController@editarExperiencia');
-Route::post('/editarExperiencia/{id}', 'experienciasController@editarExperiencia');
+Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
+Route::post('/editarExperiencia/{id}', 'experienciaController@editarExperiencia');
 
 Route::get('/CadastroDeParceiro', 'pageController@exibirCadastroDeParceiro');
 

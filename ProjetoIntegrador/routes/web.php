@@ -19,25 +19,31 @@ Route::get('/', function () {
 
 Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');
 
-Route::get('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
-Route::post('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
 
 Route::get('/ListaDeExperiencias', 'experienciasController@listarExperiencias');
 
 Route::get('/Experiencia/{id}', 'experienciasController@detalhesExperiencia');
 
-Route::get('/DeletarExperiencia/{id}', 'experienciasController@deletarExperiencia');
+Route::get('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
+Route::post('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
 
 Route::get('/EditarExperiencia/{id}', 'experienciasController@editarExperiencia');
 Route::post('/editarExperiencia/{id}', 'experienciasController@editarExperiencia');
 
+Route::get('/DeletarExperiencia/{id}', 'experienciasController@deletarExperiencia');
 
+// Rotas de Restaurantes
 Route::get('/Restaurantes', 'restauranteController@listarRestaurante');
 
 Route::get('/Restaurante/{nomeRestaurante}/{id}', 'restauranteController@paginaRestaurante');
 
 Route::get('/CadastroDeParceiro', 'restauranteController@cadastrarParceiro');
 Route::post('/CadastroDeParceiro', 'restauranteController@cadastrarParceiro');
+
+Route::get('/EditarRestaurante/{id}', 'restauranteController@editarRestaurante');
+Route::post('/EditarRestaurante/{id}', 'restauranteController@editarRestaurante');
+
+Route::get('/EditarRestaurante/{id}', 'restauranteController@deletarRestaurante');
 
 
 Route::get('/CadastroUsuario', 'pageController@exibirCadastroUsuario');

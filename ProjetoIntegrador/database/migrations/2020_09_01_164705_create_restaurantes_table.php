@@ -24,7 +24,7 @@ class CreateRestaurantesTable extends Migration
             $table->string('senha');
             $table->string('endereco');
             $table->integer('telefone');
-            $table->string('cnpj');
+            $table->string('cnpj') -> nullable();
             $table->string('foto');
             $table->string('fotoBanner');
             $table->timestamps();

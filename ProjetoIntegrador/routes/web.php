@@ -31,7 +31,14 @@ Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia
 Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
 Route::post('/editarExperiencia/{id}', 'experienciaController@editarExperiencia');
 
-Route::get('/CadastroDeParceiro', 'pageController@exibirCadastroDeParceiro');
+
+Route::get('/Restaurantes', 'restauranteController@listarRestaurante');
+
+Route::get('/Restaurante/{nomeRestaurante}/{id}', 'restauranteController@paginaRestaurante');
+
+Route::get('/CadastroDeParceiro', 'restauranteController@cadastrarParceiro');
+Route::post('/CadastroDeParceiro', 'restauranteController@cadastrarParceiro');
+
 
 Route::get('/CadastroUsuario', 'pageController@exibirCadastroUsuario');
 
@@ -41,11 +48,7 @@ Route::get('/Contato', 'pageController@exibirContato');
 
 Route::get('/FAQ', 'pageController@exibirFAQ');
 
-Route::get('/Restaurantes', 'pageController@exibirListaDeRestaurantes');
-
 Route::get('/Pagamento', 'pageController@exibirPaginaDePagamento');
-
-Route::get('/Restaurante', 'pageController@exibirPaginaDeRestaurante');
 
 Route::get('/SobreNos', 'pageController@exibirPaginaSobreNos');
 

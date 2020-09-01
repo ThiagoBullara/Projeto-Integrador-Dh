@@ -10,94 +10,63 @@
 
 @section('conteudo')
     <div class="container">
-        <div class="body-header">
-            <h1 class="title" style="text-align:center;">Cadastro de Restaurante</h1>
-            <br>
-            <br>
-            <p class="subtitle">Preencha o formulário para se cadastrar como parceiro no nosso site! Ou se sua intenção se cadastrar como usuário da nossa plataforma, clique <a href="/CadastroUsuario">aqui</a>.</p>
-            <p class="subsubtitle">Essas informações são necessárias para cadastrar seu restaurante, elas serão revisadas antes de serem aceitas, você pode alterar algumas informações depois que seu cadastro for aceito, como a foto do restaurante, o endereço, etc.</p>
+        <div>
+            <h1>Cadastro de Restaurante</h1>
+            <p>Preencha o formulário para se cadastrar como parceiro no nosso site! Ou se sua intenção se cadastrar como usuário da 
+            nossa plataforma, clique <a href="/CadastroUsuario">aqui</a>.Essas informações são necessárias para cadastrar seu restaurante, 
+            elas serão revisadas antes de serem aceitas, você pode alterar algumas informações 
+            depois que seu cadastro for aceito, como a foto do restaurante, o endereço, etc.</p>
         </div>
-        <br>
-        <hr>
-        <br>
-        <form method="POST" enctype="multipart/form-data">
+        <div>
+            <form action="/CadastroDeParceiro" method="POST" enctype="multipart/form-data">
+                @csrf
 
-            <div>
-            <label class="label" for="person-name">Nome do responsável</label>
-                <input class="input form-control" type="text" name="person-name" id="person-name" placeholder="Nome completo do responsável pela conta na plataforma, não será mostrado aos usuários">
-            </div>
+                <label for="nomeProprietario">Nome do proprietário</label>
+                <input class="form-control mb-4" type="text" name="nomeProprietario" id="nomeProprietario" placeholder="Nome do responsavel do restaurante">
 
-            <hr>
+                <label for="nomeRestaurante">Nome do restaurante</label>
+                <input class="form-control mb-4" type="text" name="nomeRestaurante" id="nomeRestaurante">
 
-            <div>
-            <label class="label" for="restaurant-name">Nome do Restaurante</label>
-                <input class="input form-control" type="text" name="restaurant-name" id="restaurant-name" placeholder="Nome do Restaurante que será exibido aos usuários">
-            </div>
+                <label for="descricao">Descrição</label>
+                <textarea class="form-control mb-4" type="text" name="descricao" id="descricao"></textarea>
 
-            <hr>
+                <label for="descricaoCardapio">Descrição Cardápio</label>
+                <textarea class="form-control mb-4" type="text" name="descricaoCardapio" id="descricaoCardapio"></textarea>
 
-            <div>
-            <label class="label" for="tax-number">CNPJ</label>
-                <input class="input form-control" type="text" name="tax-number" id="tax-number">
-            </div>
+                <label for="cnpj">Cnpj</label>
+                <input class="form-control mb-4" type="text" name="cnpj" id="cnpj">
 
-            <hr>
+                <label for="endereco">Endereço</label>
+                <input class="form-control mb-4" type="text" name="endereco" id="endereco">
 
-            <div>
-            <label class="label" for="address">Endereço</label>
-                <input class="input form-control" type="text" name="address" id="address" placeholder="Endereço Completo com CEP">
-            </div>
+                <label for="telefone">Número de telefone</label>
+                <input class="form-control mb-4" type="text" name="telefone" id="telefone">
 
-            <hr>
+                <label for="email">E-mail</label>
+                <input class="form-control mb-4" type="email" name="email" id="email">
 
-            <div>
-            <label class="label" for="phone-number">Número de Telefone</label>
-                <input class="input form-control" type="text" name="phone-number" id="phone-number" placeholder="Número de Telefone para contato, será exibido aos usuários">
-            </div>
+                <label for="password">Senha</label>
+                <input class="form-control mb-4" type="password" name="password" id="password">
+        
+                <label for="passwordConfirma">Confirmação de senha</label>
+                <input class="form-control mb-4" type="password" name="passwordConfirma" id="passwordConfirma">
 
-            <hr>
+                <label for="funcionamento">Horario de funcionamento</label>
+                <input class="form-control mb-4" type="text" name="funcionamento" id="funcionamento">
 
-            <div>
-            <label class="label" for="email">E-mail</label>
-                <input class="input form-control" type="email" name="email" id="email" placeholder="E-mail de acesso à plataforma">
-            </div>
+                <label for="foto">Foto de perfil </label>
+                <input class="form-control mb-4" type="file" name="foto" id="foto">
 
-            <hr>
+                <label for="fotoBanner">Foto do banner do restaurante</label>
+                <input class="form-control mb-4" type="file" name="fotoBanner" id="fotoBanner">
 
-            <div>
-            <label class="label" for="password">Senha</label>
-                <input class="input form-control" type="password" name="password" id="password">
-            </div>
+                <input type="checkbox" id="termosCondicao" name="termosCondicao" value="agreed-terms">
+                <label for="termosCondicao">Eu confirmo que li e concordo com os <a href="/TermosDeUso">Termos de Uso</a> e com a 
+                <a href="/PoliticaDePrivacidade">Política de Privacidade</a>.</label>
 
-            <hr>
-            
-            <div>
-            <label class="label" for="password">Confirmação de Senha</label>
-                <input class="input form-control" type="password" name="password" id="password">
-            </div>
+                <button type="submit" class="btn-buyhood">Cadastrar</button>
 
-            <hr>
-
-            <div>
-            <label class="label" for="working-hours">Horario de Funcionamento</label>
-                <input class="input form-control" type="text" name="working-hours" id="working-hours" placeholder="Horario de Funcionamento do restaurante">
-            </div>
-
-            <hr>
-            
-            <div>
-            <label class="label" for="photo">Foto do Restaurante</label>
-                <input class="input form-control" type="file" name="photo" id="photo">
-            </div>
-
-            <hr>
-            <input type="checkbox" id="agreed-terms" name="agreed-terms" value="agreed-terms">
-            <label for="agreed-terms">Eu confirmo que li e concordo com os <a href="/TermosDeUso">Termos de Uso</a> e com a <a href="/PoliticaDePrivacidade">Política de Privacidade</a>.</label>
-        </form>
-        <br>
-        <input type="submit" class="btn-buyhood" value="Cadastrar">
-        <br>
-        <br>
+            </form>
+        </div>
     </div>
 @endsection
-

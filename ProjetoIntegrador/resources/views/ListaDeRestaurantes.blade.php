@@ -24,114 +24,25 @@
 		</div>
 		<div class="container produtos">
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+				@forelse($restaurantes as $restaurante)
+					<div class="col-lg-4 col-md-6">
+						<a href="/Restaurante/{{$restaurante -> nomeRestaurante}}/{{$restaurante -> id}}" class="link-restaurante">
+							<div class="card-produtos">
+								<div>
+									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+								</div>
+								<div class="titulo-restaurante">
+									<p>{{$restaurante -> nomeRestaurante}}</p>
+								</div>
 							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a href="/Restaurante" class="link-restaurante">
-						<div class="card-produtos">
-							<div>
-								<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
-							</div>
-							<div class="titulo-restaurante">
-								<p>Nome do restaurante</p>
-							</div>
-						</div>
-					</a>
-				</div>
+						</a>
+					</div>
+                @empty
+                    <p>Sem restaurantes</p>
+                @endforelse
+
+				<!-- Lembrar de usar paginate depois -->
+				
 			</div>			
 		</div>
 		<button class="button-search">Ver mais</button>

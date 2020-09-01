@@ -12,9 +12,8 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 banner">
-                    <h1 class="titulo-loja">Restaurante de comida Japonesa</h1>
-                    <p class="sobre-loja">Gastronomia Japonesa como você nunca viu</p>
+                <div class="col-lg-12 banner" style="background-image: url(https://i.ibb.co/0F4rNdZ/restaurante4.jpg);"> <!--Não esquecer de escrever o código do banner-->
+                    <h1 class="titulo-loja">{{$restaurante -> nomeRestaurante}}</h1>
                 </div>
             </div>
         </div>
@@ -24,14 +23,10 @@
             <div class="row conteudo">
                 <div class="col-md-8 conteudo-sobre">
                     <h1>Sobre</h1>
-                    <p>Uma sequência de pratos diferenciados da gastronomia japonesa criados pelo nosso chef Emerson Yoshida, com ingredientes exclusivos e sazonais, como vieras, barriga de salmão, foie gras, hokkigai, e diversas outras especiarias sazonais. </p>
-                    <p>Apresentamos uma seleção bem completa de entradas, pratos frios e quentes preparados com ingredientes especiais, além de pratos exclusivos da casa e frutos do mar (camarão, polvo, lula e ovas).</p>
-                    <p>Diversas opções de pratos da gastronomia japonesa, desde os mais simples e tradicionais até os mais elaborados e exclusivos, para todos os gostos.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, error sequi suscipit eius necessitatibus enim rem ex mollitia culpa rerum possimus voluptatum ad voluptates eligendi quod perferendis odio aut itaque.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus soluta tempore, illo neque voluptas tempora harum saepe earum doloribus cum, delectus nam? Incidunt, odio. Optio ex sequi dicta harum similique.</p>
-                    <cite>Akira Hiroshi</cite>
+                    <p>{{$restaurante -> descricao}}</p>
+                    <cite>{{$restaurante -> nomeProprietario}}</cite>
                 </div>
-                <div class="info col-md-4">
+                <!-- <div class="info col-md-4">
                     <h3>Info</h3>
                     <ul class="preco">
                         <h5>Nossos preços</h5>
@@ -74,22 +69,44 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
     <section class="cardapio">
         <div class="container">
-            <div class="row">
-                <div class="sobre-cardapio">
+            <div class="row sobre-cardapio">
+                <div class="col-lg-12">
                     <h3>Cardápio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere impedit nulla veritatis repellendus at deleniti aperiam libero porro aliquid dolores fugiat voluptas eaque laboriosam itaque, accusantium adipisci placeat ipsa pariatur!</p>
                 </div>
             </div>
+            <p class="descricaoCardapio">{{$restaurante -> descricaoCardapio}}</p>
             <div class="row">
-                <h4 class="selecione">Selecione seus produtos</h4>
+                <h4 class="selecione">Selecione as Experiências</h4>
             </div>
             <div class="row">
+                <a href="/Experiencia" class="itens-cardapio">
+                    <div class="col-lg-12">
+                        <div class="card mb-3 produtos">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="https://i.ibb.co/0DMycPh/cardapio3.jpg" class="card-img" alt="Prato 1">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam laborum ad architecto. Illo, beatae rem dolore delectus dignissimos ducimus necessitatibus quia soluta. Aspernatur quisquam natus placeat atque totam eaque.</p>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam laborum ad architecto. Illo, beatae rem dolore delectus dignissimos ducimus necessitatibus quia soluta. Aspernatur quisquam natus placeat atque totam eaque.</p>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam laborum ad architecto. Illo, beatae rem dolore delectus dignissimos ducimus necessitatibus quia soluta. Aspernatur quisquam natus placeat atque totam eaque.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="row">
                 <a href="/Experiencia" class="itens-cardapio">
                     <div class="col-lg-12">
                         <div class="card mb-3 produtos">
@@ -198,29 +215,7 @@
                         </div>                        
                     </div>
                 </a>
-            </div>
-            <div class="row">
-                <a href="/Experiencia" class="itens-cardapio">
-                    <div class="col-lg-12">
-                        <div class="card mb-3 produtos">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="https://i.ibb.co/0DMycPh/cardapio3.jpg" class="card-img" alt="Prato 1">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam laborum ad architecto. Illo, beatae rem dolore delectus dignissimos ducimus necessitatibus quia soluta. Aspernatur quisquam natus placeat atque totam eaque.</p>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam laborum ad architecto. Illo, beatae rem dolore delectus dignissimos ducimus necessitatibus quia soluta. Aspernatur quisquam natus placeat atque totam eaque.</p>
-                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim veniam laborum ad architecto. Illo, beatae rem dolore delectus dignissimos ducimus necessitatibus quia soluta. Aspernatur quisquam natus placeat atque totam eaque.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </a>
-            </div>
+            </div> -->
         </div>
     </section>
     <div class="container">

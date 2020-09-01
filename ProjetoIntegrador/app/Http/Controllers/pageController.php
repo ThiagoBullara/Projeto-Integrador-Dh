@@ -51,4 +51,7 @@ class pageController extends Controller
     public function exibirTermosDeUso(){
         return view('TermosDeUso');
     }
+    public function exibirEditarPerfilRestaurante(){
+        return view('EditarPerfilRestaurante');
+    }
 }

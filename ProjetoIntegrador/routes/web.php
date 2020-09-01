@@ -60,3 +60,4 @@ Route::get('/Home', 'pageController@exibirHome');
 
 Route::get('/Layout', 'pageController@layout');
 
+Route::get('/EditarPerfilRestaurante', 'pageController@exibirEditarPerfilRestaurante');

@@ -19,22 +19,13 @@ Route::get('/', function () {
 
 Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');
 
-<<<<<<< HEAD
-=======
-Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
-Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
->>>>>>> 22dcdeb9df8e7394e91423f3379fe47aa7ec2e74
 
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
 
-<<<<<<< HEAD
 Route::get('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
 Route::post('/CadastroDeExperiencia', 'experienciasController@cadastrarExperiencia');
-=======
-Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia');
->>>>>>> 22dcdeb9df8e7394e91423f3379fe47aa7ec2e74
 
 Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
 Route::post('/editarExperiencia/{id}', 'experienciaController@editarExperiencia');

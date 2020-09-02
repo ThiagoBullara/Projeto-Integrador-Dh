@@ -77,7 +77,7 @@
 
         <div>
         <label class="label" for="fotoExperiencia">Fotos da Experiência</label>
-            <input class="input form-control" type="file" name="fotoExperiencia" id="fotoExperiencia" placeholder="Número de Telefone para contato, será exibido aos usuários">
+            <input class="input form-control" type="file" name="fotoExperiencia" id="fotoExperiencia">
         </div>
 
         <hr>

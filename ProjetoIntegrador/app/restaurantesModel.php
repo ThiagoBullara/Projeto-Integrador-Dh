@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class restaurantesModel extends Model
 {
     public $table = "restaurantes";
-    public $primaryKey = "id";
+    public $primaryKey = "id_restaurante";
     public $guarded = [];
 
     protected $fillable = [

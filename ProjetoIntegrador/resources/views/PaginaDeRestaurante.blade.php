@@ -8,11 +8,15 @@
     BuyHood - {{$restaurante -> nomeRestaurante}}
 @endsection
 
+                    
+
+
 @section('conteudo')
+
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 banner" style="background-image: url(https://i.ibb.co/0F4rNdZ/restaurante4.jpg);"> <!--Não esquecer de escrever o código do banner-->
+                <div class="col-lg-12 banner"> 
                     <h1 class="titulo-loja">{{$restaurante -> nomeRestaurante}}</h1>
                 </div>
             </div>
@@ -25,6 +29,7 @@
                     <h1>Sobre</h1>
                     <p>{{$restaurante -> descricao}}</p>
                     <cite>{{$restaurante -> nomeProprietario}}</cite>
+                    <img src="{{'storage/img/'.$restaurante -> fotoBanner}}" alt="{{ $restaurante->fotoBanner }}">
                 </div>
                 <!-- <div class="info col-md-4">
                     <h3>Info</h3>
@@ -90,7 +95,7 @@
                         <div class="card mb-3 produtos">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img src="https://i.ibb.co/0DMycPh/cardapio3.jpg" class="card-img" alt="Prato 1">
+                                    <img src="" class="card-img" alt="Prato 1">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">

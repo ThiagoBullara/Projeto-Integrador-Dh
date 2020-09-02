@@ -21,7 +21,7 @@ class restauranteController extends Controller
     public function paginaRestaurante($nomeRestaurante, $id_restaurante) {
         $restaurante = restaurantesModel::find($id_restaurante);
 
-        // dd($restaurantes);  
+        //dd($restaurante);  
 
         $vac = compact('restaurante');
 
@@ -62,12 +62,12 @@ class restauranteController extends Controller
         return view("/Home", $vac);
     }
 
-    public function editarRestaurante(Request $request){
+    public function editarRestaurante(Request $request, $id_restaurante){
         if($request -> isMethod('GET')){
             return view('editarRestaurante');
         }
 
-        $editarRestaurante = restauranteModel::find($id);
+        $editarRestaurante = restaurantesModel::find($id_restaurante);
 
         $editarRestaurante -> nomeProprietario = $request -> nomeProprietario;
         $editarRestaurante -> nomeRestaurante = $request -> nomeRestaurante;

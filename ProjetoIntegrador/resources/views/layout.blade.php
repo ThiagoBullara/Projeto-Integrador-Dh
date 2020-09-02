@@ -28,6 +28,7 @@
                     <ul class="navbar">
                         <li><a href="/Home">Home</a></li>
                         <li><a href="/Restaurantes">Restaurantes</a></li>
+                        <li><a href="/Experiencias">Experiências - Não clicar</a></li>
                         <li><a href="/SobreNos">Sobre Nós</a></li>
                         <li><a href="/CadastroDeParceiro">Torne-se um parceiro</a></li>
                         <li><a href="#">Entrar</a></li>

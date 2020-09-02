@@ -33,6 +33,9 @@ class pageController extends Controller
     public function exibirListaDeRestaurantes(){
         return view('ListaDeRestaurantes');
     }
+    public function exibirListaDeExperiencia(){
+        return view('ListaDeExperiencias');
+    }
     public function exibirPaginaDeExperiencia(){
         return view('PaginaDeExperiencia');
     }

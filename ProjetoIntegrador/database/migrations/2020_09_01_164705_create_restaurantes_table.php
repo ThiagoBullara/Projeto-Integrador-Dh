@@ -14,22 +14,22 @@ class CreateRestaurantesTable extends Migration
     public function up()
     {
         Schema::create('restaurantes', function (Blueprint $table) {
-            $table->unsignedBigInteger('id_restaurante');
+            $table->bigIncrements('id_restaurante');
             $table->string('nomeProprietario');
             $table->string('nomeRestaurante');
             $table->longText('descricao');
             $table->longText('descricaoCardapio');
-            $table->string('funcionamento');
+            $table->string('funcionamento') -> nullable();
             $table->string('email');
             $table->string('senha');
             $table->string('endereco');
-            $table->integer('telefone');
+            $table->string('telefone');
             $table->string('cnpj') -> nullable();
             $table->string('foto');
             $table->string('fotoBanner');
             $table->timestamps();
 
-            $table->foreign('id_restaurante')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('CASCADE');
+            // $table->foreign('id_restaurante')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('CASCADE');
         });
     }
 

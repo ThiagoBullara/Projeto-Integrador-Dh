@@ -4,20 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\restauranteModel;
+use App\restaurantesModel;
 
 class restauranteController extends Controller
 {
     public function listarRestaurante() {
-        $restaurantes = restauranteModel::all();
+        $restaurantes = restaurantesModel::all();
+
+        // dd($restaurantes);
 
         $vac = compact('restaurantes');
     
         return view('ListaDeRestaurantes', $vac);
     }
 
-    public function paginaRestaurante($nomeRestaurante, $id) {
-        $restaurante = restauranteModel::find($id);
+    public function paginaRestaurante($nomeRestaurante, $id_restaurante) {
+        $restaurante = restaurantesModel::find($id_restaurante);
+
+        // dd($restaurantes);  
 
         $vac = compact('restaurante');
 
@@ -29,30 +33,33 @@ class restauranteController extends Controller
             return view('CadastroDeParceiro');
         }
 
-        $novoRestaurante = new restauranteModel();
+        $novoRestaurante = new restaurantesModel();
         $novoRestaurante -> nomeProprietario = $request -> nomeProprietario;
         $novoRestaurante -> nomeRestaurante = $request -> nomeRestaurante;
         $novoRestaurante -> descricao = $request -> descricao;
         $novoRestaurante -> descricaoCardapio = $request -> descricaoCardapio;
-        $novoRestaurante -> cnpj = $request -> cnpj;
-        $novoRestaurante -> endereco = $request -> endereco;
-        $novoRestaurante -> telefone = $request -> telefone;
+        $novoRestaurante -> funcionamento = $request -> funcionamento;
         $novoRestaurante -> email = $request -> email;
         $novoRestaurante -> senha = $request -> password;
-        $novoRestaurante -> funcionamento = $request -> funcionamento;
-        // $novoRestaurante -> foto = $foto = $request -> file('foto') -> getClientOriginalName();
-        // $salvarFoto = $request -> file('foto') -> storeAs("public/imgRestaurantes", $foto);
-        // $urlBase = 'storage/imgRestaurantes/'.$foto;
-        // $novoRestaurante -> fotoBanner = $fotoBanner = $request -> file('fotoBanner') -> getClientOriginalName();
-        // $salvarFoto = $request -> file('fotoBanner') -> storeAs("public/imgRestaurantes", $fotoBanner);
-        // $urlBase = 'storage/imgRestaurantes/'.$fotoBanner;
+        $novoRestaurante -> endereco = $request -> endereco;
+        $novoRestaurante -> telefone = $request -> telefone;
+        $novoRestaurante -> cnpj = $request -> cnpj;
+
+        $imagem = $request -> file('foto') -> getClientOriginalName();                
+        $novoRestaurante -> foto = $imagem;                                                 
+        $saveImagem = $request -> file('foto') -> storeAs("public/img", $imagem);
+
+        $imagemBanner = $request -> file('fotoBanner') -> getClientOriginalName();                
+        $novoRestaurante -> fotoBanner = $imagemBanner;                                                 
+        $saveImagem = $request -> file('fotoBanner') -> storeAs("public/img", $imagemBanner);
+
 
 
         $resultado = $novoRestaurante -> save();
 
-        // $vac = compact('resultado');
+        $vac = compact('resultado');
 
-        return view("/Home");
+        return view("/Home", $vac);
     }
 
     public function editarRestaurante(Request $request){
@@ -87,8 +94,8 @@ class restauranteController extends Controller
         return view("/Home");
     }
 
-    public function deletarRestaurante($id) {
-        $restaurante = restauranteModel::find($id);
+    public function deletarRestaurante($id_restaurante) {
+        $restaurante = restaurantesModel::find($id_restaurante);
 
         $restaurante -> delete();
 

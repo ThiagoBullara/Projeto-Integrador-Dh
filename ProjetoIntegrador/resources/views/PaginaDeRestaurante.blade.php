@@ -5,7 +5,7 @@
 @endsection
 
 @section('titulo')
-    BuyHood - Nome do restaurante
+    BuyHood - {{$restaurante -> nomeRestaurante}}
 @endsection
 
 @section('conteudo')

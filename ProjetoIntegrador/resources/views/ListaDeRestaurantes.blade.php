@@ -12,7 +12,7 @@
 	<main>
 		<div>
 			<div class="banner">
-				<img class ="banner-image" src="http://via.placeholder.com/1350x550" alt="">
+				<img class ="banner-image" src="http://via.placeholder.com/1350x550" alt="Banner de restaurante">
 			</div>
 		</div> 
 		<div class="container-fliud divisao">
@@ -26,10 +26,10 @@
 			<div class="row">
 				@forelse($restaurantes as $restaurante)
 					<div class="col-lg-4 col-md-6">
-						<a href="/Restaurante/{{$restaurante -> nomeRestaurante}}/{{$restaurante -> id}}" class="link-restaurante">
+						<a href="/Restaurante/{{$restaurante -> nomeRestaurante}}/{{$restaurante -> id_restaurante}}" class="link-restaurante">
 							<div class="card-produtos">
 								<div>
-									<img src="https://via.placeholder.com/320x350" alt="Restaurante" class="imagem-mobile">
+									<img src="{{'storage/img/'.$restaurante -> foto}}" alt="Restaurante" class="imagem-mobile">
 								</div>
 								<div class="titulo-restaurante">
 									<p>{{$restaurante -> nomeRestaurante}}</p>

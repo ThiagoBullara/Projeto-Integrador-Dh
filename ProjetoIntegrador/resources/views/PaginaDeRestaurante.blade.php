@@ -13,6 +13,8 @@
 
 @section('conteudo')
 
+<img src="{{'/storage/img/'.$restaurante -> fotoBanner}}">
+
     <section>
         <div class="container-fluid">
             <div class="row">
@@ -29,7 +31,7 @@
                     <h1>Sobre</h1>
                     <p>{{$restaurante -> descricao}}</p>
                     <cite>{{$restaurante -> nomeProprietario}}</cite>
-                    <img src="{{'storage/img/'.$restaurante -> fotoBanner}}" alt="{{ $restaurante->fotoBanner }}">
+            
                 </div>
                 <!-- <div class="info col-md-4">
                     <h3>Info</h3>

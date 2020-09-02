@@ -9,7 +9,7 @@
 @endsection
 
 @section('conteudo')
-    <div class="container">
+    <div class="container corpo">
         <div>
             <h1>Cadastro de Restaurante</h1>
             <p>Preencha o formulário para se cadastrar como parceiro no nosso site! Ou se sua intenção se cadastrar como usuário da 

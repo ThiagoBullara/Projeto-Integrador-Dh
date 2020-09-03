@@ -12,6 +12,34 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.buscar {
+    color: #e2e2e2;
+    top: 50%;
+}
+
+.buscar .inp {
+    width: 15vw;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid black;
+
+}
+
+.buscar .btn-inp {
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.buscar .btn-inp:hover {
+    color: #73a942;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
 .divisao{
     text-align: center;
     padding: 10vh;

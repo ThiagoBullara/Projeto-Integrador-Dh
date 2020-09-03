@@ -15,12 +15,15 @@ class CreateExperienciaTable extends Migration
     {
         Schema::create('experiencia', function (Blueprint $table) {
             $table->bigIncrements('id_experiencia');
-            $table->string('nome');
-            $table->longText('descricao');
-            $table->string('foto');
-            $table->decimal('preco');
-            $table->string('quantidade_pessoas');
-            $table->string('disponibilidade')->nullable();
+            $table->string('nomeExperiencia');
+            $table->longText('sobreExperiencia');
+            $table->longText('sobreRestaurante');
+            $table->string('descricaoExperiencia');
+            $table->string('fotoExperiencia');
+            $table->string('logoRestaurante');
+            $table->decimal('precoExperiencia');
+            $table->integer('quantidadePessoasExperiencia');
+            $table->string('funcionamento')->nullable();
             $table->string('tags')->nullable();
             $table->timestamps();
         });

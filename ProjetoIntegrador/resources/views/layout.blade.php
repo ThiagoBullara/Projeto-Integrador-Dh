@@ -26,13 +26,38 @@
             <nav class="row">
                 <div class="nav-border col-lg-12">
                     <ul class="navbar">
-                        <li><a href="/Home">Home</a></li>
-                        <li><a href="/Restaurantes">Restaurantes</a></li>
-                        <li><a href="/Experiencias">Experiências - Não clicar</a></li>
-                        <li><a href="/SobreNos">Sobre Nós</a></li>
-                        <li><a href="/CadastroDeParceiro">Torne-se um parceiro</a></li>
-                        <li><a href="#">Entrar</a></li>
-                        <li class="botao"><a href="/CadastroUsuario">Cadastre-se</a></li>
+                        <li><a class="navbar-item" href="/Home">Home</a></li>
+                        <li><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></li>
+                        <li><a class="navbar-item" href="/SobreNos">Sobre Nós</a></li>
+                        
+                        @guest
+                            <li class="botao nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="botao nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Sair') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
                     </ul>
                 </div>   
             </nav>
@@ -42,33 +67,29 @@
         
         <footer class="container-fluid">
             <div class="row">
+            <div class="logo footer-partner col-lg-4">
+                <div class="desktop">
+                    <a href="/Home" ><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
+                </div>
+                <div class="mobile">
+                        <a href="/Home"><img src="https://i.ibb.co/0tNkSBr/Icon.png" alt="Logo Buyhood"></a>
+                </div>
+            </div>
                 <div class="footerinfo1 col-lg-4">
                     <ul class="listfooter">
                         <li class="listfootertitle">Sobre o Buyhood</li>
                         <li class="listfooteritem"><a href="/SobreNos">Sobre nós</a></li>
-                        <li class="listfooteritem"><a href="/CadastroDeParceiro">Trabalhe conosco</a></li>
-                        <li class="listfooteritem"><a href="/Restaurantes">Restaurantes</a></li>
                         <li class="listfooteritem"><a href="/Area-de-Atendimento">Área que atendemos</a></li>
+                        <li class="listfooteritem"><a href="/FAQ">F.A.Q.</a></li>
                     </ul>
                 </div>
                 <div class="footerinfo2 col-lg-4">
                     <ul class="listfooter">
                         <li class="listfootertitle">Contato</li>
-                        <li class="listfooteritem"><a href="/FAQ">F.A.Q.</a></li>
                         <li class="listfooteritem"><a href="/Contato">Contato</a></li>
                         <li class="listfooteritem"><a href="/Careers">Carreiras</a></li>
                         <li class="listfooteritem"><a href="/TermosDeUso">Termos de uso</a></li>
                         <li class="listfooteritem"><a href="/PoliticaDePrivacidade">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-                <div class="footer-partner col-lg-4">
-                    <ul class="listfooter">
-                        <li class="listfootertitle">Seja nosso parceiro</li>
-                        <li class="listfooteritem">🗹 Ganhe muita visibilidade on-line</li>
-                        <li class="listfooteritem">🗹 Clientes novos e fidelizados</li>
-                        <li class="listfooteritem">🗹 Conheça seu público-alvo</li>
-                        <li class="listfooteritem">🗹 Alto potencial de retorno financeiro</li>
-                        <li class="listfooteritem"><div class="button-footer"><a href="/CadastroDeParceiro">Cadastre o seu restaurante</a><div></li>
                     </ul>
                 </div>
             </div>

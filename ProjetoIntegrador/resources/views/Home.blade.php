@@ -45,7 +45,7 @@
             <div class="col-lg-3">
                 <img class="how-to-icons" src="https://i.ibb.co/MZf1XML/icone-Carrinho.png" alt="Ícone de carrinho">
                 <p class="how-to-title">Adicione tudo no seu carrinho</p>
-                <p class="how-to-description">São milhares de pratos e experiências que você pode escolher eat-in ou take-away!</p>
+                <p class="how-to-description">São milhares de pratos e experiências que você só encontra aqui!</p>
             </div>
             <div class="col-lg-3">
                 <img class="how-to-icons" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Ícone de benefícios">
@@ -58,7 +58,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <a href="/Restaurantes"><button class="how-to-button">Explore</button></a>
+                <a href="/ListaDeExperiencias"><button class="how-to-button">Explore</button></a>
             </div>
         </div>
     </section>
@@ -76,14 +76,14 @@
         <div class="row">
             <div class="col-lg-6" style="text-align: -webkit-center;">
                 <div class="polaroid">
-                    <a href="/Restaurante">
-                        <img src="https://i.ibb.co/KWy48wt/restaurante.jpg" alt="Melhor Restaurante" style="width:100%">
+                    <a href="/Experiencia">
+                        <img src="https://i.ibb.co/9HswNbN/experiencia.jpg" alt="Melhor Experiência" style="width:100%">
                         <div class="container">
-                            <p>Conheça nosso melhor parceiro</p>
+                            <p>Conheça nossa melhor experiência</p>
                         </div>
                     </a>
                 </div>
-            </div>
+            </div>            
             <div class="col-lg-6" style="text-align: -webkit-center;">
                 <div class="polaroid">
                     <a href="/Experiencia">

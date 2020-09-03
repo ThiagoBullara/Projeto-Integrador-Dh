@@ -12,10 +12,14 @@ class experienciaModel extends Model
     public $guarded = [];
 
     protected $fillable = [
-        'nome',
-        'preco',
-        'quantidade_pessoas',
-        'descricao',
-        'foto',
+        'nomeExperiencia',
+        'precoExperiencia',
+        'quantidadePessoasExperiencia',
+        'descricaoExperiencia',
+        'sobreExperiencia',
+        'funcionamento',
+        'sobreRestaurante',
+        'fotoExperiencia',
+        'logoRestaurante'
     ];
 }

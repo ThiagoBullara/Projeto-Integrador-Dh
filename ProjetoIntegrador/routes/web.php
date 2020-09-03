@@ -28,7 +28,7 @@ Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia
 Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
 
 Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
-Route::post('/editarExperiencia/{id}', 'experienciaController@editarExperiencia');
+Route::post('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
 
 Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia');
 
@@ -74,3 +74,7 @@ Route::get('/Experiencias', 'pageController@exibirListaDeExperiencia');
 Route::get('/teste', function () {
     return redirect('/EditarPerfilRestaurante');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

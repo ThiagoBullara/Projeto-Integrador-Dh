@@ -19,6 +19,10 @@
             <div class="row">
                 <div class="col">
                     <h2>Nossas Experiências</h2>
+                    <div class="buscar mt-4">
+                        <input type="search" class="inp" placeholder="Procure por uma experiência!">
+                        <input type="submit" value="Buscar" class="btn-inp">
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,11 +33,11 @@
                     <a href="/Experiencia/{{ $experiencias->id_experiencia }}" class="link-restaurante">
                         <div class="card-produtos">
                             <div >
-                                <img style="width:340px; height:350px;" src="{{'storage/img/'.$experiencias->foto}}" alt="{{$experiencias->foto}}" class="imagem-mobile">
+                                <img style="width:340px; height:350px;" src="{{'storage/img/'.$experiencias->fotoExperiencia}}" alt="{{$experiencias->fotoExperiencia}}" class="imagem-mobile">
                             </div>
                             <div class="titulo-restaurante">
-                                <p>{{ $experiencias->nome }}</p>
-                                <p class="nome-restaurante">R${{ $experiencias->preco }}</p>
+                                <p>{{ $experiencias->nomeExperiencia }}</p>
+                                <p class="nome-restaurante">R${{ $experiencias->precoExperiencia }}</p>
                                  <!--Futuramente Será substituido pelo nome do restaurante !-->
                             </div>
                         </div>

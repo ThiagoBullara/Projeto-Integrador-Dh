@@ -26,7 +26,7 @@
             <nav class="row">
                 <div class="nav-border col-lg-12">
                     <ul class="navbar">
-                        <li><a class="navbar-item" href="/Home">Home</a></li>
+                        <li><a class="navbar-item" href="/home">Home</a></li>
                         <li><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></li>
                         <li><a class="navbar-item" href="/SobreNos">Sobre Nós</a></li>
                         
@@ -42,13 +42,13 @@
                         @else
                             <li class="teste nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img style="width:40px; height:40px;border-radius:50%;" src="{{'storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}" class="imagem-mobile">    
+                                    <img style="width:40px; height:40px;border-radius:50%;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">    
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/EditarPerfil/{{ Auth::user()->id }}">
-                                        {{ __('Editar Perfil') }}
+                                    <a class="dropdown-item" href="/PaginaDePerfil/{{ Auth::user()->id }}">
+                                        {{ __('Perfil') }}
                                     </a>
 
                                     <a class="dropdown-item" href="/MinhasCompras/{{ Auth::user()->id }}">

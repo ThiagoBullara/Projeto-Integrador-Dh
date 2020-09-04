@@ -1,0 +1,18 @@
+body{
+    background-image:url(https://i.pinimg.com/originals/ba/04/a8/ba04a8c4625ed0c3dd409f2ce160d7fa.jpg);
+    text-align:center;
+}
+
+.container{
+    background-color: whitesmoke;
+}
+
+.compras{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.listaCompras{
+    margin-top: 4vw;
+    padding-bottom: 4vw;
+}

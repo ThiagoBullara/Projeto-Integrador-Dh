@@ -16,10 +16,10 @@
             <div class="row">
                 <div class="logo col-lg-12">
                     <div class="desktop">
-                        <a href="/Home" ><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
+                        <a href="/home" ><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
                     </div>
                     <div class="mobile">
-                        <a href="/Home"><img src="https://i.ibb.co/0tNkSBr/Icon.png" alt="Logo Buyhood"></a>
+                        <a href="/home"><img src="https://i.ibb.co/0tNkSBr/Icon.png" alt="Logo Buyhood"></a>
                     </div>
                 </div>
             </div>

@@ -97,14 +97,43 @@
 
         <hr>  
 
+        <hr>  
+
         <div>
-        <label class="label" for="fotoExperiencia">Fotos da Experiência(Carrosel)</label>
-            <input class="input form-control" type="file" name="fotoExperiencia" id="fotoExperiencia">
+          <label class="label" for="fotoExperiencia1">Fotos da Experiência(Carrosel - Número 1)</label>
+              <input class="input form-control" type="file" name="fotoExperiencia1" id="fotoExperiencia1">
         </div>
 
-        <p class="mt-2">Imagem atual:</p>
-        <div style="width:200px">
-          <img  class="d-block w-100" src="{{ '/storage/img/'.$editarExperiencia->fotoExperiencia }}" alt="{{ $editarExperiencia->fotoExperiencia }}">
+        <hr>
+
+        <div>
+          <label class="label" for="fotoExperiencia2">Fotos da Experiência(Carrosel - Número 2)</label>
+              <input class="input form-control" type="file" name="fotoExperiencia2" id="fotoExperiencia2">
+        </div>
+
+        <hr>
+
+        <div>
+          <label class="label" for="fotoExperiencia3">Fotos da Experiência(Carrosel - Número 3)</label>
+              <input class="input form-control" type="file" name="fotoExperiencia3" id="fotoExperiencia3">
+        </div>
+
+      <hr>
+
+
+        <p class="mt-2">Imagens atuais:</p>
+        <div class="row">
+          <div class="col-lg-4" style="width:200px">
+            <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$editarExperiencia->fotoExperiencia1 }}" alt="{{ $editarExperiencia->fotoExperiencia1 }}">
+          </div>
+          
+          <div class="col-lg-4" style="width:200px">
+            <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$editarExperiencia->fotoExperiencia2 }}" alt="{{ $editarExperiencia->fotoExperiencia2 }}">
+          </div>
+
+          <div class="col-lg-4" style="width:200px">
+            <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$editarExperiencia->fotoExperiencia3 }}" alt="{{ $editarExperiencia->fotoExperiencia3 }}">
+          </div>
         </div>
         <hr>
 
@@ -115,7 +144,7 @@
 
         <p class="mt-2">Imagem de logo atual:</p>
         <div style="width:200px">
-          <img  class="d-block w-100" src="{{ '/storage/img/'.$editarExperiencia->logoRestaurante }}" alt="{{ $editarExperiencia->logoRestaurante }}">
+          <img  style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;" src="{{ '/storage/img/'.$editarExperiencia->logoRestaurante }}" alt="{{ $editarExperiencia->logoRestaurante }}">
         </div>
 
         <hr>

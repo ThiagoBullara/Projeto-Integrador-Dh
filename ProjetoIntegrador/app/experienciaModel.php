@@ -19,7 +19,9 @@ class experienciaModel extends Model
         'sobreExperiencia',
         'funcionamento',
         'sobreRestaurante',
-        'fotoExperiencia',
+        'fotoExperiencia1',
+        'fotoExperiencia2',
+        'fotoExperiencia3',
         'logoRestaurante'
     ];
 }

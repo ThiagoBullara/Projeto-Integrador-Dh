@@ -100,8 +100,22 @@
         <hr>  
 
         <div>
-        <label class="label" for="fotoExperiencia">Fotos da Experiência(Carrosel)</label>
-            <input class="input form-control" type="file" name="fotoExperiencia" id="fotoExperiencia">
+        <label class="label" for="fotoExperiencia1">Fotos da Experiência(Carrosel - Número 1)</label>
+            <input class="input form-control" type="file" name="fotoExperiencia1" id="fotoExperiencia1">
+        </div>
+
+        <hr>
+
+        <div>
+        <label class="label" for="fotoExperiencia2">Fotos da Experiência(Carrosel - Número 2)</label>
+            <input class="input form-control" type="file" name="fotoExperiencia2" id="fotoExperiencia2">
+        </div>
+
+        <hr>
+
+        <div>
+        <label class="label" for="fotoExperiencia3">Fotos da Experiência(Carrosel - Número 3)</label>
+            <input class="input form-control" type="file" name="fotoExperiencia3" id="fotoExperiencia3">
         </div>
 
         <hr>

@@ -22,8 +22,16 @@ class experienciaController extends Controller
         $novaExperiencia->sobreRestaurante = $request->sobreRestaurante;
         
 
-        $novaExperiencia->fotoExperiencia = $nomeDaFoto = $request->file('fotoExperiencia')->getClientOriginalName();
-        $salvarFoto = $request->file('fotoExperiencia')->storeAs("public/img",$nomeDaFoto);
+        $novaExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
+        $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);
+        $urlBase = 'storage/img/'.$nomeDaFoto;
+        
+        $novaExperiencia->fotoExperiencia2 = $nomeDaFoto = $request->file('fotoExperiencia2')->getClientOriginalName();
+        $salvarFoto = $request->file('fotoExperiencia2')->storeAs("public/img",$nomeDaFoto);
+        $urlBase = 'storage/img/'.$nomeDaFoto;
+        
+        $novaExperiencia->fotoExperiencia3 = $nomeDaFoto = $request->file('fotoExperiencia3')->getClientOriginalName();
+        $salvarFoto = $request->file('fotoExperiencia3')->storeAs("public/img",$nomeDaFoto);
         $urlBase = 'storage/img/'.$nomeDaFoto;
         
 
@@ -71,9 +79,18 @@ class experienciaController extends Controller
         $editarExperiencia->funcionamento = $request->post('funcionamento');
         $editarExperiencia->sobreRestaurante = $request->post('sobreRestaurante');
 
-        $editarExperiencia->fotoExperiencia = $nomeDaFoto = $request->file('fotoExperiencia')->getClientOriginalName();
-        $salvarFoto = $request->file('fotoExperiencia')->storeAs("public/img",$nomeDaFoto);
+        $editarExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
+        $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);
         $urlBase = 'storage/img/'.$nomeDaFoto;
+
+        $editarExperiencia->fotoExperiencia2 = $nomeDaFoto = $request->file('fotoExperiencia2')->getClientOriginalName();
+        $salvarFoto = $request->file('fotoExperiencia2')->storeAs("public/img",$nomeDaFoto);
+        $urlBase = 'storage/img/'.$nomeDaFoto;
+
+        $editarExperiencia->fotoExperiencia3 = $nomeDaFoto = $request->file('fotoExperiencia3')->getClientOriginalName();
+        $salvarFoto = $request->file('fotoExperiencia3')->storeAs("public/img",$nomeDaFoto);
+        $urlBase = 'storage/img/'.$nomeDaFoto;
+
 
         $editarExperiencia->logoRestaurante = $nomeDaFoto = $request->file('logoRestaurante')->getClientOriginalName();
         $salvarFoto = $request->file('logoRestaurante')->storeAs("public/img",$nomeDaFoto);

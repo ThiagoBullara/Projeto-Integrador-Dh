@@ -33,7 +33,7 @@
                     <a href="/Experiencia/{{ $experiencias->id_experiencia }}" class="link-restaurante">
                         <div class="card-produtos">
                             <div >
-                                <img style="width:340px; height:350px;" src="{{'storage/img/'.$experiencias->fotoExperiencia}}" alt="{{$experiencias->fotoExperiencia}}" class="imagem-mobile">
+                                <img style="width:340px; height:350px;" src="{{'storage/img/'.$experiencias->fotoExperiencia1}}" alt="{{$experiencias->fotoExperiencia1}}" class="imagem-mobile">
                             </div>
                             <div class="titulo-restaurante">
                                 <p>{{ $experiencias->nomeExperiencia }}</p>

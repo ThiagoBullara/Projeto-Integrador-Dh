@@ -40,13 +40,13 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->fotoExperiencia }}" alt="{{ $detalhesExperiencia->fotoExperiencia }}">
+                                <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->fotoExperiencia1 }}" alt="{{ $detalhesExperiencia->fotoExperiencia1 }}">
                             </div>
                             <div class="carousel-item">
-                                <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->fotoExperiencia }}" alt="{{ $detalhesExperiencia->fotoExperiencia }}">
+                                <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->fotoExperiencia2 }}" alt="{{ $detalhesExperiencia->fotoExperiencia2 }}">
                             </div>
                             <div class="carousel-item">
-                                <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->fotoExperiencia }}" alt="{{ $detalhesExperiencia->fotoExperiencia }}">
+                                <img width="540px" height="347px" class="d-block w-100" src="{{ '/storage/img/'.$detalhesExperiencia->fotoExperiencia3 }}" alt="{{ $detalhesExperiencia->fotoExperiencia3 }}">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

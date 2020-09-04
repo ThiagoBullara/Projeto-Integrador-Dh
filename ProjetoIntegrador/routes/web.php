@@ -15,12 +15,10 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return redirect('/Home');
+    return redirect('/home');
 });
 
-Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');
-
-
+//CRUD de Experiências --------------------------------------------------------------------
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
@@ -32,22 +30,9 @@ Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia')
 Route::post('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
 
 Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia');
+//CRUD de Experiências --------------------------------------------------------------------
 
-// Rotas de Restaurantes
-Route::get('/Restaurantes', 'restauranteController@listarRestaurante');
-
-Route::get('/Restaurante/{nomeRestaurante}/{id_restaurante}', 'restauranteController@paginaRestaurante');
-
-Route::get('/CadastroDeParceiro', 'restauranteController@cadastrarParceiro');
-Route::post('/CadastroDeParceiro', 'restauranteController@cadastrarParceiro');
-
-Route::get('/EditarRestaurante/{id_restaurante}', 'restauranteController@editarRestaurante');
-Route::post('/EditarRestaurante/{id_restaurante}', 'restauranteController@editarRestaurante');
-
-Route::get('/EditarRestaurante/{id_restaurante}', 'restauranteController@deletarRestaurante');
-
-
-Route::get('/CadastroUsuario', 'pageController@exibirCadastroUsuario');
+Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');
 
 Route::get('/Careers', 'pageController@exibirCareers');
 
@@ -63,19 +48,17 @@ Route::get('/PoliticaDePrivacidade', 'pageController@exibirPoliticaDePrivacidade
 
 Route::get('/TermosDeUso', 'pageController@exibirTermosDeUso');
 
-Route::get('/Home', 'pageController@exibirHome');
+Route::get('/home', 'pageController@exibirHome')->name('home');
 
 Route::get('/Layout', 'pageController@layout');
 
-Route::get('/EditarPerfilRestaurante', 'pageController@exibirEditarPerfilRestaurante');
-
-Route::get('/Experiencias', 'pageController@exibirListaDeExperiencia');
-
-
-Route::get('/teste', function () {
-    return redirect('/EditarPerfilRestaurante');
-});
-
+//CRUD de Usuário --------------------------------------------------------------------
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/PaginaDePerfil/{id}', 'usuarioController@exibirPerfil');
+
+Route::get('/EditarPerfil/{id}', 'usuarioController@editarPerfil');
+Route::post('/EditarPerfil/{id}', 'usuarioController@editarPerfil');
+
+Route::get('/DeletarPerfil/{id}', 'usuarioController@deletarPerfil');
+//CRUD de Experiências --------------------------------------------------------------------

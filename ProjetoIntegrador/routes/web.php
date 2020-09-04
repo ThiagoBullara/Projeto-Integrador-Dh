@@ -58,11 +58,11 @@ Route::get('/Layout', 'pageController@layout');
 //CRUD de Usuário --------------------------------------------------------------------
 Auth::routes();
 
-Route::get('/PaginaDePerfil/{id}', 'usuarioController@exibirPerfil');
+Route::get('/PaginaDePerfil/', 'usuarioController@exibirPerfil');
 
-Route::get('/EditarPerfil/{id}', 'usuarioController@editarPerfil');
-Route::post('/EditarPerfil/{id}', 'usuarioController@editarPerfil');
+Route::get('/EditarPerfil/', 'usuarioController@editarPerfil');
+Route::post('/EditarPerfil/', 'usuarioController@editarPerfil');
 
-Route::get('/DeletarPerfil/{id}', 'usuarioController@deletarPerfil');
+Route::get('/DeletarPerfil/', 'usuarioController@deletarPerfil');
 //CRUD de Experiências --------------------------------------------------------------------
 

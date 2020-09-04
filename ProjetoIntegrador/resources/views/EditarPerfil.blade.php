@@ -16,7 +16,7 @@
                 <div class="card-header">{{ __('Cadastro') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="/EditarPerfil/{{$editarPerfil->id}}" enctype="multipart/form-data">
+                    <form method="POST" action="/EditarPerfil/" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group row">

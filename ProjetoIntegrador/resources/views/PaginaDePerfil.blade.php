@@ -23,8 +23,8 @@
             <div  class="col-lg-6 mt-5 mb-5">
                 <h3>{{ $detalhesPerfil->name }}</h3>
                 <p>Email: {{ $detalhesPerfil->email }}</p>
-                <a href="/EditarPerfil/{{$detalhesPerfil->id}}"><button class="btn btn-primary">Editar Perfil</button></a>
-                <a href="/DeletarPerfil/{{$detalhesPerfil->id}}"><button class="btn btn-danger">Deletar Perfil</button></a>
+                <a href="/EditarPerfil/"><button class="btn btn-primary">Editar Perfil</button></a>
+                <a href="/DeletarPerfil/"><button class="btn btn-danger">Deletar Perfil</button></a>
             </div>
         </div>
 

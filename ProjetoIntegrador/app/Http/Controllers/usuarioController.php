@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class usuarioController extends Controller{
 
@@ -22,13 +24,13 @@ class usuarioController extends Controller{
         ]);
     }
 
-    protected function editarPerfil(Request $request, $id){
+    protected function editarPerfil(Request $request){
 
         if($request->isMethod('GET')){
-            $editarPerfil = User::find($id);
+            $editarPerfil = Auth::user();
             return view('EditarPerfil', ["editarPerfil" => $editarPerfil]);
         }
-            $user = User::find($id);
+            $user = Auth::user();
             $user->name = $request->post('name');
             $user->email = $request->post('email');
             $user->password = Hash::make($request->post('password'));
@@ -46,14 +48,14 @@ class usuarioController extends Controller{
 
     }
 
-    public function exibirPerfil($id){
-        $detalhesPerfil = User::find($id);
+    public function exibirPerfil(){
+        $detalhesPerfil = Auth::user();
 
         return view('PaginaDePerfil', ["detalhesPerfil" => $detalhesPerfil]);
     }
 
-    public function deletarPerfil($id){
-        $deletarPerfil = User::find($id);
+    public function deletarPerfil(){
+        $deletarPerfil = Auth::user();
         $deletarPerfil->delete();
 
         return redirect()->action("pageController@exibirHome");

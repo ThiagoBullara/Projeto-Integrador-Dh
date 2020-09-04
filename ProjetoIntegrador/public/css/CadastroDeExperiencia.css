@@ -1,5 +1,38 @@
-.meio{
-    margin: 5% 0;
+h1 {
+    text-align: center;
+    font-size: 50px;
+    border-top: lightgray 3px solid;
+    border-bottom: lightgray 3px solid;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.campo-obrigatorio {
+    color: orange;
+}
+
+.sucesso h3 {
+    padding: 10px;
+    border: solid 1px #73a942;
+    border-radius: 5px;
+}
+
+.sucesso-icon {
+    color: #73a942;
+    text-decoration: underline;  
+}
+
+.erro h3 {
+    padding: 10px;
+    border: solid 1px red;
+    border-radius: 5px;
+}
+
+.erro-icon {
+    color: red;
+    text-decoration: underline;  
 }
 
 .btn-buyhood {

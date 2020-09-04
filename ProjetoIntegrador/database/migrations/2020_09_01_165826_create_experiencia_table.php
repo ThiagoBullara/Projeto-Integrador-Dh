@@ -25,8 +25,11 @@ class CreateExperienciaTable extends Migration
             $table->string('logoRestaurante');
             $table->decimal('precoExperiencia');
             $table->integer('quantidadePessoasExperiencia');
-            $table->string('funcionamento')->nullable();
-            $table->string('tags')->nullable();
+            $table->string('funcionamento');
+            $table->string('tag1');
+            $table->string('tag2');
+            $table->string('tag3');
+            $table->string('tag4');
             $table->timestamps();
         });
     }

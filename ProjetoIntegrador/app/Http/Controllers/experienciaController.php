@@ -12,6 +12,30 @@ class experienciaController extends Controller
         if($request->isMethod('GET')){
             return view('CadastroDeExperiencia');
         }
+
+        $validatedRules = [
+            'nomeExperiencia' => 'required|max:255',
+            'precoExperiencia' => 'required|numeric',
+            'quantidadePessoasExperiencia' => 'required|numeric',
+            'descricaoExperiencia' => 'required|max:255',
+            'sobreExperiencia' => 'required|max:800',
+            'funcionamento' => 'required|max:255',
+            'sobreRestaurante' => 'required|max:800',
+            'fotoExperiencia1' => 'required|image',
+            'fotoExperiencia2' => 'required|image',
+            'fotoExperiencia3' => 'required|image',
+            'logoRestaurante' => 'required|image'
+        ];
+
+        $validatedMessage = [
+            'required' => 'Esse campo é obrigatório',
+            'max' => 'Esse campo possui muita informação',
+            'numeric' => 'Esse campo deve ser um número',
+            'image' => 'O formato desse arquivo não é válido'
+        ];
+
+        $this -> validate($request, $validatedRules, $validatedMessage);
+
         $novaExperiencia = new experienciaModel();
         $novaExperiencia->nomeExperiencia = $request->nomeExperiencia;
         $novaExperiencia->precoExperiencia = $request->precoExperiencia;
@@ -20,7 +44,6 @@ class experienciaController extends Controller
         $novaExperiencia->sobreExperiencia = $request->sobreExperiencia;
         $novaExperiencia->funcionamento = $request->funcionamento;
         $novaExperiencia->sobreRestaurante = $request->sobreRestaurante;
-        
 
         $novaExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
         $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);
@@ -33,15 +56,21 @@ class experienciaController extends Controller
         $novaExperiencia->fotoExperiencia3 = $nomeDaFoto = $request->file('fotoExperiencia3')->getClientOriginalName();
         $salvarFoto = $request->file('fotoExperiencia3')->storeAs("public/img",$nomeDaFoto);
         $urlBase = 'storage/img/'.$nomeDaFoto;
-        
-
+    
         $novaExperiencia->logoRestaurante = $nomeDaFoto = $request->file('logoRestaurante')->getClientOriginalName();
         $salvarFoto = $request->file('logoRestaurante')->storeAs("public/img",$nomeDaFoto);
         $urlBase = 'storage/img/'.$nomeDaFoto;
 
+        $novaExperiencia->tag1 = $request->tag1;
+        $novaExperiencia->tag2 = $request->tag2;
+        $novaExperiencia->tag3 = $request->tag3;
+        $novaExperiencia->tag4 = $request->tag4;
+
         $resultado = $novaExperiencia->save();
 
-        return view("CadastroDeExperiencia", ['resultado'=>$resultado]);
+        $vac = compact('resultado');
+
+        return view("CadastroDeExperiencia", $vac);
     }
 
     public function listarExperiencias(){

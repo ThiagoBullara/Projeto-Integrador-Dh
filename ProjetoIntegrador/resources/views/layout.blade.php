@@ -42,7 +42,7 @@
                         @else
                             <li class="teste nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img style="width:40px; height:40px;border-radius:50%;" src="{{'storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->name }}" class="imagem-mobile">    
+                                    <img style="width:40px; height:40px;border-radius:50%;" src="{{'storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}" class="imagem-mobile">    
                                     {{ Auth::user()->name }}
                                 </a>
 

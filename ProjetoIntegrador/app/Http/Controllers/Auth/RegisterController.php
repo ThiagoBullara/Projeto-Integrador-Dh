@@ -53,6 +53,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'fotoPerfil' => ['required','mimes:jpeg,jpg,bmp,png'],
         ]);
     }
 
@@ -64,10 +65,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        if (request()->hasFile('fotoPerfil')){
+
+            $fotoPerfil = request()->file('fotoPerfil')->getClientOriginalName();
+            request()->file('fotoPerfil')->storeAs("public/img", $fotoPerfil);
+            $user->update(['fotoPerfil'=> $fotoPerfil]);
+
+        }
+
+        return $user;
+
     }
 }

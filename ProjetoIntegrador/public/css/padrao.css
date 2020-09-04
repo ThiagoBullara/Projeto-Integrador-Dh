@@ -18,6 +18,10 @@ header {
     display: none;
 }
 
+.teste a{
+    text-decoration: none !important;
+}
+
 .navbar {
     text-align: center;
     font-size: 17px;

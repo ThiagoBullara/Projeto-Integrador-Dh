@@ -1,5 +1,6 @@
 <?php
 
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -18,19 +19,21 @@ Route::get('/', function () {
     return redirect('/home');
 });
 
+
 //CRUD de Experiências --------------------------------------------------------------------
+
+Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia')->middleware('admin');
+Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia')->middleware('admin');
+
+Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia')->middleware('admin');
+Route::post('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia')->middleware('admin');
+
+Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia')->middleware('admin');
+//CRUD de Experiências --------------------------------------------------------------------
+
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
-
-Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
-Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia');
-
-Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
-Route::post('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia');
-
-Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia');
-//CRUD de Experiências --------------------------------------------------------------------
 
 Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');
 
@@ -62,3 +65,4 @@ Route::post('/EditarPerfil/{id}', 'usuarioController@editarPerfil');
 
 Route::get('/DeletarPerfil/{id}', 'usuarioController@deletarPerfil');
 //CRUD de Experiências --------------------------------------------------------------------
+

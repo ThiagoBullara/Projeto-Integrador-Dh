@@ -24,14 +24,18 @@ class experienciaController extends Controller
             'fotoExperiencia1' => 'required|image',
             'fotoExperiencia2' => 'required|image',
             'fotoExperiencia3' => 'required|image',
-            'logoRestaurante' => 'required|image'
+            'logoRestaurante' => 'required|image',
+            'tag1' => 'required',
+            'tag2' => 'required',
+            'tag3' => 'required',
+            'tag4' => 'required'
         ];
 
         $validatedMessage = [
-            'required' => 'Esse campo é obrigatório',
-            'max' => 'Esse campo possui muita informação',
-            'numeric' => 'Esse campo deve ser um número',
-            'image' => 'O formato desse arquivo não é válido'
+            'required' => 'O campo :attribute é obrigatório',
+            'max' => 'O campo :attribute possui muita informação',
+            'numeric' => 'O campo :attribute deve ser um número',
+            'image' => 'O formato do arquivo do campo :attribute não é válido'
         ];
 
         $this -> validate($request, $validatedRules, $validatedMessage);
@@ -129,6 +133,4 @@ class experienciaController extends Controller
 
         return redirect()->action("experienciaController@listarExperiencias");
     }
-
-
 }

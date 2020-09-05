@@ -62,11 +62,10 @@
                 <div class="col-lg-6 product">
                     <ul class="description-list">
                         <li class="description-itens-title"><h2>Detalhes desta experiência</h2></li>
-                        <li class="description-itens">Opções Vegetarianas</li>
-                        <li class="description-itens">Perfeito para comer com amigos</li>
-                        <li class="description-itens">Ingredientes 100% naturais</li>
-                        <li class="description-itens">Fácil de fazer</li>
-                        <li class="description-itens">Aprovado pelo chefe</li>
+                        <li class="description-itens">{{$detalhesExperiencia -> tag1}}</li>
+                        <li class="description-itens">{{$detalhesExperiencia -> tag2}}</li>
+                        <li class="description-itens">{{$detalhesExperiencia -> tag3}}</li>
+                        <li class="description-itens">{{$detalhesExperiencia -> tag4}}</li>
                         <li class="description-itens" style="font-weight:bolder;">Preço por pessoa: R${{ $detalhesExperiencia->precoExperiencia }}</li>
                     </ul>
                     <div class="form-group">

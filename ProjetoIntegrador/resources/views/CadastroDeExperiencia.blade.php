@@ -9,25 +9,6 @@
 @endsection
 
 @section('conteudo')
-
-
-
-
-
-
-@if($errors -> any())
-<!-- @dd($errors); -->
-<div class="alert alert-danger">
-<ul>
-@foreach ($errors -> all() as $error)
-<li>{{$error}}</li>
-@endforeach
-</ul>
-</div>
-@endif  
-
-
-
     
 <div class="container">
     @if(isset($resultado))
@@ -48,7 +29,24 @@
                 <div class="col-lg-3"></div>
             </div>
         @endif
-    @endif 
+    @endif
+     
+    @if($errors -> any())
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 erro  mt-4 pb-4 pt-4">
+                <h3>Erro ao cadastrar a experiência <span class="erro-icon">&#10006;</span></h3>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors -> all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
     <div class="row">
         <div class="col-lg-12 mt-5 mb-5">

@@ -131,7 +131,7 @@
                     <option value="Frutos do mar">Frutos do mar</option>
                     <option value="Massas e Pratos Quentes">Massas</option>
                     <option value="Culinária Japonêsa">Japonêsa</option>
-                    <option value="Comida Típica Brasileira">Nacional</option>
+                    <option value="Nacional">Nacional</option>
                     <option value="Frangos e Aves">Aves</option>
                     <option value="Confeitaria">Confeitaria</option>
                     <option value="Doces e Sobremesas">Doces</option>

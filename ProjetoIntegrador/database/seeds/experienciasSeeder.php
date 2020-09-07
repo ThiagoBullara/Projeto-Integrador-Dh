@@ -49,152 +49,146 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag4 = 'Curso com certificação';
         
         $experiencia ->save();
-    }
-}
 
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '6';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
+        $experiencia = new experienciaModel();
+        $experiencia ->nomeExperiencia = 'Pesque e Coma';
+        $experiencia ->precoExperiencia = '50';
+        $experiencia ->quantidadePessoasExperiencia = '6';
+        $experiencia ->descricaoExperiencia = 'Pesque peixes em um tanque de um área reservada e nós cozinhamos para você!';
+        $experiencia ->sobreExperiencia = 'O conceito de Pesque e Pague já é algo conhecido e muito famoso na cultura brasileira, mas você já pensou em passar um tempo pescando, no coração de Moema, e então ter o seu peixe ser preparado pelos melhores chefs do Coco Bambu? Pois agora você tem essa opção, você e um grupo de amigos pode passar a tarde pescando e relaxando, e quando a fome bater, relaxe e aproveite uma cerveja gelada enquanto o peixe que você pescou é preparado com as melhores mãos da região';
+        $experiencia ->funcionamento = 'Somente as Terças-Feiras, das 11h às 15h';
+        $experiencia ->sobreRestaurante = 'Iniciamos no ano de 1989 em Fortaleza/CE com o Dom Pastel, primeiro restaurante fundado por Afranio e Daniela Barreira. Esta unidade foi inspiração para o crescimento da rede Coco Bambu, que desde então vem encantando e atraindo clientes nos mais diversos estados do Brasil.
 
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia2-1.jpg';
+ 
 
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia2-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia2-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo2.jpg';
+        Considerado o maior e melhor restaurante do Brasil, com especialidade em frutos do mar, o Coco Bambu possui um amplo e variado cardápio, com comidas e bebidas deliciosamente diferenciadas, feitas com ingredientes frescos da mais alta qualidade. Os pratos são bem servidos e toda essa excelência é apresentada a preços acessíveis.
         
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
+         
         
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '10';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia3-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia3-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia3-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo3.jpg';
+        Nossas unidades são amplas, possuem decoração rústica e elegante, oferecendo aos nossos clientes um ambiente sofisticado e aconchegante.
         
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
+         
         
-//         $experiencia ->save();
+        Visite-nos e encante-se!';
 
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '4';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
+        $experiencia ->fotoExperiencia1 = 'fotoExperiencia2-1.jpg';
 
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia4-1.jpg';
+        $experiencia ->fotoExperiencia2 = 'fotoExperiencia2-2.jpg';
 
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia4-2.jpg';
+        $experiencia ->fotoExperiencia3 = 'fotoExperiencia2-3.jpg';
 
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia4-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo4.jpg';
+        $experiencia ->logoRestaurante = 'fotoLogo2.jpg';
         
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
+        $experiencia ->tag1 = 'Frutos do mar';
+        $experiencia ->tag2 = 'Nacional';
+        $experiencia ->tag3 = 'Gastronômia Renomada';
+        $experiencia ->tag4 = 'Gastronômia Gourmet';
         
-//         $experiencia ->save();
+        $experiencia ->save();
 
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '8';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
+        $experiencia = new experienciaModel();
+        $experiencia ->nomeExperiencia = 'Jantar temático Árabe com história';
+        $experiencia ->precoExperiencia = '120';
+        $experiencia ->quantidadePessoasExperiencia = '10';
+        $experiencia ->descricaoExperiencia = 'Comida árabe não se resume a Esfihas e Kibes, descubra o verdadeiro sabor do Oriente Médio';
+        $experiencia ->sobreExperiencia = 'O oriente médio é uma das areas mais antigas da humanindade, um lugar rico em histórias, cultura e costumes. Na parte gastronômica isso não poderia ser diferente, receitas milenares passadas de geração em geração, e com sabores exóticos e intrigantes. No Brasil, no entanto, ao pensar em culinária árabe, a primeira coisa que se vem a mente é Esfiha ou Kibe. Esse jantar, exclusivo da plataforma BuyHood veio para mudar essa visão, trazendo pratos tradicionais da cultura árabe junto com a história por traz da criação e cultivação desses pratos. Aprenda um pouco mais sobre esse povo cheio de histórias enquanto se delicia com um atendimento exclusivo e personalizado.';
+        $experiencia ->funcionamento = 'De Segunda à Quinta das 18:00 às 23:00';
+        $experiencia ->sobreRestaurante = 'A esquina da Rua Horácio Lafer, no Itaim, acomoda a primeira casa do árabe Manish. Pela fachada arquitetônica já é possível perceber que seu conceito de restaurante vai além da gastronomia, com uma experiência sensorial completa. Fazendo parte do lifestyle saudável, com ingredientes frescos, orgânicos e sem conservantes, o Manish é comandado pelo Grupo SAJ e apresenta as famosas receitas da linhagem gastronômica da família Abbud – porém com a sua releitura criativa e contemporânea.
 
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia5-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia5-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia5-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo5.jpg';
+        A casa mantém no menu os clássicos tão esperados, como: o Atum à Farabbud selados na grelha com molho de azeite e zaatar; o Kibe na brasa, receita tradicional árabe com um toque de coalhada fresca; o Camarão à Flamingo, que vem grelhado com abobrinha e pesto de salsa e cebolinha; Lombo de Cordeiro marinado com vinho branco e ervas; Filé de Pintado ao molho Tarator e nozes; Batata Libanesa, amassada à moda, com cebola dourada no azeite e zaatar; a Salada Manish com folhas, queijo de cabra, pistache e damasco ao molho de mel; esfihas abertas de carne com coalhada e esticadinha de Chancliche; além de Doces Semiramis e a Coalhada com calda de Frutas Vermelhas.
         
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
+        O Delivery conta com enorme abrangência atendendo do Morumbi ao Itaim, para que todos possam receber o Manish no conforto de casa!
         
-//         $experiencia ->save();
+        Preparados com a essência homemade, todos os pratos do Manish ilustram a culinária árabe na íntegra e merecem destaque: desde as esfihas e kibes, até aos pratos mais elaborados.';
 
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '7';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
+        $experiencia ->fotoExperiencia1 = 'fotoExperiencia3-1.jpg';
 
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia6-1.jpg';
+        $experiencia ->fotoExperiencia2 = 'fotoExperiencia3-2.jpg';
 
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia6-2.jpg';
+        $experiencia ->fotoExperiencia3 = 'fotoExperiencia3-3.jpg';
 
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia6-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo6.jpg';
+        $experiencia ->logoRestaurante = 'fotoLogo3.jpg';
         
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
+        $experiencia ->tag1 = 'Culinária Árabe';
+        $experiencia ->tag2 = 'Gastrônomia Exótica';
+        $experiencia ->tag3 = 'Pratos Estrangeiros em Geral';
+        $experiencia ->tag4 = 'Gastronômia Gourmet';
         
-//         $experiencia ->save();
+        $experiencia ->save();
 
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '9';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
+        $experiencia = new experienciaModel();
+        $experiencia ->nomeExperiencia = 'Almoço no Restaurante do Chef Fogaça, com música ao vivo por ele mesmo';
+        $experiencia ->precoExperiencia = '300';
+        $experiencia ->quantidadePessoasExperiencia = '4';
+        $experiencia ->descricaoExperiencia = 'Música ao vivo cantada pelo próprio Chef Fogaça do MasterChef, que também é o Chef e dono do Restaurante';
+        $experiencia ->sobreExperiencia = 'O Chef Fogaça ficou conhecido pelo país afora por suas aparições no programa de culinária MasterChef. No entanto, além de ser um astro das telinhas, Fogaça também tem sua rede de resturantes que atuam desde 2005, e muito mais do que isso, além de Chef ele também é vocalista da banda "Oitão". Nessa experiência você conta com a chance única de poder degustar um prato feito pelo renomado Chef e também conhecer seus belos acordes e vocais num jantar extraodinário.';
+        $experiencia ->funcionamento = 'Somente aos Sábados, das 17:00 ás 20:00';
+        $experiencia ->sobreRestaurante = 'O SAL Gastronomia conta hoje com três restaurantes e vem conquistando os paladares desde 2005. O cardápio inclui entradas deliciosas, pratos principais bem servidos e uma variedade irresistível de sobremesas. O bar também não fica para trás, com alguns drinks clássicos e outros sofisticados para acompanhar toda essa experiência gastronômica. Seja no almoço, jantar, happy hour ou eventos, estamos esperando por você! De segunda a sexta-feira possuímos um menu executivo especial, nele a experiência é completa e o preço acessível, não deixe de experimentar!';
 
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia7-1.jpg';
+        $experiencia ->fotoExperiencia1 = 'fotoExperiencia4-1.jpg';
 
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia7-2.jpg';
+        $experiencia ->fotoExperiencia2 = 'fotoExperiencia4-2.jpg';
 
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia7-3.jpg';
+        $experiencia ->fotoExperiencia3 = 'fotoExperiencia4-3.jpg';
 
-//         $experiencia ->logoRestaurante = 'fotoLogo7.jpg';
+        $experiencia ->logoRestaurante = 'fotoLogo4.jpg';
         
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
+        $experiencia ->tag1 = 'Nacional';
+        $experiencia ->tag2 = 'Gastronômia Gourmet';
+        $experiencia ->tag3 = 'Gastronômia Renomada';
+        $experiencia ->tag4 = 'Pratos Estrangeiros em Geral';
         
-//         $experiencia ->save();
+        $experiencia ->save();
+
+        $experiencia = new experienciaModel();
+        $experiencia ->nomeExperiencia = 'Yakisoba de Escorpião e almoço exectuivo com insetos';
+        $experiencia ->precoExperiencia = '120';
+        $experiencia ->quantidadePessoasExperiencia = '8';
+        $experiencia ->descricaoExperiencia = 'A parte mais exótica da culinária chinesa, você só encontra aqui no BuyHood';
+        $experiencia ->sobreExperiencia = 'Todos nós já vimos ou ouvimos falar dos chineses e seus hábitos gastronômicos peculiares, espetinho de escorpião e até mesmo barata frita. Muitas pessoas tem nojo só de pensar que alguém possa estar comendo isso, mas na realidade, é um dos maiores atrativos para turistas na China, e agora, graças ao BuyHood, você pode experimentar essa maravilha culinária no centro de São Paulo!';
+        $experiencia ->funcionamento = 'Seg - Dom 11:00-16:00 e 18:00 -22:00';
+        $experiencia ->sobreRestaurante = 'Nas mesas grandes, a clientela compartilha pratos em porções generosas, que alimentam até três. Pode ser mifum (macarrão de arroz, o mesmo que bifum) com vieiras cozidas no vapor (R$ 78), frutos do mar na chapa com brócolis (R$ 65), ou ainda os tradicionais macarrão chop suey (R$ 40) e lombo agridoce (R$ 45).';
+
+        $experiencia ->fotoExperiencia1 = 'fotoExperiencia5-1.jpeg';
+
+        $experiencia ->fotoExperiencia2 = 'fotoExperiencia5-2.jpg';
+
+        $experiencia ->fotoExperiencia3 = 'fotoExperiencia5-3.jpg';
+
+        $experiencia ->logoRestaurante = 'fotoLogo5.jpg';
+        
+        $experiencia ->tag1 = 'Comida saudável e Fitness';
+        $experiencia ->tag2 = 'Culinária Chinesa';
+        $experiencia ->tag3 = 'Gastrônomia Exótica';
+        $experiencia ->tag4 = 'Pratos Estrangeiros em Geral';
+        
+        $experiencia ->save();
+
+        $experiencia = new experienciaModel();
+        $experiencia ->nomeExperiencia = 'Construa uma miniatura da casa feita de doces do João e Maria';
+        $experiencia ->precoExperiencia = '95';
+        $experiencia ->quantidadePessoasExperiencia = '7';
+        $experiencia ->descricaoExperiencia = 'Faça uma adorável casinha feita de biscoite e ganache igual a do João e Maria';
+        $experiencia ->sobreExperiencia = 'Você não precisa saber cozinhar, assar, ou preparar nada, nesse pequeno curso, você vai aprender a como fazer um delicioso molde de biscoito de gengibre e ganache com pasta americana para decoração e enfeites da linda casinha. Você, além de aprender como preparar e estilizar uma sobremesa chique e saborosa, você irá poder levar seu projeto para casa, e comer com a sua família!';
+        $experiencia ->funcionamento = 'Todos os dias das 8h às 14h';
+        $experiencia ->sobreRestaurante = 'Há 11 anos, os moradores da rua Bela Cintra no Jardins surpreenderam-se com um lugar minúsculo: a Padaria Artesanal Orgânica.
+
+        O sonho de fazer um pão artesanal, valorizar os pequenos produtores orgânicos e servir uma comida saudável tornou-se realidade. Rafael Rosa recebia seus clientes com a mão na massa, cheiro de pão quentinho e um sorriso no rosto. Com o passar dos anos, o sucesso deu espaço ao crescimento, e outros endereços surgiram. O conceito de simplicidade, verdade e autenticidade permanecem.';
+
+        $experiencia ->fotoExperiencia1 = 'fotoExperiencia6-1.jpg';
+
+        $experiencia ->fotoExperiencia2 = 'fotoExperiencia6-2.jpg';
+
+        $experiencia ->fotoExperiencia3 = 'fotoExperiencia6-3.jpg';
+
+        $experiencia ->logoRestaurante = 'fotoLogo6.jpg';
+        
+        $experiencia ->tag1 = 'Artesanal';
+        $experiencia ->tag2 = 'Padaria e Assados';
+        $experiencia ->tag3 = 'Confeitaria';
+        $experiencia ->tag4 = 'Doces e Sobremesas';
+        
+        $experiencia ->save();
 
 //         $experiencia = new experienciaModel();
 //         $experiencia ->nomeExperiencia = '';
@@ -220,293 +214,5 @@ class experienciasSeeder extends Seeder
         
 //         $experiencia ->save();
 
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '6';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia9-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia9-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia9-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo9.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '3';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia10-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia10-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia10-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo10.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '2';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia11-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia11-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia11-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo11.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '7';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia12-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia12-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia12-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo12.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '8';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia13-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia13-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia13-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo13.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '9';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia14-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia14-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia14-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo14.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '1';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia15-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia15-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia15-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo15.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '2';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia16-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia16-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia16-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo16.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '3';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia17-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia17-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia17-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo17.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '2';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia18-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia18-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia18-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo18.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '1';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia19-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia19-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia19-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo19.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-
-//         $experiencia = new experienciaModel();
-//         $experiencia ->nomeExperiencia = '';
-//         $experiencia ->precoExperiencia = '';
-//         $experiencia ->quantidadePessoasExperiencia = '4';
-//         $experiencia ->descricaoExperiencia = '';
-//         $experiencia ->sobreExperiencia = '';
-//         $experiencia ->funcionamento = '';
-//         $experiencia ->sobreRestaurante = '';
-
-//         $experiencia ->fotoExperiencia1 = 'fotoExperiencia20-1.jpg';
-
-//         $experiencia ->fotoExperiencia2 = 'fotoExperiencia20-2.jpg';
-
-//         $experiencia ->fotoExperiencia3 = 'fotoExperiencia20-3.jpg';
-
-//         $experiencia ->logoRestaurante = 'fotoLogo20.jpg';
-        
-//         $experiencia ->tag1 = '';
-//         $experiencia ->tag2 = '';
-//         $experiencia ->tag3 = '';
-//         $experiencia ->tag4 = '';
-        
-//         $experiencia ->save();
-        
-//     }
-// }
+    }
+}

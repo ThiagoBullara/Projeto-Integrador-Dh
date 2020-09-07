@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Auth;
 
 
 class usuarioController extends Controller{
-
     protected function validator(array $data)
     {
         return Validator::find($data, [
@@ -51,7 +50,9 @@ class usuarioController extends Controller{
     public function exibirPerfil(){
         $detalhesPerfil = Auth::user();
 
-        return view('PaginaDePerfil', ["detalhesPerfil" => $detalhesPerfil]);
+        $vac = compact('detalhesPerfil');
+
+        return view('PaginaDePerfil', $vac);
     }
 
     public function deletarPerfil(){

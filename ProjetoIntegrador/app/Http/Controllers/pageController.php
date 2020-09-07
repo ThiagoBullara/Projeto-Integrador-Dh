@@ -57,4 +57,7 @@ class pageController extends Controller
     public function exibirEditarPerfilRestaurante(){
         return view('EditarPerfilRestaurante');
     }
+    public function exibirCarrinho(){
+        return view('Carrinho');
+    }
 }

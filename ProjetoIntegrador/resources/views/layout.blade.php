@@ -40,7 +40,8 @@
                                 </li>
                             @endif
                         @else
-                            <li class="teste nav-item dropdown">
+                            <li><a class="navbar-item" href="/CadastroDeExperiencia">Cadastro de experiência</a></li>
+                            <li class="dropdown-login nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     <img style="width:40px; height:40px;border-radius:50%;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">    
                                     {{ Auth::user()->name }}

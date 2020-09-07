@@ -37,7 +37,7 @@
                             </div>
                             <div class="titulo-restaurante">
                                 <p>{{ $experiencias->nomeExperiencia }}</p>
-                                <p class="nome-restaurante">R${{ $experiencias->precoExperiencia }}</p>
+                                <p class="nome-restaurante">R$: {{ $experiencias->precoExperiencia }}</p>
                                  <!--Futuramente Será substituido pelo nome do restaurante !-->
                             </div>
                         </div>

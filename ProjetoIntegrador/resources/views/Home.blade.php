@@ -79,7 +79,7 @@
                     <a href="/Experiencia">
                         <img src="https://i.ibb.co/9HswNbN/experiencia.jpg" alt="Melhor Experiência" style="width:100%">
                         <div class="container">
-                            <p>Conheça nossa melhor experiência</p>
+                            <p>Conheça nossa experiência mais comprada!</p>
                         </div>
                     </a>
                 </div>
@@ -89,7 +89,7 @@
                     <a href="/Experiencia">
                         <img src="https://i.ibb.co/9HswNbN/experiencia.jpg" alt="Melhor Experiência" style="width:100%">
                         <div class="container">
-                            <p>Conheça nossa melhor experiência</p>
+                            <p>Conheça nossa experiência mais bem avaliada!</p>
                         </div>
                     </a>
                 </div>

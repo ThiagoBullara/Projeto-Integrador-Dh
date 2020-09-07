@@ -66,7 +66,7 @@
                         <li class="description-itens">{{$detalhesExperiencia -> tag2}}</li>
                         <li class="description-itens">{{$detalhesExperiencia -> tag3}}</li>
                         <li class="description-itens">{{$detalhesExperiencia -> tag4}}</li>
-                        <li class="description-itens" style="font-weight:bolder;">Preço por pessoa: R${{ $detalhesExperiencia->precoExperiencia }}</li>
+                        <li class="description-itens mt-4 mb-5" style="font-weight:bolder;">Preço por pessoa: R${{ $detalhesExperiencia->precoExperiencia }}</li>
                     </ul>
                     <div class="form-group">
                         <label for="participants"><h4>Total de participantes</h4></label>

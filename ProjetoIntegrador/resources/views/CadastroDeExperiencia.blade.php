@@ -117,115 +117,115 @@
         
         <hr>
 
-        <h3 class="mt-4 mb-4">Escolha até 4 tags que melhor definem sua experiência!</h3>
+        <h3 class="mt-4 mb-4">Escolha até 4 tags que melhor definem essa experiência!</h3>
 
         <div class="row">
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 1° tag</label>
                 <select class="form-control" id="tag1" name="tag1">
                     <option selected disabled>Selecione uma tag</option>
-                    <option value="Mexicana">Mexicana</option>
+                    <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
-                    <option value="Árabe">Árabe</option>
-                    <option value="Francesa">Francesa</option>
+                    <option value="Culinária Árabe">Árabe</option>
+                    <option value="Culinária Francesa">Francesa</option>
                     <option value="Frutos do mar">Frutos do mar</option>
-                    <option value="Massas">Massas</option>
-                    <option value="Japonêsa">Japonêsa</option>
-                    <option value="Nacional">Nacional</option>
-                    <option value="Aves">Aves</option>
-                    <option value="Alemã">Alemã</option>
-                    <option value="Doces">Doces</option>
-                    <option value="Chilena">Chilena</option>
-                    <option value="Exóticas">Exóticas</option>
-                    <option value="Chinesa">Chinesa</option>
-                    <option value="Britânica">Britânica</option>
-                    <option value="Carnes">Carnes</option>
-                    <option value="Bebidas">Bebidas</option>
-                    <option value="Salgadas">Salgadas</option>
-                    <option value="Renomada">Renomada</option>
-                    <option value="Prato estrangeiro">Prato estrangeiro</option>
-                    <option value="Gourmet">Gourmet</option>              
+                    <option value="Massas e Pratos Quentes">Massas</option>
+                    <option value="Culinária Japonêsa">Japonêsa</option>
+                    <option value="Comida Típica Brasileira">Nacional</option>
+                    <option value="Frangos e Aves">Aves</option>
+                    <option value="Confeitaria">Confeitaria</option>
+                    <option value="Doces e Sobremesas">Doces</option>
+                    <option value="Artesanal">Artesanal</option>
+                    <option value="Gastrônomia Exótica">Exóticas</option>
+                    <option value="Culinária Chinesa">Chinesa</option>
+                    <option value="Comida saudável e Fitness">Comida saudável e Fitness</option>
+                    <option value="Curso com certificação">Curso com certificação</option>
+                    <option value="Bebidas Alcoólicas">Bebidas</option>
+                    <option value="Padaria e Assados">Padaria e Assados</option>
+                    <option value="Gastronômia Renomada">Renomada</option>
+                    <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
+                    <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
             </div>
             <div class="form-group col-lg-3">
-                <label for="tag2">Selecione a 2° tag</label>
-                <select class="form-control" id="tag2" name="tag2">
+                <label for="tag1">Selecione a 2° tag</label>
+                <select class="form-control" id="tag1" name="tag1">
                     <option selected disabled>Selecione uma tag</option>
-                    <option value="Mexicana">Mexicana</option>
+                    <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
-                    <option value="Árabe">Árabe</option>
-                    <option value="Francesa">Francesa</option>
+                    <option value="Culinária Árabe">Árabe</option>
+                    <option value="Culinária Francesa">Francesa</option>
                     <option value="Frutos do mar">Frutos do mar</option>
-                    <option value="Massas">Massas</option>
-                    <option value="Japonêsa">Japonêsa</option>
-                    <option value="Nacional">Nacional</option>
-                    <option value="Aves">Aves</option>
-                    <option value="Alemã">Alemã</option>
-                    <option value="Doces">Doces</option>
-                    <option value="Chilena">Chilena</option>
-                    <option value="Exóticas">Exóticas</option>
-                    <option value="Chinesa">Chinesa</option>
-                    <option value="Britânica">Britânica</option>
+                    <option value="Massas e Pratos Quentes">Massas</option>
+                    <option value="CulináriaJaponêsa">Japonêsa</option>
+                    <option value="Comida Típica Brasileira">Nacional</option>
+                    <option value="Frangos e Aves">Aves</option>
+                    <option value="Confeitaria">Confeitaria</option>
+                    <option value="Doces e Sobremesas">Doces</option>
+                    <option value="Artesanal">Artesanal</option>
+                    <option value="Gastrônomia Exótica">Exóticas</option>
+                    <option value="Culinária Chinesa">Chinesa</option>
+                    <option value="Comida saudável e Fitness">Comida saudável e Fitness</option>
                     <option value="Carnes">Carnes</option>
-                    <option value="Bebidas">Bebidas</option>
-                    <option value="Salgadas">Salgadas</option>
-                    <option value="Renomada">Renomada</option>
-                    <option value="Prato estrangeiro">Prato estrangeiro</option>
-                    <option value="Gourmet">Gourmet</option>              
+                    <option value="Bebidas Alcoólicas">Bebidas</option>
+                    <option value="Padaria e Assados">Padaria e Assados</option>
+                    <option value="Gastronômia Renomada">Renomada</option>
+                    <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
+                    <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
             </div>
             <div class="form-group col-lg-3">
-                <label for="tag3">Selecione a 3° tag</label>
-                <select class="form-control" id="tag3" name="tag3">
+                <label for="tag1">Selecione a 3° tag</label>
+                <select class="form-control" id="tag1" name="tag1">
                     <option selected disabled>Selecione uma tag</option>
-                    <option value="Mexicana">Mexicana</option>
+                    <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
-                    <option value="Árabe">Árabe</option>
-                    <option value="Francesa">Francesa</option>
+                    <option value="Culinária Árabe">Árabe</option>
+                    <option value="Culinária Francesa">Francesa</option>
                     <option value="Frutos do mar">Frutos do mar</option>
-                    <option value="Massas">Massas</option>
-                    <option value="Japonêsa">Japonêsa</option>
-                    <option value="Nacional">Nacional</option>
-                    <option value="Aves">Aves</option>
-                    <option value="Alemã">Alemã</option>
-                    <option value="Doces">Doces</option>
-                    <option value="Chilena">Chilena</option>
-                    <option value="Exóticas">Exóticas</option>
-                    <option value="Chinesa">Chinesa</option>
-                    <option value="Britânica">Britânica</option>
+                    <option value="Massas e Pratos Quentes">Massas</option>
+                    <option value="CulináriaJaponêsa">Japonêsa</option>
+                    <option value="Comida Típica Brasileira">Nacional</option>
+                    <option value="Frangos e Aves">Aves</option>
+                    <option value="Confeitaria">Confeitaria</option>
+                    <option value="Doces e Sobremesas">Doces</option>
+                    <option value="Artesanal">Artesanal</option>
+                    <option value="Gastrônomia Exótica">Exóticas</option>
+                    <option value="Culinária Chinesa">Chinesa</option>
+                    <option value="Comida saudável e Fitness">Comida saudável e Fitness</option>
                     <option value="Carnes">Carnes</option>
-                    <option value="Bebidas">Bebidas</option>
-                    <option value="Salgadas">Salgadas</option>
-                    <option value="Renomada">Renomada</option>
-                    <option value="Prato estrangeiro">Prato estrangeiro</option>
-                    <option value="Gourmet">Gourmet</option>              
+                    <option value="Bebidas Alcoólicas">Bebidas</option>
+                    <option value="Padaria e Assados">Padaria e Assados</option>
+                    <option value="Gastronômia Renomada">Renomada</option>
+                    <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
+                    <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
             </div>
             <div class="form-group col-lg-3">
-                <label for="tag4">Selecione a 4° tag</label>
-                <select class="form-control" id="tag4" name="tag4">
+                <label for="tag1">Selecione a 4° tag</label>
+                <select class="form-control" id="tag1" name="tag1">
                     <option selected disabled>Selecione uma tag</option>
-                    <option value="Mexicana">Mexicana</option>
+                    <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
-                    <option value="Árabe">Árabe</option>
-                    <option value="Francesa">Francesa</option>
+                    <option value="Culinária Árabe">Árabe</option>
+                    <option value="Culinária Francesa">Francesa</option>
                     <option value="Frutos do mar">Frutos do mar</option>
-                    <option value="Massas">Massas</option>
-                    <option value="Japonêsa">Japonêsa</option>
-                    <option value="Nacional">Nacional</option>
-                    <option value="Aves">Aves</option>
-                    <option value="Alemã">Alemã</option>
-                    <option value="Doces">Doces</option>
-                    <option value="Chilena">Chilena</option>
-                    <option value="Exóticas">Exóticas</option>
-                    <option value="Chinesa">Chinesa</option>
-                    <option value="Britânica">Britânica</option>
+                    <option value="Massas e Pratos Quentes">Massas</option>
+                    <option value="CulináriaJaponêsa">Japonêsa</option>
+                    <option value="Comida Típica Brasileira">Nacional</option>
+                    <option value="Frangos e Aves">Aves</option>
+                    <option value="Confeitaria">Confeitaria</option>
+                    <option value="Doces e Sobremesas">Doces</option>
+                    <option value="Artesanal">Artesanal</option>
+                    <option value="Gastrônomia Exótica">Exóticas</option>
+                    <option value="Culinária Chinesa">Chinesa</option>
+                    <option value="Comida saudável e Fitness">Comida saudável e Fitness</option>
                     <option value="Carnes">Carnes</option>
-                    <option value="Bebidas">Bebidas</option>
-                    <option value="Salgadas">Salgadas</option>
-                    <option value="Renomada">Renomada</option>
-                    <option value="Prato estrangeiro">Prato estrangeiro</option>
-                    <option value="Gourmet">Gourmet</option>              
+                    <option value="Bebidas Alcoólicas">Bebidas</option>
+                    <option value="Padaria e Assados">Padaria e Assados</option>
+                    <option value="Gastronômia Renomada">Renomada</option>
+                    <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
+                    <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
             </div>
         

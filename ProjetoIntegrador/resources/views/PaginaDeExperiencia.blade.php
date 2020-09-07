@@ -85,7 +85,7 @@
                         </select>
                     </div>
                     <div class="pricing">
-                        <a href="/Pagamento" class="btn-buyhood">Comprar</a>
+                        <a href="/PaginaDeCarrinho" class="btn-buyhood">Comprar</a>
                     </div>
                 </div>       
             </div>

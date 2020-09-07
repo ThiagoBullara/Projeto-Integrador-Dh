@@ -55,7 +55,7 @@ Route::get('/home', 'pageController@exibirHome')->name('home');
 
 Route::get('/Layout', 'pageController@layout');
 
-Route::get('/Carrinho', 'pageController@exibirCarrinho');
+Route::get('/PaginaDeCarrinho', 'pageController@exibirCarrinho');
 
 //CRUD de Usuário --------------------------------------------------------------------
 Auth::routes();

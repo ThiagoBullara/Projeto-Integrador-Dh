@@ -63,55 +63,55 @@
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="nomeExperiencia">Nome da experiência <span class="campo-obrigatorio">*</span></label>
-                <input class="form-control" type="text" name="nomeExperiencia" id="nomeExperiencia" placeholder="Exemplo: Jantar vegetariano" value="{{old('nomeExperiencia')}}">
+                <input class="form-control" type="text" name="nomeExperiencia" id="nomeExperiencia" placeholder="Exemplo: Jantar vegetariano" value="{{old('nomeExperiencia')}}" required>
             </div>
             <div class="col-lg-3">
                 <label for="precoExperiencia">Preço <span class="campo-obrigatorio">*</span></label>
-                <input class="form-control" type="number" name="precoExperiencia" id="precoExperiencia" placeholder="R$: 29.99" min="0" value="{{old('precoExperiencia')}}">
+                <input class="form-control" type="number" name="precoExperiencia" id="precoExperiencia" placeholder="R$: 29.99" min="0" value="{{old('precoExperiencia')}}" required>
             </div>
             <div class="col-lg-3">
                 <label for="quantidadePessoasExperiencia">Quantidade máxima de pessoas <span class="campo-obrigatorio">*</span></label>
-                <input class="form-control" type="number" name="quantidadePessoasExperiencia" id="quantidadePessoasExperiencia" placeholder="4" min="1" max="10" value="{{old('quantidadePessoasExperiencia')}}">
+                <input class="form-control" type="number" name="quantidadePessoasExperiencia" id="quantidadePessoasExperiencia" placeholder="4" min="1" max="10" value="{{old('quantidadePessoasExperiencia')}}" required>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="descricaoExperiencia">Descrição <span class="campo-obrigatorio">*</span></label><br>
-                <textarea rows="5" class="form-control" type="text" name="descricaoExperiencia" id="descricaoExperiencia" placeholder="Descubra uma nova forma de ser vegetariano">{{old('descricaoExperiencia')}}</textarea>
+                <textarea rows="5" class="form-control" type="text" name="descricaoExperiencia" id="descricaoExperiencia" placeholder="Descubra uma nova forma de ser vegetariano" required>{{old('descricaoExperiencia')}}</textarea>
             </div>
             <div class="col-lg-6">
                 <label for="sobreExperiencia">Sobre a Experiência <span class="campo-obrigatorio">*</span></label><br>
-                <textarea rows="5" class="form-control" type="text" name="sobreExperiencia" id="sobreExperiencia" placeholder="Essa experiência é perfeita para duas pessoas que gostam de animais, nela será servida apenas planta e terra já que é uma experiência vegetariana é isso que lhe aguarda">{{old('sobreExperiencia')}}</textarea>
+                <textarea rows="5" class="form-control" type="text" name="sobreExperiencia" id="sobreExperiencia" placeholder="Essa experiência é perfeita para duas pessoas que gostam de animais, nela será servida apenas planta e terra já que é uma experiência vegetariana é isso que lhe aguarda" required>{{old('sobreExperiencia')}}</textarea>
             </div>      
         </div>
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="sobreRestaurante">Sobre o restaurante <span class="campo-obrigatorio">*</span></label><br>
-                <textarea rows="5" type="text" name="sobreRestaurante" class="form-control" placeholder="O restaurante foi fundado em 1970 na época em que ser vegetariano era estranho então ele quase faliu algumas vezes">{{old('sobreRestaurante')}}</textarea>
+                <textarea rows="5" type="text" name="sobreRestaurante" class="form-control" placeholder="O restaurante foi fundado em 1970 na época em que ser vegetariano era estranho então ele quase faliu algumas vezes" required>{{old('sobreRestaurante')}}</textarea>
             </div>
             <div class="col-lg-6">
                 <label for="funcionamento">Dias da Semana disponíveis para essa experiências <span class="campo-obrigatorio">*</span></label><br>
-                <textarea rows="3" type="text" name="funcionamento" class="form-control" placeholder="Experência válida de segunda a quinta das 13:00 às 19:00">{{old('funcionamento')}}</textarea>
+                <textarea rows="3" type="text" name="funcionamento" class="form-control" placeholder="Experência válida de segunda a quinta das 13:00 às 19:00" required>{{old('funcionamento')}}</textarea>
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="fotoExperiencia1">Fotos da Experiência - Carrosel 1 <span class="campo-obrigatorio">*</span></label><br>
-                <input class="form-control-file" type="file" name="fotoExperiencia1" id="fotoExperiencia1">
+                <input class="form-control-file" type="file" name="fotoExperiencia1" id="fotoExperiencia1" required>
             </div>
             <div class="col-lg-6">
                 <label for="fotoExperiencia2">Fotos da Experiência - Carrosel 2 <span class="campo-obrigatorio">*</span></label><br>
-                <input class="form-control-file" type="file" name="fotoExperiencia2" id="fotoExperiencia2">      
+                <input class="form-control-file" type="file" name="fotoExperiencia2" id="fotoExperiencia2" required>      
             </div>
         </div>
         <div class="row mb-4 pb-4">
             <div class="col-lg-6">
                 <label for="fotoExperiencia3">Fotos da Experiência - Carrosel 3 <span class="campo-obrigatorio">*</span></label><br>
-                <input class="form-control-file" type="file" name="fotoExperiencia3" id="fotoExperiencia3">
+                <input class="form-control-file" type="file" name="fotoExperiencia3" id="fotoExperiencia3" required>
             </div>        
             <div class="col-lg-6">
                 <label for="logoRestaurante">Logo do Restaurante <span class="campo-obrigatorio">*</span></label><br>
-                <input class="form-control-file" type="file" name="logoRestaurante" id="logoRestaurante">
+                <input class="form-control-file" type="file" name="logoRestaurante" id="logoRestaurante" required>
             </div>
         </div>
         
@@ -122,7 +122,7 @@
         <div class="row">
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 1° tag</label>
-                <select class="form-control" id="tag1" name="tag1">
+                <select class="form-control" id="tag1" name="tag1" required>
                     <option selected disabled>Selecione uma tag</option>
                     <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
@@ -149,7 +149,7 @@
             </div>
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 2° tag</label>
-                <select class="form-control" id="tag1" name="tag1">
+                <select class="form-control" id="tag2" name="tag2" required>
                     <option selected disabled>Selecione uma tag</option>
                     <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
@@ -176,7 +176,7 @@
             </div>
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 3° tag</label>
-                <select class="form-control" id="tag1" name="tag1">
+                <select class="form-control" id="tag3" name="tag3" required>
                     <option selected disabled>Selecione uma tag</option>
                     <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>
@@ -203,7 +203,7 @@
             </div>
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 4° tag</label>
-                <select class="form-control" id="tag1" name="tag1">
+                <select class="form-control" id="tag4" name="tag4" required>
                     <option selected disabled>Selecione uma tag</option>
                     <option value="Culinária Mexicana">Mexicana</option>
                     <option value="Vegetariana">Vegetariana</option>

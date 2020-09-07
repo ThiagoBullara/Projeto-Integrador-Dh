@@ -22,12 +22,15 @@ header {
     text-decoration: none !important;
 }
 
+.botao.nav-item{
+    margin-right: 1vw !important;
+}
+
 .navbar {
-    text-align: center;
     font-size: 17px;
     list-style: none;
-    padding: 0 40px 20px 40px !important;
-    margin-bottom: 0;
+    padding: 0px !important;
+    margin-bottom: 10px;
 }
 
 .navbar li a { 

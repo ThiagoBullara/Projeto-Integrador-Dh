@@ -29,8 +29,8 @@
                         <li><a class="navbar-item" href="/home">Home</a></li>
                         <li><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></li>
                         <li><a class="navbar-item" href="/SobreNos">Sobre Nós</a></li>
-                        
                         @guest
+                        <ul class="navbar">
                             <li class="botao nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -40,7 +40,6 @@
                                 </li>
                             @endif
                         @else
-                            <li><a class="navbar-item" href="/CadastroDeExperiencia">Cadastro de experiência</a></li>
                             <li class="dropdown-login nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     <img style="width:40px; height:40px;border-radius:50%;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">    
@@ -51,6 +50,12 @@
                                     <a class="dropdown-item" href="/PaginaDePerfil/">
                                         {{ __('Perfil') }}
                                     </a>
+                                    
+                                    @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com")
+                                        <a class="dropdown-item" href="/CadastroDeExperiencia/">
+                                            {{ __('Cadastro de Experiências') }}
+                                        </a>
+                                    @endif
 
                                     <a class="dropdown-item" href="/MinhasCompras/">
                                         {{ __('Minhas Compras') }}
@@ -68,8 +73,9 @@
 
                                 </div>
                             </li>
-                        @endguest
-                    </ul>
+                        </ul>
+                    @endguest
+                    </ul>                        
                 </div>   
             </nav>
         </header>

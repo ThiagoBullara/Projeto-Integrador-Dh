@@ -16,10 +16,14 @@
                     <br>
                     <br>
                 </div>
+                @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
                 <div class="col-lg-6" style="text-align:right;">
                     <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
                     <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
                 </div>
+                @endif
+                <div class="col-lg-6"></div>
+
             </div>
             
             <div class="info-header row">

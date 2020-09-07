@@ -22,6 +22,10 @@ class experienciaModel extends Model
         'fotoExperiencia1',
         'fotoExperiencia2',
         'fotoExperiencia3',
-        'logoRestaurante'
+        'logoRestaurante',
+        'tag1',
+        'tag2',
+        'tag3',
+        'tag4'
     ];
 }

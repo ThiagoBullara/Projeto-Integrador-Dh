@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('css')
-    <link rel="stylesheet" href="{{asset('css/CadastroDeExperiencia.css')}}">
+    <link rel="stylesheet" href="{{asset('css/CadastroEdicaoDeExperiencia.css')}}">
 @endsection
 
 @section('titulo')
@@ -231,7 +231,7 @@
         
         </div>
 
-        <button type="submit" class="btn-buyhood">Cadastrar</button>
+        <button type="submit" class="btn-buyhood">Cadastrar!</button>
         
         <hr>
 

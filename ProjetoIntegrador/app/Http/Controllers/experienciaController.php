@@ -77,30 +77,41 @@ class experienciaController extends Controller
         return view("CadastroDeExperiencia", $vac);
     }
 
-    public function listarExperiencias(){
-        $experiencia = experienciaModel::paginate(15);
-
-        return view('ListaDeExperiencias',["experiencia" => $experiencia]);
-    }
-
-    public function detalhesExperiencia($id_experiencia){
-        $detalhesExperiencia = experienciaModel::find($id_experiencia);
-
-        return view('PaginaDeExperiencia', ["detalhesExperiencia" =>$detalhesExperiencia]);
-    }
-
-    public function deletarExperiencia($id_experiencia){
-        $deletarExperiencia = experienciaModel::find($id_experiencia);
-        $deletarExperiencia->delete();
-
-        return redirect()->action("experienciaController@listarExperiencias");
-    }
-
     public function editarExperiencia(Request $request, $id_experiencia){
         if($request->isMethod('GET')){
             $editarExperiencia = experienciaModel::find($id_experiencia);
-            return view('EdicaoDeExperiencia', ["editarExperiencia" => $editarExperiencia]);
+
+            $vac = compact('editarExperiencia');
+
+            return view('EdicaoDeExperiencia', $vac);
         }
+
+        $validatedRules = [
+            'nomeExperiencia' => 'required|max:255',
+            'precoExperiencia' => 'required|numeric',
+            'quantidadePessoasExperiencia' => 'required|numeric',
+            'descricaoExperiencia' => 'required|max:255',
+            'sobreExperiencia' => 'required|max:800',
+            'funcionamento' => 'required|max:255',
+            'sobreRestaurante' => 'required|max:800',
+            'fotoExperiencia1' => 'required|image',
+            'fotoExperiencia2' => 'required|image',
+            'fotoExperiencia3' => 'required|image',
+            'logoRestaurante' => 'required|image',
+            'tag1' => 'required',
+            'tag2' => 'required',
+            'tag3' => 'required',
+            'tag4' => 'required'
+        ];
+
+        $validatedMessage = [
+            'required' => 'O campo :attribute é obrigatório',
+            'max' => 'O campo :attribute possui muita informação',
+            'numeric' => 'O campo :attribute deve ser um número',
+            'image' => 'O formato do arquivo do campo :attribute não é válido'
+        ];
+
+        $this -> validate($request, $validatedRules, $validatedMessage);    
 
         $editarExperiencia = experienciaModel::find($id_experiencia);
 
@@ -129,7 +140,31 @@ class experienciaController extends Controller
         $salvarFoto = $request->file('logoRestaurante')->storeAs("public/img",$nomeDaFoto);
         $urlBase = 'storage/img/'.$nomeDaFoto;
 
+        $editarExperiencia->tag1 = $request->post('tag1');
+        $editarExperiencia->tag2 = $request->post('tag2');
+        $editarExperiencia->tag3 = $request->post('tag3');
+        $editarExperiencia->tag4 = $request->post('tag4');
+
         $resultado = $editarExperiencia->save();
+
+        return redirect()->action("experienciaController@listarExperiencias");
+    }
+
+    public function listarExperiencias(){
+        $experiencia = experienciaModel::paginate(15);
+
+        return view('ListaDeExperiencias',["experiencia" => $experiencia]);
+    }
+
+    public function detalhesExperiencia($id_experiencia){
+        $detalhesExperiencia = experienciaModel::find($id_experiencia);
+
+        return view('PaginaDeExperiencia', ["detalhesExperiencia" =>$detalhesExperiencia]);
+    }
+
+    public function deletarExperiencia($id_experiencia){
+        $deletarExperiencia = experienciaModel::find($id_experiencia);
+        $deletarExperiencia->delete();
 
         return redirect()->action("experienciaController@listarExperiencias");
     }

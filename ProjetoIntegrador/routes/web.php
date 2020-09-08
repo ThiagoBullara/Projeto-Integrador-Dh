@@ -58,7 +58,7 @@ Route::get('/Layout', 'pageController@layout');
 Route::get('/PaginaDeCarrinho', 'pageController@exibirCarrinho');
 
 //CRUD de Usuário --------------------------------------------------------------------
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/PaginaDePerfil/', 'usuarioController@exibirPerfil');
 

@@ -5,7 +5,7 @@
 @endsection
 
 @section('titulo')
-	BuyHood - Area de atendimento
+	BuyHood - Esqueci Minha Senha
 @endsection
 
 @section('conteudo')

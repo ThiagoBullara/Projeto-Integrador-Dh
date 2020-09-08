@@ -9,18 +9,18 @@
 @endsection
 
 @section('conteudo')
-    <div class="container">
+        <div class="container">
             <div class="row">
+                @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6" style="text-align:right;">
+                        <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
+                        <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
+                    </div>
+                @endif
                 <div class="col-lg-12">
                     <h1 class="product-title mb-4">{{ $detalhesExperiencia->nomeExperiencia }}</h1>
                 </div>
-                @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
-                <div class="col-lg-6" style="text-align:right;">
-                    <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
-                    <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
-                </div>
-                @endif
-
             </div>
             
             <div class="info-header row">

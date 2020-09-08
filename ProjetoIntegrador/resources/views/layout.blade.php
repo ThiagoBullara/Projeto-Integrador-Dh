@@ -24,11 +24,12 @@
                 </div>
             </div>
             <nav class="row">
-                <div class="nav-border col-lg-12">
-                    <ul class="navbar">
-                        <li><a class="navbar-item" href="/home">Home</a></li>
-                        <li><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></li>
-                        <li><a class="navbar-item" href="/SobreNos">Sobre Nós</a></li>
+                <div class="nav-border col-lg-12">                    
+                    <div class="navbar">
+                        <div class="col-lg-3"><a class="navbar-item" href="/home">Home</a></div>
+                        <div class="col-lg-3"><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></div>
+                        <div class="col-lg-3"><a class="navbar-item" href="/SobreNos">Sobre Nós</a></div>
+                        <div class="col-lg-3">
                         @guest
                         <ul class="navbar">
                             <li class="botao nav-item">
@@ -46,7 +47,7 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="user-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/PaginaDePerfil/">
                                         {{ __('Perfil') }}
                                     </a>
@@ -70,15 +71,14 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
-
                                 </div>
                             </li>
-                        </ul>
-                    @endguest
-                    </ul>                        
-                </div>   
-            </nav>
-        </header>
+                        @endguest
+                    </div>
+                </ul>
+            </div>                           
+        </nav>
+    </header>
 
         @yield('conteudo')
         

@@ -20,25 +20,33 @@ header {
 
 .dropdown-login a {
     text-decoration: none !important;
+    color:white;
 }
 
 .botao.nav-item{
     margin-right: 1vw !important;
 }
 
+.user-dropdown.dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
+  }
+
 .navbar {
     font-size: 17px;
     list-style: none;
     padding: 0px !important;
     margin-bottom: 10px;
+    text-align:center;
 }
 
-.navbar li a { 
+.navbar-item { 
     text-decoration: underline;
     color: white;
 }
 
-.navbar li a:hover {
+.navbar-item:hover {
     text-decoration: none;
     color: #73a942;
 }

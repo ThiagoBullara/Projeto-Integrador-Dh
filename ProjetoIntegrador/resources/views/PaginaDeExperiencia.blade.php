@@ -73,16 +73,9 @@
                         <label for="participants"><h4>Total de participantes</h4></label>
                         <select name="participantes" class="form-control participants" id="participants">
                             <option default selected disabled>Selecione</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                            @for($i=1; $i <= $detalhesExperiencia['quantidadePessoasExperiencia'] ; $i++)
+                                <option value="{{$i}}">{{$i}}</option>
+                            @endfor
                         </select>
                     </div>
                     <div class="pricing">

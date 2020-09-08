@@ -39,13 +39,6 @@
             </div>
             <div class="col-lg-3"></div>
         </div>
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors -> all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
     @endif
 
     <div class="row">
@@ -64,54 +57,87 @@
             <div class="col-lg-6">
                 <label for="nomeExperiencia">Nome da experiência <span class="campo-obrigatorio">*</span></label>
                 <input class="form-control" type="text" name="nomeExperiencia" id="nomeExperiencia" placeholder="Exemplo: Jantar vegetariano" value="{{old('nomeExperiencia')}}" required>
+                @error('nomeExperiencia')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="col-lg-3">
                 <label for="precoExperiencia">Preço <span class="campo-obrigatorio">*</span></label>
                 <input class="form-control" type="number" name="precoExperiencia" id="precoExperiencia" placeholder="R$: 29.99" min="0" value="{{old('precoExperiencia')}}" required>
+                @error('precoExperiencia')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="col-lg-3">
                 <label for="quantidadePessoasExperiencia">Quantidade máxima de pessoas <span class="campo-obrigatorio">*</span></label>
                 <input class="form-control" type="number" name="quantidadePessoasExperiencia" id="quantidadePessoasExperiencia" placeholder="4" min="1" max="10" value="{{old('quantidadePessoasExperiencia')}}" required>
+                @error('quantidadePessoasExperiencia')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="descricaoExperiencia">Descrição <span class="campo-obrigatorio">*</span></label><br>
                 <textarea rows="5" class="form-control" type="text" name="descricaoExperiencia" id="descricaoExperiencia" placeholder="Descubra uma nova forma de ser vegetariano" required>{{old('descricaoExperiencia')}}</textarea>
+                @error('descricaoExperiencia')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="col-lg-6">
                 <label for="sobreExperiencia">Sobre a Experiência <span class="campo-obrigatorio">*</span></label><br>
                 <textarea rows="5" class="form-control" type="text" name="sobreExperiencia" id="sobreExperiencia" placeholder="Essa experiência é perfeita para duas pessoas que gostam de animais, nela será servida apenas planta e terra já que é uma experiência vegetariana é isso que lhe aguarda" required>{{old('sobreExperiencia')}}</textarea>
+                @error('sobreExperiencia')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>      
         </div>
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="sobreRestaurante">Sobre o restaurante <span class="campo-obrigatorio">*</span></label><br>
                 <textarea rows="5" type="text" name="sobreRestaurante" class="form-control" placeholder="O restaurante foi fundado em 1970 na época em que ser vegetariano era estranho então ele quase faliu algumas vezes" required>{{old('sobreRestaurante')}}</textarea>
+                @error('sobreRestaurante')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="col-lg-6">
                 <label for="funcionamento">Dias da Semana disponíveis para essa experiências <span class="campo-obrigatorio">*</span></label><br>
                 <textarea rows="3" type="text" name="funcionamento" class="form-control" placeholder="Experência válida de segunda a quinta das 13:00 às 19:00" required>{{old('funcionamento')}}</textarea>
+                @error('funcionamento')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
         </div>
         <div class="row mb-4">
             <div class="col-lg-6">
                 <label for="fotoExperiencia1">Fotos da Experiência - Carrosel 1 <span class="campo-obrigatorio">*</span></label><br>
                 <input class="form-control-file" type="file" name="fotoExperiencia1" id="fotoExperiencia1" required>
+                @error('fotoExperiencia1')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="col-lg-6">
                 <label for="fotoExperiencia2">Fotos da Experiência - Carrosel 2 <span class="campo-obrigatorio">*</span></label><br>
                 <input class="form-control-file" type="file" name="fotoExperiencia2" id="fotoExperiencia2" required>      
+                @error('fotoExperiencia2')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
         </div>
         <div class="row mb-4 pb-4">
             <div class="col-lg-6">
                 <label for="fotoExperiencia3">Fotos da Experiência - Carrosel 3 <span class="campo-obrigatorio">*</span></label><br>
                 <input class="form-control-file" type="file" name="fotoExperiencia3" id="fotoExperiencia3" required>
+                @error('fotoExperiencia3')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>        
             <div class="col-lg-6">
                 <label for="logoRestaurante">Logo do Restaurante <span class="campo-obrigatorio">*</span></label><br>
                 <input class="form-control-file" type="file" name="logoRestaurante" id="logoRestaurante" required>
+                @error('logoRestaurante')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
         </div>
         
@@ -146,6 +172,9 @@
                     <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
                     <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
+                @error('tag1')
+                    <p style="color: red;">{{$message}}</p>
+                 @enderror
             </div>
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 2° tag</label>
@@ -173,6 +202,9 @@
                     <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
                     <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
+                @error('tag2')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 3° tag</label>
@@ -200,6 +232,9 @@
                     <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
                     <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
+                @error('tag3')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
             <div class="form-group col-lg-3">
                 <label for="tag1">Selecione a 4° tag</label>
@@ -227,8 +262,10 @@
                     <option value="Pratos Estrangeiros em Geral">Prato estrangeiro</option>
                     <option value="Gastronômia Gourmet">Gourmet</option>              
                 </select>
+                @error('tag4')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
             </div>
-        
         </div>
 
         <button type="submit" class="btn-buyhood">Cadastrar!</button>

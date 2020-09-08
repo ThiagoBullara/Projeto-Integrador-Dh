@@ -19,9 +19,31 @@
             <div class="row">
                 <div class="col">
                     <h2>Nossas Experiências</h2>
-                    <div class="buscar mt-4">
-                        <input type="search" class="inp" placeholder="Procure por uma experiência!">
-                        <input type="submit" value="Buscar" class="btn-inp">
+                    <div class="buscar mt-4 pt-4">
+                        <form action="/ListaDeExperienciasBuscar" method="GET">
+                            <input type="search" class="inp mb-4" name="tipo" placeholder="Procure por uma experiência!">
+                            <button type="submit" class="btn-inp">Buscar</button>
+                            <div class="row mt-4">
+                            <div class="col-lg-2">
+                                <button type="submit" class="filtro-buyhood" value="Gastrônomia Exótica" name="tipo">Exótico</button>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="filtro-buyhood" value="Artesanal" name="tipo">Artesanal</button>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="filtro-buyhood" value="Gourmet" name="tipo">Gourmet</button>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="filtro-buyhood" value="Renomada" name="tipo">Renomada</button>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="filtro-buyhood" value="Nacional" name="tipo">Nacional</button>
+                            </div>
+                            <div class="col-lg-2">
+                                <button type="submit" class="filtro-buyhood" value="Estrangeiro" name="tipo">Estrangeira</button>
+                            </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -52,7 +74,6 @@
             @endforelse
             </div>
             <div class="button-search">
-                {{ $experiencia->links() }}
             </div>
         </div>
     </main>

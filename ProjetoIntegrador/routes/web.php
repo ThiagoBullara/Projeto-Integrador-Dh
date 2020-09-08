@@ -32,6 +32,7 @@ Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia
 //CRUD de Experiências --------------------------------------------------------------------
 
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
+Route::get('/ListaDeExperienciasBuscar', 'experienciaController@buscar');
 
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
 

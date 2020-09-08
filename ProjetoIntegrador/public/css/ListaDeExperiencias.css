@@ -55,12 +55,22 @@ h1, h2, h3, h4, h5, h6 {
 main{
     margin-bottom: 5%;
 }
-/* .banner-image{
-    width: 100%;
-    height: auto;  
-} */
 
-/* Restaurantes */
+.filtro-buyhood {
+    background: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    width: 100px;
+}
+
+.filtro-buyhood:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Experiências */
 
 .produtos {
     margin: 50px auto;

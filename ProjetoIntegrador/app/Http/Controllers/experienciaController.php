@@ -150,10 +150,33 @@ class experienciaController extends Controller
         return redirect()->action("experienciaController@listarExperiencias");
     }
 
-    public function listarExperiencias(){
+    public function listarExperiencias(Request $request){
+        
         $experiencia = experienciaModel::paginate(15);
 
-        return view('ListaDeExperiencias',["experiencia" => $experiencia]);
+        $vac = compact('experiencia');
+
+        return view('ListaDeExperiencias', $vac);
+            
+    }
+
+    public function buscar(Request $request) {
+
+        $experiencia = experienciaModel::where('nomeExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('precoExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('descricaoExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('sobreExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('funcionamento', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('sobreRestaurante', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('tag1', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('tag2', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('tag3', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->orWhere('tag4', 'LIKE', '%'.$request->get('tipo').'%')
+                                        ->get();
+
+        $vac = compact('experiencia');
+
+        return view('ListaDeExperiencias', $vac);
     }
 
     public function detalhesExperiencia($id_experiencia){

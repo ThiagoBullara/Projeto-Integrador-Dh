@@ -21,8 +21,10 @@
                 </p>
             </li>
             <li class="buscar">
-                <input type="text" class="inp" placeholder="Procure por uma experiência!">
-                <input type="submit" value="Buscar" class="btn-inp">
+                <form action="/ListaDeExperienciasBuscar" method="GET">
+                    <input type="search" class="inp" name="tipo" placeholder="Procure por uma experiência!">
+                    <button type="submit" class="btn-inp">Buscar</button>
+                </form>
             </li>
         </ul>
     </section>
@@ -76,8 +78,8 @@
         <div class="row">
             <div class="col-lg-6" style="text-align: -webkit-center;">
                 <div class="polaroid">
-                    <a href="/Experiencia">
-                        <img src="https://i.ibb.co/9HswNbN/experiencia.jpg" alt="Melhor Experiência" style="width:100%">
+                    <a href="/Experiencia/4">
+                        <img src="storage/img/fotoExperiencia4-1.jpg" alt="Melhor Experiência" style="width:100%">
                         <div class="container">
                             <p>Conheça nossa experiência mais comprada!</p>
                         </div>
@@ -86,8 +88,8 @@
             </div>            
             <div class="col-lg-6" style="text-align: -webkit-center;">
                 <div class="polaroid">
-                    <a href="/Experiencia">
-                        <img src="https://i.ibb.co/9HswNbN/experiencia.jpg" alt="Melhor Experiência" style="width:100%">
+                    <a href="/Experiencia/2">
+                        <img src="storage/img/fotoExperiencia2-1.jpg" alt="Melhor Experiência" style="width:100%">
                         <div class="container">
                             <p>Conheça nossa experiência mais bem avaliada!</p>
                         </div>

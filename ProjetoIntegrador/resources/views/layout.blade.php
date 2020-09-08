@@ -58,8 +58,12 @@
                                         </a>
                                     @endif
 
-                                    <a class="dropdown-item" href="/MinhasCompras/">
+                                    <a class="dropdown-item" href="#">
                                         {{ __('Minhas Compras') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="/PaginaDeCarrinho/">
+                                        {{ __('Carrinho') }}
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"

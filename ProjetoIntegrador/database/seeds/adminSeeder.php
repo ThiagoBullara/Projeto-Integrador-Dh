@@ -19,7 +19,6 @@ class adminSeeder extends Seeder
         $admin -> email = 'buyhoodlocalfoods@gmail.com';
         $admin -> password = Hash::make('picanha22');
         $admin -> fotoPerfil = 'BuyHood.png';
-        $admin -> admin = true;
 
         $admin->save();
 

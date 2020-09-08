@@ -11,10 +11,8 @@
 @section('conteudo')
     <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="product-title">{{ $detalhesExperiencia->nomeExperiencia }}</h1>
-                    <br>
-                    <br>
+                <div class="col-lg-12">
+                    <h1 class="product-title mb-4">{{ $detalhesExperiencia->nomeExperiencia }}</h1>
                 </div>
                 @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
                 <div class="col-lg-6" style="text-align:right;">
@@ -22,14 +20,13 @@
                     <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
                 </div>
                 @endif
-                <div class="col-lg-6"></div>
 
             </div>
             
             <div class="info-header row">
                 <div class="col-lg-10">
                     <div class="info">
-                        <p>{{ $detalhesExperiencia->descricaoExperiencia }}</p>
+                        <h3>{{ $detalhesExperiencia->descricaoExperiencia }}</h3>
                     </div>
                 </div>
             </div>

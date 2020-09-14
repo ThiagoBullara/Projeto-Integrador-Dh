@@ -11,7 +11,7 @@ class carrinhoController extends Controller
     public function adicionarCarrinho($produtos){
         
         $produto = experienciaModel::find($produtos);
-
+        
         \Cart::session(auth()->id())->add(array(
             'id' => uniqid(),
             'name' => $produto->nomeExperiencia,

@@ -9,25 +9,13 @@
 @endsection
 
 @section('conteudo')
-    <div class=" container-fluid my-5 ">
-        <div class="row justify-content-center ">
+    <div class=" container-fluid my-5">
+        <div class="row justify-content-center">
             <div class="col-xl-10">
-                <div class="card shadow-lg ">
-                    <div class="row p-2 mt-3 justify-content-between mx-sm-2">
-                        <div class="col">
-                            <p class="text-muted space mb-0 shop"> No.de Compra 78618K</p>
-                            <p class="text-muted space mb-0 shop"></p>
-                        </div>
-                        <div class="col">
-                            <div class="row justify-content-start ">
-                                <!-- LOGO DA BUYHOOD <div class="col"> <img class="irc_mi img-fluid cursor-pointer " src="" width="70" height="70"> </div> -->
-                            </div>
-                        </div>    
-                    </div>
-                    
+                <div class="card shadow-lg">
                     <div class="row mx-auto justify-content-center text-center">
                         <div class="col-12 mt-3 ">
-                            <nav aria-label="breadcrumb" class="second ">
+                            <nav aria-label="breadcrumb" class="second mt-5">
                                 <ol class="breadcrumb indigo lighten-6 first ">
                                     <li class="breadcrumb-item font-weight-bold "><a class="black-text text-uppercase " href="/ListaDeExperiencias"><span class="mr-md-3 mr-1">VOLTAR AS COMPRAS</span></a><i class="fa fa-angle-double-right " aria-hidden="true"></i></li>
                                     <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="/Carrinho"><span class="mr-md-3 mr-1">CARRINHO</span></a><i class="fa fa-angle-double-right text-uppercase " aria-hidden="true"></i></li>
@@ -62,7 +50,7 @@
                                     </div>
                                     <div class="row mb-md-5">
                                         <form action="/CompraAutorizada/">
-                                            <div class="col"> <button type="submit" name="" id="" class="btn btn-lg btn-block ">CONFIRMAR COMPRA</button> </div>
+                                            <div class="col"> <button type="submit" name="" id="" class="btn-buyhood">CONFIRMAR COMPRA</button> </div>
                                         </form>
                                     </div>
                                 </div>

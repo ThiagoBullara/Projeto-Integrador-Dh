@@ -13,7 +13,7 @@
             <div class="row">
                 @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
                     <div class="col-lg-6"></div>
-                    <div class="col-lg-6" style="text-align:right;">
+                    <div class="col-lg-6 mb-5 mt-5" style="text-align:right;">
                         <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
                         <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
                     </div>
@@ -72,8 +72,7 @@
                     <form action="{{ route('carrinho.adicionar',$detalhesExperiencia -> id_experiencia) }}">
                         <div class="form-group">
                             <label for="participants"><h4>Total de participantes</h4></label>
-                            <select name="participantes" class="form-control" id="participantes">
-                                <option default selected disabled>Selecione</option>
+                            <select name="participantes" class="form-control" id="participantes" required>
                                 @for($i=1; $i <= $detalhesExperiencia['quantidadePessoasExperiencia'] ; $i++)
                                     <option value="{{$i}}">{{$i}}</option>
                                 @endfor

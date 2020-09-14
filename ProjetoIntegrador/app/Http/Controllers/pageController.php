@@ -57,4 +57,8 @@ class pageController extends Controller
     public function exibirCarrinho(){
         return view('Carrinho');
     }
+
+    public function exibirCompraAutorizada(){
+        return view('CompraAutorizada');
+    }
 }

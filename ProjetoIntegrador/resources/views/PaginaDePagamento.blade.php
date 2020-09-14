@@ -61,8 +61,8 @@
                                         </div>
                                     </div>
                                     <div class="row mb-md-5">
-                                        <form action="/CompraAutorizada">
-                                            <div class="col"> <button type="button" name="" id="" class="btn btn-lg btn-block ">CONFIRMAR COMPRA</button> </div>
+                                        <form action="/CompraAutorizada/">
+                                            <div class="col"> <button type="submit" name="" id="" class="btn btn-lg btn-block ">CONFIRMAR COMPRA</button> </div>
                                         </form>
                                     </div>
                                 </div>

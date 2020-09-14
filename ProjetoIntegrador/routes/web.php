@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\pageController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -66,6 +67,8 @@ Route::get('/Carrinho/Deletar/{itemId}', 'carrinhoController@deletarCarrinho')->
 Route::get('/Carrinho/Editar/{rowId}', 'carrinhoController@editarCarrinho')->name('carrinho.editar')->middleware('auth');
 
 Route::get('/Pagamento', 'carrinhoController@exibirCarrinhoCheckout')->middleware('auth');
+
+Route::get('/CompraAutorizada', 'pageController@exibirCompraAutorizada');
 
 //CRUD de Carrinho --------------------------------------------------------------------
 

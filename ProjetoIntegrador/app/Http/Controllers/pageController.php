@@ -39,9 +39,6 @@ class pageController extends Controller
     public function exibirPaginaDeExperiencia(){
         return view('PaginaDeExperiencia');
     }
-    public function exibirPaginaDePagamento(){
-        return view('PaginaDePagamento');
-    }
     public function exibirPaginaDeRestaurante(){
         return view('PaginaDeRestaurante');
     }

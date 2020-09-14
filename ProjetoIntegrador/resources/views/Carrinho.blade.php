@@ -70,7 +70,7 @@
                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
                             <h5 class="font-weight-bold">R${{\Cart::session(auth()->id())->getTotal()}}</h5>
                         </li>
-                        </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Checkout</a>
+                        </ul><a href="/Pagamento/" class="btn btn-dark rounded-pill py-2 btn-block">Checkout</a>
                     </div>
                     </div>
                 </div>

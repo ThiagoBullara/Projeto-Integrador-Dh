@@ -45,8 +45,6 @@ Route::get('/Contato', 'pageController@exibirContato');
 
 Route::get('/FAQ', 'pageController@exibirFAQ');
 
-Route::get('/Pagamento', 'pageController@exibirPaginaDePagamento');
-
 Route::get('/SobreNos', 'pageController@exibirPaginaSobreNos');
 
 Route::get('/PoliticaDePrivacidade', 'pageController@exibirPoliticaDePrivacidade');
@@ -66,6 +64,8 @@ Route::get('/Carrinho', 'carrinhoController@exibirCarrinho')->name('carrinho.exi
 Route::get('/Carrinho/Deletar/{itemId}', 'carrinhoController@deletarCarrinho')->name('carrinho.removerProduto')->middleware('auth');
 
 Route::get('/Carrinho/Editar/{rowId}', 'carrinhoController@editarCarrinho')->name('carrinho.editar')->middleware('auth');
+
+Route::get('/Pagamento', 'carrinhoController@exibirCarrinhoCheckout')->middleware('auth');
 
 //CRUD de Carrinho --------------------------------------------------------------------
 

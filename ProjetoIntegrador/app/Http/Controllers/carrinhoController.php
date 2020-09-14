@@ -52,4 +52,12 @@ class carrinhoController extends Controller
         return back();
 
     }
+
+    public function exibirCarrinhoCheckout(){
+
+        $itensCarrinho = \Cart::session(auth()->id())->getContent();
+
+        return view('PaginaDePagamento', compact('itensCarrinho'));
+
+    }
 }

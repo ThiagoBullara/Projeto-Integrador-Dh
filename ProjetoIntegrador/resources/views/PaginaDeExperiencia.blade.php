@@ -69,18 +69,20 @@
                         <li class="description-itens">{{ $detalhesExperiencia -> tag4 }}</li>
                         <li class="description-itens mt-4 mb-5" style="font-weight:bolder;">Preço por pessoa: R${{ $detalhesExperiencia->precoExperiencia }}</li>
                     </ul>
-                    <div class="form-group">
-                        <label for="participants"><h4>Total de participantes</h4></label>
-                        <select name="participantes" class="form-control participants" id="participants">
-                            <option default selected disabled>Selecione</option>
-                            @for($i=1; $i <= $detalhesExperiencia['quantidadePessoasExperiencia'] ; $i++)
-                                <option value="{{$i}}">{{$i}}</option>
-                            @endfor
-                        </select>
-                    </div>
-                    <div class="pricing">
-                        <a href="/PaginaDeCarrinho" class="btn-buyhood">Comprar</a>
-                    </div>
+                    <form action="{{ route('carrinho.adicionar',$detalhesExperiencia -> id_experiencia) }}">
+                        <div class="form-group">
+                            <label for="participants"><h4>Total de participantes</h4></label>
+                            <select name="participantes" class="form-control" id="participantes">
+                                <option default selected disabled>Selecione</option>
+                                @for($i=1; $i <= $detalhesExperiencia['quantidadePessoasExperiencia'] ; $i++)
+                                    <option value="{{$i}}">{{$i}}</option>
+                                @endfor
+                            </select>
+                        </div>
+                        <div class="pricing">
+                            <button class="btn-buyhood" type="submit">Comprar</button>
+                        </div>
+                    </form>
                 </div>       
             </div>
         </div>

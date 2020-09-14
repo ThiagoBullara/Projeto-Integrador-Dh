@@ -10,6 +10,7 @@
 @endsection
 
 @section('conteudo')
+
     <div class="px-4 px-lg-0 cima">
         <div class="pb-5">
             <div class="container">
@@ -26,7 +27,7 @@
                                 <div class="py-2 text-uppercase">Preço</div>
                             </th>
                             <th scope="col" class="border-0 bg-light">
-                                <div class="py-2 text-uppercase">Quantidade</div>
+                                <div class="py-2 text-uppercase">Quantidade de Pessoas</div>
                             </th>
                             <th scope="col" class="border-0 bg-light">
                                 <div class="py-2 text-uppercase">Remover</div>
@@ -34,32 +35,26 @@
                             </tr>
                         </thead>
                         <tbody>
+                        @foreach($itensCarrinho as $carrinho)
                             <tr>
                             <th scope="row" class="border-0">
                                 <div class="p-2">
                                     <img src="" alt="" width="70" class="img-fluid rounded shadow-sm">
                                 <div class="ml-3 d-inline-block align-middle">
-                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Thiago faz brownie no Fasano</a></h5>
+                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">{{$carrinho -> name}}</a></h5>
                                 </div>
                                 </div>
+
                             </th>
-                                <td class="border-0 align-middle"><strong>R$200</strong></td>
-                                <td class="border-0 align-middle"><strong>3</strong></td>
-                                <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                                <td class="border-0 align-middle"><strong>{{\Cart::session(auth()->id())->get($carrinho->id)->getPriceSum()}} </strong></td>
+                                <form action=" {{route('carrinho.editar', $carrinho->id)}} ">
+                                    <td class="border-0 align-middle"><input type="number" name="quantidadeCarrinho" value="{{$carrinho -> quantity}}">
+                                    <input type="submit" value="Alterar" class="btn-buyhood">
+                                    </td>                                    
+                                </form>
+                                <td class="border-0 align-middle"><a href=" {{route('carrinho.removerProduto', $carrinho -> id) }}" class="text-dark"><i class="fa fa-trash"></i></a></td>
                             </tr>
-                            <tr>
-                            <th scope="row" class="border-0">
-                                <div class="p-2">
-                                    <img src="" alt="" width="70" class="img-fluid rounded shadow-sm">
-                                <div class="ml-3 d-inline-block align-middle">
-                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Thiago faz brownie no Fasano</a></h5>
-                                </div>
-                                </div>
-                            </th>
-                                <td class="border-0 align-middle"><strong>R$200</strong></td>
-                                <td class="border-0 align-middle"><strong>3</strong></td>
-                                <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
-                            </tr>
+                        @endforeach
                         </tbody>
                         </table>
                     </div>
@@ -73,7 +68,7 @@
                         <div class="p-4">
                         <ul class="list-unstyled mb-4">
                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                            <h5 class="font-weight-bold">R$400.00</h5>
+                            <h5 class="font-weight-bold">R${{\Cart::session(auth()->id())->getTotal()}}</h5>
                         </li>
                         </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Checkout</a>
                     </div>

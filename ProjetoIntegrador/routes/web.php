@@ -32,6 +32,7 @@ Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia
 //CRUD de Experiências --------------------------------------------------------------------
 
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
+
 Route::get('/ListaDeExperienciasBuscar', 'experienciaController@buscar');
 
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
@@ -56,7 +57,17 @@ Route::get('/home', 'pageController@exibirHome')->name('home');
 
 Route::get('/Layout', 'pageController@layout');
 
-Route::get('/PaginaDeCarrinho', 'pageController@exibirCarrinho');
+//CRUD de Carrinho --------------------------------------------------------------------
+
+Route::get('/AdicionarAoCarrinho/{id_experiencia}', 'carrinhoController@adicionarCarrinho')->name('carrinho.adicionar')->middleware('auth');
+
+Route::get('/Carrinho', 'carrinhoController@exibirCarrinho')->name('carrinho.exibir')->middleware('auth');
+
+Route::get('/Carrinho/Deletar/{itemId}', 'carrinhoController@deletarCarrinho')->name('carrinho.removerProduto')->middleware('auth');
+
+Route::get('/Carrinho/Editar/{rowId}', 'carrinhoController@editarCarrinho')->name('carrinho.editar')->middleware('auth');
+
+//CRUD de Carrinho --------------------------------------------------------------------
 
 //CRUD de Usuário --------------------------------------------------------------------
 Auth::routes(['verify' => true]);
@@ -67,5 +78,5 @@ Route::get('/EditarPerfil/', 'usuarioController@editarPerfil');
 Route::post('/EditarPerfil/', 'usuarioController@editarPerfil');
 
 Route::get('/DeletarPerfil/', 'usuarioController@deletarPerfil');
-//CRUD de Experiências --------------------------------------------------------------------
+//CRUD de Usuário --------------------------------------------------------------------
 

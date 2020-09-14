@@ -62,7 +62,7 @@
                                         {{ __('Minhas Compras') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="/PaginaDeCarrinho/">
+                                    <a class="dropdown-item" href="{{ route('carrinho.exibir') }}">
                                         {{ __('Carrinho') }}
                                     </a>
 

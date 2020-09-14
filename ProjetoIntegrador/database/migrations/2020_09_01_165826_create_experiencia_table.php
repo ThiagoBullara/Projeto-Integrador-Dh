@@ -19,6 +19,7 @@ class CreateExperienciaTable extends Migration
             $table->longText('sobreExperiencia');
             $table->longText('sobreRestaurante');
             $table->string('descricaoExperiencia');
+            $table->string('email_restaurante');
             $table->string('fotoExperiencia1');
             $table->string('fotoExperiencia2');
             $table->string('fotoExperiencia3');

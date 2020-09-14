@@ -47,6 +47,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Bebidas Alcoólicas';
         $experiencia ->tag3 = 'Gastronômia Gourmet';
         $experiencia ->tag4 = 'Curso com certificação';
+
+        $experiencia ->email_restaurante = 'reidoswhisky@email.com';
         
         $experiencia ->save();
 
@@ -83,6 +85,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Nacional';
         $experiencia ->tag3 = 'Gastronômia Renomada';
         $experiencia ->tag4 = 'Gastronômia Gourmet';
+
+        $experiencia ->email_restaurante = 'cocobambu@email.com';
         
         $experiencia ->save();
 
@@ -113,6 +117,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Gastrônomia Exótica';
         $experiencia ->tag3 = 'Pratos Estrangeiros em Geral';
         $experiencia ->tag4 = 'Gastronômia Gourmet';
+
+        $experiencia ->email_restaurante = 'manish@email.com';
         
         $experiencia ->save();
 
@@ -137,6 +143,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Gastronômia Gourmet';
         $experiencia ->tag3 = 'Gastronômia Renomada';
         $experiencia ->tag4 = 'Pratos Estrangeiros em Geral';
+
+        $experiencia ->email_restaurante = 'osal@email.com';
         
         $experiencia ->save();
 
@@ -161,6 +169,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Culinária Chinesa';
         $experiencia ->tag3 = 'Gastrônomia Exótica';
         $experiencia ->tag4 = 'Pratos Estrangeiros em Geral';
+
+        $experiencia ->email_restaurante = 'shifu@email.com';
         
         $experiencia ->save();
 
@@ -187,6 +197,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Padaria e Assados';
         $experiencia ->tag3 = 'Confeitaria';
         $experiencia ->tag4 = 'Doces e Sobremesas';
+
+        $experiencia ->email_restaurante = 'paopadarias@email.com';
         
         $experiencia ->save();
 

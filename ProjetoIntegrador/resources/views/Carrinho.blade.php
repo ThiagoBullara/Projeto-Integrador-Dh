@@ -59,6 +59,7 @@
                                             <td class="border-0 align-middle"><button type="submit" class="btn-buyhood">Checkout</button></td>
                                             </form>
                                         </tr>
+                                        @break
                                     @endforeach
                                 </tbody>
                             </table>

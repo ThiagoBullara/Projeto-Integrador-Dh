@@ -29,7 +29,7 @@ class carrinhoController extends Controller
 
     public function exibirCarrinho(){
 
-        $itensCarrinho = \Cart::session(auth()->id())->getContent();
+        $itensCarrinho = \Cart::session(auth()->id())->getContent()->reverse();
 
         return view('Carrinho', compact('itensCarrinho'));
 

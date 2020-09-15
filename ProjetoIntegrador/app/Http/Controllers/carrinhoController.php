@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\compraModel;
 use App\experienciaModel;
+use App\Order;
+use Illuminate\Support\Facades\Auth;
 
 class carrinhoController extends Controller
 {
@@ -13,7 +15,7 @@ class carrinhoController extends Controller
         $produto = experienciaModel::find($produtos);
         
         \Cart::session(auth()->id())->add(array(
-            'id' => uniqid(),
+            'id' => random_int(1,9999999),
             'name' => $produto->nomeExperiencia,
             'price' => $produto->precoExperiencia,
             'quantity' => request('participantes'),
@@ -60,4 +62,38 @@ class carrinhoController extends Controller
         return view('PaginaDePagamento', compact('itensCarrinho'));
 
     }
+
+    public function checkout(){
+
+        $order = new compraModel();
+
+        $order->name = request('name');
+        $order->id_compra = random_int(1,9999999);
+        $order->id_usuario = auth()->id();
+        $order->quantidade_pessoas = request('quantidadeCarrinho');
+
+        $order -> save();
+
+        \Cart::session(auth()->id())->clear();
+
+        return view('CompraAutorizada');
+    }
+
+    public function ativarCompra(Request $request){
+        $ativacao = compraModel::find($request->id_compra);
+        $ativacao->usado = 1;
+        $ativacao->update();
+
+        return view('AtivarExperiencia');
+    }
+
+    public function compraAtiva(){
+
+        $minhasCompras = compraModel::paginate(15)->reverse();
+        
+        $vac2 = compact('minhasCompras');
+
+        return view('ExperienciaAtivada', $vac2);
+    }
+
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\compraModel;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -49,10 +50,13 @@ class usuarioController extends Controller{
 
     public function exibirPerfil(){
         $detalhesPerfil = Auth::user();
+        $minhasCompras = compraModel::where('id_usuario', 'LIKE', Auth::user()->id)->get()->reverse();
+        
+        $vac2 = compact('minhasCompras');
 
         $vac = compact('detalhesPerfil');
 
-        return view('PaginaDePerfil', $vac);
+        return view('PaginaDePerfil', $vac, $vac2);
     }
 
     public function deletarPerfil(){

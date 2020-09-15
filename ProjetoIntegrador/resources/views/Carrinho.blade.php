@@ -26,13 +26,16 @@
                                     <div class="p-2 px-3 text-uppercase">Experiência</div>
                                 </th>
                                 <th scope="col" class="border-0 bg-light">
-                                    <div class="py-2 text-uppercase">Preço</div>
+                                    <div class="py-2 text-uppercase">Preço Total</div>
                                 </th>
                                 <th scope="col" class="border-0 bg-light">
                                     <div class="py-2 text-uppercase">Quantidade de Pessoas</div>
                                 </th>
                                 <th scope="col" class="border-0 bg-light">
                                     <div class="py-2 text-uppercase">Remover</div>
+                                </th>
+                                <th scope="col" class="border-0 bg-light">
+                                    <div class="py-2 text-uppercase">Comprar</div>
                                 </th>
                                 </tr>
                             </thead>
@@ -46,32 +49,20 @@
                                                     </div>
                                                 </div>
                                             </th>
-                                            <td class="border-0 align-middle"><strong>{{\Cart::session(auth()->id())->get($carrinho->id)->getPriceSum()}} </strong></td>
-                                            <form action=" {{route('carrinho.editar', $carrinho->id)}} ">
+                                            <td class="border-0 align-middle" style="text-align:center;"><strong>R${{\Cart::session(auth()->id())->get($carrinho->id)->getPriceSum()}} </strong></td>
+                                                <form action="/Checkout">
+                                                <input type="hidden" value="{{$carrinho -> name}}" name="name" >
                                                 <td class="border-0 align-middle">
                                                     <input type="number" class="inp-buyhood" name="quantidadeCarrinho" min="1" max="10" value="{{$carrinho -> quantity}}">
-                                                    <button type="submit" class="btn-buyhood">Alterar</button>
-                                                </td>  
-                                            </form>
+                                                </td>                                           
                                             <td class="border-0 align-middle"><a href=" {{route('carrinho.removerProduto', $carrinho -> id) }}" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                                            <td class="border-0 align-middle"><button type="submit" class="btn-buyhood">Checkout</button></td>
+                                            </form>
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row py-5 p-4 bg-white rounded shadow-sm">
-                    <div class="col-lg-12">
-                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Total</div>
-                        <div class="p-4">
-                        <ul class="list-unstyled mb-4">
-                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-                            <h5 class="font-weight-bold">R${{\Cart::session(auth()->id())->getTotal()}}</h5>
-                        </li>
-                        </ul><a href="/Pagamento/" class="btn-buyhood">Checkout</a>
-                    </div>
                     </div>
                 </div>
             </div>

@@ -30,15 +30,58 @@
 
         <hr>
 
-        <div class="compras">
+        <div>
             <h1>Suas Compras</h1>
         </div>
-
+        <table>
+        <thead>
+            <tr>
+            <th>
+                <h4>ID da Compra</h4>
+            </th>
+            <th>
+                <h4>Experiencia</h4>
+            </th>
+            <th>
+                <h4>Quantidade de Pessoas</h4>
+            </th>
+            <th>
+                <h4>Validade</h4>
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        @foreach($minhasCompras as $carrinho)
+            <tr>
+                <th>
+                    <div>
+                        <div>
+                        <strong> #{{ $carrinho -> id_compra }} </strong>
+                        </div>
+                    </div>
+                </th>
+                <td style="text-align:center;">{{ $carrinho -> name }}</td>
+                <td style="text-align:center;"><strong> {{$carrinho -> quantidade_pessoas}} </strong></td>
+                <td> 
+                    @if($carrinho['usado'] == 0) 
+                <form action="/AtivarExperiencia">
+                    <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
+                    <button type="submit" class="btn-buyhood">Mostrar QR Code</button>
+                </form>                         
+                    @else
+                    Já usado 
+                    @endif
+                </td>                                    
+            </tr>
+        @endforeach
+        </tbody>
+        </table>
         <hr>
 
-        <div class="listaCompras">
+        <!-- <div class="listaCompras">
             <h3>Você ainda não realizou nenhuma compra</h3>
-        </div>
+        </div> -->
         
     </div>
     

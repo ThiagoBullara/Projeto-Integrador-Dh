@@ -49,7 +49,7 @@
                                         </div>
                                     </div>
                                     <div class="row mb-md-5">
-                                        <form action="/CompraAutorizada/">
+                                        <form action="/Checkout/">
                                             <div class="col"> <button type="submit" name="" id="" class="btn-buyhood">CONFIRMAR COMPRA</button> </div>
                                         </form>
                                     </div>

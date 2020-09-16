@@ -49,27 +49,27 @@
 
                                 <div class="user-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/PaginaDePerfil/">
-                                        {{ __('Perfil') }}
+                                    👤{{ __('Perfil') }}
                                     </a>
                                     
                                     @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com")
                                         <a class="dropdown-item" href="/CadastroDeExperiencia/">
-                                            {{ __('Cadastro de Experiências') }}
+                                        {{ __('Cadastro de Experiências') }}
                                         </a>
                                     @endif
 
-                                    <a class="dropdown-item" href="#">
-                                        {{ __('Minhas Compras') }}
+                                    <a class="dropdown-item" href="/PaginaDePerfil/">
+                                    🛍{{ __('Minhas Compras') }}
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('carrinho.exibir') }}">
-                                        {{ __('Carrinho') }}
+                                    🛒{{ __('Carrinho') }}
                                     </a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Sair') }}
+                                        🚪 {{ __('Sair') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

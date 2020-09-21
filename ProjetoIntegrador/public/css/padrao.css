@@ -187,10 +187,8 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-    .navbar li a {
-        display: inline-block;
-        margin: 1vh 2vw;
-        font-size: 20px;
+    .navbar .navbar-item {
+        font-size: 5vw;
     }
 
     .botao {
@@ -198,10 +196,7 @@ footer {
     }
 
     .botao a {
-        padding: 0;
-        border: none;
-        background: none !important;
-        color: white !important;
+        padding: 1vw;
     }
 
     .botao a:hover {
@@ -231,7 +226,7 @@ footer {
 
     .navbar li a {
         margin: 0.5vw 2vh;
-        display: block;
+        
     }
 
 }

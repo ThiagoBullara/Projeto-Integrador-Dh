@@ -140,6 +140,23 @@
                 @enderror
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label for="endereco">Endereço da Experiência <span class="campo-obrigatorio">*</span></label><br>
+                <input class="form-control-file" type="text" name="endereco" id="endereco" required>
+                @error('endereco')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
+            </div>
+            <div class="col-6">
+                <label for="video">Vídeo de Referência <span class="campo-obrigatorio">*</span></label><br>
+                <input class="form-control-file" type="text" name="video" id="video" required>
+                @error('video')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
+            </div>
+        </div>
         
         <hr>
 

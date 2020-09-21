@@ -48,6 +48,10 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag3 = 'Gastronômia Gourmet';
         $experiencia ->tag4 = 'Curso com certificação';
 
+        $experiencia ->endereco = 'Av. Sabiá, 257 - Indianópolis, São Paulo - SP, 04515-001';
+
+        $experiencia ->video = 'https://www.youtube.com/embed/IrM6BhIkkeE';
+
         $experiencia ->email_restaurante = 'reidoswhisky@email.com';
         
         $experiencia ->save();
@@ -86,6 +90,10 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag3 = 'Gastronômia Renomada';
         $experiencia ->tag4 = 'Gastronômia Gourmet';
 
+        $experiencia ->endereco = 'Av. Antônio Joaquim de Moura Andrade, 737 - Vila Nova Conceição, São Paulo - SP, 04507-000';
+
+        $experiencia ->video = 'https://www.youtube.com/embed/uhYnLof1-vE';
+
         $experiencia ->email_restaurante = 'cocobambu@email.com';
         
         $experiencia ->save();
@@ -118,6 +126,10 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag3 = 'Pratos Estrangeiros em Geral';
         $experiencia ->tag4 = 'Gastronômia Gourmet';
 
+        $experiencia ->endereco = 'Av. Horácio Lafer, 491 - Itaim Bibi, São Paulo - SP, 04538-082';
+
+        $experiencia ->video = 'https://www.youtube.com/embed/DYbP6f0hGdc';
+
         $experiencia ->email_restaurante = 'manish@email.com';
         
         $experiencia ->save();
@@ -144,6 +156,10 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag3 = 'Gastronômia Renomada';
         $experiencia ->tag4 = 'Pratos Estrangeiros em Geral';
 
+        $experiencia ->endereco = 'R. Minas Gerais, 352 - Higienópolis, São Paulo - SP, 01244-010';
+
+        $experiencia ->video = 'https://www.youtube.com/embed/3Lm__DEs75w';
+
         $experiencia ->email_restaurante = 'osal@email.com';
         
         $experiencia ->save();
@@ -169,6 +185,10 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Culinária Chinesa';
         $experiencia ->tag3 = 'Gastrônomia Exótica';
         $experiencia ->tag4 = 'Pratos Estrangeiros em Geral';
+
+        $experiencia ->endereco = 'Praça Carlos Gomes, 200 - Liberdade, São Paulo - SP, 01501-040';
+
+        $experiencia ->video = 'https://www.youtube.com/embed/thqL1IBDvo4';
 
         $experiencia ->email_restaurante = 'shifu@email.com';
         
@@ -197,6 +217,10 @@ class experienciasSeeder extends Seeder
         $experiencia ->tag2 = 'Padaria e Assados';
         $experiencia ->tag3 = 'Confeitaria';
         $experiencia ->tag4 = 'Doces e Sobremesas';
+
+        $experiencia ->endereco = 'R. Domingos Leme, 284 - Vila Nova Conceição, São Paulo - SP, 04510-040';
+
+        $experiencia ->video = 'https://www.youtube.com/embed/GVIvYH4ZU6w';
 
         $experiencia ->email_restaurante = 'paopadarias@email.com';
         

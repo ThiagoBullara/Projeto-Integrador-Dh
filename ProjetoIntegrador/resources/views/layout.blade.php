@@ -26,9 +26,9 @@
             <nav class="row">
                 <div class="nav-border col-lg-12">                    
                     <div class="navbar">
-                        <div class="col-lg-3"><a class="navbar-item" href="/home">Home</a></div>
-                        <div class="col-lg-3"><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></div>
-                        <div class="col-lg-3"><a class="navbar-item" href="/SobreNos">Sobre Nós</a></div>
+                        <div class="col-3"><a class="navbar-item" href="/home">Home</a></div>
+                        <div class="col-3"><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></div>
+                        <div class="col-3"><a class="navbar-item" href="/SobreNos">Sobre</a></div>
                         <div class="col-lg-3">
                         @guest
                         <ul class="navbar">

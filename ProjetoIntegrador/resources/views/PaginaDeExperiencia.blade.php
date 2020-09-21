@@ -14,7 +14,17 @@
                 @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
                     <div class="col-lg-6"></div>
                     <div class="col-lg-6 mb-5 mt-5" style="text-align:right;">
-                        <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger">Deletar Experiencia</button></a>
+                        <a href="/DeletarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-danger" onclick="confirmacao()">Deletar Experiencia</button></a>
+                            <script>
+                                function confirmacao() {
+
+                                    var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
+
+                                    if (!boolConfirmacao){
+                                        event.preventDefault();
+                                    }
+                                }
+                            </script>
                         <a href="/EditarExperiencia/{{$detalhesExperiencia->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
                     </div>
                 @endif

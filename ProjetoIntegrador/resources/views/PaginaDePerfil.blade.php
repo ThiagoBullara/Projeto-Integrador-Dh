@@ -24,7 +24,17 @@
                 <h3>{{ $detalhesPerfil->name }}</h3>
                 <p>Email: {{ $detalhesPerfil->email }}</p>
                 <a href="/EditarPerfil/"><button class="btn btn-primary">Editar Perfil</button></a>
-                <a href="/DeletarPerfil/"><button class="btn btn-danger">Deletar Perfil</button></a>
+                <a href="/DeletarPerfil/"><button class="btn btn-danger" onclick="confirmacao()">Deletar Perfil</button></a>
+                <script>
+                    function confirmacao() {
+
+                        var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
+
+                        if (!boolConfirmacao){
+                            event.preventDefault();
+                        }
+                    }
+                </script>
             </div>
         </div>
 

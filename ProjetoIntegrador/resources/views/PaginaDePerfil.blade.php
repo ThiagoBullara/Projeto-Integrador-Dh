@@ -24,7 +24,17 @@
                 <h3>{{ $detalhesPerfil->name }}</h3>
                 <p>Email: {{ $detalhesPerfil->email }}</p>
                 <a href="/EditarPerfil/"><button class="btn btn-primary">Editar Perfil</button></a>
-                <a href="/DeletarPerfil/"><button class="btn btn-danger">Deletar Perfil</button></a>
+                <a href="/DeletarPerfil/"><button class="btn btn-danger" onclick="confirmacao()">Deletar Perfil</button></a>
+                <script>
+                    function confirmacao() {
+
+                        var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
+
+                        if (!boolConfirmacao){
+                            event.preventDefault();
+                        }
+                    }
+                </script>
             </div>
         </div>
 
@@ -65,7 +75,17 @@
                 <td style="text-align:center;"><strong> {{$carrinho -> quantidade_pessoas}} </strong></td>
                 <td> 
                     @if($carrinho['usado'] == 0) 
-                <form action="/AtivarExperiencia">
+                <form action="/AtivarExperiencia" onsubmit="confirmacao()">
+                    <script>
+                        function confirmacao() {
+
+                           var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
+
+                           if (!boolConfirmacao){
+                            event.preventDefault();
+                           }
+                        }
+                    </script>
                     <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
                     <button type="submit" class="btn-buyhood">Mostrar QR Code</button>
                 </form>                         

@@ -9,67 +9,28 @@ header {
     border-bottom: 1px solid black;
 }
 
-.logo .desktop {
-    text-align: center;
-    padding: 5px 0;
+.logo-desktop {
+    margin: 18.5px 0 18.5px 10px;
 }
 
-.logo .mobile {
+.logo-mobile {
     display: none;
 }
 
-.dropdown-login a {
-    text-decoration: none !important;
-    color:white;
+.nav-buyhood {
+    text-align: end;
 }
 
-.botao.nav-item{
-    margin-right: 1vw !important;
+.nav-buyhood li {
+    text-align: end;
+    padding-top: 50px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 20px;
 }
 
-.user-dropdown.dropdown-menu {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    top: 100% !important;
-  }
-
-.navbar {
-    font-size: 17px;
-    list-style: none;
-    padding: 0px !important;
-    margin-bottom: 10px;
-    text-align:center;
-}
-
-.navbar-item { 
-    text-decoration: underline;
+.nav-buyhood li a {
     color: white;
-}
-
-.navbar-item:hover {
-    text-decoration: none;
-    color: #73a942;
-}
-
-.botao {
-    list-style: none;
-    font-size: 17px;
-}
-
-.botao a {
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #1a4301 !important;
-    background-color: white;
-}
-
-.botao a:hover {
-    color: white !important;
-    border-color: white;
-    background: none !important;
-    transition: 0.5s all;
 }
 
 footer {

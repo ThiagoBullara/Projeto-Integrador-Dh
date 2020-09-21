@@ -14,75 +14,43 @@
     <body>
         <header class="container-fluid">
             <div class="row">
-                <div class="logo col-lg-12">
-                    <div class="desktop">
-                        <a href="/home" ><img src="https://i.ibb.co/71JLCrG/Logo-Buy-Hood-removebg-preview.png" alt="Logo Buyhood"></a>
+                <div class="col-lg-6">
+                    <div class="logo-desktop">
+                        <a href="/home" ><img src="https://i.ibb.co/BjrHN7h/Logo-Buy-Hood-Png.png" alt="Logo Buyhood"></a>
                     </div>
-                    <div class="mobile">
-                        <a href="/home"><img src="https://i.ibb.co/0tNkSBr/Icon.png" alt="Logo Buyhood"></a>
+                    <div class="logo-mobile">
+                        <a href="/home"><img src="https://i.ibb.co/0tNkSBr/Icon.png" alt="Logo Buyhood Mobile"></a>
                     </div>
                 </div>
-            </div>
-            <nav class="row">
-                <div class="nav-border col-lg-12">                    
-                    <div class="navbar">
-                        <div class="col-3"><a class="navbar-item" href="/home">Home</a></div>
-                        <div class="col-3"><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></div>
-                        <div class="col-3"><a class="navbar-item" href="/SobreNos">Sobre</a></div>
-                        <div class="col-lg-3">
-                        @guest
-                        <ul class="navbar">
-                            <li class="botao nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="botao nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="dropdown-login nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img style="width:40px; height:40px;border-radius:50%;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">    
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="user-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/PaginaDePerfil/">
-                                    👤{{ __('Perfil') }}
-                                    </a>
-                                    
-                                    @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com")
-                                        <a class="dropdown-item" href="/CadastroDeExperiencia/">
-                                        {{ __('Cadastro de Experiências') }}
-                                        </a>
-                                    @endif
-
-                                    <a class="dropdown-item" href="/PaginaDePerfil/">
-                                    🛍{{ __('Minhas Compras') }}
-                                    </a>
-
-                                    <a class="dropdown-item" href="{{ route('carrinho.exibir') }}">
-                                    🛒{{ __('Carrinho') }}
-                                    </a>
-
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        🚪 {{ __('Sair') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </div>
-                </ul>
+                <ul class="col-lg-6 nav-buyhood">
+                    <li><a class="navbar-item" href="/home">Home</a></li>
+                    <li><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></li>
+                    <li><a class="navbar-item" href="/SobreNos">Sobre</a></li>
+                    @guest
+                        <li><a class="navbar-item" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                        @if (Route::has('register'))
+                            <li><a class="navbar-item" href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a></li>
+                        @endif
+                    @else
+                        <li>
+                            <a class="navbar-item dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><img style="width:40px; height:40px;border-radius:50%;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">{{ Auth::user()->name }}</a>
+                            <div class="user-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/PaginaDePerfil/">{{ __('Perfil') }}</a>
+                                @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com")
+                                    <a class="dropdown-item" href="/CadastroDeExperiencia/">{{ __('Cadastro de Experiências') }}</a>
+                                @endif
+                                <a class="dropdown-item" href="/PaginaDePerfil/">{{ __('Minhas Compras') }}</a>
+                                <a class="dropdown-item" href="{{ route('carrinho.exibir') }}">{{ __('Carrinho') }}</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Sair') }}</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
+                </ul>                    
             </div>                           
-        </nav>
-    </header>
+        </header>
 
         @yield('conteudo')
         

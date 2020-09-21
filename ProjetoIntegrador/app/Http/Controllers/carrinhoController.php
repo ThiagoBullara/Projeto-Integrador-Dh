@@ -76,6 +76,17 @@ class carrinhoController extends Controller
 
         \Cart::session(auth()->id())->clear();
 
+        $data = ['key' => Auth::user()];
+
+        \Mail::send('EmailCompraAutorizada', $data, function($message){
+
+        $message->from('buyhoodlocalfoods@gmail.com', 'BuyHood');
+
+        $message->to(Auth::user()->email,Auth::user()->name)->subject('Sua compra no BuyHood');
+
+        //$message->attach($pathToFile);
+});
+
         return view('CompraAutorizada');
     }
 

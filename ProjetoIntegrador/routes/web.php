@@ -82,11 +82,11 @@ Route::get('/ExperienciaAtivada', 'carrinhoController@compraAtiva')->middleware(
 //CRUD de Usuário --------------------------------------------------------------------
 Auth::routes(['verify' => true]);
 
-Route::get('/PaginaDePerfil/', 'usuarioController@exibirPerfil');
+Route::get('/PaginaDePerfil/', 'usuarioController@exibirPerfil')->middleware('auth');
 
-Route::get('/EditarPerfil/', 'usuarioController@editarPerfil');
-Route::post('/EditarPerfil/', 'usuarioController@editarPerfil');
+Route::get('/EditarPerfil/', 'usuarioController@editarPerfil')->middleware('auth');
+Route::post('/EditarPerfil/', 'usuarioController@editarPerfil')->middleware('auth');
 
-Route::get('/DeletarPerfil/', 'usuarioController@deletarPerfil');
+Route::get('/DeletarPerfil/', 'usuarioController@deletarPerfil')->middleware('auth');
 //CRUD de Usuário --------------------------------------------------------------------
 

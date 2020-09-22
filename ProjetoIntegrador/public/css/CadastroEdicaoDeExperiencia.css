@@ -5,8 +5,18 @@ h1 {
     border-bottom: lightgray 3px solid;
 }
 
+body{
+    background-image:url(https://i.pinimg.com/originals/ba/04/a8/ba04a8c4625ed0c3dd409f2ce160d7fa.jpg);
+}
+
 h2, h3 {
     text-align: center;
+}
+
+.container{
+    background-color: #e2e2e2;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .campo-obrigatorio {

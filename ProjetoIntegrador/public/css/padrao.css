@@ -21,18 +21,7 @@ header {
 
 .logo-desktop {
     margin: 18.5px 0 18.5px 10px;
-}
-
-.logo-mobile {
-    display: none;
-}
-
-.nav-buyhood {
-    text-align: end;
-}
-
-.dropdown-item{
-    color: #73a942 !important;
+    padding-top: 0 !important;
 }
 
 .nav-buyhood li {
@@ -45,6 +34,51 @@ header {
 
 .nav-buyhood li a {
     color: white;
+}
+
+.pesquisa-buyhood {
+    height: 40px;
+    width: 350px;
+    position: relative;
+}
+
+.pesquisa-buyhood input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+.icone-pesquisar-buyhood {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 40px;
+    border-radius: 0 50px 50px 0;
+    background-color: lightgrey;
+}
+
+.nav-buyhood-login {
+    text-align: end;
+}
+
+.nav-buyhood-login li {
+    text-align: end;
+    padding-top: 50px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-buyhood-login li a {
+    color: white;
+}
+
+.dropdown-item:active {
+    background-color: none !important;
 }
 
 footer {
@@ -129,16 +163,6 @@ footer {
 }
 
 @media only screen and (max-width: 420px) {
-    .logo-desktop {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-        text-align: center;
-        margin: 40px 0;
-    }
-
     .navbar {
         padding: 0 !important;
         text-align: left;

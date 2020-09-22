@@ -65,15 +65,7 @@ header {
     text-align: end;
 }
 
-<<<<<<< HEAD
 .nav-buyhood-login li {
-=======
-.dropdown-item{
-    color: #73a942 !important;
-}
-
-.nav-buyhood li {
->>>>>>> 339a9ee1d523269a0629b6acfa20ba8f82cd6d41
     text-align: end;
     padding-top: 50px;
     font-size: 20px;
@@ -171,19 +163,6 @@ footer {
 }
 
 @media only screen and (max-width: 420px) {
-<<<<<<< HEAD
-=======
-    .logo-desktop {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-        text-align: center;
-        margin: 40px 0;
-    }
-
->>>>>>> 339a9ee1d523269a0629b6acfa20ba8f82cd6d41
     .navbar {
         padding: 0 !important;
         text-align: left;

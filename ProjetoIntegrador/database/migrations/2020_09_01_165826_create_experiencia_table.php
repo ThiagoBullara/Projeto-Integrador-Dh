@@ -27,7 +27,7 @@ class CreateExperienciaTable extends Migration
             $table->decimal('precoExperiencia');
             $table->integer('quantidadePessoasExperiencia');
             $table->string('funcionamento');
-            $table->string('video');
+            $table->longtext('video');
             $table->text('endereco');
             $table->string('tag1');
             $table->string('tag2');

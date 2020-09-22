@@ -35,6 +35,14 @@ h2, h3 {
     text-decoration: underline;  
 }
 
+.erro-campo-obrigatorio {
+    text-align: center;
+}
+
+.btn-buyhood-envio {
+    text-align: end;
+}
+
 .btn-buyhood {
     text-decoration: none;
     border: 1px solid white;

@@ -27,10 +27,10 @@ Route::get('/', function () {
 Route::get('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia')->middleware('admin');
 Route::post('/CadastroDeExperiencia', 'experienciaController@cadastrarExperiencia')->middleware('admin');
 
-Route::get('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia')->middleware('admin');
-Route::post('/EditarExperiencia/{id}', 'experienciaController@editarExperiencia')->middleware('admin');
+Route::get('/EditarExperiencia/{id_experiencia}', 'experienciaController@editarExperiencia')->middleware('admin');
+Route::post('/EditarExperiencia/{id_experiencia}', 'experienciaController@editarExperiencia')->middleware('admin');
 
-Route::get('/DeletarExperiencia/{id}', 'experienciaController@deletarExperiencia')->middleware('admin');
+Route::get('/DeletarExperiencia/{id_experiencia}', 'experienciaController@deletarExperiencia')->middleware('admin');
 //CRUD de Experiências --------------------------------------------------------------------
 
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');

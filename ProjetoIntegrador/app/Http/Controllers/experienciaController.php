@@ -21,6 +21,9 @@ class experienciaController extends Controller
             'sobreExperiencia' => 'required|max:800',
             'funcionamento' => 'required|max:255',
             'sobreRestaurante' => 'required|max:800',
+            'endereco' => 'required|max:255',
+            'video' => 'required|max:800',
+            'email_restaurante' => 'email:rfc,dns',
             'fotoExperiencia1' => 'required|image',
             'fotoExperiencia2' => 'required|image',
             'fotoExperiencia3' => 'required|image',
@@ -32,10 +35,11 @@ class experienciaController extends Controller
         ];
 
         $validatedMessage = [
-            'required' => 'O campo :attribute é obrigatório',
-            'max' => 'O campo :attribute possui muita informação',
-            'numeric' => 'O campo :attribute deve ser um número',
-            'image' => 'O formato do arquivo do campo :attribute não é válido'
+            'required' => 'Esse campo é obrigatório',
+            'max' => 'Esse campo está muito longo',
+            'numeric' => 'Esse campo deve ser um número',
+            'image' => 'O formato do arquivo é inválido',
+            'email' => 'Endereço de e-mail inválido'
         ];
 
         $this -> validate($request, $validatedRules, $validatedMessage);
@@ -48,6 +52,9 @@ class experienciaController extends Controller
         $novaExperiencia->sobreExperiencia = $request->sobreExperiencia;
         $novaExperiencia->funcionamento = $request->funcionamento;
         $novaExperiencia->sobreRestaurante = $request->sobreRestaurante;
+        $novaExperiencia->endereco = $request->endereco;
+        $novaExperiencia->video = $request->video;
+        $novaExperiencia->email_restaurante = $request->email_restaurante;
 
         $novaExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
         $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);
@@ -94,6 +101,9 @@ class experienciaController extends Controller
             'sobreExperiencia' => 'required|max:800',
             'funcionamento' => 'required|max:255',
             'sobreRestaurante' => 'required|max:800',
+            'endereco' => 'required|max:255',
+            'video' => 'required|max:800',
+            'email_restaurante' => 'email:rfc,dns',
             'fotoExperiencia1' => 'required|image',
             'fotoExperiencia2' => 'required|image',
             'fotoExperiencia3' => 'required|image',
@@ -105,13 +115,16 @@ class experienciaController extends Controller
         ];
 
         $validatedMessage = [
-            'required' => 'O campo :attribute é obrigatório',
-            'max' => 'O campo :attribute possui muita informação',
-            'numeric' => 'O campo :attribute deve ser um número',
-            'image' => 'O formato do arquivo do campo :attribute não é válido'
+            'required' => 'Esse campo é obrigatório',
+            'max' => 'Esse campo está muito longo',
+            'numeric' => 'Esse campo deve ser um número',
+            'image' => 'O formato do arquivo é inválido',
+            'email' => 'Endereço de e-mail inválido'
         ];
 
-        $this -> validate($request, $validatedRules, $validatedMessage);    
+        $this -> validate($request, $validatedRules, $validatedMessage);   
+        
+        $id_experiencia = $request->post('id_experiencia');
 
         $editarExperiencia = experienciaModel::find($id_experiencia);
 
@@ -122,6 +135,10 @@ class experienciaController extends Controller
         $editarExperiencia->sobreExperiencia = $request->post('sobreExperiencia');
         $editarExperiencia->funcionamento = $request->post('funcionamento');
         $editarExperiencia->sobreRestaurante = $request->post('sobreRestaurante');
+        $editarExperiencia->endereco = $request->post('endereco');
+        $editarExperiencia->video = $request->post('video');
+        $editarExperiencia->email_restaurante = $request->post('email_restaurante');
+
 
         $editarExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
         $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);

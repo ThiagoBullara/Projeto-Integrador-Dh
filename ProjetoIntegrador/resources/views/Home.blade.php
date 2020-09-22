@@ -20,12 +20,6 @@
                     <a href="/Area-de-Atendimento">aqui!</a>
                 </p>
             </li>
-            <li class="buscar">
-                <form action="/ListaDeExperienciasBuscar" method="GET">
-                    <input type="search" class="inp" name="tipo" placeholder="Procure por uma experiência!">
-                    <button type="submit" class="btn-inp">Buscar</button>
-                </form>
-            </li>
         </ul>
     </section>
 

@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+  }
+
 header {
     background-image: linear-gradient(#1a4301, #146601);
     border-bottom: 1px solid black;
@@ -21,6 +31,10 @@ header {
     text-align: end;
 }
 
+.dropdown-item{
+    color: #73a942 !important;
+}
+
 .nav-buyhood li {
     text-align: end;
     padding-top: 50px;
@@ -34,24 +48,27 @@ header {
 }
 
 footer {
-    background-color: #1a4301;
-    background-image: linear-gradient(#146601, #1a4301);
-    border-top: 1px solid rgba(0, 0, 0, 0.425);
-    color: white;
+    background-image: linear-gradient(white, #e2e2e2);
+    color: #2e2e2e;
     text-align: center;
     padding: 1vw;
+}
+
+.links{
+    margin: auto;
 }
 
 .listfooteritem {
     font-size: 15px;
     list-style: none;
-    display: block;
+    display: inline;
     padding: 0.75vw;
+    
 }
 
 .listfooteritem a {
     text-decoration: none;
-    color: white;
+    color: #2e2e2e;
 }
 
 .listfooteritem a:hover {
@@ -59,10 +76,11 @@ footer {
 }
 
 .copyright {
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
     color: gray;
     font-weight: bold;
+    margin: auto;
 }
 
 .listfootertitle {
@@ -71,80 +89,18 @@ footer {
     font-size: 15px;
 }
 
-.button-footer {
-    list-style: none;
-    font-size: 17px;
-}
-
-.button-footer a {
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 1vw;
-}
-
-.button-footer a:hover {
-    color: #73a942;
-    border-color: #73a942;
-    background-color: white;
-    transition: 0.5s all;
-}
-
-.social-media {
-    margin-bottom: 1vw;
-}
-
-.social-media a {
-    margin: 0 auto;
-}
-
-.fa {
-    margin-right: 0.5vw;
-    padding: 10px;
-    font-size: 25px;
-    width: 50px;
+.fab{
+    color: #2e2e2e;
     text-align: center;
-    text-decoration: none !important;
+    margin:1vw;
+    font-size: 25px
 }
 
-.fa:hover {
-    color: lightgray;
-    opacity: 1.5;
+.fab:hover{
+    color: #73a942;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.button-footer {
-    font-size: 17px;
-}
-
-.dropdown-item{
-    color: #73a942 !important;
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -166,14 +122,18 @@ footer {
         transition: 0.5s all;
         background-color: none;
     }
+
+    .listfooteritem{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 420px) {
-    .logo .desktop {
+    .logo-desktop {
         display: none;
     }
 
-    .logo .mobile {
+    .logo-mobile {
         display: block;
         text-align: center;
         margin: 40px 0;
@@ -186,8 +146,12 @@ footer {
     }
 
     .navbar li a {
-        margin: 0.5vw 2vh;
-        
+        margin: 0.5vw 2vh;        
+    }
+
+    .listfooteritem{
+        display: block;
+        margin-bottom: 10px;
     }
 
 }

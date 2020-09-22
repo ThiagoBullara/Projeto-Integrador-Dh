@@ -73,7 +73,7 @@
                             <label for="fotoPerfil" class="col-md-4 col-form-label text-md-right">{{ __('Foto de Perfil') }}</label>
 
                             <div class="col-md-6">
-                                <input id="fotoPerfil" type="file" name="fotoPerfil" value="{{ old('fotoPerfil') }}">
+                                <input id="fotoPerfil" type="file" name="fotoPerfil" class="form-control" value="{{ old('fotoPerfil') }}">
                             </div>
                         </div>
 

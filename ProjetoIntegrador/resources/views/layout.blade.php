@@ -14,11 +14,13 @@
     <body>
         <header class="container-fluid">
             <div class="row">
-                <ul class="col-lg-6 nav-buyhood">
-                    <li class="logo-desktop"><a href="/home" ><img src="https://i.ibb.co/BjrHN7h/Logo-Buy-Hood-Png.png" alt="Logo Buyhood"></a></li>
-                    <li><a class="navbar-item" href="/home">Home</a></li>
-                    <li><a class="navbar-item" href="/ListaDeExperiencias">Experiências</a></li>
-                    <li><a class="navbar-item" href="/SobreNos">Sobre</a></li>
+                <div class="col-lg-2">
+                    <div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div>
+                </div>
+                <ul class="col-lg-4 nav-buyhood">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/ListaDeExperiencias">Experiências</a></li>
+                    <li><a href="/SobreNos">Sobre</a></li>
                 </ul>
                 <ul class="col-lg-6 nav-buyhood-login">
                     <li>
@@ -37,9 +39,9 @@
                         </form>
                     </li>
                     @guest
-                        <li><a class="navbar-item" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                        <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         @if (Route::has('register'))
-                            <li><a class="navbar-item" href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a></li>
+                            <li><a href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a></li>
                         @endif
                     @else
                         <li>
@@ -68,14 +70,14 @@
             <div class="row">
                 <div class="logo footer-partner col-lg-6">
                     <div class="logo-desktop">
-                        <a href="/home" ><img src="https://i.ibb.co/19p7LJG/Screenshot-2-removebg-preview.png" alt="Logo Buyhood"></a>
+                        <a href="/home" ><img src="https://i.ibb.co/RSCPMG8/Screenshot-5-removebg-preview.png" alt="Logo Buyhood"></a>
                     </div>
                     <div class="logo-mobile">
-                        <a href="/home"><img src="https://i.ibb.co/2tYsbt4/Screenshot-1-removebg-preview.png" alt="Logo Buyhood"></a>
+                        <a href="/home"><img src="https://i.ibb.co/fqPwfhs/Screenshot-2-removebg-preview.png" alt="Logo Buyhood"></a>
                     </div>
                 </div>
                     <div class="links col-lg-6">
-                        <p class="mb-4" style="font-size:15px;font-weight:bold;">Saiba Mais!</p>
+                        <p class="mb-4" style="font-size:20px;font-weight:bold;">Saiba Mais!</p>
                         <ul class="listfooter">
                             <li class="listfooteritem"><a href="/SobreNos">Sobre nós</a></li>
                             <li class="listfooteritem"><a href="/Area-de-Atendimento">Área que atendemos</a></li>

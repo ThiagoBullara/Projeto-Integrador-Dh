@@ -18,7 +18,7 @@
                             <script>
                                 function confirmacao() {
 
-                                    var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
+                                    var boolConfirmacao =  confirm("Você tem certeza que quer deletar permanentemente essa experiência?");
 
                                     if (!boolConfirmacao){
                                         event.preventDefault();

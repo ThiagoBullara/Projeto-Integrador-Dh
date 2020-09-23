@@ -79,9 +79,9 @@
                         <p class="mb-4" style="font-size:20px;font-weight:bold;">Saiba Mais!</p>
                         <ul class="listfooter">
                             <li class="listfooteritem"><a href="/SobreNos">Sobre nós</a></li>
-                            <li class="listfooteritem"><a href="/Area-de-Atendimento">Área que atendemos</a></li>
-                            <li class="listfooteritem"><a href="/FAQ">F.A.Q.</a></li>
-                            <li class="listfooteritem"><a href="/Contato">Contato</a></li>
+                            <li class="listfooteritem"><a href="/SobreNos#Contato" id="AreaQueAtendemos">Área que atendemos</a></li>
+                            <li class="listfooteritem"><a href="/SobreNos#FAQ">F.A.Q.</a></li>
+                            <li class="listfooteritem"><a href="/SobreNos#Contato">Contato</a></li>
                             <li class="listfooteritem"><a href="/TermosDeUso">Termos de uso</a></li>
                             <li class="listfooteritem"><a href="/PoliticaDePrivacidade">Política de Privacidade</a></li>
                         </ul>

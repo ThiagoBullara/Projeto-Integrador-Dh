@@ -91,99 +91,102 @@
     </div>
 
 
+    <section id="FAQ">
+        <div class="faq">           
+            <h2 class="faq-title">F.A.Q.</h2>
 
-    <div class="faq">           
-        <h2 class="faq-title">F.A.Q.</h2>
+            <button class="accordion">O que vocês vendem no seu site? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Nós vendemos experiências gastronômicas que são exclusivas da nossa plataforma. Vamos aos melhores restaurantes da região e pedimos para eles organizarem uma atividade inesquecível, e jamais antes vista na região, e depois de muito pensar e conversar, fechamos o acordo para trazer a nossa plataforma, somente as melhores ideias! Aproveite!</p>
+                </div>
 
-        <button class="accordion">O que vocês vendem no seu site? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Nós vendemos experiências gastronômicas que são exclusivas da nossa plataforma. Vamos aos melhores restaurantes da região e pedimos para eles organizarem uma atividade inesquecível, e jamais antes vista na região, e depois de muito pensar e conversar, fechamos o acordo para trazer a nossa plataforma, somente as melhores ideias! Aproveite!</p>
-            </div>
+            <button class="accordion">O que são "Experiências Gastronômicas"? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Vamos aos melhores restaurantes da região e pedimos para eles organizarem uma atividade inesquecível, e jamais antes vista na região, e depois de muito pensar e conversar, fechamos o acordo para trazer a nossa plataforma, somente as melhores ideias! Aproveite!</p>
+                </div>
 
-        <button class="accordion">O que são "Experiências Gastronômicas"? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Vamos aos melhores restaurantes da região e pedimos para eles organizarem uma atividade inesquecível, e jamais antes vista na região, e depois de muito pensar e conversar, fechamos o acordo para trazer a nossa plataforma, somente as melhores ideias! Aproveite!</p>
-            </div>
+            <button class="accordion">Posso comprar mais de um experiência por vez? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Tecnicamente, não. Você só pode colocar no carrinho e fazer checkout com uma experiência por vez, isso é feito porque nosso site foi criado para ser acessível para todos, e algumas pessoas poderiam ficar confusos de como tudo isso iria funcionar, no entanto, pode fazer outra compra com outra experiência e ativa-lás quando tiver vontade (Termos e Condições se aplicam)</p>
+                </div>
 
-        <button class="accordion">Posso comprar mais de um experiência por vez? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Tecnicamente, não. Você só pode colocar no carrinho e fazer checkout com uma experiência por vez, isso é feito porque nosso site foi criado para ser acessível para todos, e algumas pessoas poderiam ficar confusos de como tudo isso iria funcionar, no entanto, pode fazer outra compra com outra experiência e ativa-lás quando tiver vontade (Termos e Condições se aplicam)</p>
-            </div>
+            <button class="accordion">Como eu resgato a minha experiência? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Você receberá um código de QR (Aquele quadradinho pixelado preto e branco) no seu e-mail (ele também fica salvo no seu perfil aqui na BuyHood!), basta chegar no restuarante que você comprou essa experiência, mostrar o QR Code e pronto! A partir daí, só aproveitar um momento inesquecível </p>
+                </div>
 
-        <button class="accordion">Como eu resgato a minha experiência? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Você receberá um código de QR (Aquele quadradinho pixelado preto e branco) no seu e-mail (ele também fica salvo no seu perfil aqui na BuyHood!), basta chegar no restuarante que você comprou essa experiência, mostrar o QR Code e pronto! A partir daí, só aproveitar um momento inesquecível </p>
-            </div>
+            <button class="accordion">Posso resgatar minha experiência qualquer dia, qualquer hora? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Não, as experiências são cuidadosamente planejadas pelos restaurantes e pela equipe BuyHood, para que você possa resgatar a sua experiência, é necessário que você compareca no restaurante cadastrado no horário válido de sua experiência (Informação que você recebe no seu e-mail e também está no seu perfil)</p>
+                </div>
 
-        <button class="accordion">Posso resgatar minha experiência qualquer dia, qualquer hora? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Não, as experiências são cuidadosamente planejadas pelos restaurantes e pela equipe BuyHood, para que você possa resgatar a sua experiência, é necessário que você compareca no restaurante cadastrado no horário válido de sua experiência (Informação que você recebe no seu e-mail e também está no seu perfil)</p>
-            </div>
+            <button class="accordion">E se eu esquecer de levar o QR Code no dia que for resgatar a experiência? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>O QR Code é necessário para que você ative a experiência, sem ele, você não poderá desfrutar do serviço adiquirido :(</p>
+                </div>
 
-        <button class="accordion">E se eu esquecer de levar o QR Code no dia que for resgatar a experiência? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>O QR Code é necessário para que você ative a experiência, sem ele, você não poderá desfrutar do serviço adiquirido :(</p>
-            </div>
+            <button class="accordion">Tive um problema com uma experiência, o que devo fazer? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Se você teve qualquer problema com a sua compra, a plataforma BuyHood ou durante a sua experiência, por favor não hesite em nos contatar no forumlário de contato que você encontra nessa mesma página! Estamos aqui para te ajudar!</p>
+                </div>
 
-        <button class="accordion">Tive um problema com uma experiência, o que devo fazer? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Se você teve qualquer problema com a sua compra, a plataforma BuyHood ou durante a sua experiência, por favor não hesite em nos contatar no forumlário de contato que você encontra nessa mesma página! Estamos aqui para te ajudar!</p>
-            </div>
+            <button class="accordion">Onde eu encontro as experiências que eu comprei? <i class="fas fa-plus-square"></i></button>
+                <div class="panel">
+                    <p>Elas estão localizadas na seção "Minhas Compras" que você encontra no seu perfil, aqui na BuyHood! (Nós também te enviamos um e-mail depois de cada compra)</p>
+                </div>
 
-        <button class="accordion">Onde eu encontro as experiências que eu comprei? <i class="fas fa-plus-square"></i></button>
-            <div class="panel">
-                <p>Elas estão localizadas na seção "Minhas Compras" que você encontra no seu perfil, aqui na BuyHood! (Nós também te enviamos um e-mail depois de cada compra)</p>
-            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
 
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        } else {
+                        panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </section>
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    } else {
-                    panel.style.display = "block";
-                    }
-                });
-            }
-        </script>
-    </div>
-
-    <div class="row mt-5 mb-5">
-        <div class="col-lg-6">
-            <div style="text-align:center">
-                <h2>Contate-nos!</h2>
-                <p>Nos envie uma mensagem e nós responderemos assim que possível!</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form>
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" name="firstname" placeholder="Digite aqui seu primeiro nome...">
-                        <label for="surname">Sobrenome</label>
-                        <input type="text" id="surname" name="surname" placeholder="Digite aqui seu sobrenome...">
-                        <label for="subject">Assunto</label>
-                        <select id="subject" name="subject">
-                            <option value="feedback">Dar um feedback</option>
-                            <option value="opinion">Dar uma opinião</option>
-                            <option value="problem">Tenho um problema...</option>
-                            <option value="other">Outro...</option>
-                        </select>
-                        <label for="messsage">Mensagem</label>
-                        <textarea id="messsage" name="messsage" placeholder="Digite aqui sua mensagem" style="height:170px"></textarea>
-                        <button class="btn-buyhood" type="submit">Enviar</button>
-                    </form>
+    <section id="Contato">
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-6">
+                <div style="text-align:center">
+                    <h2>Contate-nos!</h2>
+                    <p>Nos envie uma mensagem e nós responderemos assim que possível!</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form>
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="firstname" placeholder="Digite aqui seu primeiro nome...">
+                            <label for="surname">Sobrenome</label>
+                            <input type="text" id="surname" name="surname" placeholder="Digite aqui seu sobrenome...">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject">
+                                <option value="feedback">Dar um feedback</option>
+                                <option value="opinion">Dar uma opinião</option>
+                                <option value="problem">Tenho um problema...</option>
+                                <option value="other">Outro...</option>
+                            </select>
+                            <label for="messsage">Mensagem</label>
+                            <textarea id="messsage" name="messsage" placeholder="Digite aqui sua mensagem" style="height:170px"></textarea>
+                            <button class="btn-buyhood" type="submit">Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1bR-u0RxdThunkn-_P-Y29h_ru83XtfKC" width="100%" height="100%"></iframe>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <iframe class="responsive-iframe" src="https://www.google.com/maps/d/embed?mid=1bR-u0RxdThunkn-_P-Y29h_ru83XtfKC" width="100%" height="100%"></iframe>
-        </div>
-    </div>
+    </section>
 </div>
 
 @endsection

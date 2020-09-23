@@ -24,10 +24,6 @@ header {
     font-size: -webkit-xxx-large;
 }
 
-.nav-buyhood li:first-child {
-    margin-left: 20px;
-}
-
 .nav-buyhood li {
     right: 100px;
     font-size: 20px;
@@ -65,7 +61,7 @@ header {
 }
 
 .nav-buyhood-login {
-    margin: 20px 0;
+    margin: 42px 0;
     text-align: end;
     font-size: -webkit-xxx-large;
 }
@@ -139,11 +135,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-
-    .navbar .navbar-item {
-        font-size: 5vw;
-    }
-
     .botao {
         font-size: 17px;
     }
@@ -172,17 +163,6 @@ footer {
     .logo-mobile {
         display: block;
         text-align: center;
-        margin: 40px 0;
-    }
-
-    .navbar {
-        padding: 0 !important;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .navbar li a {
-        margin: 0.5vw 2vh;        
     }
 
     .listfooteritem{

@@ -163,20 +163,21 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <form>
+                        <form action="/FormularioContato" method="POST">
+                        @csrf
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="firstname" placeholder="Digite aqui seu primeiro nome...">
-                            <label for="surname">Sobrenome</label>
-                            <input type="text" id="surname" name="surname" placeholder="Digite aqui seu sobrenome...">
+                            <input type="text" id="name" name="name" placeholder="Digite aqui seu primeiro nome..." required>
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="Digite aqui seu primeiro nome..." required>
                             <label for="subject">Assunto</label>
-                            <select id="subject" name="subject">
+                            <select id="subject" name="subject" required>
                                 <option value="feedback">Dar um feedback</option>
-                                <option value="opinion">Dar uma opinião</option>
-                                <option value="problem">Tenho um problema...</option>
-                                <option value="other">Outro...</option>
+                                <option value="opinião">Dar uma opinião</option>
+                                <option value="problema">Tenho um problema...</option>
+                                <option value="outro">Outro...</option>
                             </select>
-                            <label for="messsage">Mensagem</label>
-                            <textarea id="messsage" name="messsage" placeholder="Digite aqui sua mensagem" style="height:170px"></textarea>
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Digite aqui sua mensagem" style="height:170px" required></textarea>
                             <button class="btn-buyhood" type="submit">Enviar</button>
                         </form>
                     </div>

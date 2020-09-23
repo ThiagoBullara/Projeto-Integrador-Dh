@@ -29,6 +29,7 @@ Nosso projeto utilizou diversas ferramentas de desenvolvimento web, tais como:
     - npm install (assumindo que você tem Node.js instalado)
     - npm run dev (assumindo que você tem Node.js instalado)
     - composer require "darryldecode/cart"
+    - baixar a pasta contendo todas as imagens, para ser inserido em public/storage/[aqui](https://mega.nz/folder/EF11lA5I#UNPmDA7gwtIKMRdAnk3CQQ)
     - php artisan migrate:fresh --seed (assumindo que você tem o arquivo .env configurado corretamente)
     - php artisan serve
     

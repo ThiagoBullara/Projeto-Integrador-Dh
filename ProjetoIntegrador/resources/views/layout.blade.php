@@ -16,14 +16,14 @@
     <body>
         <header class="container-fluid">
             <div class="row">
-                <ul class="col-lg-6 col-md-12 nav-buyhood">
+                <ul class="col-lg-12 col-md-12 nav-buyhood">
                     <li><div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div></li>
                     <li><div class="logo-mobile"><a href="/home"><img src="https://i.ibb.co/RNy1YxH/Screenshot-4-removebg-preview.png" alt="Logo Buyhood"></a></div></li>
                     <li><a href="/home">Home</a></li>
                     <li><a href="/ListaDeExperiencias">Experiências</a></li>
                     <li><a href="/SobreNos">Sobre</a></li>
-                </ul>
-                <ul class="col-lg-6 col-md-12 nav-buyhood-login">
+                <!-- </ul>
+                <ul class="col-lg-8 col-md-12 nav-buyhood-login"> -->
                     <li>
                         <form action="/ListaDeExperienciasBuscar" method="GET">
                             <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">

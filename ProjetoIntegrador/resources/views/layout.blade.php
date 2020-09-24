@@ -7,8 +7,10 @@
         <link rel="icon" href="https://i.ibb.co/0tNkSBr/Screenshot-1-removebg-preview.png%22%3E">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/padrao.css')}}">
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         @yield('css')
         <script src="https://kit.fontawesome.com/0299beac0d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title> @yield('titulo') </title>
     </head>
     <body>
@@ -100,6 +102,10 @@
                 </div>
             </div>
         </footer>
+
         <script src="{{asset('js/app.js')}}" ></script>
+        <script src="{{asset('js/carrossel.js')}}" ></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </body>
 </html>

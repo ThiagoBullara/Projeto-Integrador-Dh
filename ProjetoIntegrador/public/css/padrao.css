@@ -77,6 +77,11 @@ header {
     color: white;
 }
 
+.nav-de-baixo li{
+    margin-right: 6%;
+    margin-left: 7%;
+}
+
 footer {
     background-image: linear-gradient(white, #e2e2e2);
     color: #2e2e2e;
@@ -134,7 +139,7 @@ footer {
     color: #73a942;
 }
 
-
+ 
 @media only screen and (max-width: 1024px) {
     .logo-mobile{
         display: block;
@@ -169,11 +174,16 @@ footer {
         display: inline-block;
         margin: 0;
     }
+
+    .nav-de-baixo li{
+        margin-right: 4%;
+        margin-left: 6%;
+    }
 }
 
 
 
-@media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
     .botao {
         font-size: 17px;
     }
@@ -192,9 +202,21 @@ footer {
     .listfooteritem{
         display: block;
     }
+
+    .nav-de-baixo li{
+        margin-right: 2%;
+        margin-left: 5%;
+    }
 }
 
+
 @media only screen and (max-width: 420px) {
+    .nav-buyhood .logo-mobile{
+        display: block;
+        position: relative;
+        left: 65%;
+    }
+
     .logo-desktop {
         display: none;
     }
@@ -208,5 +230,8 @@ footer {
         display: block;
         margin-bottom: 10px;
     }
-
-}
+    .nav-de-baixo li{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+} 

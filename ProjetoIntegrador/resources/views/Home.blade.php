@@ -60,7 +60,28 @@
     </section>
 
     <section class="container-fluid carrosel">
-        <p>Aqui vai ter um carrosel</p>
+    <div class="slider">
+
+    <div class="slider-experiencias">
+                
+        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        
+        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+
+        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        
+        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        
+        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        
+        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+
+    </div>
+    <!-- 
+    <div id="arrow-prev" class="arrow"></div>            
+    <div id="arrow-next" class="arrow"></div> -->
+
+    </div>
     </section>
 
     <section class="container-fluid descubra-todos">

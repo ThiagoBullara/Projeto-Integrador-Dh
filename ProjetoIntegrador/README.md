@@ -19,6 +19,19 @@ Nosso projeto utilizou diversas ferramentas de desenvolvimento web, tais como:
   - **XAMPP** usado algumas vezes como hosteador de servidor Apache e MySQL
   - **NPM** como gerenciador de dependências do JavaScript e JQUERY
   - **Composer v1.10.10** usado para gerenciar as dependências do Laravel
+  - [**darryldecode/laravelshoppingcart**](https://github.com/darryldecode/laravelshoppingcart) como scaffolding para criação do sistema de carrinho
+  
+  ### Como visualizar nosso projeto da melhor maneira
+  - Baixar zip do projeto pelo GitHub
+  - Usar os seguinte comandos em sequência:
+    - composer install
+    - php artisan key:generate
+    - npm install (assumindo que você tem Node.js instalado)
+    - npm run dev (assumindo que você tem Node.js instalado)
+    - composer require "darryldecode/cart"
+    - baixar a pasta contendo todas as imagens, para ser inserido em public/storage/[aqui](https://mega.nz/folder/EF11lA5I#UNPmDA7gwtIKMRdAnk3CQQ)
+    - php artisan migrate:fresh --seed (assumindo que você tem o arquivo .env configurado corretamente)
+    - php artisan serve
     
  ## Motivação para criar o projeto
  

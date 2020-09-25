@@ -28,7 +28,7 @@ header {
     right: 100px;
     font-size: 20px;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 1%;
 }
 
 .nav-buyhood li a {
@@ -75,6 +75,11 @@ header {
 
 .nav-buyhood-login li a {
     color: white;
+}
+
+.nav-de-baixo li{
+    margin-right: 6%;
+    margin-left: 7%;
 }
 
 footer {
@@ -134,7 +139,16 @@ footer {
     color: #73a942;
 }
 
-@media only screen and (max-width: 768px) {
+ 
+@media only screen and (max-width: 1024px) {
+    .logo-mobile{
+        display: block;
+    }
+    
+    .logo-desktop{
+        display: none;
+    }
+
     .botao {
         font-size: 17px;
     }
@@ -153,9 +167,56 @@ footer {
     .listfooteritem{
         display: block;
     }
+
+    .nav-buyhood li {
+        right: 100px;
+        font-size: 20px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .nav-de-baixo li{
+        margin-right: 4%;
+        margin-left: 6%;
+    }
 }
 
+
+
+ @media only screen and (max-width: 768px) {
+    .botao {
+        font-size: 17px;
+    }
+
+    .botao a {
+        padding: 1vw;
+    }
+
+    .botao a:hover {
+        color: #73a942;
+        border-color: none;
+        transition: 0.5s all;
+        background-color: none;
+    }
+
+    .listfooteritem{
+        display: block;
+    }
+
+    .nav-de-baixo li{
+        margin-right: 2%;
+        margin-left: 5%;
+    }
+}
+
+
 @media only screen and (max-width: 420px) {
+    .nav-buyhood .logo-mobile{
+        display: block;
+        position: relative;
+        left: 65%;
+    }
+
     .logo-desktop {
         display: none;
     }
@@ -169,5 +230,8 @@ footer {
         display: block;
         margin-bottom: 10px;
     }
-
-}
+    .nav-de-baixo li{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+} 

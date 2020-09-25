@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\carrinhoController;
 use App\Http\Controllers\pageController;
+use App\Http\Controllers\usuarioController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -32,6 +33,8 @@ Route::post('/EditarExperiencia/{id_experiencia}', 'experienciaController@editar
 
 Route::get('/DeletarExperiencia/{id_experiencia}', 'experienciaController@deletarExperiencia')->middleware('admin');
 //CRUD de Experiências --------------------------------------------------------------------
+
+Route::post('/FormularioContato', 'usuarioController@emailContato');
 
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
@@ -91,4 +94,6 @@ Route::post('/EditarPerfil/', 'usuarioController@editarPerfil')->middleware('aut
 
 Route::get('/DeletarPerfil/', 'usuarioController@deletarPerfil')->middleware('auth');
 //CRUD de Usuário --------------------------------------------------------------------
+
+
 

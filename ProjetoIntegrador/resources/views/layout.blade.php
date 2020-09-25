@@ -7,36 +7,41 @@
         <link rel="icon" href="https://i.ibb.co/0tNkSBr/Screenshot-1-removebg-preview.png%22%3E">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/padrao.css')}}">
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         @yield('css')
         <script src="https://kit.fontawesome.com/0299beac0d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title> @yield('titulo') </title>
     </head>
     <body>
         <header class="container-fluid">
             <div class="row">
-                <ul class="col-lg-6 col-md-12 nav-buyhood">
-                    <li><div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div></li>
-                    <li><div class="logo-mobile"><a href="/home"><img src="https://i.ibb.co/RNy1YxH/Screenshot-4-removebg-preview.png" alt="Logo Buyhood"></a></div></li>
+                    <ul class="col-lg-12 nav-buyhood">    
+                        <li><div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div></li>
+                        <li><div class="logo-mobile"><a href="/home"><img src="https://i.ibb.co/RNy1YxH/Screenshot-4-removebg-preview.png" alt="Logo Buyhood"></a></div></li>
+                        <li>
+                            <form action="/ListaDeExperienciasBuscar" method="GET">
+                                <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">
+                                    <input type="search" class="form-control" name="tipo" placeholder="Pesquisar na BuyHood">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="form-control icone-pesquisar-buyhood">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="col-lg-12 nav-buyhood nav-de-baixo">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/ListaDeExperiencias">Experiências</a></li>
                     <li><a href="/SobreNos">Sobre</a></li>
-                </ul>
-                <ul class="col-lg-6 col-md-12 nav-buyhood-login">
-                    <li>
-                        <form action="/ListaDeExperienciasBuscar" method="GET">
-                            <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">
-                                <input type="search" class="form-control" name="tipo" placeholder="Pesquisar na BuyHood">
-                                <div class="input-group-append">
-                                    <button type="submit" class="form-control icone-pesquisar-buyhood">
-                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </li>
                     @guest
                         <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         @if (Route::has('register'))
@@ -59,8 +64,8 @@
                             </div>
                         </li>
                     @endguest
-                </ul>                    
-            </div>                           
+                </ul>
+            </div>
         </header>
 
         @yield('conteudo')
@@ -79,9 +84,9 @@
                         <p class="mb-4" style="font-size:20px;font-weight:bold;">Saiba Mais!</p>
                         <ul class="listfooter">
                             <li class="listfooteritem"><a href="/SobreNos">Sobre nós</a></li>
-                            <li class="listfooteritem"><a href="/Area-de-Atendimento">Área que atendemos</a></li>
-                            <li class="listfooteritem"><a href="/FAQ">F.A.Q.</a></li>
-                            <li class="listfooteritem"><a href="/Contato">Contato</a></li>
+                            <li class="listfooteritem"><a href="/SobreNos#Contato" id="AreaQueAtendemos">Área que atendemos</a></li>
+                            <li class="listfooteritem"><a href="/SobreNos#FAQ">F.A.Q.</a></li>
+                            <li class="listfooteritem"><a href="/SobreNos#Contato">Contato</a></li>
                             <li class="listfooteritem"><a href="/TermosDeUso">Termos de uso</a></li>
                             <li class="listfooteritem"><a href="/PoliticaDePrivacidade">Política de Privacidade</a></li>
                         </ul>
@@ -100,6 +105,10 @@
                 </div>
             </div>
         </footer>
+
         <script src="{{asset('js/app.js')}}" ></script>
+        <script src="{{asset('js/carrossel.js')}}" ></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </body>
 </html>

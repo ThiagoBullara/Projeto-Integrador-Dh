@@ -7,7 +7,6 @@ use App\experienciaModel;
 
 class experienciaController extends Controller
 {
-    //
     public function cadastrarExperiencia(Request $request){
         if($request->isMethod('GET')){
             return view('CadastroDeExperiencia');
@@ -178,18 +177,29 @@ class experienciaController extends Controller
     }
 
     public function buscar(Request $request) {
-
         $experiencia = experienciaModel::where('nomeExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('precoExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('descricaoExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('sobreExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('funcionamento', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('sobreRestaurante', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('tag1', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('tag2', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('tag3', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->orWhere('tag4', 'LIKE', '%'.$request->get('tipo').'%')
-                                        ->get();
+            ->orWhere('precoExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('descricaoExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('sobreExperiencia', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('funcionamento', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('sobreRestaurante', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag1', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag2', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag3', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag4', 'LIKE', '%'.$request->get('tipo').'%')
+            ->get();
+
+        $vac = compact('experiencia');
+
+        return view('ListaDeExperiencias', $vac);
+    }
+
+    public function buscartag(Request $request) {
+        $experiencia = experienciaModel::where('tag1', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag2', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag3', 'LIKE', '%'.$request->get('tipo').'%')
+            ->orWhere('tag4', 'LIKE', '%'.$request->get('tipo').'%')
+            ->get();
 
         $vac = compact('experiencia');
 

@@ -37,6 +37,8 @@ Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
 Route::get('/ListaDeExperienciasBuscar', 'experienciaController@buscar');
 
+Route::get('/ListaDeExperienciasBuscarTag', 'experienciaController@buscartag');
+
 Route::get('/Experiencia/{id_experiencia}', 'experienciaController@detalhesExperiencia');
 
 Route::get('/Area-de-Atendimento', 'pageController@exibirAreaQueAtendemos');

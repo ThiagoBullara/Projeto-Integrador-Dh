@@ -106,20 +106,18 @@
         </div>
         <div class="container">
             <div class="row about">
-                <div class="col-lg-3">
+            <div class="col-lg-4" style="text-align: start;">
                     <h2>Sobre a sua experiência</h2>
                 </div>
-                <div class="col-lg-1"></div>
                 <div class="col-lg-8">
                     {{ $detalhesExperiencia->sobreExperiencia }}
                 </div>
                 <iframe class="mt-5 mb-5" width="1200" height="600" src="{{ $detalhesExperiencia->video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="row host">
-                <div class="col-lg-3">
+                <div class="col-lg-4" style="text-align: start;">
                     <h2>Sobre o restaurante</h2>
                 </div>
-                <div class="col-lg-1"></div>
                 <div class="col-lg-8">
                     <img src="{{ '/storage/img/'.$detalhesExperiencia->logoRestaurante }}" alt="Avatar" class="avatar">
                     <section>

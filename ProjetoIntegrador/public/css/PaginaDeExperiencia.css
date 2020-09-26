@@ -91,9 +91,9 @@ h2 {
     border: none;
 }
 
-
-
-
+.comentarios-img {
+    border-radius: 50px;
+}
 
 .btn-buyhood {
     text-decoration: none;

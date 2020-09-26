@@ -28,4 +28,8 @@ class experienciaModel extends Model
         'tag3',
         'tag4'
     ];
+
+    public function comentarios() {
+        return $this->hasMany("App\comentariosModel", "id_comentario");
+    }
 }

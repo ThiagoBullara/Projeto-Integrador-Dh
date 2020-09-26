@@ -104,7 +104,7 @@
                 </div>       
             </div>
         </div>
-        <div class="container" style="border: none;">
+        <div class="container">
             <div class="row about">
             <div class="col-lg-4" style="text-align: start;">
                     <h2>Sobre a sua experiência</h2>
@@ -126,12 +126,24 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <h4>Comentarios</h4>
+        <div class="container mt-5" style="border: none;">
+            <div class="row mb-5" style="justify-content: center;">
+                <div class="col-lg-2">
+                    <img class="comentarios-img" src="https://via.placeholder.com/100" alt="#">
+                </div>
+                <div class="col-lg-8">
+                    <p>Aqui vai o comentario</p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="comentarios">
-                        
-                    </div>
+                    <form action="/EnviarComentario/{id_experiencia}" method="POST">
+                        @csrf
+                        <input type="hidden" name="id_experiencia" value="{{ $detalhesExperiencia->id_experiencia }}">
+                        <textarea class="comentarios-form" name="comentario" id="comentario" cols="150" rows="5"></textarea>
+                        <button type="submit">Comentar</button>
+                    </form>
                 </div>
             </div>
         </div>

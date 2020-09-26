@@ -3,6 +3,7 @@
 use App\Http\Controllers\carrinhoController;
 use App\Http\Controllers\pageController;
 use App\Http\Controllers\usuarioController;
+use App\Http\Controllers\comentariosController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -61,6 +62,12 @@ Route::get('/TermosDeUso', 'pageController@exibirTermosDeUso');
 Route::get('/home', 'pageController@exibirHome')->name('home');
 
 Route::get('/Layout', 'pageController@layout');
+
+// Comentarios
+
+Route::post('/EnviarComentario/{id_experiencia}', 'comentariosController@postar');
+
+// Comentarios
 
 //CRUD de Carrinho --------------------------------------------------------------------
 

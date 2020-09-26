@@ -126,6 +126,11 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- Aqui começa o front de comentarios -->
+
+
         <h4>Comentarios</h4>
         <div class="container mt-5" style="border: none;">
             <div class="row mb-5" style="justify-content: center;">
@@ -147,5 +152,10 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- Aqui termina o front de comentarios -->
+
+
     </div>
 @endsection

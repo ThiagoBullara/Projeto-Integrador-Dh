@@ -104,7 +104,7 @@
                 </div>       
             </div>
         </div>
-        <div class="container">
+        <div class="container" style="border: none;">
             <div class="row about">
             <div class="col-lg-4" style="text-align: start;">
                     <h2>Sobre a sua experiência</h2>
@@ -123,6 +123,15 @@
                     <section>
                         <p>{{ $detalhesExperiencia->sobreRestaurante }}</p>
                     </section>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="comentarios">
+                        
+                    </div>
                 </div>
             </div>
         </div>

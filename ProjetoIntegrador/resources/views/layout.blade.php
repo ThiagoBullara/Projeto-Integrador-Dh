@@ -59,6 +59,9 @@
                             </li>
                         @endguest
                     </ul>
+
+        <!-- Itens do header linhas 40 42 46 -->
+
             </div>
         </header>
 

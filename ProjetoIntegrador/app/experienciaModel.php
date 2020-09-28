@@ -32,4 +32,8 @@ class experienciaModel extends Model
     public function comentarios() {
         return $this->hasMany("App\comentariosModel", "id_comentario");
     }
+
+    public function rating() {
+        return $this->hasMany("App\ratingsModel", "id");
+    }
 }

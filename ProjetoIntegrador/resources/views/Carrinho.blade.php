@@ -48,10 +48,11 @@
                                                         <h5 class="mb-0">{{$carrinho -> name}}</h5>
                                                     </div>
                                                 </div>
-                                            </th>
+                                            </th>                                            
                                             <td class="border-0 align-middle" style="text-align:center;"><strong>R${{\Cart::session(auth()->id())->get($carrinho->id)->getPriceSum()}} </strong></td>
                                                 <form action="/Checkout">
-                                                <input type="hidden" value="{{$carrinho -> name}}" name="name" >
+                                                <input type="hidden" value="{{$carrinho -> name}}" name="name">
+                                                <input type="hidden" value="{{$carrinho->associatedModel->id_experiencia}}" name="id_experiencia">
                                                 <td class="border-0 align-middle">
                                                     <input type="number" class="inp-buyhood" name="quantidadeCarrinho" min="1" max="10" value="{{$carrinho -> quantity}}">
                                                 </td>                                           

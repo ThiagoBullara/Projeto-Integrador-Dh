@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 use App\compraModel;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use App\ratingsModel;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 
 class usuarioController extends Controller{
     protected function validator(array $data)
@@ -50,13 +50,16 @@ class usuarioController extends Controller{
 
     public function exibirPerfil(){
         $detalhesPerfil = Auth::user();
+        
         $minhasCompras = compraModel::where('id_usuario', 'LIKE', Auth::user()->id)->get()->reverse();
+        
+        $feedback = ratingsModel::where('nome_usuario', 'LIKE', Auth::user()->name)->get();
+
+        $vac1 = compact('detalhesPerfil');
         
         $vac2 = compact('minhasCompras');
 
-        $vac = compact('detalhesPerfil');
-
-        return view('PaginaDePerfil', $vac, $vac2);
+        return view('PaginaDePerfil', $vac1, $vac2);
     }
 
     public function deletarPerfil(){

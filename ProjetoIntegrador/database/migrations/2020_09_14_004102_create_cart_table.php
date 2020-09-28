@@ -16,9 +16,11 @@ class CreateCartTable extends Migration
         Schema::create('cart', function (Blueprint $table) {
             $table->string('id_compra');
             $table->bigInteger('id_usuario');
+            $table->bigInteger('id_experiencia');
             $table->text('name');
             $table->boolean('usado')->default(false);
             $table->integer('quantidade_pessoas');
+            $table->boolean('avaliado')->default(false);
             $table->timestamps();
         });
     }

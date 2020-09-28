@@ -95,6 +95,18 @@ h2 {
     border-radius: 50px;
 }
 
+.timestamp{
+    font-size: 12px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.box-de-comentario{
+    background-color: #e2e2e2;
+    font-style: italic;
+    border: 5px solid lightgray;
+}
+
 .btn-buyhood {
     text-decoration: none;
     border: 1px solid white;

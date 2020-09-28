@@ -39,7 +39,11 @@ header {
     margin: 0 25px;
 }
 
-.nav-buyhood li a {
+.item-nav-buyhood {
+    color: white;
+}
+
+.item-nav-buyhood:hover {
     color: white;
 }
 

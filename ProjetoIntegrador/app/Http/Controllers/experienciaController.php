@@ -215,15 +215,13 @@ class experienciaController extends Controller
     }
 
     public function detalhesExperiencia($id_experiencia){
-        $detalhesExperiencia = experienciaModel::find($id_experiencia);
 
-        $vac = compact('detalhesExperiencia');
+        $data =  array();
+        $data['detalhesExperiencia']  = experienciaModel::find($id_experiencia);
+        $data['comentarios'] = comentariosModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->simplePaginate(3);
+        $data['feedback'] = ratingsModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->simplePaginate(3);
 
-        $comentarios = comentariosModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->get();
-
-        $vac2= compact('comentarios');
-
-        return view('PaginaDeExperiencia', $vac, $vac2);
+        return view('PaginaDeExperiencia', compact("data"));
     }
 
     public function deletarExperiencia($id_experiencia){
@@ -252,7 +250,7 @@ class experienciaController extends Controller
         $novoFeedback->feedback = $request->feedback;
         $novoFeedback->id_experiencia = $request->id_experiencia;
         $novoFeedback->nome_usuario = Auth::user()->name;
-        $novoFeedback->foto_usuario = Auth::user()->name;
+        $novoFeedback->foto_usuario = Auth::user()->fotoPerfil;
 
         $resultado = $novoFeedback->save();
 

@@ -19,4 +19,8 @@ class comentariosModel extends Model
         return $this->belongsTo("App\experienciaModel", "id_experiencia");
     }
 
+    public function usuario() {
+        return $this->belongsTo("App\User", "id");
+    }
+
 }

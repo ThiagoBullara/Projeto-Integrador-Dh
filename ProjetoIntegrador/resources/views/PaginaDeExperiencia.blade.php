@@ -131,26 +131,40 @@
         <!-- Aqui começa o front de comentarios -->
 
 
-        <h4>Comentarios</h4>
+        <h4>Perguntas e Comentarios</h4>
         <div class="container mt-5" style="border: none;">
-            <div class="row mb-5" style="justify-content: center;">
-                <div class="col-lg-2">
-                    <img class="comentarios-img" src="https://via.placeholder.com/100" alt="#">
+            @forelse($comentarios as $comentario)
+                <div class="row mb-5" style="justify-content: center;">            
+                    <div class="col-lg-2">
+                        <img class="comentarios-img" src="{{ '/storage/img/'.$comentario->fotoPerfil }}" width="100" height="100" alt="#">
+                    </div>
+                    <div class="col-lg-8">
+                        <h3>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h3>
+                        <p class="box-de-comentario">"{{ $comentario->comentario }}"</p>
+                    </div>
                 </div>
-                <div class="col-lg-8">
-                    <p>Aqui vai o comentario</p>
+            @empty
+                <div class="row mb-5" style="justify-content: center;">            
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="col-lg-8">
+                        <p>Ainda não existem comentários sobre essa experiência</p>
+                    </div>
                 </div>
-            </div>
+        @endforelse
+        @auth
             <div class="row">
                 <div class="col-lg-12">
                     <form action="/EnviarComentario/{id_experiencia}" method="POST">
                         @csrf
                         <input type="hidden" name="id_experiencia" value="{{ $detalhesExperiencia->id_experiencia }}">
+                        <input type="hidden" name="nome_usuario" value="{{ $detalhesExperiencia->id_experiencia }}">
                         <textarea class="comentarios-form" name="comentario" id="comentario" cols="150" rows="5"></textarea>
                         <button type="submit">Comentar</button>
                     </form>
                 </div>
             </div>
+        @endauth
         </div>
 
 

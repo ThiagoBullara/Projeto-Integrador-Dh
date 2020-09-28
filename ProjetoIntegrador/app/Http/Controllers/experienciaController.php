@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\comentariosModel;
 use Illuminate\Http\Request;
 use App\experienciaModel;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class experienciaController extends Controller
 {
@@ -209,7 +212,13 @@ class experienciaController extends Controller
     public function detalhesExperiencia($id_experiencia){
         $detalhesExperiencia = experienciaModel::find($id_experiencia);
 
-        return view('PaginaDeExperiencia', ["detalhesExperiencia" =>$detalhesExperiencia]);
+        $vac = compact('detalhesExperiencia');
+
+        $comentarios = comentariosModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->get();
+
+        $vac2= compact('comentarios');
+
+        return view('PaginaDeExperiencia', $vac, $vac2);
     }
 
     public function deletarExperiencia($id_experiencia){

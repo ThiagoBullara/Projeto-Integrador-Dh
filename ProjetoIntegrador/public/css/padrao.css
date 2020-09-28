@@ -28,7 +28,7 @@ header {
 }
 
 .nav-buyhood, .logo-desktop {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: -webkit-xxx-large;
 }
 
@@ -191,6 +191,12 @@ footer {
 
 
  @media only screen and (max-width: 768px) {
+    .logo-mobile{
+        display: block;
+        position: relative;
+        right: 140px;
+        margin-left: 0;
+    }
     .botao {
         font-size: 17px;
     }
@@ -213,13 +219,9 @@ footer {
     .nav-buyhood li {
         font-size: 20px;
         display: inline-block;
+        margin-left: 70px;
     }
-
-    .barra-de-pesquisa{
-        position: relative;
-        left: 5vw;
-    }
-   
+  
 }
 
 
@@ -227,7 +229,7 @@ footer {
     .nav-buyhood .logo-mobile{
         display: block;
         position: relative;
-        left: 65%;
+        right: 50px;
     }
 
     .logo-desktop {
@@ -239,12 +241,20 @@ footer {
         text-align: center;
     }
 
+    .nav-buyhood li {
+        font-size: 20px;
+        display: inline-block;
+        margin-left: 20%;
+
+    }
+
+    .barra-de-pesquisa{
+        position: relative;
+        left: -35px;
+    }
+
     .listfooteritem{
         display: block;
         margin-bottom: 10px;
     }
-    .nav-de-baixo li{
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-}  */
+}  

@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\comentariosModel;
 use Illuminate\Http\Request;
 use App\experienciaModel;
+use App\ratingsModel;
 use App\User;
+use App\compraModel;
 use Illuminate\Support\Facades\Auth;
 
 class experienciaController extends Controller
@@ -226,5 +228,37 @@ class experienciaController extends Controller
         $deletarExperiencia->delete();
 
         return redirect()->action("experienciaController@listarExperiencias");
+    }
+
+    public function feedback(Request $request){
+
+        $validatedRules = [
+            'rating' => 'required',
+        ];
+
+        $validatedMessage = [
+            'required' => 'Esse campo é obrigatório',
+        ];
+
+        $this -> validate($request, $validatedRules, $validatedMessage);
+
+        $novoFeedback = new ratingsModel();
+
+        $novoFeedback->id_compra = $request->id_compra;
+        $novoFeedback->rating = $request->rating;
+        $novoFeedback->feedback = $request->feedback;
+        $novoFeedback->id_experiencia = $request->id_experiencia;
+        $novoFeedback->nome_usuario = Auth::user()->name;
+        $novoFeedback->foto_usuario = Auth::user()->name;
+
+        $resultado = $novoFeedback->save();
+
+        $vac = compact('resultado');
+
+        $ativacao = compraModel::find($request->id_compra);
+        $ativacao->avaliado = 1;
+        $ativacao->update();
+
+        return back()->with($vac);
     }
 }

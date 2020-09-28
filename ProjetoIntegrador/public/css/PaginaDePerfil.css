@@ -48,3 +48,17 @@ tr:nth-child(even) {
     background-color: white;
     transition: 0.5s all;
 }
+
+.modal-body{
+    text-align:center;
+}
+
+.rating{
+    display: inline;
+    margin-left: 50px;
+    top: 50px;
+}
+
+.status{
+    font-weight: bold;
+}

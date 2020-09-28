@@ -11,6 +11,37 @@
 @section('conteudo')
 
     <div class="container mt-4 mb-4">
+        @if(isset($resultado))
+            @if($resultado)
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 sucesso  mt-4 pt-4">
+                        <h3>Feedback enviado com sucesso! <span class="sucesso-icon">&#10004;</span></h3>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            @else
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 erro  mt-4 pt-4">
+                        <h3>Erro ao enviar feedback <span class="erro-icon">&#10006;</span></h3>
+                        <p class="erro-campo-obrigatorio">Os campos com <span class="campo-obrigatorio">*</span> são obrigatórios</p>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            @endif
+        @endif
+        
+        @if($errors -> any())
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 erro  mt-4 pt-4">
+                    <h3>Erro ao enviar feedback <span class="erro-icon">&#10006;</span></h3>
+                    <p class="erro-campo-obrigatorio">Os campos com <span class="campo-obrigatorio">*</span> são obrigatórios</p>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        @endif
         <div class="row">
             <div class="col-lg-12 mt-4" >
                 <h1>Perfil</h1>
@@ -44,65 +75,119 @@
             <h1>Suas Compras</h1>
         </div>
         <table>
-        <thead>
-            <tr>
-            <th>
-                <h4>ID da Compra</h4>
-            </th>
-            <th>
-                <h4>Experiencia</h4>
-            </th>
-            <th>
-                <h4>Quantidade de Pessoas</h4>
-            </th>
-            <th>
-                <h4>Validade</h4>
-            </th>
-            </tr>
-        </thead>
-        <tbody>
-            
-        @foreach($minhasCompras as $carrinho)
-            <tr>
+            <thead>
+                <tr>
                 <th>
-                    <div>
-                        <div>
-                        <strong> #{{ $carrinho -> id_compra }} </strong>
-                        </div>
-                    </div>
+                    <h4>ID da Compra</h4>
                 </th>
-                <td style="text-align:center;">{{ $carrinho -> name }}</td>
-                <td style="text-align:center;"><strong> {{$carrinho -> quantidade_pessoas}} </strong></td>
-                <td> 
-                    @if($carrinho['usado'] == 0) 
-                <form action="/AtivarExperiencia" onsubmit="confirmacao()">
-                    <script>
-                        function confirmacao() {
+                <th>
+                    <h4>Experiencia Comprada</h4>
+                </th>
+                <th>
+                    <h4>Quantidade de Pessoas</h4>
+                </th>
+                <th>
+                    <h4>Validade</h4>
+                </th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                @foreach($minhasCompras as $carrinho)
+                    <tr>
+                        <th>
+                            <div>
+                                <div>
+                                <strong> #{{ $carrinho -> id_compra }} </strong>
+                                </div>
+                            </div>
+                        </th>
+                        <td style="text-align:center;">{{ $carrinho -> name }}</td>
+                        <td style="text-align:center;"><strong> {{$carrinho -> quantidade_pessoas}} </strong></td>
+                        <td style="text-align:center;"> 
+                            @if($carrinho['usado'] == 0) 
+                        <form action="/AtivarExperiencia" onsubmit="confirmacao()">
+                            <script>
+                                function confirmacao() {
 
-                           var boolConfirmacao =  confirm("Você tem certeza que quer deletar permanentemente essa experiência?");
+                                    var boolConfirmacao =  confirm("Você tem certeza que quer deletar permanentemente essa experiência?");
 
-                           if (!boolConfirmacao){
-                            event.preventDefault();
-                           }
-                        }
-                    </script>
-                    <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
-                    <button type="submit" class="btn-buyhood">Mostrar QR Code</button>
-                </form>                         
-                    @else
-                    Já usado 
-                    @endif
-                </td>                                    
-            </tr>
-        @endforeach
-        </tbody>
+                                    if (!boolConfirmacao){
+                                        event.preventDefault();
+                                    }
+                                }
+                            </script>
+                            <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
+                            <button type="submit" class="btn-buyhood">Mostrar QR Code</button>
+                        </form>                         
+                            @else
+                            <p class="status">Já Usado</p>
+                            @if($carrinho['avaliado'] == 0)
+                                <a href="#" data-toggle="modal" data-target="#modalFeedback" >Clique aqui para avaliar sua experiência</a>
+                                @else
+                                    <p>Você já avaliou essa experiência,<br> <a href="#">clique aqui</a> para verificar seu feedback</p>
+                                @endif
+                                <div class="modal fade" id="modalFeedback">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1>Feedback experiência #{{ $carrinho -> id_compra }}</h1>
+                                                <a href="#" data-dismiss="modal">X</a>
+                                            </div>
+                                            <form action="/Feedback" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="id_experiencia" value="{{ $carrinho -> id_experiencia }}">
+                                                <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <h3 class="mb-5">De 0 à 5 como você classifica sua experiência {{ $carrinho -> name }} para {{$carrinho -> quantidade_pessoas}} pessoas?</h3>
+                                                    </div>
+                                                    <div class="row mb-5">
+                                                        <div class="col-lg-2">
+                                                            <p>Péssima</p>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <input type="radio" id="0" name="rating" value="0" class="rating" checked>
+                                                            <label for="0">0</label>
+                                                            <input type="radio" id="1" name="rating" value="1" class="rating">
+                                                            <label for="1">1</label>
+                                                            <input type="radio" id="2" name="rating" value="2" class="rating">
+                                                            <label for="2">2</label>
+                                                            <input type="radio" id="3" name="rating" value="3" class="rating">
+                                                            <label for="3">3</label>
+                                                            <input type="radio" id="4" name="rating" value="4" class="rating" required>
+                                                            <label for="4">4</label>
+                                                            <input type="radio" id="5" name="rating" value="5" class="rating">
+                                                            <label for="5">5</label>
+                                                                @error('sobreExperiencia')
+                                                                    <p style="color: red;">{{$message}}</p>
+                                                                @enderror
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <p>Ótima</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h3>Conte-nos mais!</h3>
+                                                    </div>
+                                                    <div class="row">
+                                                        <textarea id="feedback" name="feedback" rows="5" class="form-control"></textarea>
+                                                    </div>
+                                                    <div class="row">
+                                                        <button type="submit" class="btn-buyhood mt-5">Enviar Feedback</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        </td>                                    
+                    </tr>
+                @endforeach
+            </tbody>
         </table>
-        <hr>
-
-        <!-- <div class="listaCompras">
-            <h3>Você ainda não realizou nenhuma compra</h3>
-        </div> -->
-        
+        <hr>        
     </div>
-    
+
 @endsection

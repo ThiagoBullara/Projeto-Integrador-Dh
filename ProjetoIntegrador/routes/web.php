@@ -37,6 +37,8 @@ Route::get('/DeletarExperiencia/{id_experiencia}', 'experienciaController@deleta
 
 Route::post('/FormularioContato', 'usuarioController@emailContato');
 
+Route::post('/Feedback', 'experienciaController@feedback')->middleware('auth');
+
 Route::get('/ListaDeExperiencias', 'experienciaController@listarExperiencias');
 
 Route::get('/ListaDeExperienciasBuscar', 'experienciaController@buscar');

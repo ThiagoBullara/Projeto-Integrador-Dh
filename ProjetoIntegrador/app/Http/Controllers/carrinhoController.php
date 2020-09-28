@@ -13,6 +13,8 @@ class carrinhoController extends Controller
     public function adicionarCarrinho($produtos){
         
         $produto = experienciaModel::find($produtos);
+
+        $vac = compact('produto');
         
         \Cart::session(auth()->id())->add(array(
             'id' => random_int(1,9999999),
@@ -21,9 +23,11 @@ class carrinhoController extends Controller
             'quantity' => request('participantes'),
             'attributes' => array(),
             'associatedModel' => $produto
-        ));
+        ));        
 
-        return redirect()->route('carrinho.exibir');
+        $vac = compact('produto');
+
+        return redirect()->route('carrinho.exibir', $vac);
 
     }
 
@@ -68,6 +72,7 @@ class carrinhoController extends Controller
         $order = new compraModel();
 
         $order->name = request('name');
+        $order->id_experiencia = request('id_experiencia');
         $order->id_compra = random_int(1,9999999);
         $order->id_usuario = auth()->id();
         $order->quantidade_pessoas = request('quantidadeCarrinho');

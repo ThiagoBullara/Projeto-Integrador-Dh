@@ -30,6 +30,7 @@ class CreateExperienciaTable extends Migration
             $table->longtext('video');
             $table->text('endereco');
             $table->string('tag1');
+            $table->string('nomeRestaurante');
             $table->string('tag2');
             $table->string('tag3');
             $table->string('tag4');

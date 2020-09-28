@@ -91,7 +91,7 @@
                             </div>
                             <div class="titulo-restaurante">
                                 <p>{{ $experiencias->nomeExperiencia }}</p>
-                                <p class="nome-restaurante">R$: {{ $experiencias->nomeRestaurante }}</p>
+                                <p class="nome-restaurante">R$:{{ $experiencias->precoExperiencia }} - {{ $experiencias->nomeRestaurante }}</p>
                             </div>
                         </div>
                     </a>
@@ -99,7 +99,7 @@
                 @empty
 
                 <div class="col-lg-12" style="text-align:center;">
-                    <h1 class="mt-5 pt-5">Não existem experiências com esse tipo</h1>
+                    <h1 class="mt-5 pt-5">Infelizmente ainda não existem experiências com esse tipo</h1>
                 </div>
 
             @endforelse

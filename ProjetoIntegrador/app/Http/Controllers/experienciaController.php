@@ -28,6 +28,7 @@ class experienciaController extends Controller
             'endereco' => 'required|max:255',
             'video' => 'required|max:800',
             'email_restaurante' => 'email:rfc,dns',
+            'nomeRestaurante' => 'required|max:255',
             'fotoExperiencia1' => 'required|image',
             'fotoExperiencia2' => 'required|image',
             'fotoExperiencia3' => 'required|image',
@@ -59,6 +60,7 @@ class experienciaController extends Controller
         $novaExperiencia->endereco = $request->endereco;
         $novaExperiencia->video = $request->video;
         $novaExperiencia->email_restaurante = $request->email_restaurante;
+        $novaExperiencia->nomeRestaurante = $request->nomeRestaurante;
 
         $novaExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
         $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);
@@ -108,6 +110,7 @@ class experienciaController extends Controller
             'endereco' => 'required|max:255',
             'video' => 'required|max:800',
             'email_restaurante' => 'email:rfc,dns',
+            'nomeRestaurante' => 'required|max:255',
             'fotoExperiencia1' => 'required|image',
             'fotoExperiencia2' => 'required|image',
             'fotoExperiencia3' => 'required|image',
@@ -142,7 +145,7 @@ class experienciaController extends Controller
         $editarExperiencia->endereco = $request->post('endereco');
         $editarExperiencia->video = $request->post('video');
         $editarExperiencia->email_restaurante = $request->post('email_restaurante');
-
+        $editarExperiencia->nomeRestaurante = $request->post('nomeRestaurante');
 
         $editarExperiencia->fotoExperiencia1 = $nomeDaFoto = $request->file('fotoExperiencia1')->getClientOriginalName();
         $salvarFoto = $request->file('fotoExperiencia1')->storeAs("public/img",$nomeDaFoto);

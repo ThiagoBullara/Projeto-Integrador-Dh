@@ -132,7 +132,14 @@
             <div class="col-lg-6">
                 <label for="email_restaurante">Email do restaurante <span class="campo-obrigatorio">*</span></label><br>
                 <input class="form-control" type="email" name="email_restaurante" id="email_restaurante" placeholder="{{ $editarExperiencia -> email_restaurante}}" required>
-                @error('video')
+                @error('email_restaurante')
+                    <p style="color: red;">{{$message}}</p>
+                @enderror
+            </div>
+            <div class="col-lg-6">
+                <label for="nomeRestaurante">Nome do Restaurante <span class="campo-obrigatorio">*</span></label><br>
+                <input class="form-control" type="text" name="nomeRestaurante" id="nomeRestaurante" placeholder="{{ $editarExperiencia -> nomeRestaurante}}" value="{{old('nomeRestaurante')}}" required>
+                @error('nomeRestaurante')
                     <p style="color: red;">{{$message}}</p>
                 @enderror
             </div>

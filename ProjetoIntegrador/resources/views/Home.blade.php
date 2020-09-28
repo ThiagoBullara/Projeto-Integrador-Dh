@@ -94,7 +94,7 @@
             <div class="col-lg-6" style="text-align: -webkit-center;">
                 <div class="polaroid">
                     <a href="/Experiencia/4">
-                        <img src="storage/img/fotoExperiencia4-1.jpg" alt="Melhor Experiência" style="width:100%">
+                        <img src="storage/img/fotoExperiencia4-1.jpg" alt="Melhor Experiência" style="width:100%" height="450">
                         <div class="container">
                             <p>Conheça nossa experiência mais comprada!</p>
                         </div>
@@ -104,7 +104,7 @@
             <div class="col-lg-6" style="text-align: -webkit-center;">
                 <div class="polaroid">
                     <a href="/Experiencia/2">
-                        <img src="storage/img/fotoExperiencia2-1.jpg" alt="Melhor Experiência" style="width:100%">
+                        <img src="storage/img/fotoExperiencia2-1.jpg" alt="Melhor Experiência" style="width:100%" height="450">
                         <div class="container">
                             <p>Conheça nossa experiência mais bem avaliada!</p>
                         </div>

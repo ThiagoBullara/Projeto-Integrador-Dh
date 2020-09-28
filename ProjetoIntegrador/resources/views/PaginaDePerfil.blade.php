@@ -124,9 +124,6 @@
                             <p class="status">Já Usado</p>
                             @if($carrinho['avaliado'] == 0)
                                 <a href="#" data-toggle="modal" data-target="#modalFeedback" >Clique aqui para avaliar sua experiência</a>
-                                @else
-                                    <p>Você já avaliou essa experiência,<br> <a href="#">clique aqui</a> para verificar seu feedback</p>
-                                @endif
                                 <div class="modal fade" id="modalFeedback">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -140,16 +137,14 @@
                                                 <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
                                                 <div class="modal-body">
                                                     <div class="row">
-                                                        <h3 class="mb-5">De 0 à 5 como você classifica sua experiência {{ $carrinho -> name }} para {{$carrinho -> quantidade_pessoas}} pessoas?</h3>
+                                                        <h3 class="mb-5">De 1 à 5 como você classifica sua experiência {{ $carrinho -> name }} para {{$carrinho -> quantidade_pessoas}} pessoas?</h3>
                                                     </div>
                                                     <div class="row mb-5">
                                                         <div class="col-lg-2">
                                                             <p>Péssima</p>
                                                         </div>
                                                         <div class="col-lg-8">
-                                                            <input type="radio" id="0" name="rating" value="0" class="rating" checked>
-                                                            <label for="0">0</label>
-                                                            <input type="radio" id="1" name="rating" value="1" class="rating">
+                                                            <input type="radio" id="1" name="rating" value="1" class="rating" checked>
                                                             <label for="1">1</label>
                                                             <input type="radio" id="2" name="rating" value="2" class="rating">
                                                             <label for="2">2</label>
@@ -181,6 +176,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                @else
+                                    <p>Você já avaliou essa experiência,<br>obrigado pelo seu feedback</p>
+                                @endif
                             @endif
                         </td>                                    
                     </tr>

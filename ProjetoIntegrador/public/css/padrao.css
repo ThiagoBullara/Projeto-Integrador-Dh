@@ -144,13 +144,16 @@ footer {
 
  
 @media only screen and (max-width: 1024px) {
-    .logo-mobile{
+    .nav-buyhood .logo-mobile{
         display: block;
         position: relative;
         right: 250px;
         margin-left: 0%;
     }
-    
+    .logo-mobile{
+        display: block;
+        margin-left: 0%;
+    }
     .logo-desktop{
         display: none;
     }
@@ -190,13 +193,19 @@ footer {
 
 
 
- @media only screen and (max-width: 768px) {
-    .logo-mobile{
+ @media only screen and (max-width: 900px) {
+    .nav-buyhood .logo-mobile{
         display: block;
         position: relative;
         right: 140px;
         margin-left: 0;
     }
+
+    .logo-mobile{
+        display: block;
+        margin-left: 0%;
+    }
+
     .botao {
         font-size: 17px;
     }
@@ -225,7 +234,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 670px) {
     .nav-buyhood .logo-mobile{
         display: block;
         position: relative;
@@ -245,7 +254,7 @@ footer {
         font-size: 20px;
         display: inline-block;
         margin-left: 20%;
-
+        margin-right: 10px;
     }
 
     .barra-de-pesquisa{

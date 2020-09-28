@@ -64,17 +64,17 @@
 
     <div class="slider-experiencias">
                 
-        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
         
-        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
 
-        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
         
-        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
         
-        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
         
-        <img  class="slide" src="https://i.ibb.co/P96rpp0/icone-Beneficios.png" alt="Joao-Doria">
+        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
 
     </div>
     <!-- 

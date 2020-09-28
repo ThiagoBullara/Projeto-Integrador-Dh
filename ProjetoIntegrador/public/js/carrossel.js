@@ -6,7 +6,7 @@ $(function(){
     slidesToShow: 5,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     prevArrow: $("#arrow-prev"),
     nextArrow: $("#arrow-next"),
     responsive: [

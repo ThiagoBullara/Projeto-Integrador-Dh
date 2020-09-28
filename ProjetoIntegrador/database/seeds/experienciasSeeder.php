@@ -53,6 +53,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->video = 'https://www.youtube.com/embed/IrM6BhIkkeE';
 
         $experiencia ->email_restaurante = 'reidoswhisky@email.com';
+
+        $experiencia ->nomeRestaurante = 'Rei dos Whiskys';
         
         $experiencia ->save();
 
@@ -95,6 +97,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->video = 'https://www.youtube.com/embed/uhYnLof1-vE';
 
         $experiencia ->email_restaurante = 'cocobambu@email.com';
+
+        $experiencia ->nomeRestaurante = 'Coco Bambu';
         
         $experiencia ->save();
 
@@ -131,6 +135,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->video = 'https://www.youtube.com/embed/DYbP6f0hGdc';
 
         $experiencia ->email_restaurante = 'manish@email.com';
+
+        $experiencia ->nomeRestaurante = 'Manish';
         
         $experiencia ->save();
 
@@ -161,6 +167,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->video = 'https://www.youtube.com/embed/3Lm__DEs75w';
 
         $experiencia ->email_restaurante = 'osal@email.com';
+
+        $experiencia ->nomeRestaurante = 'Osal';
         
         $experiencia ->save();
 
@@ -191,6 +199,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->video = 'https://www.youtube.com/embed/thqL1IBDvo4';
 
         $experiencia ->email_restaurante = 'shifu@email.com';
+
+        $experiencia ->nomeRestaurante = 'Shifu';
         
         $experiencia ->save();
 
@@ -223,6 +233,8 @@ class experienciasSeeder extends Seeder
         $experiencia ->video = 'https://www.youtube.com/embed/GVIvYH4ZU6w';
 
         $experiencia ->email_restaurante = 'paopadarias@email.com';
+
+        $experiencia ->nomeRestaurante = 'Pão Padarias';
         
         $experiencia ->save();
 

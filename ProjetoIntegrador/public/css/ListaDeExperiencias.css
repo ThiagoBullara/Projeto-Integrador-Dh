@@ -55,6 +55,7 @@ main{
     margin: 30px 5px;
     position: relative;
     border-radius: 5px;
+    height: 450px;
 }
 
 .imagem-mobile {

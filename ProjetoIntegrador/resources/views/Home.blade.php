@@ -17,7 +17,7 @@
                     O Buyhood é uma plataforma onde você descobre e desfruta de experiências 
                     gastronômicas de uma maneira única. Trabalhamos em uma pequena área entre o Morumbi, 
                     Campo Belo, Pinheiros e Paraíso, confira toda nossa área de atendimento 
-                    <a href="/Area-de-Atendimento">aqui!</a>
+                    <a href="/SobreNos#Contato">aqui!</a>
                 </p>
             </li>
         </ul>

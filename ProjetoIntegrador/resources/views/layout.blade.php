@@ -210,7 +210,7 @@
                             @endif
                          @else
                             <li>
-                                <a class="navbar-item dropdown-toggle item-nav-buyhood" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><img style="width:40px; height:40px;border-radius:50%; margin-right: 10px;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">{{ Auth::user()->name }}</a>
+                                <a class="navbar-item dropdown-toggle item-nav-buyhood" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><img style="width:40px; height:40px;border-radius:50%; margin-right: 10px;background-color:gray;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}">{{ Auth::user()->name }}</a>
                                 <div class="user-dropdown dropdown-menu" aria-labelledby="navbarDropdown" style="margin-top: 20px;">
                                     <a class="dropdown-item" href="/PaginaDePerfil/"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>  {{ __('Perfil') }}</a>
                                     @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com")

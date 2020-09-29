@@ -53,8 +53,8 @@
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHlhEBKYLZ8w/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=GYBl3-tJ-si79LMJzYw8FBd-iXPNS6JVGuyUNCyNtwA" width="150"alt="" height="150" class="foto-time-perfil">
                     <h5 class="mt-4" >Raphael Scandura</h5>
                     <p>Encontre-me em:</p>
-                    <a href="https://github.com/raphaelscandura"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/raphaelscandura/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/raphaelscandura" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/raphaelscandura/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
 
@@ -63,8 +63,8 @@
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHX4iHg2fyjKA/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=sebA56WD_EPkvE7uLZsv42YuYOrLp0FDLiC3EOmbTcw" width="150" height="150" alt="" class="foto-time-perfil">
                     <h5 class="mt-4" >Henrique Evers</h5>
                     <p>Encontre-me em:</p>
-                    <a href="https://github.com/EversHenrique"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/henriqueewers/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/EversHenrique" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/henriqueewers/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
 
@@ -73,8 +73,8 @@
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHxecPlm_qNow/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=yVNTDvHQ4hxF1JqfiyJYtfJpNnKwe1Ca9kO302bdFWM" width="150" height="150" alt="" class="foto-time-perfil">
                     <h5 class="mt-4" >Luis Felipe de Oliveira</h5>
                     <p>Encontre-me em:</p>
-                    <a href="https://github.com/LuisFelipeOl"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/lufelipeoliveira/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/LuisFelipeOl" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lufelipeoliveira/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
 
@@ -83,8 +83,8 @@
                     <img src="https://avatars0.githubusercontent.com/u/66804021?s=460&u=c7f7405c56959a3bbf5eb721d932a74bd953971b&v=4" width="150" height="150" alt="" class="foto-time-perfil">
                     <h5 class="mt-4" >Thiago Bullara</h5>
                     <p>Encontre-me em:</p>
-                    <a href="https://github.com/ThiagoBullara"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/thiago-bullara-leite-b92a901a9/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ThiagoBullara" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/thiago-bullara-leite-b92a901a9/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>

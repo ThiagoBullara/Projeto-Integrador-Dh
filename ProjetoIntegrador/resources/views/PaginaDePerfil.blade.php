@@ -49,7 +49,7 @@
         </div>
         <div class="row">
             <div  class="col-lg-5 mt-5 mb-5">
-                <img style="width:140px; height:140px;border-radius:50%;" src="{{'/storage/img/'.$detalhesPerfil->fotoPerfil }}" alt="{{ $detalhesPerfil->fotoPerfil }}" class="imagem-mobile">    
+                <img style="width:140px; height:140px;border-radius:50%;background-color:lightgray;" src="{{'/storage/img/'.$detalhesPerfil->fotoPerfil }}" alt="{{ $detalhesPerfil->fotoPerfil }}" class="imagem-mobile">    
             </div>
             <div  class="col-lg-6 mt-5 mb-5">
                 <h3>{{ $detalhesPerfil->name }}</h3>

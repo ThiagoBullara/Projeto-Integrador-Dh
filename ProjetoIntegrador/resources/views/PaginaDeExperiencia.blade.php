@@ -182,8 +182,9 @@
         <!-- Aqui começa o front de comentarios -->
 
 
-        <h3>Perguntas e Comentarios</h3>
+        
         <div class="container mt-5" style="border: none;">
+            <h3>Perguntas e Comentarios</h3>
             @forelse($data['comentarios'] as $comentario)
             <hr> 
                 <div class="row mb-5" style="justify-content: center;">            

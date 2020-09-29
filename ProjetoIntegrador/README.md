@@ -22,6 +22,7 @@ Nosso projeto utilizou diversas ferramentas de desenvolvimento web, tais como:
   - [**darryldecode/laravelshoppingcart**](https://github.com/darryldecode/laravelshoppingcart) como scaffolding para criação do sistema de carrinho
   
   ### Como visualizar nosso projeto da melhor maneira
+  - Nosso [Trello](https://trello.com/b/kCw3tyUy/projeto-dh)
   - Baixar zip do projeto pelo GitHub
   - Usar os seguinte comandos em sequência:
     - composer install

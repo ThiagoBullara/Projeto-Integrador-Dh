@@ -92,7 +92,7 @@
                                                             </div>
 
                                                             <div class="d-flex justify-content-center mt-3 login_container">
-                                                                <button type="submit" class="btn-buyhood">
+                                                                <button type="submit" class="login_btn">
                                                                     {{ __('Login') }}
                                                                 </button>                                                                
                                                             </div>
@@ -124,7 +124,12 @@
                                             <div class="row justify-content-center">
                                                 <div class="col-md-8">
                                                     <div class="card">
-                                                        <div class="card-header">{{ __('Cadastro') }}</div>
+                                                        <div class="card-header">                                                     
+                                                            <div style="text-align:end;">
+                                                                <a href="#" data-dismiss="modal">X</a>
+                                                            </div>
+                                                            {{ __('Cadastro') }}
+                                                        </div>
                                                         <div class="card-body">
                                                             <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                                                                 @csrf
@@ -189,10 +194,9 @@
 
                                                                 <div class="form-group row mb-0">
                                                                     <div class="col-md-6 offset-md-4">
-                                                                        <button type="submit" class="btn-buyhood">
+                                                                        <button type="submit" class="login_btn">
                                                                             {{ __('Cadastrar') }}
                                                                         </button>
-                                                                        <a href="#" data-dismiss="modal">Cancelar</a>
                                                                     </div>
                                                                 </div>
                                                             </form>

@@ -11,6 +11,7 @@
         @yield('css')
         <script src="https://kit.fontawesome.com/0299beac0d.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <title> @yield('titulo') </title>
     </head>
     <body>
@@ -131,7 +132,7 @@
                                                             {{ __('Cadastro') }}
                                                         </div>
                                                         <div class="card-body">
-                                                            <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                                                            <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data" onsubmit="return validateRecaptcha();">
                                                                 @csrf
 
                                                                 <div class="form-group row">
@@ -194,6 +195,19 @@
 
                                                                 <div class="form-group row mb-0">
                                                                     <div class="col-md-6 offset-md-4">
+                                                                    <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
+                                                                        <script>
+                                                                            function validateRecaptcha() {
+                                                                                var response = grecaptcha.getResponse();
+                                                                                if (response.length === 0) {
+                                                                                    alert("Você não validou o reCAPTCHA");
+                                                                                    return false;
+                                                                                } else {
+                                                                                    alert("Conta criada com sucesso, você receberá um e-mail para confirmação em breve");
+                                                                                    return true;
+                                                                                }
+                                                                            }
+                                                                        </script>
                                                                         <button type="submit" class="login_btn">
                                                                             {{ __('Cadastrar') }}
                                                                         </button>

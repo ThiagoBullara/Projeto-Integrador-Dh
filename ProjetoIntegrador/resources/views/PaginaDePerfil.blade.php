@@ -59,7 +59,7 @@
                 <script>
                     function confirmacao() {
 
-                        var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
+                        var boolConfirmacao =  confirm("Você tem certeza que deseja deletar permanentemente o seu perfil no BuyHood?");
 
                         if (!boolConfirmacao){
                             event.preventDefault();
@@ -110,7 +110,7 @@
                             <script>
                                 function confirmacao() {
 
-                                    var boolConfirmacao =  confirm("Você tem certeza que quer deletar permanentemente essa experiência?");
+                                    var boolConfirmacao =  confirm("Você tem certeza que quer ativar essa experiência?");
 
                                     if (!boolConfirmacao){
                                         event.preventDefault();
@@ -131,7 +131,7 @@
                                                 <h1>Feedback experiência #{{ $carrinho -> id_compra }}</h1>
                                                 <a href="#" data-dismiss="modal">X</a>
                                             </div>
-                                            <form action="/Feedback" method="POST">
+                                            <form action="/Feedback" method="POST" onsubmit="return validateRecaptcha();">
                                                 @csrf
                                                 <input type="hidden" name="id_experiencia" value="{{ $carrinho -> id_experiencia }}">
                                                 <input type="hidden" name="id_compra" value="{{ $carrinho -> id_compra }}">
@@ -169,6 +169,19 @@
                                                         <textarea id="feedback" name="feedback" rows="5" class="form-control"></textarea>
                                                     </div>
                                                     <div class="row">
+                                                        <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
+                                                            <script>
+                                                                function validateRecaptcha() {
+                                                                    var response = grecaptcha.getResponse();
+                                                                    if (response.length === 0) {
+                                                                        alert("Você não validou o reCAPTCHA");
+                                                                        return false;
+                                                                    } else {
+                                                                        alert("Seu feedback foi enviado com sucesso! Obrigado pela preferência!");
+                                                                        return true;
+                                                                    }
+                                                                }
+                                                            </script>
                                                         <button type="submit" class="btn-buyhood mt-5">Enviar Feedback</button>
                                                     </div>
                                                 </div>

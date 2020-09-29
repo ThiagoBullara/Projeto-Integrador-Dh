@@ -209,11 +209,24 @@
         @auth
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="/EnviarComentario/{id_experiencia}" method="POST">
+                    <form action="/EnviarComentario/{id_experiencia}" method="POST" onsubmit="return validateRecaptcha();">
                         @csrf
                         <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
                         <input type="hidden" name="nome_usuario" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
                         <textarea class="comentarios-form" name="comentario" id="comentario" cols="150" rows="5"></textarea>
+                        <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
+                            <script>
+                                function validateRecaptcha() {
+                                    var response = grecaptcha.getResponse();
+                                    if (response.length === 0) {
+                                        alert("Você não validou o reCAPTCHA");
+                                        return false;
+                                    } else {
+                                        alert("O seu comentário foi postado com sucesso!");
+                                        return true;
+                                    }
+                                }
+                            </script>
                         <button type="submit">Comentar</button>
                     </form>
                 </div>

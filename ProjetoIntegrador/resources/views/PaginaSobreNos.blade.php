@@ -163,7 +163,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <form action="/FormularioContato" method="POST">
+                        <form action="/FormularioContato" method="POST" onsubmit="return validateRecaptcha();">
                         @csrf
                             <label for="name">Nome</label>
                             <input type="text" id="name" name="name" placeholder="Digite aqui seu primeiro nome..." required>
@@ -178,6 +178,19 @@
                             </select>
                             <label for="message">Mensagem</label>
                             <textarea id="message" name="message" placeholder="Digite aqui sua mensagem" style="height:170px" required></textarea>
+                            <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
+                            <script>
+                                function validateRecaptcha() {
+                                    var response = grecaptcha.getResponse();
+                                    if (response.length === 0) {
+                                        alert("Você não validou o reCAPTCHA");
+                                        return false;
+                                    } else {
+                                        alert("Sua mensagem de contato foi enviada com sucesso! Retornaremos assim que possível");
+                                        return true;
+                                    }
+                                }
+                            </script>
                             <button class="btn-buyhood" type="submit">Enviar</button>
                         </form>
                     </div>

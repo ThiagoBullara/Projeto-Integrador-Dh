@@ -30,12 +30,33 @@
                     </div>
                 @endif
                 <div class="col-lg-12">
-                    <h1 class="product-title mb-4">{{ $data['detalhesExperiencia']->nomeExperiencia }}</h1>
+                    <div class="row">
+                        <h1 class="product-title mb-4">{{ $data['detalhesExperiencia']->nomeExperiencia }} </h1>
+                        @if(count($data['feedback']))
+
+                        @php $rating = $data['feedback']->sum('rating') / count($data['feedback']); @endphp
+
+                        @foreach(range(1,5) as $i)
+                                <span class="estrelas fa-stack" style="width:1em">
+                                    <i class="estrelas far fa-star fa-stack-1x"></i>
+                                    @if($rating >0)
+                                        @if($rating >0.5)
+                                            <i class="estrelas fas fa-star fa-stack-1x"></i>
+                                        @else
+                                            <i class="estrelas fas fa-star-half fa-stack-1x"></i>
+                                        @endif
+                                    @endif
+                                    @php $rating--; @endphp
+                                </span>
+                            @endforeach
+                            <p class="rating-titulo">({{number_format($data['feedback']->sum('rating') / count($data['feedback']), 2)}})</p>
+                        @endif                   
+                    </div>
                 </div>
             </div>
             
             <div class="info-header row">
-                <div class="col-lg-10">
+                <div class="col-lg-9">
                     <div class="info">
                         <h3>{{ $data['detalhesExperiencia']->descricaoExperiencia }}</h3>
                     </div>
@@ -152,16 +173,10 @@
                         <div class="col-lg-2">
                         </div>
                         <div class="col-lg-8">
-                            <p>Ainda não existem avaliações sobre essa experiência</p>
+                            <h4>Ainda não existem avaliações sobre essa experiência</h4>
                         </div>
                     </div>
                 @endforelse
-                <div class="row">
-                    <div class="col-lg-5"></div>
-                    <div class="col-lg-6">
-                        {{$data['feedback']->links()}}
-                    </div>
-                </div>
         </div>
 
         <!-- Aqui começa o front de comentarios -->
@@ -186,16 +201,10 @@
                     <div class="col-lg-2">
                     </div>
                     <div class="col-lg-8">
-                        <p>Ainda não existem comentários sobre essa experiência</p>
+                        <h4>Ainda não existem comentários sobre essa experiência</h4>
                     </div>
                 </div>
         @endforelse
-        <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-6">
-                {{$data['comentarios']->links()}}
-            </div>
-        </div>
         @auth
             <div class="row">
                 <div class="col-lg-12">

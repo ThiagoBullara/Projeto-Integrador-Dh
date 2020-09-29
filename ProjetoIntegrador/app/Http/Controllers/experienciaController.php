@@ -218,8 +218,8 @@ class experienciaController extends Controller
 
         $data =  array();
         $data['detalhesExperiencia']  = experienciaModel::find($id_experiencia);
-        $data['comentarios'] = comentariosModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->simplePaginate(3);
-        $data['feedback'] = ratingsModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->simplePaginate(3);
+        $data['comentarios'] = comentariosModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->get();
+        $data['feedback'] = ratingsModel::where('id_experiencia', 'LIKE', '%'.$id_experiencia.'%')->get();
 
         return view('PaginaDeExperiencia', compact("data"));
     }

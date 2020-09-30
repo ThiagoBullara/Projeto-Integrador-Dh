@@ -149,6 +149,14 @@
             </div>
         </div>
 
+        <!-- Aqui começa o front de comentarios -->
+
+
+
+
+
+
+
         
         <div class="about container mt-5">
             <h3>Opinião de quem comprou</h3>
@@ -178,10 +186,6 @@
                     </div>
                 @endforelse
         </div>
-
-        <!-- Aqui começa o front de comentarios -->
-
-
         
         <div class="container mt-5" style="border: none;">
             <h3>Perguntas e Comentarios</h3>
@@ -265,6 +269,14 @@
         @endauth
         
         </div>
+
+
+
+
+
+        
+
         <!-- Aqui termina o front de comentarios -->
+ 
     </div>
 @endsection

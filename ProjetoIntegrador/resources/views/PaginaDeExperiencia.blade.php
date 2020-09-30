@@ -193,10 +193,41 @@
                     </div>
                     <div class="col-lg-8">
                         <h5>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h5>
-                        <p class="box-de-comentario">"{{ $comentario->comentario }}"</p>
+                        <div class="box-de-comentario">
+                            <p>"{{ $comentario->comentario }}"</p>
+                            <button type="button" data-toggle="modal" data-target="#myModal">Editar</button>
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Editar seu comentário</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                            <form action="/EditarComentario/{id_comentario}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
+                                                <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                                <textarea name="comentario" id="comentario" cols="30" rows="10" require></textarea>
+                                                <button type="submit">Editar</button>
+                                            </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <form action="/DeletarComentario/{id_comentario}" method="POST">
+                                @csrf
+                                <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
+                                <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                <button type="submit">Deletar</button>
+                            </form>
+                        </div>
+                        
                     </div>
                 </div>
-                
             @empty
                 <div class="row mb-5" style="justify-content: center;">            
                     <div class="col-lg-2">
@@ -215,18 +246,18 @@
                         <input type="hidden" name="nome_usuario" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
                         <textarea class="comentarios-form" name="comentario" id="comentario" cols="150" rows="5"></textarea>
                         <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
-                            <script>
-                                function validateRecaptcha() {
-                                    var response = grecaptcha.getResponse();
-                                    if (response.length === 0) {
-                                        alert("Você não validou o reCAPTCHA");
-                                        return false;
-                                    } else {
-                                        alert("O seu comentário foi postado com sucesso!");
-                                        return true;
-                                    }
+                        <script>
+                            function validateRecaptcha() {
+                                var response = grecaptcha.getResponse();
+                                if (response.length === 0) {
+                                    alert("Você não validou o reCAPTCHA");
+                                    return false;
+                                } else {
+                                    alert("O seu comentário foi postado com sucesso!");
+                                    return true;
                                 }
-                            </script>
+                            }
+                        </script>
                         <button type="submit">Comentar</button>
                     </form>
                 </div>

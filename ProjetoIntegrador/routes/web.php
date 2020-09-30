@@ -68,6 +68,9 @@ Route::get('/Layout', 'pageController@layout');
 // Comentarios
 
 Route::post('/EnviarComentario/{id_experiencia}', 'comentariosController@postar');
+Route::post('/EditarComentario/{id_comentario}', 'comentariosController@editar');
+Route::post('/DeletarComentario/{id_comentario}', 'comentariosController@deletar');
+
 
 // Comentarios
 

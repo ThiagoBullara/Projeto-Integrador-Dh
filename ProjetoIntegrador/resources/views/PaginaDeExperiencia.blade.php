@@ -199,13 +199,13 @@
                         <h5>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h5>
                         <div class="box-de-comentario">
                             <p>"{{ $comentario->comentario }}"</p>
-                            <button type="button" data-toggle="modal" data-target="#myModal">Editar</button>
+                            <button type="button" data-toggle="modal" data-target="#myModal" class="editar">Editar</button>
                                 <div id="myModal" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 <h4 class="modal-title">Editar seu comentário</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
                                             <div class="modal-body">
                                             <form action="/EditarComentario/{id_comentario}" method="POST">
@@ -213,11 +213,11 @@
                                                 <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
                                                 <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
                                                 <textarea name="comentario" id="comentario" cols="30" rows="10" require></textarea>
-                                                <button type="submit">Editar</button>
+                                                <button type="submit" class="btn-modal">Editar</button>
                                             </form>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+                                                <button type="button" class="btn btn-default btn-modal" data-dismiss="modal">Voltar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -226,7 +226,7 @@
                                 @csrf
                                 <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
                                 <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                <button type="submit">Deletar</button>
+                                <button type="submit" class="deletar">Deletar</button>
                             </form>
                         </div>
                         
@@ -262,7 +262,7 @@
                                 }
                             }
                         </script>
-                        <button type="submit">Comentar</button>
+                        <button type="submit" class="btn-buyhood">Comentar</button>
                     </form>
                 </div>
             </div>

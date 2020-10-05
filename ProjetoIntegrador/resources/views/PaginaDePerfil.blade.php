@@ -91,8 +91,7 @@
                 </th>
                 </tr>
             </thead>
-            <tbody>
-                
+            <tbody>                
                 @foreach($minhasCompras as $carrinho)
                     <tr>
                         <th>
@@ -168,8 +167,8 @@
                                                     <div class="row">
                                                         <textarea id="feedback" name="feedback" rows="5" class="form-control"></textarea>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
+                                                    <div class="row" style="margin-left: 30%;">
+                                                        <div class="g-recaptcha mt-4 mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
                                                             <script>
                                                                 function validateRecaptcha() {
                                                                     var response = grecaptcha.getResponse();
@@ -182,13 +181,13 @@
                                                                     }
                                                                 }
                                                             </script>
-                                                        <button type="submit" class="btn-buyhood mt-5">Enviar Feedback</button>
+                                                        </div>
+                                                        <button type="submit" class="btn-buyhood">Enviar Feedback</button>
                                                     </div>
-                                                </div>
-                                            </form>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 @else
                                     <p>Você já avaliou essa experiência,<br>obrigado pelo seu feedback</p>
                                 @endif

@@ -26,6 +26,10 @@ h2 {
     font-size: 20px;
 }
 
+.modal-content{
+    background-color: white;
+}
+
 .info-header {
     border-bottom: 3px lightgray solid;
     margin-bottom: 20px;
@@ -138,11 +142,14 @@ h2 {
     position: relative;
     left: 49vw;
 }
+
 .btn-modal{
     background: none;
     border: none;
-    color: white;
+    color: black;
+    text-align: center;
 }
+
 .deletar{
     margin-top: 10px;
     background: none;

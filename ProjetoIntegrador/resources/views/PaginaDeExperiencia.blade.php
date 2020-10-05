@@ -207,17 +207,16 @@
                                                 <h4 class="modal-title">Editar seu comentário</h4>
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                             </div>
-                                            <div class="modal-body">
+                                            <div class="modal-body">                                            
                                             <form action="/EditarComentario/{id_comentario}" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
                                                 <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                                <textarea name="comentario" id="comentario" cols="30" rows="10" require></textarea>
-                                                <button type="submit" class="btn-modal">Editar</button>
+                                                <textarea name="comentario" id="comentario" cols="55" rows="5" require></textarea>
+                                                <div class="btn-enviar row">
+                                                    <button type="submit" class="btn-buyhood">Editar</button>
+                                                </div>
                                             </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default btn-modal" data-dismiss="modal">Voltar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -228,8 +227,7 @@
                                 <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
                                 <button type="submit" class="deletar">Deletar</button>
                             </form>
-                        </div>
-                        
+                        </div>                        
                     </div>
                 </div>
             @empty

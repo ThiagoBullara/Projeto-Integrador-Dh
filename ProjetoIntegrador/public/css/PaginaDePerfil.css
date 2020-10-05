@@ -49,8 +49,8 @@ tr:nth-child(even) {
     transition: 0.5s all;
 }
 
-.modal-body{
-    text-align:center;
+.modal-content{
+    background-color: white;
 }
 
 .rating{

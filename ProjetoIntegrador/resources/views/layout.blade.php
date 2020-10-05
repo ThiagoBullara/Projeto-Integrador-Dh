@@ -17,9 +17,11 @@
     <body>
         <header class="container-fluid">
             <div class="row">
-                    <ul class="col-lg-12 nav-buyhood">    
-                        <li><div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div></li>
-                        <li><div class="logo-mobile"><a href="/home"><img src="https://i.ibb.co/RNy1YxH/Screenshot-4-removebg-preview.png" alt="Logo Buyhood" width="70%"></a></div></li>
+                <div class="col-lg-5">
+                    <div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div>
+                    <div class="logo-mobile"><a href="/home"><img src="https://i.ibb.co/RNy1YxH/Screenshot-4-removebg-preview.png" alt="Logo Buyhood" width="70%"></a></div>
+                </div>
+                    <ul class="col-lg-7 nav-buyhood">    
                         <li class="barra-de-pesquisa">
                             <form action="/ListaDeExperienciasBuscar" method="GET">
                                 <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">
@@ -81,8 +83,6 @@
                                                                         </span>
                                                                     @enderror
                                                             </div>
-
-
                                                             <div class="form-group">
                                                                 <div class="custom-control custom-checkbox">
                                                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>

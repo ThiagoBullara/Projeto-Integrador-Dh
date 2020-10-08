@@ -24,9 +24,9 @@ class comentariosController extends Controller
         $novoComentario = new comentariosModel();
         $novoComentario->comentario = $request->comentario;
         $novoComentario->id_experiencia = $request->id_experiencia;
+        $novoComentario->id_usuario = Auth::user()->id;
         $novoComentario->nome_usuario = Auth::user()->name;
         $novoComentario->fotoPerfil = Auth::user()->fotoPerfil;
-
 
         $id_experiencia = $request->id_experiencia;
         $comentarioSalvo = $novoComentario->save();
@@ -49,6 +49,7 @@ class comentariosController extends Controller
         $this -> validate($request, $validatedRules, $validatedMessage);
 
         $id_comentario = $request->id_comentario;
+
         $editarComentario = comentariosModel::find($id_comentario);
         $editarComentario->comentario = $request->comentario;
         

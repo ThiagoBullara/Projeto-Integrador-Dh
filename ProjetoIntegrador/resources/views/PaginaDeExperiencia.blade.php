@@ -183,38 +183,43 @@
                         <h5>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h5>
                         <div class="box-de-comentario">
                             <p>"{{ $comentario->comentario }}"</p>
-                            <div class="row">
-                                <div class="col-lg-10" style="text-align: end; padding-right: 0;">
-                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Editar</button>
-                                    <div id="myModal" class="modal fade" role="dialog">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Editar seu comentário</h4>
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                </div>
-                                                <div class="modal-body">                                            
-                                                    <form action="/EditarComentario/{id_comentario}" method="POST">
-                                                        @csrf
-                                                        <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
-                                                        <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                                        <textarea name="comentario" id="comentario" cols="55" rows="5" require style="padding: 4px;"></textarea>
-                                                        <button type="submit" class="btn btn-primary">Editar</button>
-                                                    </form>
+                            @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com" || Auth::user()->id == $comentario->id_usuario )
+                                <div class="row">
+                                    <div class="col-lg-10" style="text-align: end; padding-right: 0;">
+                                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Editar</button>
+                                        <div id="myModal" class="modal fade" role="dialog">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Editar seu comentário</h4>
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    <div class="modal-body">                                            
+                                                        <form action="/EditarComentario/{id_comentario}" method="POST">
+                                                            @csrf
+                                                            <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario }}">
+                                                            <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                                            <textarea name="comentario" id="comentario" cols="55" rows="5" required style="padding: 4px;"></textarea>
+                                                            @error('comentario')
+                                                                <p style="color: red;">{{$message}}</p>
+                                                            @enderror
+                                                            <button type="submit" class="btn btn-primary">Editar</button>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-2">
+                                        <form action="/DeletarComentario/{id_comentario}" method="POST">
+                                            @csrf
+                                            <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario }}">
+                                            <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                            <button type="submit" class="btn btn-danger">Deletar</button>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="col-lg-2">
-                                    <form action="/DeletarComentario/{id_comentario}" method="POST">
-                                        @csrf
-                                        <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
-                                        <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                        <button type="submit" class="btn btn-danger">Deletar</button>
-                                    </form>
-                                </div>
-                            </div>
+                            @endif
                         </div>                        
                     </div>
                 </div>
@@ -229,29 +234,20 @@
 
         @auth
             <div class="container mb-4" style="border: none; border-top: solid black 1px; border-bottom: solid black 1px;">
-                <h3 class="h-comentarios mb-3">Deixe aqui seu comentário</h3>
+                <h3 class="h-comentarios mb-4">Deixe aqui seu comentário</h3>
                 <form action="/EnviarComentario/{id_experiencia}" method="POST" onsubmit="return validateRecaptcha();">
                     @csrf
                     <div class="row">
                         <div class="col-lg-8" style="text-align: center;">
                             <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                            <input type="hidden" name="nome_usuario" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                            <textarea class="comentarios-form" name="comentario" id="comentario" cols="100" rows="5" require style="padding: 4px;"></textarea>
+                            <input type="hidden" name="nome_usuario">
+                            <textarea class="comentarios-form" name="comentario" id="comentario" cols="100" rows="5" required style="padding: 4px;" placeholder="Escreva um comentário sobre o restaurante, experiência, etc..."></textarea>
+                            @error('comentario')
+                                <p style="color: red;">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="col-lg-4">
                             <div class="g-recaptcha mb-3" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
-                            <script>
-                                function validateRecaptcha() {
-                                    var response = grecaptcha.getResponse();
-                                    if (response.length === 0) {
-                                        alert("Você não validou o reCAPTCHA");
-                                        return false;
-                                    } else {
-                                        alert("O seu comentário foi postado com sucesso!");
-                                        return true;
-                                    }
-                                }
-                            </script>
                             <button type="submit" class="btn-buyhood">Comentar</button>
                         </div>
                     </div>

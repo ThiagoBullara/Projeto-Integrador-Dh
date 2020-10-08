@@ -19,6 +19,11 @@ header {
 .container {
     flex: 1;
 }
+
+.nav-buyhood {
+    text-align: end;
+}
+
 .nav-buyhood .logo-desktop{
     display: none;
 }

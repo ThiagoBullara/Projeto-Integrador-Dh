@@ -12,30 +12,30 @@
 
         <div class="container">
             <div class="row">
-                @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6 mb-5 mt-5" style="text-align:right;">
-                        <a href="/DeletarExperiencia/{{$data['detalhesExperiencia']->id_experiencia}}"><button class="btn btn-danger" onclick="confirmacao()">Deletar Experiencia</button></a>
-                            <script>
-                                function confirmacao() {
-
-                                    var boolConfirmacao =  confirm("Você tem certeza que quer deletar permanentemente essa experiência?");
-
-                                    if (!boolConfirmacao){
-                                        event.preventDefault();
-                                    }
-                                }
-                            </script>
-                        <a href="/EditarExperiencia/{{$data['detalhesExperiencia']->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
-                    </div>
-                @endif
                 <div class="col-lg-12">
-                    <div class="row">
-                        <h1 class="product-title mb-4">{{ $data['detalhesExperiencia']->nomeExperiencia }} </h1>
+                    <div class="row mt-3">
+                        <div class="col-lg-8">
+                            <h1 class="product-title">{{ $data['detalhesExperiencia']->nomeExperiencia }}</h1>
+                        </div>
+                        @if (Auth::user() != null && Auth::user()->email == "buyhoodlocalfoods@gmail.com")
+                            <div class="col-lg-4" style="text-align:right;">
+                                <a href="/EditarExperiencia/{{$data['detalhesExperiencia']->id_experiencia}}"><button class="btn btn-primary">Editar Experiencia</button></a>
+                                <a href="/DeletarExperiencia/{{$data['detalhesExperiencia']->id_experiencia}}"><button class="btn btn-danger" onclick="confirmacao()">Deletar Experiencia</button></a>
+                                <script>
+                                    function confirmacao() {
+                                        var boolConfirmacao =  confirm("Você tem certeza que quer deletar permanentemente essa experiência?");
+                                        if (!boolConfirmacao){
+                                            event.preventDefault();
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        @endif
+                    </div>
+                    <div class="row mb-4" style="padding-left: 15px;">
                         @if(count($data['feedback']))
-
                         @php $rating = $data['feedback']->sum('rating') / count($data['feedback']); @endphp
-
+                        <p class="rating-titulo">({{number_format($data['feedback']->sum('rating') / count($data['feedback']), 2)}})</p>
                         @foreach(range(1,5) as $i)
                                 <span class="estrelas fa-stack" style="width:1em">
                                     <i class="estrelas far fa-star fa-stack-1x"></i>
@@ -49,7 +49,6 @@
                                     @php $rating--; @endphp
                                 </span>
                             @endforeach
-                            <p class="rating-titulo">({{number_format($data['feedback']->sum('rating') / count($data['feedback']), 2)}})</p>
                         @endif                   
                     </div>
                 </div>
@@ -99,7 +98,7 @@
                         <li class="description-itens">{{ $data['detalhesExperiencia'] -> tag2 }}</li>
                         <li class="description-itens">{{ $data['detalhesExperiencia'] -> tag3 }}</li>
                         <li class="description-itens">{{ $data['detalhesExperiencia'] -> tag4 }}</li>
-                        <li class="description-itens mt-3 mb-3">Horário disponível para essa experiência: <strong>{{ $data['detalhesExperiencia'] -> funcionamento }}</strong></li>
+                        <li class="description-itens mt-3">Horário disponível para essa experiência: <strong>{{ $data['detalhesExperiencia'] -> funcionamento }}</strong></li>
                         <li class="description-itens mb-3">
                             Endereço: <a href="http://maps.google.com/?q={{ $data['detalhesExperiencia'] -> endereco }}" target="_blank"><strong>{{ $data['detalhesExperiencia'] -> endereco }}</strong>
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -148,133 +147,116 @@
                 </div>
             </div>
         </div>
-
-        <!-- Aqui começa o front de comentarios -->
-
-
-
-
-
-
-
-        
         <div class="about container mt-5">
-            <h3>Opinião de quem comprou</h3>
-                @forelse($data['feedback'] as $feedback)
-                    <hr> 
-                    <div class="row mb-5" style="justify-content: center;">            
-                        <div class="col-lg-2">
-                            <img class="comentarios-img" src="{{ '/storage/img/'.$feedback->foto_usuario }}" width="100" height="100" alt="#">
-                        </div>
-                        <div class="col-lg-8">
-                            <h5>{{ $feedback->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($feedback->created_at)) }}</span></h5>
-                            <p>
-                                @for($i=0;$i<$feedback['rating'];$i++)
-                                    <i class="estrelas fas fa-star"></i>
-                                @endfor
-                            </p>
-                            <p class="box-de-comentario">"{{ $feedback->feedback }}"</p>
-                        </div>
-                    </div>                   
-                @empty
-                    <div class="row mb-5" style="justify-content: center;">            
-                        <div class="col-lg-2">
-                        </div>
-                        <div class="col-lg-8">
-                            <h4>Ainda não existem avaliações sobre essa experiência</h4>
-                        </div>
+            <h2 class="h-comentarios mb-5">Opinião de quem comprou</h2>
+            @forelse($data['feedback'] as $feedback)
+                <div class="row mb-4" style="justify-content: center;">            
+                    <div class="col-lg-2 box-comentario-img">
+                        <img class="comentarios-img" src="{{ '/storage/img/'.$feedback->foto_usuario }}" width="100" height="100" alt="#">
                     </div>
-                @endforelse
+                    <div class="col-lg-8 box-comentario-info">
+                        <h5>{{ $feedback->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($feedback->created_at)) }}</span></h5>
+                        <p>
+                            @for($i=0;$i<$feedback['rating'];$i++)
+                                <i class="estrelas fas fa-star"></i>
+                            @endfor
+                        </p>
+                        <p class="box-de-comentario box-comentario">"{{ $feedback->feedback }}"</p>
+                    </div>
+                </div>          
+            @empty
+                <div class="row mt-4 mb-4" style="justify-content: center;">            
+                    <div class="col-lg-12">
+                        <h3 class="h-comentarios mb-5">Ainda não existem avaliações sobre essa experiência</h3>
+                    </div>
+                </div> 
+            @endforelse 
         </div>
-        
         <div class="container mt-5" style="border: none;">
-            <h3>Perguntas e Comentarios</h3>
+            <h2 class="h-comentarios mb-5">Perguntas e Comentarios</h2>
             @forelse($data['comentarios'] as $comentario)
-            <hr> 
-                <div class="row mb-5" style="justify-content: center;">            
-                    <div class="col-lg-2">
+                <div class="row mb-4" style="justify-content: center;">            
+                    <div class="col-lg-2 box-comentario-img">
                         <img class="comentarios-img" src="{{ '/storage/img/'.$comentario->fotoPerfil }}" width="100" height="100" alt="#">
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 box-comentario-info">
                         <h5>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h5>
                         <div class="box-de-comentario">
                             <p>"{{ $comentario->comentario }}"</p>
-                            <button type="button" data-toggle="modal" data-target="#myModal" class="editar">Editar</button>
-                                <div id="myModal" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Editar seu comentário</h4>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">                                            
-                                            <form action="/EditarComentario/{id_comentario}" method="POST">
-                                                @csrf
-                                                <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
-                                                <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                                <textarea name="comentario" id="comentario" cols="55" rows="5" require></textarea>
-                                                <div class="btn-enviar row">
-                                                    <button type="submit" class="btn-buyhood">Editar</button>
+                            <div class="row">
+                                <div class="col-lg-10" style="text-align: end; padding-right: 0;">
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Editar</button>
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Editar seu comentário</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 </div>
-                                            </form>
+                                                <div class="modal-body">                                            
+                                                    <form action="/EditarComentario/{id_comentario}" method="POST">
+                                                        @csrf
+                                                        <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
+                                                        <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                                        <textarea name="comentario" id="comentario" cols="55" rows="5" require style="padding: 4px;"></textarea>
+                                                        <button type="submit" class="btn btn-primary">Editar</button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            <form action="/DeletarComentario/{id_comentario}" method="POST">
-                                @csrf
-                                <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
-                                <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                <button type="submit" class="deletar">Deletar</button>
-                            </form>
+                                <div class="col-lg-2">
+                                    <form action="/DeletarComentario/{id_comentario}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario}}">
+                                        <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                        <button type="submit" class="btn btn-danger">Deletar</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>                        
                     </div>
                 </div>
-            @empty
-                <div class="row mb-5" style="justify-content: center;">            
-                    <div class="col-lg-2">
-                    </div>
-                    <div class="col-lg-8">
-                        <h4>Ainda não existem comentários sobre essa experiência</h4>
-                    </div>
-                </div>
-        @endforelse
-        @auth
-            <div class="row">
-                <div class="col-lg-12">
-                    <form action="/EnviarComentario/{id_experiencia}" method="POST" onsubmit="return validateRecaptcha();">
-                        @csrf
-                        <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                        <input type="hidden" name="nome_usuario" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                        <textarea class="comentarios-form" name="comentario" id="comentario" cols="150" rows="5"></textarea>
-                        <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
-                        <script>
-                            function validateRecaptcha() {
-                                var response = grecaptcha.getResponse();
-                                if (response.length === 0) {
-                                    alert("Você não validou o reCAPTCHA");
-                                    return false;
-                                } else {
-                                    alert("O seu comentário foi postado com sucesso!");
-                                    return true;
-                                }
-                            }
-                        </script>
-                        <button type="submit" class="btn-buyhood">Comentar</button>
-                    </form>
-                </div>
-            </div>
-        @endauth
-        
+                @empty
+                    <div class="row mt-4 mb-4" style="justify-content: center;">            
+                        <div class="col-lg-12">
+                            <h3 class="h-comentarios mb-5">Ainda não existem perguntas e comentários para essa experiência</h3>
+                        </div>
+                    </div> 
+            @endforelse
         </div>
 
-
-
-
-
-        
-
-        <!-- Aqui termina o front de comentarios -->
- 
+        @auth
+            <div class="container mb-4" style="border: none; border-top: solid black 1px; border-bottom: solid black 1px;">
+                <h3 class="h-comentarios mb-3">Deixe aqui seu comentário</h3>
+                <form action="/EnviarComentario/{id_experiencia}" method="POST" onsubmit="return validateRecaptcha();">
+                    @csrf
+                    <div class="row">
+                        <div class="col-lg-8" style="text-align: center;">
+                            <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                            <input type="hidden" name="nome_usuario" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                            <textarea class="comentarios-form" name="comentario" id="comentario" cols="100" rows="5" require style="padding: 4px;"></textarea>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="g-recaptcha mb-3" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
+                            <script>
+                                function validateRecaptcha() {
+                                    var response = grecaptcha.getResponse();
+                                    if (response.length === 0) {
+                                        alert("Você não validou o reCAPTCHA");
+                                        return false;
+                                    } else {
+                                        alert("O seu comentário foi postado com sucesso!");
+                                        return true;
+                                    }
+                                }
+                            </script>
+                            <button type="submit" class="btn-buyhood">Comentar</button>
+                        </div>
+                    </div>
+                </form>                
+            </div>
+        @endauth 
     </div>
 @endsection

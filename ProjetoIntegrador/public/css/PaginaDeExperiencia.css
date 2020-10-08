@@ -18,7 +18,7 @@ h2 {
 }
 
 .product-title {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 2.7em;
 }
 
@@ -135,28 +135,33 @@ h2 {
     transition: 0.5s all;
 }
 
-.editar{
-    margin-top: 10px;
-    background: none;
-    border: none;
-    position: relative;
-    left: 49vw;
-}
-
-.btn-modal{
+.btn-modal {
     background: none;
     border: none;
     color: black;
     text-align: center;
 }
 
-.deletar{
-    margin-top: 10px;
-    background: none;
-    border: none;
-    position: relative;
-    left: 49vw;
+.h-comentarios {
+    text-align: center;
 }
+
+.box-comentario-img, .box-comentario-info {
+    background-color: #f3f3f3;
+}
+
+.box-comentario-img {
+    padding: 10px 0 10px 20px;
+    border: solid 1px black;
+    border-right: none;
+}
+
+.box-comentario-info {
+    padding: 10px 0;
+    border: solid 1px black;
+    border-left: none;
+}
+
 
   @media (max-width: 500px) {
     .review-section {

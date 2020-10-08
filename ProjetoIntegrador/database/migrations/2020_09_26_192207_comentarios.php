@@ -16,6 +16,7 @@ class Comentarios extends Migration
         Schema::create('comentarios', function (Blueprint $table) {
             $table->bigIncrements('id_comentario');
             $table->unsignedBigInteger('id_experiencia');
+            $table->unsignedBigInteger('id_usuario');
             $table->longText('comentario');            
             $table->text('nome_usuario');
             $table->text('fotoPerfil');

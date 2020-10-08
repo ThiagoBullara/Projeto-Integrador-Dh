@@ -24,9 +24,6 @@ header {
     text-align: end;
 }
 
-.nav-buyhood .logo-desktop{
-    display: none;
-}
 
 .nav-buyhood .logo-mobile{
     display: block;
@@ -253,20 +250,63 @@ footer {
     border: none;
 }
 
+.navbar-mobile{
+    width: 100%;
+    display: none;
+    position: fixed;
+    background-color:lightgray;
+    z-index: 5000000000;
+    bottom: 0%;
+}
+
+.fas.fa-home, .fas.fa-search, .fas.fa-building, .fas.fa-user{
+    color: black;
+}
+#modal-mobile{
+    z-index: 5000000000;
+}
+
  
 @media only screen and (max-width: 1024px) {
+    .navbar-mobile{
+        display: block;
+        text-align: center;
+        padding-top:10px;
+    }
+
+    .logo-desktop-footer{
+        display: none;
+    }
+
+    .ul-navbar-mobile{
+        margin-top: 5px;
+        display: inline-block;       
+    }
+
+    .navbar-mobile-item{
+        display:inline;
+        margin: 5vw;
+    }
+
+    .nav-buyhood{
+        display: none;
+    }        
+
     .nav-buyhood .logo-mobile{
         display: block;
         position: relative;
         right: 250px;
         margin-left: 0%;
     }
+
     .logo-mobile{
+        width: 50%;
         display: block;
         margin-left: 0%;
     }
+
     .logo-desktop{
-        display: none;
+        width: 50%;
     }
 
     .botao {
@@ -350,10 +390,6 @@ footer {
         display: block;
         position: relative;
         right: 50px;
-    }
-
-    .logo-desktop {
-        display: none;
     }
 
     .logo-mobile {

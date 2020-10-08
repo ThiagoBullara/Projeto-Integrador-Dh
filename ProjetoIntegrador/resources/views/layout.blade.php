@@ -15,13 +15,12 @@
         <title> @yield('titulo') </title>
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="header container-fluid">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div>
-                    <div class="logo-mobile"><a href="/home"><img src="https://i.ibb.co/RNy1YxH/Screenshot-4-removebg-preview.png" alt="Logo Buyhood" width="70%"></a></div>
                 </div>
-                <ul class="col-lg-8 nav-buyhood">    
+                <ul class="nav-buyhood col-lg-8">    
                     <li class="barra-de-pesquisa">
                         <form action="/ListaDeExperienciasBuscar" method="GET">
                             <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">
@@ -37,8 +36,9 @@
                             </div>
                         </form>
                     </li>
-                    <li><a class="item-nav-buyhood" href="/home">Home</a></li>
+                    <li><a class="item-nav-buyhood" href="/home">Inicio</a></li>
                     <li><a class="item-nav-buyhood" href="/ListaDeExperiencias">Experiências</a></li>
+                    <li><a class="item-nav-buyhood" href="/SobreNos">Sobre nós</a></li>
                     @guest
                         <li><a class="item-nav-buyhood" href="#" data-toggle="modal" data-target="#modalLogin">{{ __('Login') }}</a></li>
                             <div class="modal fade" id="modalLogin">
@@ -247,14 +247,117 @@
         </header>
 
         @yield('conteudo')
+
+        <section class="navbar-mobile">
+            <ul class="ul-navbar-mobile">
+                <li class="navbar-mobile-item"><a href="/home"><i class="fas fa-home fa-2x"></a></i></li>
+                <li class="navbar-mobile-item"><a href="/ListaDeExperiencias"><i class="fas fa-search fa-2x"></a></i></li>
+                <li class="navbar-mobile-item"><a href="/SobreNos"><i class="fas fa-building fa-2x"></a></i></li>
+                <li class="navbar-mobile-item">
+                    @if (Auth::check()) 
+                        <a class="navbar-item item-nav-buyhood" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><img style="width:40px; height:40px;border-radius:50%; margin-right: 10px;background-color:gray;" src="{{'/storage/img/'.Auth::user()->fotoPerfil }}" alt="{{ Auth::user()->fotoPerfil }}"></a>
+                            <div class="user-dropdown dropdown-menu" aria-labelledby="navbarDropdown" style="margin-top: 20px;">
+                                <a class="dropdown-item" href="/PaginaDePerfil/"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>  {{ __('Perfil') }}</a>
+                                @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com")
+                                    <a class="dropdown-item" href="/CadastroDeExperiencia/"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0H4zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z"/></svg>  {{ __('Cadastro de Experiências') }}</a>
+                                @endif
+                                <a class="dropdown-item" href="/PaginaDePerfil/"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/></svg>  {{ __('Minhas Compras') }}</a>
+                                <a class="dropdown-item" href="{{ route('carrinho.exibir') }}"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>  {{ __('Carrinho') }}</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-closed-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 1a1 1 0 0 0-1 1v13H1.5a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2a1 1 0 0 0-1-1H4zm2 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>  {{ __('Sair') }}</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div> 
+                        @else
+                        <a href="#" data-toggle="modal" data-target="#modal-mobile"><i class="fas fa-user fa-2x"></i></a>
+                        <div class="modal fade" id="modal-mobile">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-center h-100">
+                                        <div class="user_card">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="brand_logo_container">
+                                                    <img src="https://i.ibb.co/0tNkSBr/Icon.png" width="40%"class="brand_logo" alt="Logo">                                                            
+                                                </div>
+                                            </div>
+                                            <div style="text-align:end;">
+                                                <a href="#" data-dismiss="modal">X</a>
+                                            </div>
+                                            <div class="d-flex justify-content-center form_container">
+                                                <form method="POST" action="{{ route('login') }}">
+                                                    @csrf
+
+                                                    <div class="row input-group mb-2">
+                                                        <div class="col-md-3 input-group-append">
+                                                            <label for="email" class="col-form-label">{{ __('Email') }}</label>
+                                                        </div>
+                                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                        <input id="email" type="email" class="cold-md-8 form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                                            @error('email')
+                                                                <span class="invalid-feedback" role="alert">
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
+                                                            @enderror
+                                                    </div>
+
+                                                    <div class="row input-group mb-2">
+                                                    <div class="col-md-3 input-group-append">
+                                                            <label for="password" class="col-form-label">{{ __('Senha') }}</label>
+                                                        </div>
+                                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                        <input id="password" type="password" class="cold-md-6 form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                                            @error('password')
+                                                                <span class="invalid-feedback" role="alert">
+                                                                    <strong>{{ $message }}</strong>
+                                                                </span>
+                                                            @enderror
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                                            <label class="form-check-label" for="remember">
+                                                                {{ __('Mantenha-me conectado') }}
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-center mt-3 login_container">
+                                                        <button type="submit" class="login_btn">
+                                                            {{ __('Login') }}
+                                                        </button>                                                                
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <div class="d-flex justify-content-center links">
+                                                    Não tem uma conta? <a href="/register" class="ml-2">Cadastre-se!</a>
+                                                </div>
+                                                @if (Route::has('password.request'))
+                                                    <div class="d-flex justify-content-center links">
+                                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                            {{ __('Esqueceu sua senha?') }}
+                                                        </a>
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                </li>
+            </ul>
+        </section>
         
         <footer class="container-fluid">
             <div class="row">
                 <div class="logo footer-partner col-lg-6">
-                    <div class="logo-desktop">
+                    <div class="logo-desktop-footer">
                         <a href="/home" ><img src="https://i.ibb.co/RSCPMG8/Screenshot-5-removebg-preview.png" alt="Logo Buyhood"></a>
                     </div>
-                    <div class="logo-mobile">
+                    <div class="logo-mobile-footer">
                         <a href="/home"><img src="https://i.ibb.co/fqPwfhs/Screenshot-2-removebg-preview.png" alt="Logo Buyhood"></a>
                     </div>
                 </div>

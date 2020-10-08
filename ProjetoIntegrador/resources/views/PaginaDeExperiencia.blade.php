@@ -151,10 +151,10 @@
             <h2 class="h-comentarios mb-5">Opinião de quem comprou</h2>
             @forelse($data['feedback'] as $feedback)
                 <div class="row mb-4" style="justify-content: center;">            
-                    <div class="col-lg-2 box-comentario-img">
+                    <div class="col-lg-2 col-md-2 col-sm-2 box-comentario-img">
                         <img class="comentarios-img" src="{{ '/storage/img/'.$feedback->foto_usuario }}" width="100" height="100" alt="#">
                     </div>
-                    <div class="col-lg-8 box-comentario-info">
+                    <div class="col-lg-10 col-md-10 col-sm-10 box-comentario-info">
                         <h5>{{ $feedback->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($feedback->created_at)) }}</span></h5>
                         <p>
                             @for($i=0;$i<$feedback['rating'];$i++)
@@ -176,15 +176,15 @@
             <h2 class="h-comentarios mb-5">Perguntas e Comentarios</h2>
             @forelse($data['comentarios'] as $comentario)
                 <div class="row mb-4" style="justify-content: center;">            
-                    <div class="col-lg-2 box-comentario-img">
-                        <img class="comentarios-img" src="{{ '/storage/img/'.$comentario->fotoPerfil }}" width="100" height="100" alt="#">
+                    <div class="col-lg-2 col-md-2 col-sm-2 box-comentario-img">
+                        <img class="comentarios-img" src="{{ '/storage/img/'.$comentario->fotoPerfil }}" width="100" height="100" alt="Foto de perfil do usuário">
                     </div>
-                    <div class="col-lg-8 box-comentario-info">
+                    <div class="col-lg-10 col-md-10 col-sm-10 box-comentario-info">
                         <h5>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h5>
                         <div class="box-de-comentario">
                             <p>"{{ $comentario->comentario }}"</p>
                             @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com" || Auth::user()->id == $comentario->id_usuario )
-                                <div class="row">
+                                <div class="row" style="width: 100%;">
                                     <div class="col-lg-10" style="text-align: end; padding-right: 0;">
                                         <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Editar</button>
                                         <div id="myModal" class="modal fade" role="dialog">
@@ -238,10 +238,10 @@
                 <form action="/EnviarComentario/{id_experiencia}" method="POST" onsubmit="return validateRecaptcha();">
                     @csrf
                     <div class="row">
-                        <div class="col-lg-8" style="text-align: center;">
+                        <div class="col-lg-8 col-md-12 col-sm-12" style="text-align: center;">
                             <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
                             <input type="hidden" name="nome_usuario">
-                            <textarea class="comentarios-form" name="comentario" id="comentario" cols="100" rows="5" required style="padding: 4px;" placeholder="Escreva um comentário sobre o restaurante, experiência, etc..."></textarea>
+                            <textarea class="comentarios-form" name="comentario" id="comentario" rows="5" required style="padding: 4px; width: 100%;" placeholder="Escreva um comentário sobre o restaurante, experiência, etc..."></textarea>
                             @error('comentario')
                                 <p style="color: red;">{{$message}}</p>
                             @enderror

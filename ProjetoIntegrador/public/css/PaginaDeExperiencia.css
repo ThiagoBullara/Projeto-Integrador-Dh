@@ -162,8 +162,7 @@ h2 {
     border-left: none;
 }
 
-
-  @media (max-width: 500px) {
+@media (max-width: 500px) {
     .review-section {
         text-align: center;
     }
@@ -172,5 +171,5 @@ h2 {
         float: none;
         display: block;
     }
-  }
+}
 

@@ -203,15 +203,24 @@ class experienciaController extends Controller
     }
 
     public function buscartag(Request $request) {
-        $experiencia = experienciaModel::where('tag1', 'LIKE', '%'.$request->get('tipo').'%')
+        if($request->get('tipo') != 'todas'){
+            $experiencia = experienciaModel::where('tag1', 'LIKE', '%'.$request->get('tipo').'%')
             ->orWhere('tag2', 'LIKE', '%'.$request->get('tipo').'%')
             ->orWhere('tag3', 'LIKE', '%'.$request->get('tipo').'%')
             ->orWhere('tag4', 'LIKE', '%'.$request->get('tipo').'%')
             ->get();
 
-        $vac = compact('experiencia');
+            $vac = compact('experiencia');
 
-        return view('ListaDeExperiencias', $vac);
+            return view('ListaDeExperiencias', $vac);
+        } else {
+            $experiencia = experienciaModel::paginate(15);
+
+            $vac = compact('experiencia');
+
+            return view('ListaDeExperiencias', $vac);
+        }
+
     }
 
     public function detalhesExperiencia($id_experiencia){

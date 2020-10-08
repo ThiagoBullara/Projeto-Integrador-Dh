@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .produtos{
     border: black 0.05px;
-    background-color: rgb(255, 255, 255);
     margin-top: 10vh;
 }
 
@@ -51,11 +51,12 @@ main{
 }
 
 .card-produtos {
+    width:100% !important;
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
     margin: 30px 5px;
     position: relative;
     border-radius: 5px;
-    height: 450px;
+    height: 90%;
 }
 
 .imagem-mobile {
@@ -88,6 +89,11 @@ main{
 .link-restaurante:hover {
     text-decoration: none;
     color: black;
+}
+
+.imagem-experiencia{
+    width:100%; 
+    height:350px;
 }
 
 .card-produtos:after, .card-produtos:before {
@@ -136,6 +142,15 @@ main{
     left: 40%;
 }
 
+.tags-mobile{
+    display: none;
+}
+
+.navbar-toggler{
+    color: white;
+    border: 1px solid white;
+}
+
 @media (max-width: 370px){
     h2{
         font-size:20px;
@@ -154,6 +169,19 @@ main{
         padding: 18px 9px;
         margin: 1px 0;
         font-size: 18px;
+    }
+
+    .tags-mobile{
+        display: block;
+        text-align: center;
+    }
+
+    .tag,.tag-2{
+        margin-bottom: 5vw;
+    }
+
+    .tags-desktop{
+        display: none;
     }
 
 }

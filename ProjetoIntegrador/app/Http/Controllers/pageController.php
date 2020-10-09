@@ -27,9 +27,6 @@ class pageController extends Controller
     public function exibirFAQ(){
         return view('FAQ');
     }
-    public function exibirHome(){
-        return view('Home');
-    }
     public function exibirListaDeRestaurantes(){
         return view('ListaDeRestaurantes');
     }

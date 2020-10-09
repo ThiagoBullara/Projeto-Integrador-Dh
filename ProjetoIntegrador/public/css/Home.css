@@ -132,6 +132,42 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.card-produtos {
+    width:100%;
+    height: 450px;
+}
+
+.titulo-restaurante {
+    text-align: center;
+    align-items: center;
+    padding: 18px 9px;
+    margin: 1px 0;
+}
+
+.titulo-restaurante p {
+    margin: 0;
+}
+
+.nome-restaurante {
+    font-size: 13px;
+    color: gray;
+}
+
+.link-restaurante {
+    color: black;
+    text-decoration: none;
+}
+
+.link-restaurante:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.imagem-experiencia{
+    width:100%; 
+    height:350px;
+}
+
 /* Descubra */
 
 .descubra-todos {

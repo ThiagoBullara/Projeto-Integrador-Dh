@@ -4,6 +4,7 @@ use App\Http\Controllers\carrinhoController;
 use App\Http\Controllers\pageController;
 use App\Http\Controllers\usuarioController;
 use App\Http\Controllers\comentariosController;
+use App\Http\Controllers\HomeController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -19,10 +20,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/home');
-});
+Route::get('/', 'HomeController@home')->name('home');
 
+Route::get('/home', 'HomeController@home')->name('home');
 
 //CRUD de Experiências --------------------------------------------------------------------
 
@@ -60,8 +60,6 @@ Route::get('/SobreNos', 'pageController@exibirPaginaSobreNos');
 Route::get('/PoliticaDePrivacidade', 'pageController@exibirPoliticaDePrivacidade');
 
 Route::get('/TermosDeUso', 'pageController@exibirTermosDeUso');
-
-Route::get('/home', 'pageController@exibirHome')->name('home');
 
 Route::get('/Layout', 'pageController@layout');
 

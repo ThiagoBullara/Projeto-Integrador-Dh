@@ -60,28 +60,27 @@
     </section>
 
     <section class="container-fluid carrosel">
-    <div class="slider">
+        <div class="slider">
 
-    <div class="slider-experiencias">
-                
-        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
-        
-        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
+            <div class="slider-experiencias">
+                        
+                @foreach($experiencias as $experiencia)
+                    <a href="/Experiencia/{{ $experiencia->id_experiencia }}" class="link-restaurante">
+                        <div class="card-produtos">
+                            <div >
+                                <img  src="{{'storage/img/'.$experiencia->fotoExperiencia1}}" alt="{{$experiencia->fotoExperiencia1}}" class="imagem-experiencia">
+                            </div>
+                            <div class="titulo-restaurante">
+                                <p>{{ $experiencia->nomeExperiencia }}</p>
+                                <p class="nome-restaurante">R$:{{ $experiencia->precoExperiencia }} - {{ $experiencia->nomeRestaurante }}</p>
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
 
-        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
-        
-        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
-        
-        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
-        
-        <img  class="slide" src="http://via.placeholder.com/400x400" alt="Joao-Doria">
+            </div>
 
-    </div>
-    <!-- 
-    <div id="arrow-prev" class="arrow"></div>            
-    <div id="arrow-next" class="arrow"></div> -->
-
-    </div>
+        </div>
     </section>
 
     <section class="container-fluid descubra-todos">

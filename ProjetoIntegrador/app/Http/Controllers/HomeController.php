@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\experienciaModel;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth','verified']);
+        $this->middleware(['auth']);
     }
 
     /**
@@ -21,8 +22,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('home');
+    // public function index()
+    // {
+    //     return view('home');
+    // } 
+
+    public function home (Request $request) {
+
+        $experiencias = experienciaModel::paginate(2000);
+
+        $vac = compact('experiencias');
+
+        return view("home", $vac);
     }
+
 }

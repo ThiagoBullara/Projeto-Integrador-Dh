@@ -391,6 +391,6 @@
         <script src="{{asset('js/carrossel.js')}}" ></script>
         <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="{{asset('js/reCAPTCHAV2.js')}}"></script>
-
+        <script src="{{asset('js/mostrarMais.js')}}"></script>
     </body>
 </html>

@@ -146,8 +146,19 @@ h2 {
     text-align: center;
 }
 
-.comentarios-inv{
+.comentario-inv{
+    max-height: 0;
     opacity: 0;
+    pointer-events: none;
+}
+
+.visivel{
+    opacity: 0;
+}
+
+.fade-in{
+    opacity: 1 ease-in;
+    transition: 2s;
 }
 
 .box-comentario-img, .box-comentario-info {

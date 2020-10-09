@@ -44,7 +44,7 @@ class usuarioController extends Controller{
 
             }
 
-            return redirect()->action("pageController@exibirHome");
+            return redirect()->action("HomeController@home");
 
     }
 
@@ -66,7 +66,7 @@ class usuarioController extends Controller{
         $deletarPerfil = Auth::user();
         $deletarPerfil->delete();
 
-        return redirect()->action("pageController@exibirHome");
+        return redirect()->action("HomeController@home");
     }
 
 }

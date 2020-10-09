@@ -51,6 +51,7 @@ tr:nth-child(even) {
 
 .modal-content{
     background-color: white;
+    padding: 15px;
 }
 
 .rating{

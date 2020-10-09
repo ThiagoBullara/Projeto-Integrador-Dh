@@ -18,6 +18,7 @@ header {
 
 .container {
     flex: 1;
+    min-height: 50vh;
 }
 
 .nav-buyhood {
@@ -248,6 +249,10 @@ footer {
 .modal-content{
     background-color: rgba(0,0,0,.0001);
     border: none;
+}
+
+.logo-mobile-footer{
+    display:none;
 }
 
 .navbar-mobile{

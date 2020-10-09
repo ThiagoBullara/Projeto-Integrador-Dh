@@ -147,10 +147,10 @@
                 </div>
             </div>
         </div>
-        <div class="about container mt-5">
+        <div class="about mt-5">
             <h2 class="h-comentarios mb-5">Opinião de quem comprou</h2>
             @forelse($data['feedback'] as $feedback)
-                <div class="row mb-4" style="justify-content: center;">            
+                <div class="comentarios-inv row mb-4" style="justify-content: center;">            
                     <div class="col-lg-2 col-md-2 col-sm-2 box-comentario-img">
                         <img class="comentarios-img" src="{{ '/storage/img/'.$feedback->foto_usuario }}" width="100" height="100" alt="#">
                     </div>
@@ -172,7 +172,7 @@
                 </div> 
             @endforelse 
         </div>
-        <div class="container mt-5" style="border: none;">
+        <div class="mt-5" style="border: none;">
             <h2 class="h-comentarios mb-5">Perguntas e Comentarios</h2>
             @forelse($data['comentarios'] as $comentario)
                 <div class="row mb-4" style="justify-content: center;">            

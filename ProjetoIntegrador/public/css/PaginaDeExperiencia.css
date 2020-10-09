@@ -146,6 +146,10 @@ h2 {
     text-align: center;
 }
 
+.comentarios-inv{
+    opacity: 0;
+}
+
 .box-comentario-img, .box-comentario-info {
     background-color: #f3f3f3;
 }

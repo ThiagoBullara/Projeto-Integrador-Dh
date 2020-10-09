@@ -9,59 +9,24 @@ h1, h2, h3, h4, h5, h6 {
 /* Banner */
 
 .banner {
-    background-image: url(https://i.ibb.co/3YnxC4k/Buy-Hood-Home4.jpg);
+    background-image: url(https://i.ibb.co/pKKzrKG/banner-home.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 550px;
-    position: relative;
+    height: 470px;
 }
 
-.banner ul {
-    align-items: center;
-    margin: 0;
+.sobre {
+    margin-top: 30px;
+    margin-left: 100px;
+    color: white;
 }
 
-.banner ul .sobre {
-    width: 27%;
-    display: inline-block;
-    color: #e2e2e2;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+.sobre h1 {
+    font-size: 80px;
 }
 
-.banner ul .buscar {
-    width: 40%;
-    display: inline-block;
-    color: #e2e2e2;
-    position: absolute;
-    top: 50%;
-    right: -17%;
-    transform: translate(-50%, -50%);
-}
-
-.banner ul .buscar .inp {
-    width: 75%;
-    padding: 1.5% 2%;
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid black;
-
-}
-
-.banner ul .buscar .btn-inp {
-    padding: 1.5% 4%;
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid black;
-    font-weight: 600;
-}
-
-.banner ul .buscar .btn-inp:hover {
-    color: #73a942;
-    text-decoration: underline;
-    transition: all 0.5s;
+.sobre p {
+    font-size: 20px;
 }
 
 /* How To */
@@ -202,32 +167,47 @@ div .polaroid a {
     color: black;
 }
 
-@media only screen and (max-width: 1110px) {
-    .banner {
-        background-image: none;
+@media only screen and (max-width: 1300px) {
+    .sobre h1 {
+        font-size: 60px;
     }
 
-    .banner ul .sobre {
-        color: #000;
+    .sobre p {
         font-size: 16px;
     }
+}
+
+@media only screen and (max-width: 1131px) { 
+    .sobre h1 {
+        font-size: 50px;
+    }
+
+    .sobre p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .banner {
+        height: 350px;
+    }
 
     .how-to-button {
         width: 30%;
         left: 35%;
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    .sobre {
+        margin-left: 20px;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
-    .banner ul .sobre {
-        color: black;
-        display: block;
-        width: 35%;
-    }
-
-    .banner ul .buscar {
-        width: 40%;
-        display: block;
+    .banner {
+        height: 250px;
     }
 
     .how-to-button {
@@ -237,20 +217,15 @@ div .polaroid a {
 
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 640px) {
     .banner {
-        background-image: none;
+        background: url(none);
+        height: 250px;
     }
 
-    .banner ul .sobre {
-        display: block;
-        width: 70%;
-        left: 50%;
+    .sobre {
         color: black;
+        margin-left: 0;
+        text-align: center;
     }
-
-    .banner ul .buscar {
-        display: none;
-    }
-
 }

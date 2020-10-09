@@ -10,8 +10,8 @@
 
 @section('conteudo')
     <section class="container-fluid banner">
-        <ul>
-            <li class="sobre">
+        <div class="row">
+            <div class="col-lg-4 sobre">
                 <h1>Conheça o Buyhood</h1>
                 <p>
                     O Buyhood é uma plataforma onde você descobre e desfruta de experiências 
@@ -19,9 +19,11 @@
                     Campo Belo, Pinheiros e Paraíso, confira toda nossa área de atendimento 
                     <a href="/SobreNos#Contato">aqui!</a>
                 </p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
+
+    
 
     <section class="container-fluid">
         <div class="row titulo">

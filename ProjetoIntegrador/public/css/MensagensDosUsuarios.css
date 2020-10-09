@@ -1,0 +1,29 @@
+.modal-content {
+    background-color: white;
+}
+
+.modal-header {
+    color: black;
+}
+
+#menssage_for_user {
+    width: 100%;
+    padding: 5px;
+}
+
+.h-contato {
+    text-align: center;
+}
+
+.row-tags {
+    justify-content: center;
+}
+
+.tag {
+    padding: 5px 20px;
+    border: solid 1px black;
+    border-radius: 50px;
+    align-items: center;
+    margin: 10px 25px;
+}
+

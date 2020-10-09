@@ -54,4 +54,33 @@ class contatoController extends Controller
 
         return view ("PaginaSobreNos", $vac);
     }
+
+    public function listarContatos (Request $request) {
+
+        $mensagens = contatoModel::all();
+
+        $vac = compact('mensagens');
+
+        return view ("MensagensDosUsuarios", $vac);
+    }
+
+    public function filtrarContatos (Request $request) {
+        if($request->get('tipo') != 'todas'){
+
+            $mensagens = contatoModel::where('subject', 'LIKE', '%'.$request->get('tipo').'%')->get();
+            
+            $vac = compact('mensagens');
+
+            return view ("MensagensDosUsuarios", $vac);
+
+        } else {
+            $mensagens = contatoModel::all();
+
+            $vac = compact('mensagens');
+
+            return view ("MensagensDosUsuarios", $vac);
+        }
+    }
+
+
 }

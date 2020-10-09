@@ -200,10 +200,11 @@
                             @enderror
                             <label for="subject">Assunto</label>
                             <select id="subject" name="subject" required>
-                                <option value="feedback">Dar um feedback</option>
-                                <option value="opinião">Dar uma opinião</option>
-                                <option value="problema">Tenho um problema...</option>
-                                <option value="outro">Outro...</option>
+                                <option value="Feedback">Dar um feedback</option>
+                                <option value="Opinião">Dar uma opinião</option>
+                                <option value="Problema">Tenho um problema...</option>
+                                <option value="Negócios">Quero fazer parte...</option>
+                                <option value="Outro">Outro...</option>
                             </select>
                             @error('subject')
                                 <p style="color: red;">{{$message}}</p>

@@ -82,28 +82,20 @@ class contatoController extends Controller
         }
     }
 
-    public function enviarEmail (Request $request) {
-
-        $email = $request->email_usuario;
-        $nome = $request->nome_usuario;
-        $message_usuario = $request->message_usuario;
-
-        $data = [
-            'message' => $request->menssage_for_user,
-            'email' => $request->email_usuario,
-            'nome' => $request->nome_usuario,
-            'message_usuario' => $request->message_usuario,
-        ];
-
-        \Mail::send('emailResponder', $data, function($message) use ($request)
+    public function enviarEmail (Request $request) {            
+            \Mail::send('emailResponder',
+            array(
+                'name' => $request->get('nome_usuario'),
+                'email' => $request->get('email_usuario'),
+                'subject' => $request->get('menssage_for_user'),
+                'user_message' => $request->get('message_usuario'),
+                ), function($message) use ($request)
             {
-            $message->from('buyhoodlocalfoods@gmail.com');
-            $message->to($request->email_usuario, "Usuário BuyHood")->subject('Nova Mensagem de Contato');
-          });
+                $message->from('buyhoodlocalfoods@gmail.com');
+                $message->to($request->get('email_usuario'), "Usuário BuyHood")->subject('Resposta sobre seu contato conosco');
+            });
 
-          return back();
-
+            return back();
+        }
     }
 
-
-}

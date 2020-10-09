@@ -63,9 +63,7 @@
 
     <section class="container-fluid carrosel">
         <div class="slider">
-
-            <div class="slider-experiencias">
-                        
+            <div class="slider-experiencias">                        
                 @foreach($experiencias as $experiencia)
                     <a href="/Experiencia/{{ $experiencia->id_experiencia }}" class="link-restaurante">
                         <div class="card-produtos">
@@ -79,9 +77,7 @@
                         </div>
                     </a>
                 @endforeach
-
             </div>
-
         </div>
     </section>
 
@@ -96,7 +92,7 @@
                 <div class="polaroid">
                     <a href="/Experiencia/4">
                         <img src="storage/img/fotoExperiencia4-1.jpg" alt="Melhor Experiência" style="width:100%" height="450">
-                        <div class="container">
+                        <div class="experiencia-home">
                             <p>Conheça nossa experiência mais comprada!</p>
                         </div>
                     </a>
@@ -106,7 +102,7 @@
                 <div class="polaroid">
                     <a href="/Experiencia/2">
                         <img src="storage/img/fotoExperiencia2-1.jpg" alt="Melhor Experiência" style="width:100%" height="450">
-                        <div class="container">
+                        <div class="experiencia-home">
                             <p>Conheça nossa experiência mais bem avaliada!</p>
                         </div>
                     </a>

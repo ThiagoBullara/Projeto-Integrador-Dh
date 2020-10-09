@@ -1,23 +1,36 @@
-
 $(function(){
 
   $(".slider-experiencias").slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: $("#arrow-prev"),
-    nextArrow: $("#arrow-next"),
+    autoplaySpeed: 3500,
+    prevArrow: $(".arrow-prev"),
+    nextArrow: $(".arrow-next"),
     responsive: [
       {
-        breakpoint: 640,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
   })
 
 })
-

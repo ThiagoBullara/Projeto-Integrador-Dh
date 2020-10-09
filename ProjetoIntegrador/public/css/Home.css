@@ -131,6 +131,11 @@ h1, h2, h3, h4, h5, h6 {
 .imagem-experiencia{
     width:100%; 
     height:350px;
+    border-radius: 3%;
+}
+.experiencia-home{
+    padding: 15px;
+    font-size: 20px;
 }
 
 /* Descubra */
@@ -166,6 +171,23 @@ div .container {
 div .polaroid a {
     color: black;
 }
+
+.card-produtos {
+    width:100%;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+
+.link-restaurante:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
 
 @media only screen and (max-width: 1300px) {
     .sobre h1 {

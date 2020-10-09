@@ -279,6 +279,10 @@ footer {
         padding-top:10px;
     }
 
+    .logo-mobile-footer{
+        display:block;
+    }
+
     .logo-desktop-footer{
         display: none;
     }

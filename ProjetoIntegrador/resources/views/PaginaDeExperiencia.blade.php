@@ -172,7 +172,7 @@
                 </div> 
             @endforelse
             @if(count($data['feedback']) > 3)
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col-lg-12" style="text-align: center;">
                         <button class="botaoMostrarMais btn-buyhood" onclick="mostrarMais()"> Mostrar mais</button>
                     </div>
@@ -240,7 +240,7 @@
                     </div> 
             @endforelse
             @if(count($data['comentarios']) > 3)
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col-lg-12" style="text-align: center;">
                         <button class="botaoMostrarMais btn-buyhood" onclick="mostrarMais()"> Mostrar mais</button>
                     </div>

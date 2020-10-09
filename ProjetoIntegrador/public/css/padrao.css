@@ -274,6 +274,11 @@ footer {
 
  
 @media only screen and (max-width: 1024px) {
+    footer{
+        margin-bottom: 70px;
+    }
+
+
     .navbar-mobile{
         display: block;
         text-align: center;
@@ -316,8 +321,10 @@ footer {
     }
 
     .logo-desktop{
-        width: 50%;
+        width: 100%;
+        text-align: center;
     }
+
 
     .botao {
         font-size: 17px;

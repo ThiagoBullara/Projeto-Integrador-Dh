@@ -196,18 +196,6 @@
                                                             <div class="form-group row mb-0">
                                                                 <div class="col-md-6 offset-md-4">
                                                                 <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
-                                                                    <script>
-                                                                        function validateRecaptcha() {
-                                                                            var response = grecaptcha.getResponse();
-                                                                            if (response.length === 0) {
-                                                                                alert("Você não validou o reCAPTCHA");
-                                                                                return false;
-                                                                            } else {
-                                                                                alert("Conta criada com sucesso, você receberá um e-mail para confirmação em breve");
-                                                                                return true;
-                                                                            }
-                                                                        }
-                                                                    </script>
                                                                     <button type="submit" class="login_btn">
                                                                         {{ __('Cadastrar') }}
                                                                     </button>

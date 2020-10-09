@@ -169,18 +169,6 @@
                                                     </div>
                                                     <div class="row" style="margin-left: 30%;">
                                                         <div class="g-recaptcha mt-4 mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
-                                                            <script>
-                                                                function validateRecaptcha() {
-                                                                    var response = grecaptcha.getResponse();
-                                                                    if (response.length === 0) {
-                                                                        alert("Você não validou o reCAPTCHA");
-                                                                        return false;
-                                                                    } else {
-                                                                        alert("Seu feedback foi enviado com sucesso! Obrigado pela preferência!");
-                                                                        return true;
-                                                                    }
-                                                                }
-                                                            </script>
                                                         </div>
                                                         <button type="submit" class="btn-buyhood">Enviar Feedback</button>
                                                     </div>

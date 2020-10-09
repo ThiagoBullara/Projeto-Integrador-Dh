@@ -163,12 +163,41 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
+                        @if(isset($salvarContato))
+                            @if($salvarContato)
+                                <div class="row">
+                                    <div class="col-lg-12 sucesso mt-4 pt-4" style="text-align: center;">
+                                        <h3>Menssagem enviada <span class="sucesso-icon">&#10004;</span></h3>
+                                    </div>
+                                </div>
+                            @else
+                                <div class="row">
+                                    <div class="col-lg-12 erro mt-4 pt-4" style="text-align: center;">
+                                        <h3>Menssagem não enviada <span class="erro-icon">&#10006;</span></h3>
+                                    </div>
+                                </div>
+                            @endif
+                        @endif
+                        
+                        @if($errors -> any())
+                            <div class="row">
+                                <div class="col-lg-12 erro mt-4 pt-4" style="text-align: center;">
+                                    <h3>Menssagem não enviada <span class="erro-icon">&#10006;</span></h3>
+                                </div>
+                            </div>
+                        @endif
                         <form action="/FormularioContato" method="POST" onsubmit="return validateRecaptcha();">
                         @csrf
                             <label for="name">Nome</label>
                             <input type="text" id="name" name="name" placeholder="Digite aqui seu primeiro nome..." required>
+                            @error('name')
+                                <p style="color: red;">{{$message}}</p>
+                            @enderror
                             <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" placeholder="Digite aqui seu primeiro nome..." required>
+                            <input type="text" id="email" name="email" placeholder="Digite aqui seu email..." required>
+                            @error('email')
+                                <p style="color: red;">{{$message}}</p>
+                            @enderror
                             <label for="subject">Assunto</label>
                             <select id="subject" name="subject" required>
                                 <option value="feedback">Dar um feedback</option>
@@ -176,8 +205,14 @@
                                 <option value="problema">Tenho um problema...</option>
                                 <option value="outro">Outro...</option>
                             </select>
+                            @error('subject')
+                                <p style="color: red;">{{$message}}</p>
+                            @enderror
                             <label for="message">Mensagem</label>
                             <textarea id="message" name="message" placeholder="Digite aqui sua mensagem" style="height:170px" required></textarea>
+                            @error('message')
+                                <p style="color: red;">{{$message}}</p>
+                            @enderror
                             <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
                             <script>
                                 function validateRecaptcha() {

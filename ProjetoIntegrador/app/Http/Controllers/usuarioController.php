@@ -69,22 +69,6 @@ class usuarioController extends Controller{
         return redirect()->action("pageController@exibirHome");
     }
 
-    public function emailContato(Request $request){
-
-        \Mail::send('emailContato',
-        array(
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'subject' => $request->get('subject'),
-            'user_message' => $request->get('message'),
-        ), function($message) use ($request)
-          {
-            $message->from($request->email);
-            $message->to('buyhoodlocalfoods@gmail.com', 'BuyHood')->subject('Nova Mensagem de Contato');
-          });
-
-        return back()->with('success', 'Thank you for contact us!');
-    }
 }
 
 

@@ -127,6 +127,32 @@ input[type=submit]:hover {
   transition: 0.5s all;
 }
 
+.sucesso h3 {
+  padding: 10px;
+  border: solid 1px #73a942;
+  border-radius: 5px;
+}
+
+.sucesso-icon {
+  color: #73a942;
+  text-decoration: underline;  
+}
+
+.erro h3 {
+  padding: 10px;
+  border: solid 1px red;
+  border-radius: 5px;
+}
+
+.erro-icon {
+  color: red;
+  text-decoration: underline;  
+}
+
+.erro-campo-obrigatorio {
+  text-align: center;
+}
+
 @media screen and (max-width: 600px) {
   .col-lg-12, input[type=submit] {
     width: 100%;

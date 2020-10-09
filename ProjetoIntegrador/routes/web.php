@@ -5,6 +5,7 @@ use App\Http\Controllers\pageController;
 use App\Http\Controllers\usuarioController;
 use App\Http\Controllers\comentariosController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\contatoController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -35,7 +36,8 @@ Route::post('/EditarExperiencia/{id_experiencia}', 'experienciaController@editar
 Route::get('/DeletarExperiencia/{id_experiencia}', 'experienciaController@deletarExperiencia')->middleware('admin');
 //CRUD de Experiências --------------------------------------------------------------------
 
-Route::post('/FormularioContato', 'usuarioController@emailContato');
+Route::get('/FormularioContato', 'contatoController@enviarContato');
+Route::post('/FormularioContato', 'contatoController@enviarContato');
 
 Route::post('/Feedback', 'experienciaController@feedback')->middleware('auth');
 
@@ -68,7 +70,6 @@ Route::get('/Layout', 'pageController@layout');
 Route::post('/EnviarComentario/{id_experiencia}', 'comentariosController@postar');
 Route::post('/EditarComentario/{id_comentario}', 'comentariosController@editar');
 Route::post('/DeletarComentario/{id_comentario}', 'comentariosController@deletar');
-
 
 // Comentarios
 

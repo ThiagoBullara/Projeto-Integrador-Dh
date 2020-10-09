@@ -50,7 +50,7 @@ tr:nth-child(even) {
 }
 
 .modal-content{
-    background-color: white;
+    background-color: white !important;
     padding: 15px;
 }
 

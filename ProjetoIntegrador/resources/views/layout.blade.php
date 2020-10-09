@@ -368,10 +368,10 @@
                     <span>&copy; 2020 BuyHood - BUYHOOD BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA.</span>
                 </div>
                 <div class="col-lg-6">
-                    <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" target="_blank"><i class="fab fa-youtube" target="_blank"></i></a>
-                    <a href="https://www.instagram.com/buyhoodlocalfoods/"><i class="fab fa-instagram" target="_blank"></i></a>
-                    <a href="https://twitter.com/BuyhoodL"><i class="fab fa-twitter" target="_blank"></i></a>
-                    <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/"><i class="fab fa-facebook" target="_blank"></i></a>                        
+                    <a href="https://www.youtube.com/channel/UChvSdcECiBqYHsSGBWaU3_Q?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/buyhoodlocalfoods/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/BuyhoodL" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/Buyhood-Local-Foods-107059267736528/" target="_blank"><i class="fab fa-facebook"></i></a>                        
                 </div>
             </div>
         </footer>

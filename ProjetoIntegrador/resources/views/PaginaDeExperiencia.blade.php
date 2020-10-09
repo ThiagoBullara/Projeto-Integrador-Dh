@@ -190,43 +190,45 @@
                         <h5>{{ $comentario->nome_usuario }} <span class="timestamp"> {{ date( 'd/m/Y', strtotime($comentario->created_at)) }}</span></h5>
                         <div class="box-de-comentario">
                             <p>"{{ $comentario->comentario }}"</p>
-                            @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com" || Auth::user()->id == $comentario->id_usuario )
-                                <div class="row" style="width: 100%;">
-                                    <div class="col-lg-10" style="text-align: end; padding-right: 0;">
-                                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Editar</button>
-                                        <div id="myModal" class="modal fade" role="dialog">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title">Editar seu comentário</h4>
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    </div>
-                                                    <div class="modal-body">                                            
-                                                        <form action="/EditarComentario/{id_comentario}" method="POST">
-                                                            @csrf
-                                                            <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario }}">
-                                                            <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                                            <textarea name="comentario" id="comentario" cols="55" rows="5" required style="padding: 4px;"></textarea>
-                                                            @error('comentario')
-                                                                <p style="color: red;">{{$message}}</p>
-                                                            @enderror
-                                                            <button type="submit" class="btn btn-primary">Editar</button>
-                                                        </form>
+                            @auth
+                                @if (Auth::user()->email == "buyhoodlocalfoods@gmail.com" || Auth::user()->id == $comentario->id_usuario )
+                                    <div class="row" style="width: 100%;">
+                                        <div class="col-lg-10" style="text-align: end; padding-right: 0;">
+                                            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Editar</button>
+                                            <div id="myModal" class="modal fade" role="dialog">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Editar seu comentário</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+                                                        <div class="modal-body">                                            
+                                                            <form action="/EditarComentario/{id_comentario}" method="POST">
+                                                                @csrf
+                                                                <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario }}">
+                                                                <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                                                <textarea name="comentario" id="comentario" cols="55" rows="5" required style="padding: 4px;"></textarea>
+                                                                @error('comentario')
+                                                                    <p style="color: red;">{{$message}}</p>
+                                                                @enderror
+                                                                <button type="submit" class="btn btn-primary">Editar</button>
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-2">
+                                            <form action="/DeletarComentario/{id_comentario}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario }}">
+                                                <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
+                                                <button type="submit" class="btn btn-danger">Deletar</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-2">
-                                        <form action="/DeletarComentario/{id_comentario}" method="POST">
-                                            @csrf
-                                            <input type="hidden" name="id_comentario" value="{{ $comentario->id_comentario }}">
-                                            <input type="hidden" name="id_experiencia" value="{{ $data['detalhesExperiencia']->id_experiencia }}">
-                                            <button type="submit" class="btn btn-danger">Deletar</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            @endif
+                                @endif
+                            @endauth
                         </div>                        
                     </div>
                 </div>

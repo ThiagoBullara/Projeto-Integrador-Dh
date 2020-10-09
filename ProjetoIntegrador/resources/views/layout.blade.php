@@ -17,7 +17,7 @@
     <body>
         <header class="header container-fluid">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-12 col-sm-12">
                     <div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div>
                 </div>
                 <ul class="nav-buyhood col-lg-9">    
@@ -196,18 +196,6 @@
                                                             <div class="form-group row mb-0">
                                                                 <div class="col-md-6 offset-md-4">
                                                                 <div class="g-recaptcha mb-4" data-sitekey="6LeLw9EZAAAAAINZkXq9ANQ6lwG9ntKJRwlamNZT"></div>
-                                                                    <script>
-                                                                        function validateRecaptcha() {
-                                                                            var response = grecaptcha.getResponse();
-                                                                            if (response.length === 0) {
-                                                                                alert("Você não validou o reCAPTCHA");
-                                                                                return false;
-                                                                            } else {
-                                                                                alert("Conta criada com sucesso, você receberá um e-mail para confirmação em breve");
-                                                                                return true;
-                                                                            }
-                                                                        }
-                                                                    </script>
                                                                     <button type="submit" class="login_btn">
                                                                         {{ __('Cadastrar') }}
                                                                     </button>
@@ -392,6 +380,6 @@
         <script src="{{asset('js/carrossel.js')}}" ></script>
         <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="{{asset('js/reCAPTCHAV2.js')}}"></script>
-
+        <script src="{{asset('js/mostrarMais.js')}}"></script>
     </body>
 </html>

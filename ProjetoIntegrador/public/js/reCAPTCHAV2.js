@@ -1,4 +1,4 @@
-console.log("eita");
+
 
 function validateRecaptcha() {
     var response = grecaptcha.getResponse();

@@ -244,11 +244,12 @@ footer {
 
 .modal{
     font-size: 15px;
+
 }
 
-.modal-content{
-    background-color: rgba(0,0,0,.0001);
+.modal-content{    
     border: none;
+    background-color:rgba(0, 0, 0, 0) !important;
 }
 
 .logo-mobile-footer{
@@ -273,6 +274,11 @@ footer {
 
  
 @media only screen and (max-width: 1024px) {
+    footer{
+        margin-bottom: 70px;
+    }
+
+
     .navbar-mobile{
         display: block;
         text-align: center;
@@ -315,8 +321,10 @@ footer {
     }
 
     .logo-desktop{
-        width: 50%;
+        width: 100%;
+        text-align: center;
     }
+
 
     .botao {
         font-size: 17px;

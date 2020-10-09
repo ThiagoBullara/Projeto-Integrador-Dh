@@ -28,6 +28,7 @@ Route::get('/FormularioContato', 'contatoController@enviarContato');
 Route::post('/FormularioContato', 'contatoController@enviarContato');
 Route::get('/MensagensDosUsuarios', 'contatoController@listarContatos')->middleware('admin');
 Route::get('/filtrarMensagens', 'contatoController@filtrarContatos')->middleware('admin');
+Route::post('/EnviarEmail', 'contatoController@enviarEmail')->middleware('admin');
 // Lista de mensagens
 
 

@@ -82,5 +82,28 @@ class contatoController extends Controller
         }
     }
 
+    public function enviarEmail (Request $request) {
+
+        $email = $request->email_usuario;
+        $nome = $request->nome_usuario;
+        $message_usuario = $request->message_usuario;
+
+        $data = [
+            'message' => $request->menssage_for_user,
+            'email' => $request->email_usuario,
+            'nome' => $request->nome_usuario,
+            'message_usuario' => $request->message_usuario,
+        ];
+
+        \Mail::send('emailResponder', $data, function($message) use ($request)
+            {
+            $message->from('buyhoodlocalfoods@gmail.com');
+            $message->to($request->email_usuario, "Usuário BuyHood")->subject('Nova Mensagem de Contato');
+          });
+
+          return back();
+
+    }
+
 
 }

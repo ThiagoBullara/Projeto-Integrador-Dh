@@ -64,8 +64,11 @@
                         <td>{{ $mensagem->message }}</td>
                         <td>
                             <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">Responder</button>
-                            <form action="#" method="POST">
-                                @csrf
+                            <form action="/EnviarEmail" method="POST">
+                                @csrf                                
+                                <input type="hidden" name="nome_usuario" value=" {{$mensagem->name }} ">
+                                <input type="hidden" name="email_usuario" value=" {{$mensagem->email }} ">
+                                <input type="hidden" name="message_usuario" value=" {{$mensagem->message }} ">
                                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
@@ -79,7 +82,7 @@
                                                 <textarea name="menssage_for_user" id="menssage_for_user" cols="30" rows="10"></textarea>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">Enviar</button>
+                                                <button type="submit" class="btn btn-primary">Enviar</button>
                                             </div>
                                         </div>
                                     </div>

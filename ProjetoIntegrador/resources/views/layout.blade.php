@@ -17,10 +17,10 @@
     <body>
         <header class="header container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="logo-desktop"><a href="/home"><img src="https://i.ibb.co/C1ZPDby/Screenshot-3-removebg-preview.png" width="250px" alt="Logo Buyhood"></a></div>
                 </div>
-                <ul class="nav-buyhood col-lg-8">    
+                <ul class="nav-buyhood col-lg-9">    
                     <li class="barra-de-pesquisa">
                         <form action="/ListaDeExperienciasBuscar" method="GET">
                             <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">

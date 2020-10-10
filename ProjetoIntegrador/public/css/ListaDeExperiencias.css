@@ -151,6 +151,17 @@ main{
     border: 1px solid white;
 }
 
+.pesquisa-buyhood{
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    border-radius: 20px;
+}
+
+.form-control:focus{
+    border: lightblue solid 2px;
+}
+
 @media (max-width: 370px){
     h2{
         font-size:20px;

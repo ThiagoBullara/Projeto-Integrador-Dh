@@ -194,7 +194,7 @@ footer {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
-
+    min-height: 450px !important;
 }
 .brand_logo_container {
     position: absolute;
@@ -244,12 +244,11 @@ footer {
 
 .modal{
     font-size: 15px;
-
 }
 
 .modal-content{    
     border: none;
-    background-color:rgba(0, 0, 0, 0) !important;
+    background-color:rgba(0, 0, 0, 0) !important;    
 }
 
 .logo-mobile-footer{
@@ -263,6 +262,7 @@ footer {
     background-color:lightgray;
     z-index: 5000000000;
     bottom: 0%;
+    font-size: 15px;
 }
 
 .fas.fa-home, .fas.fa-search, .fas.fa-building, .fas.fa-user{

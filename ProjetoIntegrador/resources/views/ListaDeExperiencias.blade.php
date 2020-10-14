@@ -170,7 +170,7 @@
         <div class="container produtos">
             <form action="/ListaDeExperienciasBuscar" method="GET" class="mb-5 mt-5">
                 <div class="input-group pesquisa-buyhood pesquisa-buyhood-mobile">
-                    <input type="search" class="form-control" name="tipo" placeholder="Pesquisar na BuyHood">
+                    <input type="search" class="form-control" name="tipo" placeholder="Buscar Experiência">
                     <div class="input-group-append">
                         <button type="submit" class="form-control icone-pesquisar-buyhood">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
